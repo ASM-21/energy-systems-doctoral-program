@@ -44,7 +44,13 @@ The Chairman's testimony states that the Commission approved PPL's Second DER Ma
 
 **Evidence qualification:** The 258 MW figure is a projection reported in the Chairman's testimony, not an independently measured ex-post increase. The testimony is not a substitute for the controlling order. Retrieve the original order and docket record from the [PA PUC Document Search](https://www.puc.beta.pa.gov/search/document-search/) before making detailed claims about ordering paragraphs, cost recovery, evaluation requirements, reporting, or RFP terms.
 
-### D. PPL hosting-capacity transparency and Pennsylvania HB 2429
+### D. DER Orchestration Plan and BTM non-exporting battery review
+
+The March 13, 2026 rate-case settlement in R-2025-3057164 contains follow-through commitments on a DER Orchestration Plan and a review of BTM non-exporting battery applications. The operative settlement body paragraphs are 119 (one stakeholder working group before the plan filing) and 124 (review of BTM projects currently under interconnection review within 120 days of the June 11, 2026 final order). Appendix D contains off-by-one cross-references to paragraphs 118 and 123; use the operative settlement body numbering. The 120-day review date was October 9, 2026. No separate public report or plan was located in the indexed sources searched as of November 20, 2026; that is a public-record search status, not proof of non-filing. The 2023 PPL storage policy and 2026 Rule 12 supplement should be read together.
+
+See [DER Orchestration Plan and BTM Storage Review](der-orchestration-and-btm-storage-review.md) for the detailed chronology, technical policy crosswalk, deadline, public-record caveat, and research questions.
+
+### E. PPL hosting-capacity transparency and Pennsylvania HB 2429
 
 PPL's [public interconnection FAQ](https://pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/Customer-Owned-Generation/frequently-asked-questions) states that it does not currently publish hosting-capacity maps or specific feeder hosting-capacity information. It says that limited site-specific information may be provided during pre-application, including substation name, feeder name and voltage, and line-distance information.
 
@@ -52,7 +58,7 @@ PPL's [public interconnection FAQ](https://pplelectric.com/site/More/About-Us/El
 
 See the [public-data feasibility assessment](data-feasibility.md) for the dataset inventory, research design, and unresolved evidence gaps.
 
-### E. Pennsylvania PUC — proposed Chapter 57 rules for wholesale DER aggregations
+### F. Pennsylvania PUC — proposed Chapter 57 rules for wholesale DER aggregations
 
 **Docket:** L-2023-3044115.  
 **Order:** Notice of Proposed Rulemaking adopted and entered December 18, 2025; published April 11, 2026 in 56 Pa.B. 1985.  
@@ -72,14 +78,14 @@ Key features of the proposal include:
 
 The IRRC status page is important because it prevents a proposed rule from being represented as enacted. Recheck the regulation's status and any final-form publication before relying on these requirements.
 
-### F. PJM — DER Aggregator Participation Model
+### G. PJM — DER Aggregator Participation Model
 
 **Document:** PJM, *DER Aggregator Participation Model: Full Model Design*, March 9, 2026.  
 **Official public PDF:** [PJM model design presentation](https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/disrs/2026/20260309/20260309-item-05---updated-der-aggregator-participation-model---full-model-design---informational-only.pdf).
 
 The presentation describes the PJM implementation timeline and the division between wholesale aggregation participation and distribution interconnection. It is an informational presentation, not itself a tariff. Verify current tariff/manual language and later stakeholder/FERC actions before relying on dates or requirements.
 
-### G. FERC — Order No. 2222
+### H. FERC — Order No. 2222
 
 - [FERC Order No. 2222 fact sheet](https://www.ferc.gov/media/ferc-order-no-2222-fact-sheet).
 - [FERC Order No. 2222 explainer](https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy).
@@ -87,7 +93,7 @@ The presentation describes the PJM implementation timeline and the division betw
 
 The order establishes a framework for DER aggregations to participate in organized wholesale markets. The fact sheet and explainer are useful orientation materials, but the order and subsequent compliance orders are the controlling sources.
 
-### H. FERC — Order No. 2023
+### I. FERC — Order No. 2023
 
 - [FERC explainer on the generator interconnection final rule](https://ferc.gov/explainer-interconnection-final-rule).
 - [Order No. 2023, Docket RM22-14-000](https://ferc.gov/sites/default/files/2023-07/20230728-3060.PDF).
