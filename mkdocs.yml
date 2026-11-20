@@ -81,6 +81,7 @@ nav:
       - Question bank: research/research-question-bank/README.md
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
       - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
+      - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
       - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
