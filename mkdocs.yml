@@ -1,0 +1,65 @@
+site_name: Energy Systems, Infrastructure Economics & Public Policy
+site_description: Independent doctoral-level curriculum in energy systems, infrastructure economics, and public policy.
+site_url: https://asm-21.github.io/energy-systems-doctoral-program/
+repo_url: https://github.com/ASM-21/energy-systems-doctoral-program
+repo_name: ASM-21/energy-systems-doctoral-program
+
+docs_dir: .
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+exclude_docs: |
+  .git/
+  .github/
+  .venv/
+  site/
+  data/raw/
+
+nav:
+  - Home: docs/index.md
+  - Program:
+      - Overview: curriculum/program-overview.md
+      - Roadmap: ROADMAP.md
+      - Academic standards: ACADEMIC_STANDARDS.md
+      - Departments:
+          - Power systems: curriculum/departments/power-systems.md
+          - Energy economics: curriculum/departments/energy-economics-markets.md
+          - Regulation and policy: curriculum/departments/regulation-policy.md
+          - Climate and sustainability: curriculum/departments/climate-sustainability.md
+          - Quantitative methods: curriculum/departments/quantitative-methods.md
+          - Infrastructure strategy: curriculum/departments/infrastructure-strategy.md
+  - Curriculum:
+      - Year 1: courses/year-1/README.md
+      - Power systems: courses/year-1/y1-01-power-systems/README.md
+      - Energy economics: courses/year-1/y1-02-energy-economics/README.md
+      - Markets and regulation: courses/year-1/y1-03-markets-regulation-pjm/README.md
+      - Quantitative methods: courses/year-1/y1-04-quantitative-methods/README.md
+      - Course references: library/course-catalog.md
+  - Research:
+      - Research workflow: resources/research-workflow.md
+      - Data sources: resources/data-sources.md
+      - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
+  - Progress:
+      - Tracking guide: progress/README.md
+      - Transcript: progress/academic-transcript.md
