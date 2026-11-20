@@ -103,7 +103,7 @@ Research question: How does Pennsylvania's regulatory framework allocate decisio
 
 Methods:
 1. Build a docket chronology for P-2024-3049223, including petition, interventions, testimony, settlement or stipulations, December 3, 2025 order, tariff compliance filings, and implementation updates.
-2. Retrieve and code the original Commission order. Record every directive, deadline, reporting requirement, cost-recovery decision, and RFP obligation.
+2. Retrieve and code the original Commission order. Record every directive, deadline, reporting requirement, cost-recovery decision, and RFP obligation. Also retrieve the DER Orchestration Plan, its stakeholder working-group record, and the paragraph 123 BTM non-exporting storage review outcome from R-2025-3057164.
 3. Crosswalk Rule 12, REMSI, the Commission order, the proposed Chapter 57 wholesale DER aggregation rulemaking (L-2023-3044115) and current IRRC status, PJM's Order 2222 compliance filings, and applicable FERC orders.
 4. Separate distribution-system objectives (voltage, thermal limits, protection, reliability) from wholesale-market objectives (aggregation, dispatch, capacity, energy, ancillary services).
 5. Evaluate who bears costs and risks, what performance evidence is required, and how the Commission can assess whether projected benefits materialize.
