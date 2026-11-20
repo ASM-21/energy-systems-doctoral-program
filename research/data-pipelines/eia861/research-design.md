@@ -1,6 +1,6 @@
 # EIA-861 Research Design: PPL Distributed-Energy Adoption and Utility Outcomes
 
-**Status:** Design protocol, not an empirical result. Final variable selection depends on the historical coverage audit.  
+**Status:** Preliminary empirical descriptive result; causal analysis is not identified. Historical coverage and harmonization have been completed for 2015–2025.  
 **Unit of analysis:** Utility-year only where EIA actually reports a utility-level observation; state-year or state-sector-year otherwise.  
 **Primary source:** EIA Form 861 annual detailed files.
 
@@ -19,7 +19,7 @@ This is deliberately a descriptive and measurement-first study. A single-utility
 5. Retain the original source row and raw field names in the long-form extract. Build a separate, explicit crosswalk for harmonized variables.
 6. Never convert missing rows, blank cells, suppressed values, or non-reporting to zero.
 
-EIA states that Form EIA-861 is a census of U.S. electric utilities but that the short form has less detailed responses. EIA's schedule descriptions identify substantial definition changes: non-net-metered distributed generation was renamed in 2016, sector disaggregation and AC conversion adjustments were introduced, and Form EIA-861S imputation expanded in 2020. The net-metering schedule's published description is state/sector/balancing-authority oriented. The 2025 final workbook nevertheless contains a utility-level worksheet; this must be treated as a discovered schedule-specific exception until the historical audit establishes its coverage.
+EIA states that Form EIA-861 is a census of U.S. electric utilities but that the short form has less detailed responses. EIA's schedule descriptions identify substantial definition changes: non-net-metered distributed generation was renamed in 2016, sector disaggregation and AC conversion adjustments were introduced, and Form EIA-861S imputation expanded in 2020. Although the generic net-metering schedule description emphasizes state/sector/balancing-authority reporting, the actual annual Net_Metering workbooks contain a utility-level PPL row in every year from 2015 through 2025. The row is located in Net_Metering_States (2015), Utility_Level-States (2016), States (2017–2022 and 2024), and States- Utility Level (2023 and 2025). The coverage audit checks the actual files, not just the generic webpage description.
 
 ## 3. Candidate variables and measurement rules
 
@@ -38,12 +38,10 @@ A cumulative installation count should not be interpreted as annual installation
 
 ## 4. Historical audit decision gate
 
-The historical coverage audit and raw extraction have now been run for 2015–2025. Each annual archive contains exactly one PPL utility-level net-metering row in the relevant schedule, so a PPL descriptive time series is feasible. The standard net-metered PV capacity series rises from 76.686 MW in 2015 to 505.746 MW in 2025 (+429.060 MW; 559.5%; 20.76% CAGR). The normalized file preserves source field names and archive hashes. This is a measured utility-level reported-capacity series, not feeder hosting capacity.
+The historical coverage audit and raw extraction have now been run for 2015–2025. Each annual archive contains exactly one PPL utility-level net-metering row in the relevant schedule. The standard net-metered PV capacity series is 76.686 MW in 2015 (AC/DC basis not separately reported) and 505.746 MW in 2025 (AC). The comparable AC-basis series rises from 92.915 MW in 2016 to 505.746 MW in 2025 (+412.831 MW; +444.31%; 20.7149% CAGR). The normalized file preserves source field names, archive hashes, and annual source-row provenance. This is a measured utility-level reported-capacity series, not feeder hosting capacity.
 
-- **Observed result:** the 2015–2025 archives each contain one PPL net-metering row. A standard-PV capacity descriptive series is available across all eleven years. Compare reported cumulative MW and count measures, retaining the documented breaks; do not assume a causal effect.
-- **If utility-level net-metering rows are sporadic:** publish a coverage table and restrict trend statements to the observed years. Do not interpolate across missing survey coverage.
-- **If the utility-level worksheet exists only in 2025:** use it as a 2025 cross-sectional snapshot. Use official state-level time series for broader adoption context, but do not attribute those state totals to PPL.
-- **If peer utilities have comparable rows:** construct a utility-year panel only after verifying consistent EIA IDs, respondent form, schedule definitions, service territories, and variable units. Report the unbalanced panel and missingness mechanism.
+- **Observed result:** the 2015–2025 archives each contain one PPL net-metering row. Use the 2016–2025 AC series for comparable growth calculations; retain 2015 as a historical observation with unknown capacity basis. Keep the Customers-to-Installations count-label break in 2021 explicit.
+- The next decision is whether comparable peer-utility observations can support a broader unbalanced panel. Do not expand the sample until EIA IDs, survey forms, definitions, units, and service territories have been checked.- **If peer utilities have comparable rows:** construct a utility-year panel only after verifying consistent EIA IDs, respondent form, schedule definitions, service territories, and variable units. Report the unbalanced panel and missingness mechanism.
 
 The audit is a data-feasibility step, not a reason to select a favorable sample after looking at outcomes. Preserve the full set of candidate utilities and years in the coverage manifest.
 
@@ -60,7 +58,9 @@ For each comparable variable:
 7. Report missingness explicitly and never silently fill gaps.
 
 Potential figures:
-- cumulative net-metered PV capacity and installations, if comparable utility observations exist;
+- cumulative standard net-metered PV capacity and its AC-basis annual changes;
+- PV capacity by residential, commercial, and industrial customer sectors;
+- virtual PV capacity, with the combined-to-size-band definition change annotated;
 - annual changes in cumulative capacity, with missing years shown as gaps;
 - EIA schedule coverage heatmap by year and workbook;
 - PPL reliability and AMI indicators, if their reporting bases are comparable;
