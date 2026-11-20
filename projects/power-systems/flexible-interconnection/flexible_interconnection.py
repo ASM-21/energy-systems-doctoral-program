@@ -124,15 +124,6 @@ def solve_scenario(
     a_eq.append(terminal_row)
     b_eq.append(initial_soc)
 
-    a_ub, b_ub = [], []
-    for t, row in enumerate(profile):
-        export_row = np.zeros(size)
-        export_row[ix(pv0, t)] = 1
-        export_row[ix(dis0, t)] = 1
-        export_row[ix(ch0, t)] = -1
-        export_row[ix(exp0, t)] = -1
-        a_ub.append(export_row)
-        b_ub.append(row["site_load_mw"] + export_limit[t])
 
     bounds = []
     for t, row in enumerate(profile):
@@ -146,7 +137,6 @@ def solve_scenario(
 
     result = linprog(
         objective,
-        A_ub=np.asarray(a_ub), b_ub=np.asarray(b_ub),
         A_eq=np.asarray(a_eq), b_eq=np.asarray(b_eq),
         bounds=bounds, method="highs",
     )
