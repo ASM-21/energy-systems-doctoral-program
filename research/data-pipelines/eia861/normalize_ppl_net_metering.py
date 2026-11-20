@@ -60,7 +60,7 @@ def normalized_row(row: dict) -> dict:
         if large is None and small is None:
             virtual_capacity = None
         else:
-            virtual_capacity = (large or 0.0) + (small or 0.0)
+            virtual_capacity = round((large or 0.0) + (small or 0.0), 6)
         virtual_field = ";".join(field for field in (large_field, small_field) if field)
         virtual_measure = "sum of virtual PV capacity >=1 MW and <1 MW categories"
 
