@@ -57,6 +57,8 @@ Sources: [PPL rate-case settlement, R-2025-3057164](https://www.pplelectric.com/
 
 ### Aggregate federal data: EIA Form 861
 
+A reproducible [EIA-861 2025 inventory pipeline](../../data-pipelines/eia861/README.md) has been added. It downloads the official final ZIP, records its SHA-256 and retrieval timestamp, validates the archive, and inventories workbook/sheet names and schema previews before any transformation. The pipeline does not assume utility-level granularity for the net-metering or non-net-metered distributed-generation schedules. PPL's EIA utility identifier is provisionally crosswalked as 14715 and must be confirmed in the downloaded utility frame before any utility-level join.
+
 The EIA-861 annual survey collects responses from U.S. electric utilities and publishes detailed files covering net metering, non-net-metered distributed generation, distribution circuits, service territories, and reliability. The EIA documentation describes net-metered generator counts and capacity by technology, state, sector, and balancing authority, and non-net-metered distributed generation under 1 MW in aggregate. The EIA data page now lists a 2025 final-data ZIP, so the 2025 release is the starting point for extraction as of this verification. The exact release timestamp and any later revision notices should be recorded from EIA metadata when the archive is downloaded.
 
 These data are valuable for descriptive context and cross-state/sector comparisons. They do not supply the feeder-level engineering inputs or PPL project-level interconnection outcomes needed to estimate hosting capacity or interconnection performance at circuit level.
