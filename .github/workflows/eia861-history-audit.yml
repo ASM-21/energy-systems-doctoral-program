@@ -19,6 +19,8 @@ on:
       - "research/data-pipelines/eia861/test_inventory_eia861.py"
       - "research/data-pipelines/eia861/extract_historical_net_metering.py"
       - "research/data-pipelines/eia861/test_historical_net_metering.py"
+      - "research/data-pipelines/eia861/normalize_ppl_net_metering.py"
+      - "research/data-pipelines/eia861/test_normalize_ppl_net_metering.py"
       - ".github/workflows/eia861-history-audit.yml"
 
 permissions:
@@ -49,6 +51,11 @@ jobs:
             --start-year "${{ inputs.start_year || '2015' }}" \
             --end-year "${{ inputs.end_year || '2025' }}" \
             --output-dir /tmp/eia861-ppl-net-metering
+      - name: Harmonize PPL net-metering series
+        run: |
+          python research/data-pipelines/eia861/normalize_ppl_net_metering.py \
+            --input-csv /tmp/eia861-ppl-net-metering/ppl_net_metering_raw.csv \
+            --output-dir /tmp/eia861-ppl-net-metering/harmonized
       - name: Upload coverage and historical extraction
         uses: actions/upload-artifact@v4
         with:
