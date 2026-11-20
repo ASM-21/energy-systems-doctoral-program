@@ -68,6 +68,8 @@ def solve_scenario(
     n = len(profile)
     if len(export_limit) != n:
         raise ValueError("Export-limit vector must match profile length.")
+    if any(value < 0 for value in export_limit):
+        raise ValueError("Export limits must be nonnegative.")
     if battery_power_mw < 0 or battery_energy_mwh < 0:
         raise ValueError("Battery power and energy must be nonnegative.")
     if not (0 < eta_charge <= 1 and 0 < eta_discharge <= 1):
