@@ -25,6 +25,12 @@ class DCPowerFlowTests(unittest.TestCase):
         self.assertFalse(result["line_flows"][1]["limit_violated"])
         self.assertFalse(result["line_flows"][2]["limit_violated"])
 
+    def test_tightened_line_limit_is_flagged(self):
+        lines = [dict(line) for line in self.lines]
+        lines[0]["limit_mw"] = 30
+        result = solve_dc_power_flow(self.buses, lines)
+        self.assertTrue(result["line_flows"][0]["limit_violated"])
+
     def test_unbalanced_injections_rejected(self):
         with self.assertRaises(ValueError):
             solve_dc_power_flow({1: 40, 2: -40, 3: 5}, self.lines)
