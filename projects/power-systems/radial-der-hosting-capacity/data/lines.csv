@@ -1,0 +1,4 @@
+from_bus,to_bus,r_ohm,x_ohm,thermal_limit_mva
+1,2,0.70,0.45,1.50
+2,3,0.80,0.50,0.80
+2,4,1.20,0.65,0.80
