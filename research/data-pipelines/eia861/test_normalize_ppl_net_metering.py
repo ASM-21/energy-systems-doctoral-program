@@ -19,6 +19,7 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
             "source_row": "693", "archive_sha256": "hash",
             "Photovoltaic__Capacity_MW__Total": "76.686",
             "Photovoltaic__Customers__Total": "3554", "Total__Capacity_MW": "98.919",
+            "Photovoltaic__Virtual_Capacity_(MW)__Total": "",
             "Utility_Characteristics__State": "PA",
         }
         row = normalized_row(raw)
@@ -34,6 +35,7 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
             "source_row": "760", "archive_sha256": "hash",
             "Photovoltaic__Capacity_MW__Total": "505.746",
             "Photovoltaic__Installations__Total": "31400",
+            "Photovoltaic__Virtual_Capacity_(MW)__Total": "",
             "Photovoltaic__Virtual_Capacity-_1_MW_and_over_(MW)__Total": "10.3",
             "Photovoltaic__Virtual_Capacity-_under_1_MW_(MW)__Total": "23.174",
             "Photovoltaic__Capacity_MW__Type": "AC",
