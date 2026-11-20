@@ -42,3 +42,7 @@ A clean environment must reproduce tables and figures from raw or documented sou
 
 - [Problem Set 2](problem-set-02.md)
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
+
+
+## Computational lab
+- [OLS and robust inference on synthetic energy-demand data](../../../projects/econometrics/ols-energy-demand/README.md)
