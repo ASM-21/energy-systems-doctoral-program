@@ -7,7 +7,7 @@
 
 ## Research question
 
-How much customer-sited PV energy can be utilized under different export arrangements when feeder export headroom varies over the day? Compare a fixed export cap, a pre-agreed scheduled cap, a dynamic operating envelope, and a hypothetical physical upgrade. A behind-the-meter battery is available in each scenario.
+How much customer-sited PV energy can be utilized under different export arrangements when feeder export headroom varies over the day? Compare a fixed export cap, a pre-agreed scheduled cap, a dynamic operating envelope, and a hypothetical physical upgrade. Four arrangements are compared with a behind-the-meter battery, and a fifth fixed-cap reference is run without a battery.
 
 This lab demonstrates operational flexibility, not an actual PPL tariff or a utility-grade hosting-capacity analysis. All profiles and costs are synthetic.
 
@@ -42,6 +42,7 @@ The baseline feeder profile must already comply with the physical export limit. 
 
     python -m pip install -r requirements.txt
     python flexible_interconnection.py --output-dir outputs/flexible-interconnection
+    python flexible_interconnection.py --battery-power-mw 0 --battery-energy-mwh 0 --output-dir outputs/no-battery
     python -m unittest discover -s . -p "test_*.py" -v
 
 Outputs:
@@ -54,7 +55,7 @@ Outputs:
 - A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high. The synthetic profile deliberately includes a large midday PV surplus so that the fixed, scheduled, dynamic, and upgrade cases can exhibit different curtailment outcomes.
 - A scheduled limit is predictable but may not reflect actual feeder conditions in every interval.
 - A firm upgrade increases physical capacity but is not costed in this model.
-- A battery can shift PV energy across hours, but its usefulness depends on power/energy limits, efficiency, degradation, and the later export envelope.
+- A battery can shift PV energy across hours, but its usefulness depends on power/energy limits, efficiency, degradation, and the later export envelope. The no-battery fixed-cap reference isolates the modeled contribution of storage.
 - Compare PV energy utilized, curtailment, customer imports, exports, and battery throughput. Do not rank arrangements using only one metric.
 
 ## Limitations
