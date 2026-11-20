@@ -2,15 +2,31 @@
 
 ## Problem 1
 
-The bus injections are P2=-0.5 pu and P3=+0.5 pu if the bus 3 generator supplies its local 50 MW load plus 50 MW export. Bus 1 balances the system. This statement must be reconciled with the actual dispatch assumption: specify whether the bus 3 generator output is 100 MW or whether 100 MW is its capacity. If it is 100 MW output, the net bus 3 injection is +0.5 pu; bus 1 supplies the remaining network balance.
+The specified dispatch is 40 MW at bus 1 and 60 MW at bus 3. Loads are 50 MW at buses 2 and 3. On a 100 MVA base:
 
-For the DC model, form B' from branch susceptances 1/x. With bus 1 reference, solve the reduced system:
+    P1 = +0.4 pu
+    P2 = -0.5 pu
+    P3 = +0.1 pu
 
-    B'_red * theta_red = P_red
+The injections sum to zero. With bus 1 as reference, branch susceptances are 1/x12=10, 1/x13=5, and 1/x23=10 pu. The reduced DC susceptance matrix for buses 2 and 3 is:
 
-Branch flow from i to j is approximately (theta_i - theta_j)/x_ij. Check that flows satisfy nodal balances and that the sum of injections is zero.
+    B_red = [[20, -10],
+             [-10, 15]]
 
-A numerical solution is intentionally not supplied until the dispatch interpretation is fixed. This is a modeling lesson: a network problem is not well-posed if generator output, capacity, and local load are conflated.
+Solve B_red * [theta2, theta3]' = [-0.5, 0.1]'. The result is:
+
+    theta2 = -0.0325 rad
+    theta3 = -0.0150 rad
+
+Using flow i-to-j = (theta_i-theta_j)/x_ij:
+
+- Flow 1 to 2: 0.325 pu = 32.5 MW.
+- Flow 1 to 3: 0.075 pu = 7.5 MW.
+- Flow 2 to 3: -0.175 pu = -17.5 MW, i.e. 17.5 MW from bus 3 to bus 2.
+
+Check balances: bus 2 receives 32.5+17.5=50 MW; bus 3's 60 MW generation supplies its 50 MW load and exports 10 MW net (7.5 MW to bus 1 and 17.5 MW to bus 2), while bus 1 exports 40 MW. The network balances.
+
+The DC approximation uses fixed voltage magnitudes, small angle differences, lossless branches, and a simplified relationship between active power and angles. It does not calculate voltage magnitude, reactive power, or losses.
 
 ## Problem 2
 
@@ -29,7 +45,3 @@ Inverter reactive-power absorption can reduce voltage rise in some conditions bu
 ## Problem 4
 
 AC power flow solves nonlinear steady-state voltage magnitude and angle, real/reactive flows, and losses under specified controls. DC power flow approximates active-power/angle behavior under restrictive assumptions. Short-circuit analysis estimates fault currents for protection/equipment duty. Time-series quasi-static simulation evaluates evolving operating conditions and control interactions over many time steps. None alone establishes all aspects of interconnection feasibility.
-
-## Instructor/learner note
-
-Problem 1 is deliberately a model-formulation checkpoint. Before solving, clarify whether generator output is fixed, bounded, or decision-variable and specify the reference-bus balancing convention. Revise the problem statement in the submission and explain the chosen formulation.
