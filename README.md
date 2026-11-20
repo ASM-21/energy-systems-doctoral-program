@@ -46,10 +46,11 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] Initial four-course Year 1 sequence
 - [x] Source, research, and computational standards
 - [x] Two problem sets and worked solution notes for all four Year 1 courses
-- [x] Six computational labs with automated tests (DC power flow, dispatch, storage arbitrage, congestion, radial DER feeder screening, and OLS)
+- [x] Seven computational labs with automated tests, plus a pinned IEEE 13-node OpenDSS benchmark (DC power flow, dispatch, storage arbitrage, non-exporting BTM storage, congestion, radial DER feeder screening, and OLS)
 - [x] Initial verified course catalog, core reading list, and primary-source casebook
 - [x] GitHub Pages deployment and strict documentation build
 - [x] Pennsylvania DER / PJM casebook and preliminary public-data feasibility assessment
+- [x] Non-exporting BTM storage optimization lab and Pennsylvania storage-policy exercise
 - [ ] First independent research paper
 
 This repository is the program's source of truth. Chat discussions are not the academic record. See [repository guide](docs/repository-guide.md).
