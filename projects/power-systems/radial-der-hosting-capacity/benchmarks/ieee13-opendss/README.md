@@ -36,7 +36,7 @@ The comparison script aligns node labels, checks that engine version, pinned sou
 
 ## Verified CI baseline and 500 kW scenario
 
-The initial GitHub Actions run completed successfully on 2026-11-20 using DSS-Python 0.15.4 and DSS C-API 0.14.3 (OpenDSS SVN 3723). Both cases converged:
+The pinned GitHub Actions run completed successfully on 2026-11-20 using test-case commit `3b208397160213cae4a9e2d0a7d1aa3528ce26e1`, DSS-Python 0.15.4, and DSS C-API 0.14.3 (OpenDSS SVN 3723). Both cases converged:
 
 | Metric | Baseline, 0 kW PV | 500 kW PV at bus 675 |
 |---|---:|---:|
