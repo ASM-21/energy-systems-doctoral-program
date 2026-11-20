@@ -38,11 +38,26 @@ class RadialFeederTests(unittest.TestCase):
             self.assertTrue((Path(tmp) / "scenario_summary.csv").exists())
             self.assertTrue((Path(tmp) / "branch_detail.csv").exists())
 
+    def test_first_thermal_violation_is_at_900_kw_for_supplied_case(self):
+        results = run_sweep(self.buses, self.lines, 4, 1200, 100)
+        first = next(r["der_kw"] for r in results if not r["within_screening_limits"])
+        self.assertEqual(first, 900)
+        at_800 = solve_feeder(self.buses, self.lines, 4, 800)
+        at_900 = solve_feeder(self.buses, self.lines, 4, 900)
+        self.assertFalse(any(b["thermal_violation"] for b in at_800["branches"]))
+        self.assertTrue(any(b["thermal_violation"] for b in at_900["branches"]))
+
+    def test_voltage_limit_event_at_high_pv_penetration(self):
+        result = solve_feeder(self.buses, self.lines, 4, 5000)
+        self.assertTrue(any(v["voltage_pu"] > 1.05 for v in result["voltage_violations"]))
+
     def test_rejects_non_radial_or_invalid_inputs(self):
         with self.assertRaises(ValueError):
             solve_feeder(self.buses, self.lines, der_bus=99, der_kw=100)
         with self.assertRaises(ValueError):
             run_sweep(self.buses, self.lines, 4, 100, 0)
+        with self.assertRaises(ValueError):
+            run_sweep(self.buses, self.lines, 4, 100, 0.5)
 
 
 if __name__ == "__main__":
