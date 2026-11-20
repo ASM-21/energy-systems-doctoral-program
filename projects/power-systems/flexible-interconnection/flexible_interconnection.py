@@ -187,17 +187,27 @@ def solve_scenario(
     return {"summary": summary, "hourly": rows}
 
 
-def run_model(input_csv: Path, output_dir: Path) -> dict:
+def run_model(input_csv: Path, output_dir: Path, *, battery_power_mw: float = 0.5,
+              battery_energy_mwh: float = 1.5) -> dict:
     profile = load_profile(input_csv)
     envelopes = export_envelopes(profile)
     output_dir.mkdir(parents=True, exist_ok=True)
     summaries, hourly_rows = [], []
     for name, limit in envelopes.items():
-        result = solve_scenario(profile, limit)
+        result = solve_scenario(
+            profile, limit, battery_power_mw=battery_power_mw,
+            battery_energy_mwh=battery_energy_mwh
+        )
         summary = {"scenario": name, **result["summary"]}
         summaries.append(summary)
         for row in result["hourly"]:
             hourly_rows.append({"scenario": name, **row})
+    no_battery = solve_scenario(
+        profile, envelopes["fixed_0.35_mw"], battery_power_mw=0.0, battery_energy_mwh=0.0
+    )
+    summaries.append({"scenario": "no_battery_fixed_0.35_mw", **no_battery["summary"]})
+    for row in no_battery["hourly"]:
+        hourly_rows.append({"scenario": "no_battery_fixed_0.35_mw", **row})
     with (output_dir / "scenario_summary.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(summaries[0]))
         writer.writeheader()
@@ -210,8 +220,8 @@ def run_model(input_csv: Path, output_dir: Path) -> dict:
         "scenarios": summaries,
         "assumptions": {
             "customer_pv_nameplate_mw": 3.0,
-            "battery_power_mw": 0.5,
-            "battery_energy_mwh": 1.5,
+            "battery_power_mw": battery_power_mw,
+            "battery_energy_mwh": battery_energy_mwh,
             "battery_efficiency": 0.95,
             "feeder_export_limit_mw": 1.0,
             "upgrade_export_limit_mw": 1.5,
@@ -234,8 +244,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=Path("data/day_ahead_profile.csv"))
     parser.add_argument("--output-dir", type=Path, default=Path("outputs/flexible-interconnection"))
+    parser.add_argument("--battery-power-mw", type=float, default=0.5)
+    parser.add_argument("--battery-energy-mwh", type=float, default=1.5)
     args = parser.parse_args()
-    run_model(args.input, args.output_dir)
+    run_model(args.input, args.output_dir, battery_power_mw=args.battery_power_mw,
+              battery_energy_mwh=args.battery_energy_mwh)
 
 
 if __name__ == "__main__":
