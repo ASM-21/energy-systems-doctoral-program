@@ -1,4 +1,4 @@
-# EIA-861 2025 public-data pipeline
+# EIA-861 Public-Data Pipeline and PPL Net-Metering Analysis
 
 ## Purpose
 
@@ -9,7 +9,7 @@ Build a reproducible inventory of the official 2025 final EIA-861 detailed-data 
 - Official source: [EIA Form 861 detailed data](https://www.eia.gov/electricity/data/eia861/).
 - Direct 2025 final ZIP: https://www.eia.gov/electricity/data/eia861/zip/f8612025.zip.
 - EIA describes Form 861 as a census of U.S. electric utilities and publishes separate schedules for service territory, reliability, distribution systems, utility data, net metering, and non-net-metered distributed generation.
-- Net-metering and non-net-metered distributed-generation summaries are aggregated by state, sector, and balancing authority. They are not a PPL-specific project/interconnection queue or feeder hosting-capacity dataset.
+- EIA's generic schedule description emphasizes state/sector/balancing-authority net-metering reporting. However, the actual annual Net_Metering workbooks contain a utility-level PPL row in every archive from 2015 through 2025. This schedule-specific observation is verified by the historical archive audit below. The files still do not provide a PPL-specific project/interconnection queue or feeder hosting-capacity dataset.
 - PPL Electric Utilities Corp is EIA utility ID 14715, confirmed in the downloaded official `Frame_2025.xlsx` respondent frame. The extraction script checks that ID 14715 continues to map to a PPL Electric name in every selected sheet.
 
 ## Run
@@ -46,8 +46,9 @@ Run:
 
     python audit_historical_coverage.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-coverage
     python extract_historical_net_metering.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-net-metering
+    python normalize_ppl_net_metering.py --input-csv outputs/historical-net-metering/ppl_net_metering_raw.csv --output-dir outputs/historical-net-metering/harmonized
 
-The script uses EIA's official annual ZIP archives, checks ZIP CRCs, records each archive's SHA-256, and writes a worksheet-level coverage CSV plus manifest. Historical files use EIA's `/archive/zip/` path; the latest 2025 final release uses `/zip/`. The audit deliberately does not harmonize variables or treat a missing utility row as zero. It is a prerequisite to a historical panel, not the panel itself.
+The script uses EIA's official annual ZIP archives, checks ZIP CRCs, records each archive's SHA-256, and writes a worksheet-level coverage CSV plus manifest. Historical files use EIA's `/archive/zip/` path; the latest 2025 final release uses `/zip/`. The audit deliberately does not harmonize variables or treat a missing utility row as zero. The extraction script preserves the complete PPL row and its source provenance. The normalizer then creates a conservative descriptive series, preserving annual schema breaks and omitting growth calculations across non-comparable capacity bases.
 
 EIA warns that schedule definitions and coverage change over time. Examples include the 2016 change that renamed the non-net-metered distributed-generation schedule and added sector breakdowns, and the 2020 expansion of Form EIA-861S imputation. See the [official EIA-861 schedule descriptions and historical changes](https://www.eia.gov/electricity/data/eia861/). A valid panel must separately document reporting-form coverage, utility mergers/name changes, units, AC/DC adjustments, imputation, and survey redesigns.
 
@@ -55,9 +56,9 @@ EIA warns that schedule definitions and coverage change over time. Examples incl
 
 The 2015–2025 historical extraction workflow completed successfully. It found exactly one PPL utility-level net-metering row in each annual archive. The normalized standard net-metered PV capacity series is 76.686 MW in 2015, rising to 505.746 MW in 2025, an increase of 429.060 MW (559.5%) and a 20.76% compound annual growth rate over ten years. These are EIA-reported utility-level standard net-metered PV capacity values, not feeder hosting capacity or all DER capacity.
 
-The annual PV customer/installations field is reported as `Customers` through 2020 and `Installations` beginning in 2021. The labels may describe similar cumulative measures, but they are retained as a measurement break pending confirmation from year-specific instructions. The capacity type is not separately reported in the 2015 PPL row; 2016–2025 report AC. Virtual PV capacity is not separately identified in the 2015 row, reported as a combined virtual capacity field in 2016–2022, and split into >=1 MW and <1 MW categories in 2023–2025. The standard PV capacity series excludes those virtual capacity categories.
+The annual PV customer/installations field is reported as `Customers` through 2020 and `Installations` beginning in 2021. The labels may describe similar cumulative measures, but they are retained as a measurement break pending confirmation from year-specific instructions. The capacity type is not separately reported in the 2015 PPL row; 2016–2025 report AC. Virtual PV capacity is not separately identified in the 2015 row, reported as a combined virtual capacity field in 2016–2022, and split into >=1 MW and <1 MW categories in 2023–2025. The normalized virtual capacity sums the later size bands, while preserving the source field names. The standard PV capacity series excludes those virtual capacity categories.
 
-The EIA archive hashes and full source-row provenance are retained in the workflow artifact. The 2015–2025 values are suitable for a descriptive trend analysis after a final source-instruction review. They do not identify the causal effect of PPL's Second DER Management Plan, Rule 12, or any other policy, and they do not measure feeder-level interconnection performance.
+The EIA archive hashes and full source-row provenance are retained in the workflow artifact. The full descriptive series, annual increments, sector composition, and measurement caveats are documented in [PPL Reported Net-Metered PV Capacity, 2015–2025](../../casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md). The 2015–2025 values are suitable for a descriptive trend analysis after a final source-instruction review. They do not identify the causal effect of PPL's Second DER Management Plan, Rule 12, or any other policy, and they do not measure feeder-level interconnection performance.
 
 ## Research protocol
 
