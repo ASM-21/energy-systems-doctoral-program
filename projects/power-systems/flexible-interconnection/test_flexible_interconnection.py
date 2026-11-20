@@ -69,6 +69,17 @@ class FlexibleInterconnectionTests(unittest.TestCase):
             without_battery["summary"]["pv_curtailment_mwh"],
         )
 
+    def test_total_feeder_export_respects_physical_limit(self):
+        for name in ("fixed_0.35_mw", "scheduled_0.40_0.90_mw", "dynamic_operating_envelope"):
+            result = solve_scenario(self.profile, self.envelopes[name])
+            self.assertLessEqual(result["summary"]["peak_feeder_net_export_mw"], 1.0 + 1e-7)
+        upgraded = solve_scenario(self.profile, self.envelopes["firm_upgrade_1.50_mw"])
+        self.assertLessEqual(upgraded["summary"]["peak_feeder_net_export_mw"], 1.5 + 1e-7)
+
+    def test_rejects_negative_export_limit(self):
+        with self.assertRaises(ValueError):
+            solve_scenario(self.profile, [-0.1] + [0.5] * 23)
+
 
 if __name__ == "__main__":
     unittest.main()
