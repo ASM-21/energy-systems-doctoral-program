@@ -3,6 +3,7 @@
 ## 2026-11-20 — Distribution engineering and Pennsylvania research expansion
 
 - Added a radial distribution feeder DER hosting-capacity screening lab with synthetic inputs, first-order voltage calculations, branch thermal screening, reverse-flow flags, scenario sweeps, and regression tests.
+- Added a reproducible IEEE 13-node OpenDSS benchmark runner using DSS-Python, with baseline and PV cases, node-level voltage exports, loss summaries, and a dedicated GitHub Actions workflow. The IEEE benchmark is explicitly distinguished from validation of the synthetic feeder.
 - Added an applied radial-feeder DER problem set and worked solution notes to Y1-01.
 - Extended economic dispatch with carbon pricing and flexible-demand optimization, including cost/emissions decomposition and automated tests.
 - Added a carbon-pricing and demand-response problem set with worked solution notes to Y1-02.
