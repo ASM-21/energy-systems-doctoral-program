@@ -63,6 +63,11 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
 
 
-## Computational lab
+## Computational labs
 - [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
+- [Radial feeder DER hosting-capacity screen](../../../projects/power-systems/radial-der-hosting-capacity/README.md)
+
+## Additional applied problem set
+- [Problem Set 3 — Radial feeder DER integration](problem-set-03-radial-der.md)
+- [Solution notes for Problem Set 3](problem-set-03-radial-der-solutions.md)
 
