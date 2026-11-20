@@ -22,7 +22,9 @@ They are related but not interchangeable. A DER's physical interconnection and d
 
 **Document:** PPL Electric Utilities Corporation, General Tariff, Electric Pa. P.U.C. No. 201, Supplement No. 414, issued March 31, 2026, effective April 10, 2026.  
 **Relevant section:** Rule 12, Distributed Energy Resource (DER) Interconnection Service, pages 14C.1–14C.3.  
-**Official PDF:** [PPL tariff PDF](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/Apr/master414-posted-2026-4-10.pdf).
+**Current Rule 12 pages:** [PPL Rule 12 PDF, Supplement No. 411](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/rule12.pdf).  
+**Full tariff context:** [PPL General Tariff, Supplement No. 414](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/Apr/master414-posted-2026-4-10.pdf).  
+**Implementation context:** [PPL DER Management Program](https://www.pplelectric.com/site/More/For-Construction/DER-Management) and [REMSI page](https://www.pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/REMSI).
 
 Initial observations from the public tariff:
 - Rule 12 states that DER Interconnection Service applies to new DER interconnections with the distribution system effective January 3, 2026.
