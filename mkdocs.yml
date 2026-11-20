@@ -53,6 +53,8 @@ nav:
   - Curriculum:
       - Year 1: courses/year-1/README.md
       - Power systems: courses/year-1/y1-01-power-systems/README.md
+      - Power systems problem set: courses/year-1/y1-01-power-systems/problem-set-01.md
+      - Power systems solutions: courses/year-1/y1-01-power-systems/problem-set-01-solutions.md
       - Energy economics: courses/year-1/y1-02-energy-economics/README.md
       - Markets and regulation: courses/year-1/y1-03-markets-regulation-pjm/README.md
       - Quantitative methods: courses/year-1/y1-04-quantitative-methods/README.md
