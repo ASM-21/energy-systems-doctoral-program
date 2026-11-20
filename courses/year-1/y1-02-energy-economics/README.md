@@ -48,3 +48,8 @@ Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page execu
 
 - [Problem Set 2](problem-set-02.md)
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
+
+
+## Computational labs
+- [Merit-order dispatch and marginal pricing](../../../projects/energy-economics/merit-order-dispatch/README.md)
+- [Battery arbitrage and intertemporal optimization](../../../projects/energy-economics/storage-arbitrage/README.md)
