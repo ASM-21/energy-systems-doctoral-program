@@ -50,6 +50,22 @@ Outputs:
 - hourly_dispatch.csv: hourly limits, PV, load, battery, grid exchange, curtailment, and state of charge.
 - summary.json: scenario assumptions and results.
 
+## Reproducible baseline results
+
+The checked-in synthetic 24-hour profile has 23.200 MWh of PV available. With the default 0.5 MW / 1.5 MWh battery and stated price assumptions, the CI smoke test produced:
+
+| Arrangement | PV absorbed (MWh) | PV curtailed (MWh) | Grid imports (MWh) | Grid exports (MWh) |
+|---|---:|---:|---:|---:|
+| Fixed 0.35 MW | 14.148 | 9.052 | 2.895 | 3.240 |
+| Scheduled 0.40 / 0.90 MW | 14.918 | 8.282 | 2.895 | 4.010 |
+| Dynamic operating envelope | 15.278 | 7.922 | 2.895 | 4.370 |
+| Firm upgrade to 1.50 MW | 19.138 | 4.062 | 2.895 | 8.230 |
+| Fixed 0.35 MW, no battery | 10.990 | 12.210 | 4.320 | 3.240 |
+
+"PV absorbed" is PV supplied directly or sent to battery charging, before battery conversion losses. It is not identical to final energy delivered to load. In this synthetic case, adding the battery to the fixed-cap arrangement reduces curtailment by 3.158 MWh and grid imports by 1.425 MWh. The dynamic envelope absorbs 1.130 MWh more PV than the fixed cap, but it is not more permissive in every hour: at hour 13 its 0.22 MW limit is below the fixed 0.35 MW cap. Its aggregate result reflects the full 24-hour profile.
+
+These are deterministic outputs of the stated synthetic LP, not measured utility performance or a recommendation to adopt a specific export limit.
+
 ## Interpretation
 
 - A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high. The synthetic profile deliberately includes a large midday PV surplus so that the fixed, scheduled, dynamic, and upgrade cases can exhibit different curtailment outcomes.
