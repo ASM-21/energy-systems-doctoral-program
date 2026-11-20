@@ -33,9 +33,8 @@ Develop working technical literacy in structure, modeling, operation, and constr
 | 12 | Synthesis | Final technical report |
 
 ## Verified course benchmarks and references
-- Purdue ECE 51020, *Power Distribution System Analysis*: [official catalog page](https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=841&show=true&type=grad). Catalog page includes prerequisites, text, lecture outline, and assessment description.
-- Purdue ECE 51032, *Computational Methods for Power System Analysis*: [official catalog page](https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=92&show=true&type=undergrad).
-- Purdue ECE 61020, *Operation of Modern Power Systems*: [official catalog page](https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=789&show=true&type=grad).
+- Purdue ECE 51020, *Power Distribution System Analysis*: [official catalog page](https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=841&show=true&type=undergrad). Catalog page includes prerequisites, text, lecture outline, and assessment description.
+- Purdue ECE 51032, *Computational Methods for Power System Analysis*: listed in Purdue's [official graduate ECE catalog](https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/coursesGradByArea) under Power and Energy Devices and Systems (3 credits; catalog lists Fall).
 - Kersting, *Distribution System Modeling and Analysis*, 5th ed.; Grainger & Stevenson, *Power System Analysis*; Wood, Wollenberg & Sheblé, *Power Generation, Operation, and Control*.
 
 These are curriculum references, not enrollment or claims that every chapter is freely accessible. Catalog schedules and details can change.
