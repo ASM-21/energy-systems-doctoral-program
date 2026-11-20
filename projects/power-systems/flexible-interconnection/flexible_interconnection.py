@@ -209,7 +209,7 @@ def run_model(input_csv: Path, output_dir: Path) -> dict:
     metadata = {
         "scenarios": summaries,
         "assumptions": {
-            "customer_pv_nameplate_mw": 1.5,
+            "customer_pv_nameplate_mw": 3.0,
             "battery_power_mw": 0.5,
             "battery_energy_mwh": 1.5,
             "battery_efficiency": 0.95,
