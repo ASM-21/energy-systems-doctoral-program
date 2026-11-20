@@ -1,0 +1,33 @@
+name: IEEE 13-node OpenDSS benchmark
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/**"
+      - ".github/workflows/ieee13-benchmark.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  ieee13-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install DSS-Python
+        run: python -m pip install -r projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/requirements.txt
+      - name: Run baseline benchmark
+        run: python projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/run_benchmark.py --pv-kw 0 --output-dir /tmp/ieee13-baseline
+      - name: Run PV benchmark
+        run: python projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/run_benchmark.py --pv-kw 500 --output-dir /tmp/ieee13-pv-500
+      - name: Upload benchmark results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ieee13-opendss-benchmark
+          path: |
+            /tmp/ieee13-baseline/**
+            /tmp/ieee13-pv-500/**
