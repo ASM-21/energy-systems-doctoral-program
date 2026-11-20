@@ -1,0 +1,29 @@
+name: EIA-861 public-data inventory
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "research/data-pipelines/eia861/**"
+      - ".github/workflows/eia861-inventory.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install parser
+        run: python -m pip install -r research/data-pipelines/eia861/requirements.txt
+      - name: Download and inventory official EIA-861 final data
+        run: python research/data-pipelines/eia861/inventory_eia861.py --archive /tmp/f8612025.zip --output-dir /tmp/eia861-inventory
+      - name: Upload source inventory and schema previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: eia861-2025-inventory
+          path: /tmp/eia861-inventory/**
