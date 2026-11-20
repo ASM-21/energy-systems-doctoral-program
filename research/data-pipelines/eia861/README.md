@@ -45,6 +45,7 @@ The 2025 package contains a utility-level net-metering worksheet even though EIA
 Run:
 
     python audit_historical_coverage.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-coverage
+    python extract_historical_net_metering.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-net-metering
 
 The script uses EIA's official annual ZIP archives, checks ZIP CRCs, records each archive's SHA-256, and writes a worksheet-level coverage CSV plus manifest. Historical files use EIA's `/archive/zip/` path; the latest 2025 final release uses `/zip/`. The audit deliberately does not harmonize variables or treat a missing utility row as zero. It is a prerequisite to a historical panel, not the panel itself.
 
