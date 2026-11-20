@@ -20,6 +20,8 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
             "Photovoltaic__Capacity_MW__Total": "76.686",
             "Photovoltaic__Customers__Total": "3554", "Total__Capacity_MW": "98.919",
             "Photovoltaic__Virtual_Capacity_(MW)__Total": "",
+            "Photovoltaic__Virtual_Capacity-_1_MW_and_over_(MW)__Total": "",
+            "Photovoltaic__Virtual_Capacity-_under_1_MW_(MW)__Total": "",
             "Utility_Characteristics__State": "PA",
         }
         row = normalized_row(raw)
