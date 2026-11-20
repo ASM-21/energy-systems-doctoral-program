@@ -23,7 +23,7 @@ def field_ending(row: dict, suffixes: tuple[str, ...]) -> tuple[str | None, str 
             return populated[0]
         if len(populated) > 1:
             raise ValueError(f"Ambiguous populated fields for suffixes {suffixes}: {[key for key, _ in populated]}")
-        return matches[0]
+        return None, None
     return matches[0]
 
 
