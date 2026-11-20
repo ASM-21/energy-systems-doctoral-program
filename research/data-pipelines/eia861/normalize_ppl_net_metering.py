@@ -154,8 +154,8 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
         "ac_capacity_start_mw": ac_start["standard_net_metered_pv_capacity_mw"] if ac_start else None,
         "ac_capacity_end_year": end["year"] if ac_start else None,
         "ac_capacity_end_mw": end["standard_net_metered_pv_capacity_mw"] if ac_start else None,
-        "ac_capacity_change_mw": round(end["standard_net_metered_pv_capacity_mw"] - ac_start["standard_net_metered_pv_capacity_mw"], 6) if ac_start else None,
-        "ac_capacity_change_pct": round(100 * (end["standard_net_metered_pv_capacity_mw"] / ac_start["standard_net_metered_pv_capacity_mw"] - 1), 6) if ac_start else None,
+        "ac_capacity_change_mw": round(end["standard_net_metered_pv_capacity_mw"] - ac_start["standard_net_metered_pv_capacity_mw"], 6) if ac_start and ac_years_span else None,
+        "ac_capacity_change_pct": round(100 * (end["standard_net_metered_pv_capacity_mw"] / ac_start["standard_net_metered_pv_capacity_mw"] - 1), 6) if ac_start and ac_years_span else None,
         "ac_capacity_cagr_pct": round(100 * ac_cagr, 6) if ac_cagr is not None else None,
         "count_measure_break": "EIA field changes from Customers through 2020 to Installations beginning 2021; do not treat the count series as perfectly homogeneous without reviewing survey instructions.",
         "capacity_basis_break": "2015 does not separately report the PV capacity AC/DC type in this row; 2016 onward reports AC. Treat 2015 basis as unknown.",
@@ -165,7 +165,10 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
     }
     (output_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(f"PPL standard net-metered PV capacity: {summary['standard_net_metered_pv_capacity_start_mw']:.3f} MW ({summary['start_year']}) -> {summary['standard_net_metered_pv_capacity_end_mw']:.3f} MW ({summary['end_year']})")
-    print(f"AC-basis change: {summary['ac_capacity_change_mw']:.3f} MW; CAGR {summary['ac_capacity_cagr_pct']:.2f}%")
+    if summary["ac_capacity_cagr_pct"] is None:
+        print("AC-basis trend: insufficient AC-basis observations for a multi-year rate")
+    else:
+        print(f"AC-basis change: {summary['ac_capacity_change_mw']:.3f} MW; CAGR {summary['ac_capacity_cagr_pct']:.2f}%")
     return summary
 
 
