@@ -26,7 +26,7 @@ def unique_headers(headers: list[str]) -> list[str]:
 
 def extract_net_metering_workbook(data: bytes, year: int, workbook_name: str,
                                   archive_sha256: str, utility_id: str = TARGET_UTILITY_ID) -> tuple[list[dict], list[dict]]:
-    workbook = load_workbook(BytesIO(data), read_only=True, data_only=True)
+    workbook = load_workbook(BytesIO(data), read_only=False, data_only=True)
     rows, schemas = [], []
     try:
         for sheet in workbook.worksheets:
