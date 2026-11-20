@@ -71,6 +71,31 @@ class ExtractPPLRowsTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 extract_ppl_rows(workbooks, root / "out")
 
+    def test_merged_group_headers_are_propagated_to_each_sector_column(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "merged.xlsx"
+            workbook = Workbook()
+            sheet = workbook.active
+            sheet.merge_cells("A1:B1")
+            sheet["A1"] = "Utility Characteristics"
+            sheet.merge_cells("C1:E1")
+            sheet["C1"] = "Photovoltaic"
+            sheet.merge_cells("C2:D2")
+            sheet["C2"] = "Capacity MW"
+            sheet.append([])
+            sheet.append(["Utility Number", "Utility Name", "Residential", "Commercial", "Total"])
+            sheet.append([14715, "PPL Electric Utilities Corp", 100, 20, 120])
+            workbook.save(path)
+            from openpyxl import load_workbook
+            loaded = load_workbook(path, read_only=False, data_only=True)
+            ws = loaded.active
+            headers = build_headers(ws, 3)
+            loaded.close()
+            self.assertIn("Photovoltaic__Capacity_MW__Residential", headers)
+            self.assertIn("Photovoltaic__Capacity_MW__Commercial", headers)
+            self.assertIn("Photovoltaic__Total", headers)
+
 
 if __name__ == "__main__":
     unittest.main()
