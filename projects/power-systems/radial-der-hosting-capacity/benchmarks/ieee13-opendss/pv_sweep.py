@@ -24,7 +24,9 @@ def summarize_sweep(results: list[dict], voltage_limit_pu: float = 1.05) -> dict
     if len({row["pv_kw"] for row in ordered}) != len(ordered):
         raise ValueError("PV scenario ratings must be unique.")
     baseline = next((row for row in ordered if row["pv_kw"] == 0), None)
-    baseline_exceeds = bool(baseline and baseline["maximum_node_voltage_pu"] > voltage_limit_pu)
+    if baseline is None:
+        raise ValueError("A zero-PV baseline scenario is required.")
+    baseline_exceeds = baseline["maximum_node_voltage_pu"] > voltage_limit_pu
     first_new_exceedance = next(
         (row["pv_kw"] for row in ordered
          if row["maximum_node_voltage_pu"] > voltage_limit_pu
