@@ -8,6 +8,11 @@
 2. Steven Stoft, *Power System Economics: Designing Markets for Electricity*, Wiley-IEEE Press, 2002. ISBN 978-0-471-15040-4. [Wiley publisher page](https://www.wiley.com/en-us/power-system-economics-designing-markets-for-electricity-p-9780471150404). A foundational market-design text; some institutional examples predate current market rules, so pair conceptual arguments with current tariffs and manuals.
 3. Paul L. Joskow, “Lessons Learned From Electricity Market Liberalization,” *The Energy Journal*, 29(2_suppl), 9–42 (2008). DOI: [10.5547/ISSN0195-6574-EJ-Vol29-NoSI2-3](https://doi.org/10.5547/ISSN0195-6574-EJ-Vol29-NoSI2-3). [Journal record](https://journals.sagepub.com/doi/10.5547/ISSN0195-6574-EJ-Vol29-NoSI2-3). Use as a framework for evaluating reform outcomes; do not treat 2008 analysis as a description of today's rules.
 
+## DER integration and interconnection
+
+- U.S. Department of Energy Office of Electricity, *Flexible DER & EV Connections* (July 2024). [Official PDF](https://www.energy.gov/sites/default/files/2024-08/Flexible%20DER%20%20EV%20Connections%20July%202024.pdf). Defines dynamic operating envelopes, flexible interconnections, and flexible service connections; compares customer-controlled and utility-direct-controlled solutions and includes California and Massachusetts examples.
+- U.S. Department of Energy Office of Electricity, [Distributed Resource Utilization](https://www.energy.gov/oe/distributed-resource-utilization). A curated source page for distribution grid codes, DER orchestration, operational coordination, and distribution services.
+
 ## Econometrics and causal inference
 
 4. Jeffrey M. Wooldridge, *Introductory Econometrics: A Modern Approach*, 8th ed., Cengage, 2025. ISBN 978-0-357-90016-1 (print). [Cengage publisher page](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-8e-wooldridge/9780357900161). Current edition verified on publisher page. Use selected chapters for regression, panel data, and treatment-effect foundations; the program's Year 2 econometrics sequence must go beyond an introductory text.
