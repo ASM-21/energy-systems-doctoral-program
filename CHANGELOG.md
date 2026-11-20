@@ -4,6 +4,7 @@
 
 - Added a radial distribution feeder DER hosting-capacity screening lab with synthetic inputs, first-order voltage calculations, branch thermal screening, reverse-flow flags, scenario sweeps, and regression tests.
 - Added a reproducible IEEE 13-node OpenDSS benchmark runner using DSS-Python, with baseline and PV cases, node-level voltage exports, loss summaries, and a dedicated GitHub Actions workflow. The IEEE benchmark is explicitly distinguished from validation of the synthetic feeder.
+- Added node-aligned scenario comparison, regression tests, and a verified baseline/500 kW result table. The baseline already exceeds a simple 1.05 pu maximum-voltage screen, so the coursework explicitly separates pre-existing operating conditions from incremental DER effects.
 - Added an applied IEEE 13-node benchmark assignment and solution guide to Y1-01, with voltage and load sensitivity experiments and explicit model-comparison requirements.
 - Added an applied radial-feeder DER problem set and worked solution notes to Y1-01.
 - Extended economic dispatch with carbon pricing and flexible-demand optimization, including cost/emissions decomposition and automated tests.
