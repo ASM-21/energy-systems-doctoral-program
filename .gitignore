@@ -21,8 +21,9 @@ data/processed/*
 .DS_Store
 Thumbs.db
 
-# Build artifacts
+ # Build artifacts
 _site/
 site/
+site_docs/
 dist/
 build/
