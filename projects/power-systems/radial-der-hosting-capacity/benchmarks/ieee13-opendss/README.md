@@ -27,12 +27,13 @@ From this directory:
     python run_benchmark.py --pv-kw 500 --output-dir outputs/pv-500kw
     python run_benchmark.py --pv-kw 1000 --output-dir outputs/pv-1000kw
     python compare_scenarios.py --baseline-dir outputs/baseline --scenario-dir outputs/pv-500kw --output-dir outputs/comparison
+    python pv_sweep.py --output-dir outputs/pv-sweep
 
 The runner downloads the public test-case snapshot through the helper included with DSS-Python, compiles the IEEE 13-node circuit, solves a snapshot power flow, adds a balanced three-phase PVSystem at bus 675 for nonzero PV scenarios, solves again, and writes:
 - `bus_voltages.csv`: node-level per-unit voltage magnitudes;
 - `summary.json`: convergence, engine version, voltage extrema, circuit losses, and scenario parameters.
 
-The comparison script aligns node labels, checks that engine version, pinned source commit, and load multiplier match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. Use a fresh output directory for each run. The default source commit is immutable and recorded in every output.
+The comparison script aligns node labels, checks that engine version, pinned source commit, and load multiplier match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. The PV sweep runs 0, 100, 250, 500, 750, and 1,000 kW cases on the same pinned feeder and load snapshot. It exports a CSV and summary JSON. It requires a zero-PV baseline and will not attribute a voltage-limit exceedance to PV if the baseline already exceeds the selected screen. Use a fresh output directory for each run. The default source commit is immutable and recorded in every output.
 
 ## Verified CI baseline and 500 kW scenario
 
@@ -57,7 +58,7 @@ These are reproducible outputs from the first successful workflow run, not gener
 4. Compare the OpenDSS solution's complexity with the balanced first-order screen in the parent project.
 5. Identify what is still absent from a static snapshot study: time-series coincidence, stochastic PV/load variation, protection coordination, hosting-capacity criteria, and utility-specific operating practices.
 
-The runner reports voltages and losses. It does not automatically certify a hosting-capacity threshold, thermal adequacy, protection adequacy, or interconnection feasibility. A voltage-only sweep is not a complete hosting-capacity study.
+The runner reports voltages and losses. The sweep's voltage threshold is an analyst-selected screen, not a universal interconnection criterion. It does not automatically certify a hosting-capacity threshold, thermal adequacy, protection adequacy, or interconnection feasibility. A snapshot sweep does not account for time-varying loads/PV, phase-specific placement, inverter volt-var/watt controls, regulator coordination, or protection impacts. A voltage-only sweep is not a complete hosting-capacity study.
 
 ## Limitations
 
@@ -65,4 +66,4 @@ The IEEE 13-node feeder is a small benchmark distribution circuit with unbalance
 
 ## Extension assignment
 
-Run a PV sweep at bus 675, with 0, 100, 250, 500, 750, and 1,000 kW. Build a combined results table, graph minimum/maximum node voltage against PV rating, identify the first voltage criterion breach under an explicitly stated criterion, and explain why the resulting threshold is specific to this benchmark and snapshot.
+Run the automated PV sweep at bus 675, with 0, 100, 250, 500, 750, and 1,000 kW. Plot minimum/maximum node voltage and circuit real losses against PV rating. Identify whether the baseline already violates the chosen voltage screen; if it does, report incremental voltage changes and do not claim PV caused the pre-existing exceedance. Explain why the resulting response is specific to this benchmark and snapshot.
