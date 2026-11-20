@@ -12,7 +12,7 @@ Classify each source as a Commission order, approved settlement term, proposed f
 
 ## Problem 2 — DER orchestration plan and cost-effectiveness
 
-Settlement paragraph 118 provides for a stakeholder working group before PPL files the DER Orchestration Plan. Appendix D proposed findings 386–390 summarize Environmental Intervenors' arguments that the plan could reduce the Second DER Management Plan's cost and cite $1,700 per device; PPL's rebuttal disputed the timing and cost-reduction implications.
+Settlement body paragraph 119 provides for a stakeholder working group before PPL files the DER Orchestration Plan. Appendix D proposed findings 386–390 summarize Environmental Intervenors' arguments that the plan could reduce the Second DER Management Plan's cost and cite $1,700 per device; PPL's rebuttal disputed the timing and cost-reduction implications. Note that Appendix D cross-references the operative stakeholder commitment as Settlement paragraph 118, while the settlement body labels it paragraph 119.
 
 1. Explain what the stakeholder working group provision requires and what it does not require.
 2. Identify why the $1,700/device figure cannot be used as an established actual cost without examining its source testimony and exhibits.
@@ -22,9 +22,9 @@ Settlement paragraph 118 provides for a stakeholder working group before PPL fil
 
 ## Problem 3 — Non-exporting BTM battery storage
 
-Settlement paragraph 123 requires PPL to review, within 120 days of the final order, BTM non-exporting battery projects then under interconnection review and assess whether imposed requirements align with industry best practices and available studies. The settlement records Convergent's position that PPL lacked a distinct BTM non-exporting BESS rule and PPL's response that its Energy Storage Interconnection Policy and Guidance provided clear technical standards.
+Settlement paragraph 124 requires PPL to review, within 120 days of the final order, BTM non-exporting battery projects then under interconnection review and assess whether imposed requirements align with industry best practices and available studies. The settlement records Convergent's position that PPL lacked a distinct BTM non-exporting BESS rule and PPL's response that its Energy Storage Interconnection Policy and Guidance provided clear technical standards.
 
-1. Identify the exact scope of the paragraph 123 review. What projects are included, and what is the stated review criterion?
+1. Identify the exact scope of the paragraph 124 review. What projects are included, and what is the stated review criterion?
 2. Calculate the 120-calendar-day date from June 11, 2026. Explain why this is a target derived from the settlement and why the docket/order should be checked for the applicable time-computation rule.
 3. Compare non-exporting BTM storage, storage paired with net-metered generation, and an exporting storage resource. Explain why the interconnection and compensation questions differ.
 4. Specify the control, protection, metering, commissioning, and fail-safe evidence needed to substantiate non-export operation.
