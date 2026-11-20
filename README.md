@@ -44,7 +44,7 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] Initial four-course Year 1 sequence
 - [x] Source, research, and computational standards
 - [x] Two problem sets and worked solution notes for all four Year 1 courses
-- [x] Three tested computational labs (dispatch, congestion, and OLS)
+- [x] Four tested computational labs (dispatch, storage arbitrage, congestion, and OLS)
 - [x] Initial verified course catalog, core reading list, and primary-source casebook
 - [ ] GitHub Pages deployment (site build passes; repository Pages enablement remains a settings dependency)
 - [ ] First independent research paper
