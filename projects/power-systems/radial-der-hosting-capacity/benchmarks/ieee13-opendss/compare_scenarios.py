@@ -44,7 +44,11 @@ def compare(baseline_dir: Path, scenario_dir: Path, output_dir: Path) -> dict:
         "minimum_voltage_change_pu": min(row["delta_voltage_pu"] for row in rows),
         "maximum_voltage_change_pu": max(row["delta_voltage_pu"] for row in rows),
         "largest_voltage_increases": rows[:5],
-        "largest_voltage_decreases": sorted(rows, key=lambda row: row["delta_voltage_pu"])[:5],
+        "smallest_voltage_changes": rows[-5:],
+        "baseline_min_voltage_node": min(base_v, key=base_v.get),
+        "scenario_min_voltage_node": min(case_v, key=case_v.get),
+        "baseline_max_voltage_node": max(base_v, key=base_v.get),
+        "scenario_max_voltage_node": max(case_v, key=case_v.get),
         "baseline_max_exceeds_1_05_pu": base["maximum_node_voltage_pu"] > 1.05,
         "scenario_max_exceeds_1_05_pu": case["maximum_node_voltage_pu"] > 1.05,
     }
@@ -54,6 +58,8 @@ def compare(baseline_dir: Path, scenario_dir: Path, output_dir: Path) -> dict:
     print(f"Maximum voltage: {base['maximum_node_voltage_pu']:.5f} -> {case['maximum_node_voltage_pu']:.5f} pu")
     print(f"Real losses: {base['circuit_real_losses_kw']:.3f} -> {case['circuit_real_losses_kw']:.3f} kW")
     print(f"Node-level voltage delta range: {summary['minimum_voltage_change_pu']:.5f} to {summary['maximum_voltage_change_pu']:.5f} pu")
+    print(f"Baseline maximum-voltage node: {summary['baseline_max_voltage_node']}")
+    print(f"Scenario maximum-voltage node: {summary['scenario_max_voltage_node']}")
     print(f"Baseline already exceeds 1.05 pu: {summary['baseline_max_exceeds_1_05_pu']}")
     print(f"Comparison files: {output_dir.resolve()}")
     return summary
