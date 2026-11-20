@@ -51,4 +51,4 @@ Expected flows:
 
 ## Limitations
 
-This implementation assumes a connected network, positive branch reactances, fixed topology, balanced positive-sequence conditions, small angle differences, fixed voltage magnitudes, and no losses. It is not an AC power-flow solver, contingency analysis, protection study, or utility planning tool.
+This implementation assumes a connected network, positive branch reactances, fixed topology, balanced positive-sequence conditions, small angle differences, fixed voltage magnitudes, and no losses. Parallel branches are not supported in this small teaching implementation. Thermal limits are flagged after solving; they are not enforced or redispatched. It is not an AC power-flow solver, contingency analysis, protection study, or utility planning tool.
