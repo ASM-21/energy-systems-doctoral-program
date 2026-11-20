@@ -47,6 +47,20 @@ class FlexibleInterconnectionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             export_envelopes(bad)
 
+    def test_synthetic_case_exposes_curtailment_and_upgrade_tradeoff(self):
+        fixed = solve_scenario(self.profile, self.envelopes["fixed_0.35_mw"])
+        dynamic = solve_scenario(self.profile, self.envelopes["dynamic_operating_envelope"])
+        upgrade = solve_scenario(self.profile, self.envelopes["firm_upgrade_1.50_mw"])
+        self.assertGreater(fixed["summary"]["pv_curtailment_mwh"], 0.0)
+        self.assertLessEqual(
+            upgrade["summary"]["pv_curtailment_mwh"],
+            fixed["summary"]["pv_curtailment_mwh"] + 1e-7,
+        )
+        self.assertGreaterEqual(
+            dynamic["summary"]["pv_utilized_mwh"],
+            fixed["summary"]["pv_utilized_mwh"] - 1e-7,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
