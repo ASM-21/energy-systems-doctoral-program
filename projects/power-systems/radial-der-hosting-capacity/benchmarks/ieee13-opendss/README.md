@@ -6,16 +6,17 @@ This benchmark runs the published IEEE 13-node test feeder using DSS-Python, an 
 
 ## Reproducibility and source
 
-- Test case: DSS-Extensions `electricdss-tst`, `Version8/Distrib/IEEETestCases/13Bus/IEEE13Nodeckt.dss`.
-- Test-case path and loading pattern follow the DSS-Python Getting Started example.
-- Engine interface: DSS-Python 0.15.4.
-- The benchmark downloads the test-case repository at runtime. It does not copy or redistribute the feeder files into this repository.
+- Test case: `dss-extensions/electricdss-tst`, commit `3b208397160213cae4a9e2d0a7d1aa3528ce26e1`, file `Version8/Distrib/IEEETestCases/13Bus/IEEE13Nodeckt.dss`.
+- The test-case repository is a filtered copy of OpenDSS SVN examples and tests and includes project-specific modifications; it is not an unmodified upstream SVN mirror.
+- Engine interface: DSS-Python 0.15.4; DSS C-API 0.14.3 in the first CI run.
+- The runner downloads the exact Git commit archive and writes a `.source_ref` marker. The feeder files are not redistributed in this repository.
 
 References:
 - [EPRI OpenDSS examples and test cases](https://opendss.epri.com/ExamplesDocsandTestCases.html)
 - [DSS-Python Getting Started](https://dss-extensions.org/DSS-Python/examples/GettingStarted.html)
 - [DSS-Python Python API overview](https://dss-extensions.org/python_apis.html)
 - [DSS-Python API: circuit voltages](https://dss-extensions.org/DSS-Python/apidocs/dss/dss.ICircuit.html)
+- [Pinned test-case repository and history](https://github.com/dss-extensions/electricdss-tst/tree/3b208397160213cae4a9e2d0a7d1aa3528ce26e1)
 
 ## Install and run
 
@@ -31,7 +32,7 @@ The runner downloads the public test-case snapshot through the helper included w
 - `bus_voltages.csv`: node-level per-unit voltage magnitudes;
 - `summary.json`: convergence, engine version, voltage extrema, circuit losses, and scenario parameters.
 
-The comparison script aligns node labels, checks that engine/source/load settings match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. Use a fresh output directory for each run. Do not compare runs with different engine versions or different source snapshots without recording that difference.
+The comparison script aligns node labels, checks that engine version, pinned source commit, and load multiplier match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. Use a fresh output directory for each run. The default source commit is immutable and recorded in every output.
 
 ## Verified CI baseline and 500 kW scenario
 
@@ -44,7 +45,7 @@ The initial GitHub Actions run completed successfully on 2026-11-20 using DSS-Py
 | Maximum node voltage | 1.05605 pu | 1.05608 pu |
 | Real circuit losses | 112.392 kW | 86.471 kW |
 
-For this particular snapshot, 500 kW PV increased the minimum node voltage and reduced real losses. The maximum node voltage was already above a simple 1.05 pu screen in the zero-PV baseline and changed only slightly in the 500 kW case. Therefore, 1.05 pu cannot be interpreted as a PV-created violation threshold here. The maximum-voltage condition requires separate investigation of the benchmark's base controls, regulator settings, and node-level voltage profile before any hosting-capacity conclusion.
+For this particular snapshot, 500 kW PV increased the minimum node voltage and reduced real losses by 25.920 kW. The lowest-voltage node was 611.3 (0.96084 to 0.96788 pu); the highest-voltage node was rg60.3 (1.05605 to 1.05608 pu). The largest node-level increase was at 675.1 (+0.00904 pu), followed by 675.3 (+0.00833 pu). All reported node voltages increased slightly or materially in this scenario. The maximum node voltage was already above a simple 1.05 pu screen in the zero-PV baseline and changed only slightly in the 500 kW case. Therefore, 1.05 pu cannot be interpreted as a PV-created violation threshold here. The maximum-voltage condition requires separate investigation of the benchmark's base controls, regulator settings, and node-level voltage profile before any hosting-capacity conclusion.
 
 These are reproducible outputs from the first successful workflow run, not generalized feeder performance claims. [Workflow run and downloadable artifact](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44831385326).
 
