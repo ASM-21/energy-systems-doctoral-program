@@ -29,6 +29,12 @@ class PPLNetMeteringSnapshotTests(unittest.TestCase):
         self.assertEqual(float(self.rows[1]["standard_net_metered_pv_capacity_mw"]), 92.915)
         self.assertEqual(float(self.rows[-1]["standard_net_metered_pv_capacity_mw"]), 505.746)
         self.assertEqual(float(self.rows[-1]["annual_standard_pv_capacity_change_mw"]), 91.415)
+        self.assertEqual(float(self.rows[1]["pv_residential_capacity_mw"]), 29.061)
+        self.assertEqual(float(self.rows[1]["pv_commercial_capacity_mw"]), 52.823)
+        self.assertEqual(float(self.rows[-1]["pv_residential_capacity_mw"]), 277.812)
+        self.assertEqual(float(self.rows[-1]["pv_commercial_capacity_mw"]), 195.427)
+        self.assertEqual(float(self.rows[-1]["pv_industrial_capacity_mw"]), 32.507)
+        self.assertEqual(self.rows[-1]["pv_transportation_capacity_mw"], "")
 
     def test_source_archive_hashes_are_sha256(self):
         for row in self.rows:
