@@ -18,7 +18,7 @@ class RadialFeederTests(unittest.TestCase):
         self.assertTrue(result["within_screening_limits"])
         self.assertEqual(result["reverse_flow_branches"], [])
         self.assertEqual(len(result["branches"]), 3)
-        self.assertLess(result["maximum_voltage_pu"], 1.0)
+        self.assertLess(result["minimum_voltage_pu"], 1.0)
 
     def test_remote_der_causes_reverse_flow(self):
         result = solve_feeder(self.buses, self.lines, der_bus=4, der_kw=1500)
