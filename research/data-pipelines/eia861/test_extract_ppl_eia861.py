@@ -83,7 +83,6 @@ class ExtractPPLRowsTests(unittest.TestCase):
             sheet["C1"] = "Photovoltaic"
             sheet.merge_cells("C2:D2")
             sheet["C2"] = "Capacity MW"
-            sheet.append([])
             sheet.append(["Utility Number", "Utility Name", "Residential", "Commercial", "Total"])
             sheet.append([14715, "PPL Electric Utilities Corp", 100, 20, 120])
             workbook.save(path)
