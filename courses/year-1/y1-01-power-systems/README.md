@@ -59,5 +59,5 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 - [Problem Set 1 — Three-phase fundamentals and per-unit quantities](problem-set-01.md)
 - [Solution notes for Problem Set 1](problem-set-01-solutions.md)
 
-- [Problem Set 2](courses/year-1/y1-01-power-systems/problem-set-02.md)
-- [Problem Set 2 solution notes](courses/year-1/y1-01-power-systems/problem-set-02-solutions.md)
+- [Problem Set 2](problem-set-02.md)
+- [Problem Set 2 solution notes](problem-set-02-solutions.md)
