@@ -64,6 +64,15 @@ def normalized_row(row: dict) -> dict:
             virtual_measure = "sum of virtual PV capacity >=1 MW and <1 MW categories"
         virtual_field = ";".join(field for field in (large_field, small_field) if field)
 
+    sector_values = {}
+    sector_sources = {}
+    for sector in ("Residential", "Commercial", "Industrial", "Transportation"):
+        sector_field, sector_raw = field_ending(
+            row, (f"Photovoltaic__Capacity_MW__{sector}",)
+        )
+        sector_values[f"pv_{sector.lower()}_capacity_mw"] = parse_number(sector_raw)
+        sector_sources[f"pv_{sector.lower()}_source_field"] = sector_field or ""
+
     type_field, type_raw = field_ending(row, ("Photovoltaic__Capacity_MW__Type",))
     capacity_basis = type_raw if type_raw not in (None, "", ".") else "not separately reported"
     state_field, state_raw = field_ending(row, ("Utility_Characteristics__State", "State"))
@@ -79,6 +88,7 @@ def normalized_row(row: dict) -> dict:
         "state": state_raw or "",
         "balancing_authority": ba_raw or "",
         "standard_net_metered_pv_capacity_mw": capacity,
+        **sector_values,
         "pv_count_value": count_value,
         "pv_count_measure": count_measure,
         "virtual_pv_capacity_mw": virtual_capacity,
@@ -90,6 +100,7 @@ def normalized_row(row: dict) -> dict:
         "source_row": row["source_row"],
         "archive_sha256": row["archive_sha256"],
         "standard_pv_capacity_source_field": capacity_field,
+        **sector_sources,
         "pv_count_source_field": count_field or "",
         "virtual_pv_source_field": virtual_field or "",
         "all_technology_capacity_source_field": alltech_field or "",
