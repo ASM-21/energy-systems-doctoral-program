@@ -41,6 +41,7 @@ nav:
   - Program:
       - Overview: curriculum/program-overview.md
       - Roadmap: ROADMAP.md
+      - Prerequisites: curriculum/prerequisites.md
       - Academic standards: ACADEMIC_STANDARDS.md
       - Departments:
           - Power systems: curriculum/departments/power-systems.md
@@ -59,7 +60,9 @@ nav:
   - Research:
       - Research workflow: resources/research-workflow.md
       - Data sources: resources/data-sources.md
+      - Question bank: research/research-question-bank/README.md
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
+  - Assessment: assessments/README.md
   - Progress:
       - Tracking guide: progress/README.md
       - Transcript: progress/academic-transcript.md
