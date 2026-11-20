@@ -9,6 +9,7 @@
 - Expanded continuous integration to test and smoke-run six computational projects.
 - Added a Pennsylvania public-data feasibility memo separating what can be observed from what remains unavailable or requires docket-level retrieval.
 - Updated the Pennsylvania DER casebook with the December 3, 2025 Commission-order milestone and the distinction between a proposed hosting-capacity increase and independently measured feeder headroom.
+- Added analysis of Pennsylvania's proposed Chapter 57 DER aggregation rules, current IRRC status, and a Y1-03 problem set with worked solutions. The materials explicitly distinguish proposed wholesale aggregation rules from distribution interconnection requirements.
 - Added current Pennsylvania hosting-capacity legislative context and refreshed PJM / PPL source verification.
 
 ## 2026-11-20 — Year 1 curriculum and research infrastructure expansion
