@@ -26,7 +26,7 @@ Formulate a quantitative question and identify its unit of analysis; acquire, in
 | 12 | Final empirical project | Paper and repository |
 
 ## References
-Wooldridge, *Introductory Econometrics*; Angrist & Pischke, *Mostly Harmless Econometrics* (selected chapters); [OpenIntro Statistics](https://www.openintro.org/book/os/); [NIST/SEMATECH Statistical Methods](https://www.itl.nist.gov/div898/handbook/); [EIA Open Data](https://www.eia.gov/opendata/); [FRED](https://fred.stlouisfed.org/).
+Wooldridge, *Introductory Econometrics: A Modern Approach*, 8th ed. (2025; [publisher page](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-8e-wooldridge/9780357900161)); Angrist & Pischke, *Mostly Harmless Econometrics* (selected chapters); [OpenIntro Statistics](https://www.openintro.org/book/os/); [NIST/SEMATECH Statistical Methods](https://www.itl.nist.gov/div898/handbook/); [EIA Open Data](https://www.eia.gov/opendata/); [FRED](https://fred.stlouisfed.org/).
 
 ## Assessments
 Data provenance/quality audit; descriptive analysis with defensible plots; OLS derivation and interpretation; diagnostic/specification memo; final reproducible empirical analysis using public data.
