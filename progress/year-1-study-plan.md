@@ -2,7 +2,7 @@
 
 ## Time budget
 
-The four core courses contain approximately 155 planned hours before optional applied extensions. The radial-feeder problem set and lab add approximately 8 hours to Y1-01. The IEEE 13-node OpenDSS benchmark assignment adds approximately 6 hours and should be treated as a computational extension, not a replacement for core power-flow theory. The carbon-pricing/demand-response and Pennsylvania DER aggregation extensions add approximately 8 more hours across Y1-02 and Y1-03. The non-exporting BTM storage lab and assignment add approximately 4 hours to Y1-02. The DER orchestration and non-exporting BTM storage exercise adds approximately 5 hours to Y1-03. At 3 hours/week, that is about 52 weeks; at 5 hours/week, about 31 weeks. Add a 20–30 hour integration project and some buffer for difficult topics. The realistic Year 1 range is approximately 35–62 weeks for the core sequence, plus roughly 3–4 weeks for the current applied extensions depending on actual availability and remediation needs.
+The four core courses contain approximately 155 planned hours. The current applied extensions add approximately 31 hours: radial-feeder DER screening (8 h), IEEE 13-node OpenDSS benchmark (6 h), carbon pricing/flexible demand and Pennsylvania DER aggregation (8 h), non-exporting BTM storage modeling (4 h), and DER orchestration/BTM storage policy analysis (5 h). The full instructional sequence is therefore about 186 hours before the integration project. At 3 hours/week, the core sequence takes about 52 weeks and the applied extensions another 10 weeks; at 5 hours/week, about 31 core weeks plus 6 extension weeks. Add a 20–30 hour integration project (roughly 4–10 weeks depending on pace) and buffer for difficult topics. A realistic total is approximately 41–72 weeks, depending on weekly availability and remediation.
 
 Do not compress the work to meet an arbitrary calendar. The plan is designed around durable mastery, not completion speed.
 
@@ -20,9 +20,9 @@ If a problem set or lab needs more time, use the next week's allocation. Do not 
 
 ## Recommended sequence
 
-1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the two core problem sets plus the radial-feeder applied set, and run the three-bus and radial-feeder labs.
-2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch with carbon pricing and flexible demand, and storage arbitrage.
-3. **Y1-03 Electricity Markets, Utility Regulation, and PJM** — study market clearing, congestion, revenue requirements, and the Pennsylvania DER/PJM casebook.
+1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the core problem sets plus the radial-feeder and IEEE 13-node applied assignments, and run the three-bus, radial-feeder, and OpenDSS benchmark work.
+2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch with carbon pricing and flexible demand, storage arbitrage, and non-exporting BTM storage optimization.
+3. **Y1-03 Electricity Markets, Utility Regulation, and PJM** — study market clearing, congestion, revenue requirements, the Pennsylvania DER/PJM casebook, and the DER orchestration/BTM storage regulatory exercise.
 4. **Y1-04 Applied Quantitative Methods** — complete OLS and robust inference, then panel-data and causal-identification exercises.
 5. **Year 1 integration project** — refine the Pennsylvania distribution DER research question, finish the primary-source review, conduct the data-feasibility gate, and produce a policy brief or reproducible technical report.
 
@@ -32,7 +32,7 @@ At the start of each session, choose one measurable target: a chapter section, a
 
 ## Completion gate for each course
 
-- Complete both problem sets and review solution notes only after attempting the problems independently.
+- Complete all required problem sets and review solution notes only after attempting the problems independently.
 - Run the linked computational lab and understand its assumptions.
 - Produce the final course project and self-assessment.
 - Record evidence links and actual hours in the assessment tracker.
