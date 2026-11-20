@@ -52,14 +52,34 @@ PPL's [public interconnection FAQ](https://pplelectric.com/site/More/About-Us/El
 
 See the [public-data feasibility assessment](data-feasibility.md) for the dataset inventory, research design, and unresolved evidence gaps.
 
-### E. PJM — DER Aggregator Participation Model
+### E. Pennsylvania PUC — proposed Chapter 57 rules for wholesale DER aggregations
+
+**Docket:** L-2023-3044115.  
+**Order:** Notice of Proposed Rulemaking adopted and entered December 18, 2025; published April 11, 2026 in 56 Pa.B. 1985.  
+**Official sources:** [Pennsylvania Bulletin NOPR, Doc. No. 26-527](https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol56/56-15/527.html); [IRRC Regulation No. 57-346 status page](https://www.irrc.state.pa.us/regulations/RegSrchRslts.cfm?ID=3496).
+
+The proposed rules would create 52 Pa. Code §§ 57.261–57.266 for DER Aggregation Resources participating in PJM energy, capacity, and/or ancillary-services markets. The proposal is not final law. The IRRC page currently lists the regulation as proposed, with the public-comment period closed July 9, 2026, no final-form regulation received, and a final-form due date of July 9, 2028.
+
+Key features of the proposal include:
+- Net-metered customer-generators would generally be excluded from wholesale energy and capacity participation as DER Aggregator Resources, while ancillary-services participation could be allowed under the proposed conditions.
+- A Component DER would require EDC approval to participate as part of a DER Aggregation Resource.
+- An EDC would establish an electronic review process, complete review within 60 days, and explain denials.
+- An EDC could propose application/review fees through a tariff filing.
+- EDCs would provide DERA access to Component DER data with DER-operator consent, in a Commission-approved format.
+- EDCs would retain distribution-safety and reliability operating/dispatch-override procedures.
+
+**Jurisdictional boundary:** The NOPR expressly states that the Commission will address interconnection of Component DERs in another proceeding. Do not treat this proposed wholesale-aggregation rulemaking as the distribution interconnection rule or as a replacement for PPL Rule 12. Also distinguish the proposed 60-day DERA participation review from a site-specific interconnection study timeline.
+
+The IRRC status page is important because it prevents a proposed rule from being represented as enacted. Recheck the regulation's status and any final-form publication before relying on these requirements.
+
+### F. PJM — DER Aggregator Participation Model
 
 **Document:** PJM, *DER Aggregator Participation Model: Full Model Design*, March 9, 2026.  
 **Official public PDF:** [PJM model design presentation](https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/disrs/2026/20260309/20260309-item-05---updated-der-aggregator-participation-model---full-model-design---informational-only.pdf).
 
 The presentation describes the PJM implementation timeline and the division between wholesale aggregation participation and distribution interconnection. It is an informational presentation, not itself a tariff. Verify current tariff/manual language and later stakeholder/FERC actions before relying on dates or requirements.
 
-### F. FERC — Order No. 2222
+### G. FERC — Order No. 2222
 
 - [FERC Order No. 2222 fact sheet](https://www.ferc.gov/media/ferc-order-no-2222-fact-sheet).
 - [FERC Order No. 2222 explainer](https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy).
@@ -67,7 +87,7 @@ The presentation describes the PJM implementation timeline and the division betw
 
 The order establishes a framework for DER aggregations to participate in organized wholesale markets. The fact sheet and explainer are useful orientation materials, but the order and subsequent compliance orders are the controlling sources.
 
-### G. FERC — Order No. 2023
+### H. FERC — Order No. 2023
 
 - [FERC explainer on the generator interconnection final rule](https://ferc.gov/explainer-interconnection-final-rule).
 - [Order No. 2023, Docket RM22-14-000](https://ferc.gov/sites/default/files/2023-07/20230728-3060.PDF).
@@ -80,6 +100,7 @@ Study this rule to understand transmission-provider generator interconnection re
 - [Versioned primary-source register](source-register.csv)
 - [Institutional responsibility matrix](responsibility-matrix.csv)
 - [Public-data feasibility assessment](data-feasibility.md)
+- [PA PUC wholesale DER aggregation NOPR, L-2023-3044115](https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol56/56-15/527.html)
 
 The responsibility matrix is a research aid, not a legal opinion. Verify each assignment against the current controlling authority before relying on it.
 
@@ -103,6 +124,7 @@ For each process stage, identify the decision-maker, governing source, data requ
 Compare:
 - PPL current Rule 12 tariff and REMSI;
 - the December 3, 2025 PUC order in P-2024-3049223;
+- the proposed Chapter 57 wholesale DER aggregation rules in L-2023-3044115 and their current IRRC status;
 - applicable Pennsylvania PUC regulations and the wholesale DER participation rulemaking;
 - PJM tariff and manuals for DER aggregations;
 - FERC Order 2222 and relevant compliance orders;
