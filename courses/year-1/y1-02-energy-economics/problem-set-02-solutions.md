@@ -29,8 +29,8 @@ LCOE is a discounted average cost per unit of generated energy under specified a
 NPV is:
 
     NPV = -50 + 8 * [1-(1.07)^(-10)]/0.07
-        ~= $6.18 million
+        ~= $6.19 million
 
-At 5%, NPV is approximately $11.80 million. At 10%, NPV is approximately $0.58 million. Results are sensitive to the discount rate and cash-flow assumptions. Construction delay postpones benefits and may add financing costs; overruns increase initial investment; price and policy uncertainty change expected cash flows and risk. Real options matter when management can stage, defer, expand, or abandon investment as information arrives.
+At 5%, NPV is approximately $11.77 million. At 10%, NPV is approximately -$0.84 million. Results are sensitive to the discount rate and cash-flow assumptions. Construction delay postpones benefits and may add financing costs; overruns increase initial investment; price and policy uncertainty change expected cash flows and risk. Real options matter when management can stage, defer, expand, or abandon investment as information arrives.
 
 Check calculations with a spreadsheet or script and document whether cash flows are nominal or real and whether the discount rate is consistent.
