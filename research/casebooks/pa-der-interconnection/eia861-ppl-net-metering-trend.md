@@ -37,7 +37,7 @@ Virtual capacity is reported as one combined PV virtual-capacity measure in 2016
 
 The 2016 standard PV capacity row reports 29.061 MW residential, 52.823 MW commercial, and 11.031 MW industrial. In 2025, the corresponding values are 277.812 MW, 195.427 MW, and 32.507 MW. Residential therefore represents approximately 54.9% of standard net-metered PV capacity in 2025, compared with 31.3% in 2016. Commercial's share falls from approximately 56.9% to 38.6%, while industrial falls from approximately 11.9% to 6.4%.
 
-These are shares of the standard net-metered PV capacity reported in the PPL row, not shares of all solar installed in PPL's territory. The sector categories and reported totals should be checked against the applicable annual schedule instructions before publication.
+These are shares of the standard net-metered PV capacity reported in the PPL row, not shares of all solar installed in PPL's territory. The 2025 transportation-sector field is blank, not zero; the three reported residential, commercial, and industrial values sum to the reported total. The 2016 transportation-sector value is a reported numeric zero. The sector categories and reported totals should be checked against the applicable annual schedule instructions before publication.
 
 ## Measurement and interpretation
 
