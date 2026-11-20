@@ -10,6 +10,7 @@
 - Expanded CI to test all three computational labs and run smoke tests.
 - Added a core reading list with publisher/journal verification.
 - Added literature-review, research-protocol, and dataset-intake templates.
-- Added a Pennsylvania distribution DER interconnection / PJM wholesale aggregation casebook based on public tariff, FERC, and PJM sources.
+- Added a Pennsylvania distribution DER interconnection / PJM wholesale aggregation casebook based on public tariff, FERC, and PJM sources, including a versioned source register and institutional responsibility matrix.
+- Added a Year 1 study plan and granular assessment tracker.
 - Corrected arithmetic and model-formulation issues identified during review.
 - Documentation site build passes in GitHub Actions. Deployment remains dependent on repository Pages configuration.
