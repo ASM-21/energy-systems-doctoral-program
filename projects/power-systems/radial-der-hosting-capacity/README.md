@@ -4,7 +4,7 @@
 
 How does increasing behind-the-meter PV at a remote node change feeder voltage, branch loading, reverse power flow, and the first binding operating constraint?
 
-This is a transparent, balanced, steady-state **LinDistFlow-style screening model** for a small radial feeder. It is an educational model, not an AC power-flow solver, protection study, utility planning model, or interconnection approval tool.
+This is a transparent, balanced, steady-state **first-order radial voltage-drop screening model** for a small radial feeder. It is an educational model, not an AC power-flow solver, protection study, utility planning model, or interconnection approval tool.
 
 ## Model
 
