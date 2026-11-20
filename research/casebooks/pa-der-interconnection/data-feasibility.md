@@ -34,11 +34,11 @@ Source: [Prepared Testimony of PUC Chairman Stephen M. DeFrank, March 16, 2026](
 
 ### Aggregate federal data: EIA Form 861
 
-The EIA-861 annual survey collects responses from U.S. electric utilities and publishes detailed files covering net metering, non-net-metered distributed generation, distribution circuits, service territories, and reliability. The EIA documentation describes net-metered generator counts and capacity by technology, state, sector, and balancing authority, and non-net-metered distributed generation under 1 MW in aggregate. The final 2024 annual data release was published October 7, 2025.
+The EIA-861 annual survey collects responses from U.S. electric utilities and publishes detailed files covering net metering, non-net-metered distributed generation, distribution circuits, service territories, and reliability. The EIA documentation describes net-metered generator counts and capacity by technology, state, sector, and balancing authority, and non-net-metered distributed generation under 1 MW in aggregate. The EIA data page now lists a 2025 final-data ZIP, so the 2025 release is the starting point for extraction as of this verification. The exact release timestamp and any later revision notices should be recorded from EIA metadata when the archive is downloaded.
 
 These data are valuable for descriptive context and cross-state/sector comparisons. They do not supply the feeder-level engineering inputs or PPL project-level interconnection outcomes needed to estimate hosting capacity or interconnection performance at circuit level.
 
-Sources: [EIA Form EIA-861 detailed data files](https://www.eia.gov/electricity/data/eia861/) and [EIA final 2024 annual electric sales and revenue data announcement](https://www.eia.gov/about/new/?r=400).
+Source: [EIA Form EIA-861 detailed data files](https://www.eia.gov/electricity/data/eia861/). The page lists the 2025 final-data ZIP and describes the schedules, coverage, and historical definitions.
 
 ### Hosting-capacity methodology and comparative context
 
