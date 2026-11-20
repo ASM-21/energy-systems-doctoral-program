@@ -43,6 +43,7 @@ jobs:
           if [ -f dispatch.py ]; then
             python dispatch.py
           elif [ -f btm_storage.py ]; then
+            python btm_storage.py --power-kw 0 --energy-kwh 0 --output-dir /tmp/btm-storage-baseline
             python btm_storage.py --output-dir /tmp/btm-storage-results
           elif [ -f dc_power_flow.py ]; then
             python dc_power_flow.py
