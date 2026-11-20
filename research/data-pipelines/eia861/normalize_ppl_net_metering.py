@@ -109,13 +109,21 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
     if len(years) != len(set(years)):
         raise ValueError("Expected exactly one PPL utility-level net-metering row per year")
     for previous, current in zip(rows, rows[1:]):
-        current["annual_standard_pv_capacity_change_mw"] = round(
-            current["standard_net_metered_pv_capacity_mw"] - previous["standard_net_metered_pv_capacity_mw"], 6
+        comparable_basis = (
+            previous["pv_capacity_basis"] == current["pv_capacity_basis"]
+            and current["pv_capacity_basis"] != "not separately reported"
         )
-        current["annual_standard_pv_capacity_change_pct"] = round(
-            100 * current["annual_standard_pv_capacity_change_mw"] /
-            previous["standard_net_metered_pv_capacity_mw"], 6
-        )
+        if comparable_basis:
+            current["annual_standard_pv_capacity_change_mw"] = round(
+                current["standard_net_metered_pv_capacity_mw"] - previous["standard_net_metered_pv_capacity_mw"], 6
+            )
+            current["annual_standard_pv_capacity_change_pct"] = round(
+                100 * current["annual_standard_pv_capacity_change_mw"] /
+                previous["standard_net_metered_pv_capacity_mw"], 6
+            )
+        else:
+            current["annual_standard_pv_capacity_change_mw"] = None
+            current["annual_standard_pv_capacity_change_pct"] = None
     rows[0]["annual_standard_pv_capacity_change_mw"] = None
     rows[0]["annual_standard_pv_capacity_change_pct"] = None
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -125,8 +133,12 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
         writer.writeheader()
         writer.writerows(rows)
     start, end = rows[0], rows[-1]
-    years_span = end["year"] - start["year"]
-    cagr = ((end["standard_net_metered_pv_capacity_mw"] / start["standard_net_metered_pv_capacity_mw"]) ** (1 / years_span) - 1) if years_span else None
+    ac_rows = [row for row in rows if row["pv_capacity_basis"] == "AC"]
+    ac_start = ac_rows[0] if ac_rows else None
+    ac_years_span = end["year"] - ac_start["year"] if ac_start else 0
+    ac_cagr = ((end["standard_net_metered_pv_capacity_mw"] / ac_start["standard_net_metered_pv_capacity_mw"]) ** (1 / ac_years_span) - 1) if ac_start and ac_years_span else None
+    nominal_years_span = end["year"] - start["year"]
+    nominal_cagr = ((end["standard_net_metered_pv_capacity_mw"] / start["standard_net_metered_pv_capacity_mw"]) ** (1 / nominal_years_span) - 1) if nominal_years_span else None
     summary = {
         "utility_id": start["eia_utility_id"],
         "utility_name": start["utility_name"],
@@ -135,9 +147,16 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
         "end_year": end["year"],
         "standard_net_metered_pv_capacity_start_mw": start["standard_net_metered_pv_capacity_mw"],
         "standard_net_metered_pv_capacity_end_mw": end["standard_net_metered_pv_capacity_mw"],
-        "standard_net_metered_pv_capacity_change_mw": round(end["standard_net_metered_pv_capacity_mw"] - start["standard_net_metered_pv_capacity_mw"], 6),
-        "standard_net_metered_pv_capacity_change_pct": round(100 * (end["standard_net_metered_pv_capacity_mw"] / start["standard_net_metered_pv_capacity_mw"] - 1), 6),
-        "standard_net_metered_pv_capacity_cagr_pct": round(100 * cagr, 6) if cagr is not None else None,
+        "reported_nominal_capacity_change_mw_2015_2025": round(end["standard_net_metered_pv_capacity_mw"] - start["standard_net_metered_pv_capacity_mw"], 6),
+        "reported_nominal_capacity_change_pct_2015_2025": round(100 * (end["standard_net_metered_pv_capacity_mw"] / start["standard_net_metered_pv_capacity_mw"] - 1), 6),
+        "reported_nominal_capacity_cagr_pct_2015_2025": round(100 * nominal_cagr, 6) if nominal_cagr is not None else None,
+        "ac_capacity_start_year": ac_start["year"] if ac_start else None,
+        "ac_capacity_start_mw": ac_start["standard_net_metered_pv_capacity_mw"] if ac_start else None,
+        "ac_capacity_end_year": end["year"] if ac_start else None,
+        "ac_capacity_end_mw": end["standard_net_metered_pv_capacity_mw"] if ac_start else None,
+        "ac_capacity_change_mw": round(end["standard_net_metered_pv_capacity_mw"] - ac_start["standard_net_metered_pv_capacity_mw"], 6) if ac_start else None,
+        "ac_capacity_change_pct": round(100 * (end["standard_net_metered_pv_capacity_mw"] / ac_start["standard_net_metered_pv_capacity_mw"] - 1), 6) if ac_start else None,
+        "ac_capacity_cagr_pct": round(100 * ac_cagr, 6) if ac_cagr is not None else None,
         "count_measure_break": "EIA field changes from Customers through 2020 to Installations beginning 2021; do not treat the count series as perfectly homogeneous without reviewing survey instructions.",
         "capacity_basis_break": "2015 does not separately report the PV capacity AC/DC type in this row; 2016 onward reports AC. Treat 2015 basis as unknown.",
         "virtual_capacity_break": "2016-2022 reports a combined virtual PV capacity field; 2023 onward separates >=1 MW and <1 MW categories. 2015 does not report a virtual PV field in the extracted row.",
