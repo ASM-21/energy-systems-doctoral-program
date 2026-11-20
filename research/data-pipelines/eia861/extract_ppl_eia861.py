@@ -56,6 +56,8 @@ def extract_ppl_rows(workbooks_dir: Path, output_dir: Path, utility_id: str = TA
                                  "ppl_rows_found": 0, "status": "utility-number column not identified"})
                 continue
             utility_col = utility_columns[0]
+            name_columns = [i for i, header in enumerate(headers) if header.lower().endswith("utility_name")]
+            name_col = name_columns[0] if name_columns else None
             hits = 0
             for row_number, values in enumerate(sheet.iter_rows(min_row=header_row + 1, values_only=True),
                                                  start=header_row + 1):
@@ -64,12 +66,15 @@ def extract_ppl_rows(workbooks_dir: Path, output_dir: Path, utility_id: str = TA
                 if str(values[utility_col]).strip() != str(utility_id):
                     continue
                 hits += 1
+                utility_name = str(values[name_col]).strip() if name_col is not None and name_col < len(values) else ""
+                if utility_name and "PPL Electric" not in utility_name and utility_id == TARGET_UTILITY_ID:
+                    raise ValueError(f"EIA utility ID {utility_id} mapped to unexpected name {utility_name!r} in {workbook_path.name}/{sheet.title}.")
                 for index, value in enumerate(values):
                     if index >= len(headers):
                         continue
                     long_rows.append({
                         "eia_utility_id": utility_id,
-                        "utility_name": str(values[headers.index(next((h for h in headers if h.lower().endswith('utility_name')), headers[0]))]) if values else "",
+                        "utility_name": utility_name,
                         "workbook": workbook_path.name,
                         "sheet": sheet.title,
                         "source_row": row_number,
