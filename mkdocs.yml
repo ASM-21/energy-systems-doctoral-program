@@ -75,6 +75,8 @@ nav:
       - Research workflow: resources/research-workflow.md
       - Literature review template: research/literature-review-template.md
       - Research protocol template: research/research-protocol-template.md
+      - Casebooks: research/casebooks/README.md
+      - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
       - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
