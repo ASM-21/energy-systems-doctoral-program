@@ -21,19 +21,41 @@ def find_header_row(sheet) -> int | None:
     return None
 
 def build_headers(sheet, header_row: int) -> list[str]:
+    """Build semantically grouped headers, propagating merged Excel headings."""
+    grid = [
+        [sheet.cell(row_index, column).value
+         for column in range(1, (sheet.max_column or 1) + 1)]
+        for row_index in range(1, header_row + 1)
+    ]
+    # Merged group labels (e.g. Photovoltaic / Capacity MW / Residential)
+    # are stored only in the top-left cell in Excel. Propagate them across
+    # their merged ranges so each output field remains semantically distinct.
+    merged_ranges = getattr(sheet, "merged_cells", None)
+    if merged_ranges is not None:
+        for merged in merged_ranges.ranges:
+            if merged.min_row > header_row:
+                continue
+            anchor = sheet.cell(merged.min_row, merged.min_col).value
+            if anchor is None:
+                continue
+            for row_index in range(merged.min_row, min(merged.max_row, header_row) + 1):
+                for column in range(merged.min_col, merged.max_col + 1):
+                    grid[row_index - 1][column - 1] = anchor
+
     headers = []
     for column in range(1, (sheet.max_column or 1) + 1):
         parts = []
         for row_index in range(1, header_row + 1):
-            value = sheet.cell(row_index, column).value
+            value = grid[row_index - 1][column - 1]
             if value is None:
                 continue
             label = normalize_label(value)
-            if label and label.lower() not in IGNORED_HEADER_LABELS and label not in parts:
+            if not label or label.lower() in IGNORED_HEADER_LABELS or label.lower() == "utility characteristics":
+                continue
+            if label not in parts:
                 parts.append(label)
         headers.append("__".join(parts) if parts else f"column_{column}")
     return headers
-
 def extract_ppl_rows(workbooks_dir: Path, output_dir: Path, utility_id: str = TARGET_UTILITY_ID) -> dict:
     output_dir.mkdir(parents=True, exist_ok=True)
     long_rows = []
