@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Build a reproducible inventory of the official 2025 final EIA-861 detailed-data ZIP before deciding which schedules support a Pennsylvania distribution/DER research question. The pipeline does not assume that every DER schedule is utility-specific or that EIA-861 contains feeder-level interconnection outcomes.
+Build a reproducible inventory of official annual EIA-861 detailed-data ZIPs and a historical PPL utility-level net-metering PV series. The pipeline does not assume that every DER schedule is utility-specific or that EIA-861 contains feeder-level interconnection outcomes.
 
 ## Source and known limits
 
@@ -38,9 +38,9 @@ Other utility-level measures include 1,292 distribution circuits (1,292 reported
 
 [First inventory workflow and artifact](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44832915360).
 
-## Historical utility-level coverage audit
+## Historical utility-level coverage audit and extraction
 
-The 2025 package contains a utility-level net-metering worksheet even though EIA's public schedule description characterizes net-metering reporting at state, sector, and balancing-authority levels. Do not assume that this 2025 sheet exists in earlier annual releases. The historical audit scans the actual workbook/worksheet contents for EIA utility ID 14715 and records, by year, whether a worksheet has both a utility identity field and a PPL row.
+The 2015–2025 annual packages contain utility-level PPL net-metering rows, although worksheet names vary. The historical audit scans actual workbook/worksheet contents for EIA utility ID 14715 and records, by year, whether a worksheet has both a utility identity field and a PPL row. This avoids assuming that a single fixed sheet name or the generic EIA schedule description captures every annual file's structure.
 
 Run:
 
