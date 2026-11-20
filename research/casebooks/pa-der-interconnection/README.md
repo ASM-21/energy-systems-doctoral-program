@@ -95,6 +95,41 @@ The order establishes a framework for DER aggregations to participate in organiz
 
 Study this rule to understand transmission-provider generator interconnection reforms. Do not casually conflate its large- and small-generator transmission interconnection procedures with a state-regulated distribution DER process. Determine jurisdiction from the asset, transaction, tariff, and actual order language.
 
+### I. PPL 2025 rate case — DER orchestration and non-exporting BTM storage
+
+**Docket:** R-2025-3057164 and consolidated complaints.  
+**Settlement filed:** March 13, 2026.  
+**Commission action:** The Pennsylvania PUC entered an order on June 11, 2026 approving the settlement with a minor modification related to net-metering eligibility; new rates became effective July 1, 2026. PPL's Q3 2026 Form 10-Q reports that the reconsideration petition was denied August 27, 2026 and that a Commonwealth Court appeal filed September 25, 2026 is limited to a net-metering eligibility issue.  
+**Sources:** [Joint Petition for Approval of Non-Unanimous Settlement](https://www.pplelectric.com/site/-/media/ppl-jss-app/assets/Home/Landing-Pages/Public-Utility-Commission/PDFs/2026/PPL--2025-Rate-Case--Joint-Petition-for-NonUnanimous-Settlement-of-All-Issues-FINAL.pdf); [PPL Corporation Q3 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/317187/000092222426000052/ppl-20260930.htm).
+
+#### DER orchestration plan and DERMS cost-effectiveness
+
+Settlement paragraph 118 (Appendix D, proposed findings 386–390) addresses the DER Orchestration Plan referenced in P-2024-3049223. It provides for one stakeholder working group before PPL files the plan, with substantive updates, stakeholder questions, feedback, and PPL's good-faith consideration of that feedback. The PUC's June 11, 2026 order approved the settlement with a minor modification related to net-metering eligibility.
+
+Environmental Intervenors' testimony, as summarized in proposed finding 386, argued that the orchestration plan could reduce Second DER Management Plan costs and cited a figure of $1,700 per device. PPL's rebuttal, summarized in proposed finding 387, argued that the plan's timing could not affect capital costs in the fully projected future test year. **The $1,700 figure is an intervenor's position cited in proposed findings, not a Commission finding or independently verified unit cost.** Treat the cost-effectiveness question as open.
+
+Research tasks:
+- Locate the filed DER Orchestration Plan and stakeholder working-group record.
+- Identify the alternatives assessed, the control/telemetry architecture, and which functions require dedicated devices versus existing inverter communications or other approaches.
+- Reconstruct the $1,700/device estimate from its underlying testimony/exhibits before using it in a cost model.
+- Separate capital cost, installation, communications, software, maintenance, replacement, and ongoing operating costs.
+- Identify measurable benefits and counterfactuals: avoided upgrades, incremental hosting capacity, voltage excursions, curtailment, reliability, and market/aggregator value.
+- Distinguish a projected hosting-capacity increase from realized, locationally available capacity and measured customer outcomes.
+
+#### Non-exporting behind-the-meter battery storage
+
+Settlement paragraph 123 requires PPL to review, within 120 days of the Commission's final order, BTM non-exporting battery projects then under interconnection review and determine whether the requirements being imposed align with industry best practices and available studies. The settlement's proposed findings record a disagreement: Convergent argued that PPL lacked a distinct non-exporting BTM BESS interconnection rule and applied requirements designed for generation resources; PPL responded that its Energy Storage Interconnection Policy and Guidance provided clear technical standards.
+
+The Commission order was entered June 11, 2026. A straightforward 120-calendar-day count points to October 9, 2026, but confirm the applicable time-computation rule and any later docket direction. This review obligation is narrower than a general promise to create a new tariff or a new BESS interconnection rule; do not overstate it.
+
+Useful source: [PPL Energy Storage Interconnection Policy and Guidance, Revision 0, effective February 1, 2023](https://www.pplelectric.com/site/-/media/ppl-jss-app/assets/Home/More/About-Us/Electric-rates-and-rules/Point-of-contact-requirements/PPL-Electric-Energy-Storage-Policy-Rev-0.ashx). The document describes non-export configurations and control-system evidence. Verify whether a newer revision exists before treating it as current.
+
+Research tasks:
+- Compare the policy's non-export configurations with the requirements PPL applied to the projects reviewed under paragraph 123.
+- Define inadvertent export, protection, fail-safe controls, metering, commissioning tests, and operating limits.
+- Assess whether an energy-storage-specific process is technically justified and proportionate to actual export risk.
+- Locate evidence of the paragraph 123 review and any resulting policy, tariff, or guidance changes.
+
 ## Working artifacts
 
 - [Versioned primary-source register](source-register.csv)
