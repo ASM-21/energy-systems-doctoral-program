@@ -52,5 +52,9 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
 
 
+## Applied problem set
+- [Problem Set 3 — Pennsylvania DER aggregation and regulatory boundaries](problem-set-03-pa-der-aggregation.md)
+- [Solution notes for Problem Set 3](problem-set-03-pa-der-aggregation-solutions.md)
+
 ## Computational lab
 - [Two-node congestion and nodal prices](../../../projects/power-systems/two-node-congestion/README.md)
