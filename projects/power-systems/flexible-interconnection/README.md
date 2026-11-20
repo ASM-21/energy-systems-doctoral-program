@@ -18,7 +18,7 @@ This lab demonstrates operational flexibility, not an actual PPL tariff or a uti
 3. **Dynamic operating envelope:** customer export limit changes each hour with available feeder headroom, calculated as feeder export limit less the existing feeder net export.
 4. **Firm upgrade:** feeder export limit increases from 1.0 MW to 1.5 MW. This is a hypothetical infrastructure alternative, not a flexible connection.
 
-The customer has 1.5 MW of available PV, a 0.5 MW / 1.5 MWh battery, 95% charge/discharge efficiency, and a cyclic state-of-charge constraint. The battery can charge only from available PV. Customer load is served before exports; the optimization chooses PV use, battery dispatch, grid imports/exports, and curtailment.
+The customer has 3.0 MW of available PV, a 0.5 MW / 1.5 MWh battery, 95% charge/discharge efficiency, and a cyclic state-of-charge constraint. The battery can charge only from available PV. Customer load is served before exports; the optimization chooses PV use, battery dispatch, grid imports/exports, and curtailment.
 
 ## Model
 
@@ -51,7 +51,7 @@ Outputs:
 
 ## Interpretation
 
-- A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high.
+- A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high. The synthetic profile deliberately includes a large midday PV surplus so that the fixed, scheduled, dynamic, and upgrade cases can exhibit different curtailment outcomes.
 - A scheduled limit is predictable but may not reflect actual feeder conditions in every interval.
 - A firm upgrade increases physical capacity but is not costed in this model.
 - A battery can shift PV energy across hours, but its usefulness depends on power/energy limits, efficiency, degradation, and the later export envelope.
