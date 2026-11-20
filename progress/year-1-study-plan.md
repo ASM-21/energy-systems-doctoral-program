@@ -2,7 +2,7 @@
 
 ## Time budget
 
-The four core courses contain approximately 155 planned hours. The current applied extensions add approximately 31 hours: radial-feeder DER screening (8 h), IEEE 13-node OpenDSS benchmark (6 h), carbon pricing/flexible demand and Pennsylvania DER aggregation (8 h), non-exporting BTM storage modeling (4 h), and DER orchestration/BTM storage policy analysis (5 h). The full instructional sequence is therefore about 186 hours before the integration project. At 3 hours/week, the core sequence takes about 52 weeks and the applied extensions another 10 weeks; at 5 hours/week, about 31 core weeks plus 6 extension weeks. Add a 20–30 hour integration project (roughly 4–10 weeks depending on pace) and buffer for difficult topics. A realistic total is approximately 41–72 weeks, depending on weekly availability and remediation.
+The four core courses contain approximately 155 planned hours. The current applied extensions add approximately 36 hours: radial-feeder DER screening (8 h), IEEE 13-node OpenDSS benchmark (6 h), flexible interconnection and dynamic export-envelope optimization (5 h), carbon pricing/flexible demand and Pennsylvania DER aggregation (8 h), non-exporting BTM storage modeling (4 h), and DER orchestration/BTM storage policy analysis (5 h). The full instructional sequence is therefore about 191 hours before the integration project. At 3 hours/week, the core sequence takes about 52 weeks and the applied extensions another 12 weeks; at 5 hours/week, about 31 core weeks plus 7 extension weeks. Add a 20–30 hour integration project (roughly 4–10 weeks depending on pace) and buffer for difficult topics. A realistic total is approximately 42–74 weeks, depending on weekly availability and remediation.
 
 Do not compress the work to meet an arbitrary calendar. The plan is designed around durable mastery, not completion speed.
 
@@ -20,7 +20,7 @@ If a problem set or lab needs more time, use the next week's allocation. Do not 
 
 ## Recommended sequence
 
-1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the core problem sets plus the radial-feeder and IEEE 13-node applied assignments, and run the three-bus, radial-feeder, and OpenDSS benchmark work.
+1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the core problem sets plus the radial-feeder, IEEE 13-node, and flexible-interconnection applied assignments, and run the three-bus, radial-feeder, OpenDSS, and dynamic export-envelope models.
 2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch with carbon pricing and flexible demand, storage arbitrage, and non-exporting BTM storage optimization.
 3. **Y1-03 Electricity Markets, Utility Regulation, and PJM** — study market clearing, congestion, revenue requirements, the Pennsylvania DER/PJM casebook, and the DER orchestration/BTM storage regulatory exercise.
 4. **Y1-04 Applied Quantitative Methods** — complete OLS and robust inference, then panel-data and causal-identification exercises.
