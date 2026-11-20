@@ -24,7 +24,7 @@ def archive_url(year: int) -> str:
 
 def inspect_workbook_bytes(data: bytes, year: int, workbook_name: str,
                            utility_id: str = TARGET_UTILITY_ID) -> list[dict]:
-    workbook = load_workbook(BytesIO(data), read_only=True, data_only=True)
+    workbook = load_workbook(BytesIO(data), read_only=False, data_only=True)
     records = []
     try:
         for sheet in workbook.worksheets:
