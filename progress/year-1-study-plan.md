@@ -21,7 +21,7 @@ If a problem set or lab needs more time, use the next week's allocation. Do not 
 ## Recommended sequence
 
 1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the two core problem sets plus the radial-feeder applied set, and run the three-bus and radial-feeder labs.
-2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch, and storage arbitrage.
+2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch with carbon pricing and flexible demand, and storage arbitrage.
 3. **Y1-03 Electricity Markets, Utility Regulation, and PJM** — study market clearing, congestion, revenue requirements, and the Pennsylvania DER/PJM casebook.
 4. **Y1-04 Applied Quantitative Methods** — complete OLS and robust inference, then panel-data and causal-identification exercises.
 5. **Year 1 integration project** — refine the Pennsylvania distribution DER research question, finish the primary-source review, conduct the data-feasibility gate, and produce a policy brief or reproducible technical report.
