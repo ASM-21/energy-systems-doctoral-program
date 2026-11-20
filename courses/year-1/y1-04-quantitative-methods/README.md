@@ -39,3 +39,6 @@ A clean environment must reproduce tables and figures from raw or documented sou
 ## Problem sets and worked checks
 - [Problem Set 1](problem-set-01.md)
 - [Solution notes](problem-set-01-solutions.md)
+
+- [Problem Set 2](courses/year-1/y1-04-quantitative-methods/problem-set-02.md)
+- [Problem Set 2 solution notes](courses/year-1/y1-04-quantitative-methods/problem-set-02-solutions.md)
