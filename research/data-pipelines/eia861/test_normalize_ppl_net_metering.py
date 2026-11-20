@@ -38,6 +38,9 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
             "source_workbook": "Net_Metering_2025.xlsx", "source_sheet": "States- Utility Level",
             "source_row": "760", "archive_sha256": "hash",
             "Photovoltaic__Capacity_MW__Total": "505.746",
+            "Photovoltaic__Capacity_MW__Residential": "277.812",
+            "Photovoltaic__Capacity_MW__Commercial": "195.427",
+            "Photovoltaic__Capacity_MW__Industrial": "32.507",
             "Photovoltaic__Installations__Total": "31400",
             "Photovoltaic__Virtual_Capacity_(MW)__Total": "",
             "Photovoltaic__Virtual_Capacity-_1_MW_and_over_(MW)__Total": "10.3",
@@ -52,6 +55,10 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
         self.assertEqual(row["virtual_pv_capacity_mw"], 33.474)
         self.assertEqual(row["all_technology_net_metered_capacity_mw"], 577.707)
         self.assertEqual(row["pv_capacity_basis"], "AC")
+        self.assertEqual(row["pv_residential_capacity_mw"], 277.812)
+        self.assertEqual(row["pv_commercial_capacity_mw"], 195.427)
+        self.assertEqual(row["pv_industrial_capacity_mw"], 32.507)
+        self.assertIsNone(row["pv_transportation_capacity_mw"])
 
     def test_builds_annual_change_and_summary(self):
         with tempfile.TemporaryDirectory() as tmp:
