@@ -14,6 +14,8 @@ class CompareScenarioTests(unittest.TestCase):
         folder.mkdir()
         summary = {
             "engine_version": "test-engine",
+            "test_case_repository": "dss-extensions/electricdss-tst",
+            "test_case_commit": "3b208397160213cae4a9e2d0a7d1aa3528ce26e1",
             "master_file": master_file,
             "load_multiplier": 1.0,
             "pv_kw": pv_kw,
