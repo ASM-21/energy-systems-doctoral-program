@@ -4,7 +4,7 @@ site_url: https://asm-21.github.io/energy-systems-doctoral-program/
 repo_url: https://github.com/ASM-21/energy-systems-doctoral-program
 repo_name: ASM-21/energy-systems-doctoral-program
 
-docs_dir: .
+docs_dir: site_docs
 site_dir: site
 strict: true
 not_in_nav: ignore
@@ -29,13 +29,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
-
-exclude_docs: |
-  .git/
-  .github/
-  .venv/
-  site/
-  data/raw/
 
 nav:
   - Home: docs/index.md
