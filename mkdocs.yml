@@ -7,6 +7,7 @@ repo_name: ASM-21/energy-systems-doctoral-program
 docs_dir: .
 site_dir: site
 strict: true
+not_in_nav: ignore
 
 theme:
   name: material
@@ -38,6 +39,7 @@ exclude_docs: |
 
 nav:
   - Home: docs/index.md
+  - Repository README: README.md
   - Program:
       - Overview: curriculum/program-overview.md
       - Roadmap: ROADMAP.md
@@ -66,5 +68,8 @@ nav:
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
   - Assessment: assessments/README.md
   - Progress:
+      - Getting started: docs/getting-started.md
+      - Repository guide: docs/repository-guide.md
+      - Project index: projects/README.md
       - Tracking guide: progress/README.md
       - Transcript: progress/academic-transcript.md
