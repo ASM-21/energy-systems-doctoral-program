@@ -5,6 +5,7 @@ PROJECTS := \
 	projects/energy-economics/storage-arbitrage \
 	projects/power-systems/two-node-congestion \
 	projects/power-systems/three-bus-dc-power-flow \
+	projects/power-systems/radial-der-hosting-capacity \
 	projects/econometrics/ols-energy-demand
 
 .PHONY: test docs clean
