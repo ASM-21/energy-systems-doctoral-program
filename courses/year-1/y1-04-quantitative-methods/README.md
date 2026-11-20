@@ -35,3 +35,7 @@ Data provenance/quality audit; descriptive analysis with defensible plots; OLS d
 Select a narrow descriptive or associational question using public energy, economic, or infrastructure data. State clearly whether the design supports causal inference. Include question, data dictionary, cleaning and analysis scripts, exploratory figures, model and diagnostics, uncertainty, limitations, and concise interpretation.
 
 A clean environment must reproduce tables and figures from raw or documented source data. Statistical significance is not proof of causality.
+
+## Problem sets and worked checks
+- [Problem Set 1](problem-set-01.md)
+- [Solution notes](problem-set-01-solutions.md)
