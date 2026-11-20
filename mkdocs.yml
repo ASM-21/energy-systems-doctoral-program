@@ -70,13 +70,18 @@ nav:
       - Quantitative problem set: courses/year-1/y1-04-quantitative-methods/problem-set-01.md
       - Quantitative solutions: courses/year-1/y1-04-quantitative-methods/problem-set-01-solutions.md
       - Course references: library/course-catalog.md
+      - Core reading list: library/reading-list.md
   - Research:
       - Research workflow: resources/research-workflow.md
+      - Literature review template: research/literature-review-template.md
+      - Research protocol template: research/research-protocol-template.md
+      - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
       - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
+      - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
       - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
   - Assessment: assessments/README.md
   - Progress:
