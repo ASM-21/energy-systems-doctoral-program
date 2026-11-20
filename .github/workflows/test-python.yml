@@ -21,6 +21,7 @@ jobs:
           - projects/energy-economics/storage-arbitrage
           - projects/power-systems/two-node-congestion
           - projects/power-systems/three-bus-dc-power-flow
+          - projects/power-systems/radial-der-hosting-capacity
           - projects/econometrics/ols-energy-demand
     defaults:
       run:
@@ -42,6 +43,8 @@ jobs:
             python dispatch.py
           elif [ -f dc_power_flow.py ]; then
             python dc_power_flow.py
+          elif [ -f feeder.py ]; then
+            python feeder.py --output-dir /tmp/radial-feeder-results
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
