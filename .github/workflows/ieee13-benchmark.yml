@@ -20,6 +20,9 @@ jobs:
           python-version: "3.11"
       - name: Install DSS-Python
         run: python -m pip install -r projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/requirements.txt
+      - name: Test node-level comparison utility
+        working-directory: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss
+        run: python -m unittest discover -s . -p "test_*.py" -v
       - name: Run baseline benchmark
         run: python projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/run_benchmark.py --pv-kw 0 --output-dir /tmp/ieee13-baseline
       - name: Run PV benchmark
