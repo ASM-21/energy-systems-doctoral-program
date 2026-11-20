@@ -38,9 +38,9 @@ A cumulative installation count should not be interpreted as annual installation
 
 ## 4. Historical audit decision gate
 
-The historical coverage audit produces worksheet-level evidence for EIA utility ID 14715.
+The historical coverage audit and raw extraction have now been run for 2015–2025. Each annual archive contains exactly one PPL utility-level net-metering row in the relevant schedule, so a PPL descriptive time series is feasible. The standard net-metered PV capacity series rises from 76.686 MW in 2015 to 505.746 MW in 2025 (+429.060 MW; 559.5%; 20.76% CAGR). The normalized file preserves source field names and archive hashes. This is a measured utility-level reported-capacity series, not feeder hosting capacity.
 
-- **If a comparable utility-level net-metering series exists for multiple consecutive years:** construct a PPL utility-year descriptive series. Compare reported cumulative MW and installation counts; do not assume a causal effect.
+- **Observed result:** the 2015–2025 archives each contain one PPL net-metering row. A standard-PV capacity descriptive series is available across all eleven years. Compare reported cumulative MW and count measures, retaining the documented breaks; do not assume a causal effect.
 - **If utility-level net-metering rows are sporadic:** publish a coverage table and restrict trend statements to the observed years. Do not interpolate across missing survey coverage.
 - **If the utility-level worksheet exists only in 2025:** use it as a 2025 cross-sectional snapshot. Use official state-level time series for broader adoption context, but do not attribute those state totals to PPL.
 - **If peer utilities have comparable rows:** construct a utility-year panel only after verifying consistent EIA IDs, respondent form, schedule definitions, service territories, and variable units. Report the unbalanced panel and missingness mechanism.
