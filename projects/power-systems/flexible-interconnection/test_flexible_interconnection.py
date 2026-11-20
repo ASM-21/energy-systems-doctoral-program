@@ -58,6 +58,17 @@ class FlexibleInterconnectionTests(unittest.TestCase):
         )
         self.assertGreaterEqual(dynamic["summary"]["pv_curtailment_mwh"], 0.0)
 
+    def test_battery_reduces_curtailment_under_fixed_export_limit(self):
+        limit = self.envelopes["fixed_0.35_mw"]
+        with_battery = solve_scenario(self.profile, limit)
+        without_battery = solve_scenario(
+            self.profile, limit, battery_power_mw=0.0, battery_energy_mwh=0.0
+        )
+        self.assertLess(
+            with_battery["summary"]["pv_curtailment_mwh"],
+            without_battery["summary"]["pv_curtailment_mwh"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
