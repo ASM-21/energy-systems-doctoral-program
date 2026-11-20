@@ -4,7 +4,7 @@
 
 ## Problem 1 — Three-bus DC power flow
 
-Consider a three-bus network with bus 1 as the reference. Reactances are x12=0.1 pu, x13=0.2 pu, and x23=0.1 pu on a common base. Bus 2 has a 50 MW load; bus 3 has a 50 MW load and a 100 MW generator. Bus 1 has a generator. Ignore losses and use a 100 MVA base.
+Consider a three-bus network with bus 1 as the reference. Reactances are x12=0.1 pu, x13=0.2 pu, and x23=0.1 pu on a common base. Bus 2 has a 50 MW load. Bus 3 has a 50 MW load and a generator dispatched at 60 MW. Bus 1 is the reference bus and its generator balances the system at 40 MW. All quantities are on a 100 MVA base. Ignore losses and use a 100 MVA base.
 
 1. Convert the real-power injections to per unit.
 2. Construct the bus susceptance matrix for the DC approximation.
