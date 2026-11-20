@@ -38,7 +38,7 @@ The 24-hour profile contains a daytime PV surplus and an evening load/price peak
 
 ## Verified default-case results
 
-The initial CI run on 2026-11-20 produced the following results for the synthetic 24-hour profile, 95% charge/discharge efficiency, and $15/MWh throughput degradation assumption:
+The CI run on 2026-11-20 executed both the no-battery baseline and default battery case and produced the following results for the synthetic 24-hour profile, 95% charge/discharge efficiency, and $15/MWh throughput degradation assumption:
 
 | Metric | No battery | 80 kW / 160 kWh BTM battery |
 |---|---:|---:|
@@ -50,7 +50,7 @@ The initial CI run on 2026-11-20 produced the following results for the syntheti
 | Degradation proxy | $0.00 | $6.54 |
 | Total objective cost | $64.44 | $56.16 |
 
-The modeled objective improvement is approximately $8.28 for this synthetic day after the throughput degradation proxy. The battery absorbs all 0.145 MWh of baseline PV curtailment and reduces grid imports by approximately 0.123 MWh. These are model outputs, not customer bill savings or a utility-system benefit estimate. The tariff, demand charges, inverter standby losses, export compensation, battery capital cost, and network constraints are omitted.
+The modeled objective improvement is approximately $8.28 for this synthetic day after the throughput degradation proxy. The battery absorbs all 0.145 MWh of baseline PV curtailment and reduces grid imports by approximately 0.123 MWh. These are model outputs, not customer bill savings or a utility-system benefit estimate. The tariff, demand charges, inverter standby losses, export compensation, battery capital cost, and network constraints are omitted. [CI run and test logs](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44832725560).
 
 ## Interpretation
 
