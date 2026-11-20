@@ -61,7 +61,7 @@ def extract_ppl_rows(workbooks_dir: Path, output_dir: Path, utility_id: str = TA
     long_rows = []
     coverage = []
     for workbook_path in sorted(workbooks_dir.glob("*.xlsx")):
-        workbook = load_workbook(workbook_path, read_only=True, data_only=True)
+        workbook = load_workbook(workbook_path, read_only=False, data_only=True)
         for sheet in workbook.worksheets:
             header_row = find_header_row(sheet)
             if header_row is None:
