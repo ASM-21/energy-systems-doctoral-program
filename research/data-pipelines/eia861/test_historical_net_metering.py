@@ -29,7 +29,7 @@ class HistoricalNetMeteringTests(unittest.TestCase):
         self.assertEqual(rows[0]["utility_name"], "PPL Electric Utilities Corp")
         self.assertEqual(rows[0]["archive_sha256"], "abc123")
         self.assertEqual(rows[0]["Net_Metering__PV_Capacity_MW"], "505.746")
-        self.assertEqual(rows[0]["Net_Metering__PV_Installations"], "31400")
+        self.assertEqual(rows[0]["PV_Installations"], "31400")
         self.assertEqual(schemas[0]["sheet"], "States- Utility Level")
 
     def test_does_not_treat_other_utility_as_ppl(self):
