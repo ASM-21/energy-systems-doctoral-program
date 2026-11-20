@@ -12,7 +12,7 @@ def read_voltages(path: Path) -> dict[str, float]:
 def compare(baseline_dir: Path, scenario_dir: Path, output_dir: Path) -> dict:
     base = json.loads((baseline_dir / "summary.json").read_text(encoding="utf-8"))
     case = json.loads((scenario_dir / "summary.json").read_text(encoding="utf-8"))
-    for key in ("engine_version", "master_file", "load_multiplier"):
+    for key in ("engine_version", "test_case_repository", "test_case_commit", "master_file", "load_multiplier"):
         if base[key] != case[key]:
             raise ValueError(f"Scenario mismatch for {key}: {base[key]!r} != {case[key]!r}")
     base_v = read_voltages(baseline_dir / "bus_voltages.csv")
@@ -31,6 +31,8 @@ def compare(baseline_dir: Path, scenario_dir: Path, output_dir: Path) -> dict:
         writer.writerows(rows)
     summary = {
         "engine_version": base["engine_version"],
+        "test_case_repository": base["test_case_repository"],
+        "test_case_commit": base["test_case_commit"],
         "master_file": base["master_file"],
         "load_multiplier": base["load_multiplier"],
         "baseline_pv_kw": base["pv_kw"],
