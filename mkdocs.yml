@@ -85,6 +85,7 @@ nav:
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
       - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
+      - Battery arbitrage lab: projects/energy-economics/storage-arbitrage/README.md
   - Assessment: assessments/README.md
   - Progress:
       - Getting started: docs/getting-started.md
