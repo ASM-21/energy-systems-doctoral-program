@@ -41,3 +41,7 @@ Provide equations, units, assumptions, reproducible calculations, sensitivity te
 
 ## Completion evidence
 Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page executive summary.
+
+## Problem sets and worked checks
+- [Problem Set 1](problem-set-01.md)
+- [Solution notes](problem-set-01-solutions.md)
