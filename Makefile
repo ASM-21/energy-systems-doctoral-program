@@ -7,6 +7,7 @@ PROJECTS := \
 	projects/power-systems/two-node-congestion \
 	projects/power-systems/three-bus-dc-power-flow \
 	projects/power-systems/radial-der-hosting-capacity \
+	projects/power-systems/flexible-interconnection \
 	projects/econometrics/ols-energy-demand
 
 .PHONY: test docs clean
