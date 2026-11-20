@@ -57,6 +57,8 @@ nav:
       - Radial DER solution notes: courses/year-1/y1-01-power-systems/problem-set-03-radial-der-solutions.md
       - IEEE 13-node benchmark problem set: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss.md
       - IEEE 13-node benchmark solution guide: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss-solutions.md
+      - Flexible interconnection problem set: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection.md
+      - Flexible interconnection solution notes: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection-solutions.md
       - Energy economics: courses/year-1/y1-02-energy-economics/README.md
       - Energy economics problem set 2: courses/year-1/y1-02-energy-economics/problem-set-02.md
       - Energy economics solution 2: courses/year-1/y1-02-energy-economics/problem-set-02-solutions.md
@@ -102,6 +104,7 @@ nav:
       - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
       - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
       - Radial DER hosting-capacity lab: projects/power-systems/radial-der-hosting-capacity/README.md
+      - Flexible interconnection lab: projects/power-systems/flexible-interconnection/README.md
       - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
