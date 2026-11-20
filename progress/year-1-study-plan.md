@@ -2,7 +2,7 @@
 
 ## Time budget
 
-The four core courses contain approximately 155 planned hours before optional applied extensions. The radial-feeder problem set and lab add approximately 8 hours to Y1-01. The carbon-pricing/demand-response and Pennsylvania DER aggregation extensions add approximately 8 more hours across Y1-02 and Y1-03. At 3 hours/week, that is about 52 weeks; at 5 hours/week, about 31 weeks. Add a 20–30 hour integration project and some buffer for difficult topics. The realistic Year 1 range is approximately 35–62 weeks for the core sequence, plus roughly 3–4 weeks for the current applied extensions depending on actual availability and remediation needs.
+The four core courses contain approximately 155 planned hours before optional applied extensions. The radial-feeder problem set and lab add approximately 8 hours to Y1-01. The IEEE 13-node OpenDSS benchmark assignment adds approximately 6 hours and should be treated as a computational extension, not a replacement for core power-flow theory. The carbon-pricing/demand-response and Pennsylvania DER aggregation extensions add approximately 8 more hours across Y1-02 and Y1-03. At 3 hours/week, that is about 52 weeks; at 5 hours/week, about 31 weeks. Add a 20–30 hour integration project and some buffer for difficult topics. The realistic Year 1 range is approximately 35–62 weeks for the core sequence, plus roughly 3–4 weeks for the current applied extensions depending on actual availability and remediation needs.
 
 Do not compress the work to meet an arbitrary calendar. The plan is designed around durable mastery, not completion speed.
 
