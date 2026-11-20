@@ -18,6 +18,8 @@ on:
       - "research/data-pipelines/eia861/test_extract_ppl_eia861.py"
       - "research/data-pipelines/eia861/test_inventory_eia861.py"
       - "research/data-pipelines/eia861/extract_historical_net_metering.py"
+      - "research/data-pipelines/eia861/extract_pa_utility_net_metering.py"
+      - "research/data-pipelines/eia861/test_extract_pa_utility_net_metering.py"
       - "research/data-pipelines/eia861/test_historical_net_metering.py"
       - "research/data-pipelines/eia861/normalize_ppl_net_metering.py"
       - "research/data-pipelines/eia861/test_normalize_ppl_net_metering.py"
@@ -58,6 +60,13 @@ jobs:
             --start-year "${{ inputs.start_year || '2015' }}" \
             --end-year "${{ inputs.end_year || '2025' }}" \
             --output-dir /tmp/eia861-ppl-net-metering
+      - name: Extract all Pennsylvania utility-level net-metering rows
+        run: |
+          python research/data-pipelines/eia861/extract_pa_utility_net_metering.py \
+            --start-year "${{ inputs.start_year || '2015' }}" \
+            --end-year "${{ inputs.end_year || '2025' }}" \
+            --cache-dir data/historical-archives \
+            --output-dir /tmp/eia861-pa-utility-panel
       - name: Harmonize PPL net-metering series
         run: |
           python research/data-pipelines/eia861/normalize_ppl_net_metering.py \
@@ -75,3 +84,4 @@ jobs:
           path: |
             /tmp/eia861-historical-coverage/**
             /tmp/eia861-ppl-net-metering/**
+            /tmp/eia861-pa-utility-panel/**
