@@ -17,6 +17,8 @@ on:
       - "research/data-pipelines/eia861/test_historical_coverage.py"
       - "research/data-pipelines/eia861/test_extract_ppl_eia861.py"
       - "research/data-pipelines/eia861/test_inventory_eia861.py"
+      - "research/data-pipelines/eia861/extract_historical_net_metering.py"
+      - "research/data-pipelines/eia861/test_historical_net_metering.py"
       - ".github/workflows/eia861-history-audit.yml"
 
 permissions:
@@ -41,8 +43,16 @@ jobs:
             --start-year "${{ inputs.start_year || '2015' }}" \
             --end-year "${{ inputs.end_year || '2025' }}" \
             --output-dir /tmp/eia861-historical-coverage
-      - name: Upload coverage manifest
+      - name: Extract PPL historical net-metering rows
+        run: |
+          python research/data-pipelines/eia861/extract_historical_net_metering.py \
+            --start-year "${{ inputs.start_year || '2015' }}" \
+            --end-year "${{ inputs.end_year || '2025' }}" \
+            --output-dir /tmp/eia861-ppl-net-metering
+      - name: Upload coverage and historical extraction
         uses: actions/upload-artifact@v4
         with:
-          name: eia861-historical-coverage
-          path: /tmp/eia861-historical-coverage/**
+          name: eia861-historical-coverage-and-extract
+          path: |
+            /tmp/eia861-historical-coverage/**
+            /tmp/eia861-ppl-net-metering/**
