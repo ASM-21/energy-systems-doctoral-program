@@ -2,7 +2,10 @@
 
 ## 2026-11-20 — Distribution engineering and Pennsylvania research expansion
 
-- Added a radial distribution feeder DER hosting-capacity screening lab with synthetic inputs, voltage calculations, branch thermal screening, reverse-flow flags, scenario sweeps, and unit tests.
+- Added a radial distribution feeder DER hosting-capacity screening lab with synthetic inputs, first-order voltage calculations, branch thermal screening, reverse-flow flags, scenario sweeps, and regression tests.
+- Added an applied radial-feeder DER problem set and worked solution notes to Y1-01.
+- Extended economic dispatch with carbon pricing and flexible-demand optimization, including cost/emissions decomposition and automated tests.
+- Added a carbon-pricing and demand-response problem set with worked solution notes to Y1-02.
 - Expanded continuous integration to test and smoke-run six computational projects.
 - Added a Pennsylvania public-data feasibility memo separating what can be observed from what remains unavailable or requires docket-level retrieval.
 - Updated the Pennsylvania DER casebook with the December 3, 2025 Commission-order milestone and the distinction between a proposed hosting-capacity increase and independently measured feeder headroom.
