@@ -45,8 +45,9 @@ def normalized_row(row: dict) -> dict:
     )
 
     virtual_field, virtual_raw = field_ending(row, ("Photovoltaic__Virtual_Capacity_(MW)__Total",))
-    if virtual_field is not None:
-        virtual_capacity = parse_number(virtual_raw)
+    combined_virtual = parse_number(virtual_raw)
+    if combined_virtual is not None:
+        virtual_capacity = combined_virtual
         virtual_measure = "combined virtual PV capacity; size bands not separated"
     else:
         large_field, large_raw = field_ending(row, (
@@ -59,10 +60,11 @@ def normalized_row(row: dict) -> dict:
         small = parse_number(small_raw)
         if large is None and small is None:
             virtual_capacity = None
+            virtual_measure = "not reported"
         else:
             virtual_capacity = round((large or 0.0) + (small or 0.0), 6)
+            virtual_measure = "sum of virtual PV capacity >=1 MW and <1 MW categories"
         virtual_field = ";".join(field for field in (large_field, small_field) if field)
-        virtual_measure = "sum of virtual PV capacity >=1 MW and <1 MW categories"
 
     type_field, type_raw = field_ending(row, ("Photovoltaic__Capacity_MW__Type",))
     capacity_basis = type_raw if type_raw not in (None, "", ".") else "not separately reported"
