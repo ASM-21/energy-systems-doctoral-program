@@ -25,13 +25,13 @@ From this directory:
     python run_benchmark.py --pv-kw 0 --output-dir outputs/baseline
     python run_benchmark.py --pv-kw 500 --output-dir outputs/pv-500kw
     python run_benchmark.py --pv-kw 1000 --output-dir outputs/pv-1000kw
-python compare_scenarios.py --baseline-dir outputs/baseline --scenario-dir outputs/pv-500kw --output-dir outputs/comparison
+    python compare_scenarios.py --baseline-dir outputs/baseline --scenario-dir outputs/pv-500kw --output-dir outputs/comparison
 
-The runner downloads the public test-case snapshot through the helper included with DSS-Python. The comparison script aligns node labels, checks that engine/source/load settings match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. It then compiles the IEEE 13-node circuit, solves a snapshot power flow, adds a balanced three-phase PVSystem at bus 675 for nonzero PV scenarios, solves again, and writes:
+The runner downloads the public test-case snapshot through the helper included with DSS-Python, compiles the IEEE 13-node circuit, solves a snapshot power flow, adds a balanced three-phase PVSystem at bus 675 for nonzero PV scenarios, solves again, and writes:
 - `bus_voltages.csv`: node-level per-unit voltage magnitudes;
 - `summary.json`: convergence, engine version, voltage extrema, circuit losses, and scenario parameters.
 
-Use a fresh output directory for each run. Do not compare runs with different engine versions or different source snapshots without recording that difference.
+The comparison script aligns node labels, checks that engine/source/load settings match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. Use a fresh output directory for each run. Do not compare runs with different engine versions or different source snapshots without recording that difference.
 
 ## Verified CI baseline and 500 kW scenario
 
