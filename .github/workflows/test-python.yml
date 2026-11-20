@@ -40,6 +40,8 @@ jobs:
         run: |
           if [ -f dispatch.py ]; then
             python dispatch.py
+          elif [ -f dc_power_flow.py ]; then
+            python dc_power_flow.py
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
