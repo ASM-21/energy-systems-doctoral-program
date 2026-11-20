@@ -12,6 +12,7 @@
 
 - U.S. Department of Energy Office of Electricity, *Flexible DER & EV Connections* (July 2024). [Official PDF](https://www.energy.gov/sites/default/files/2024-08/Flexible%20DER%20%20EV%20Connections%20July%202024.pdf). Defines dynamic operating envelopes, flexible interconnections, and flexible service connections; compares customer-controlled and utility-direct-controlled solutions and includes California and Massachusetts examples.
 - U.S. Department of Energy Office of Electricity, [Distributed Resource Utilization](https://www.energy.gov/oe/distributed-resource-utilization). A curated source page for distribution grid codes, DER orchestration, operational coordination, and distribution services.
+- California Public Utilities Commission, [Resolution E-5296 (March 21, 2024)](https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M527/K981/527981713.PDF). Primary regulatory comparator for Limited Generation Profiles: 24-value annual schedules, certified power-control systems, a 10% buffer, curtailment conditions, and monitoring/reporting.
 
 ## Econometrics and causal inference
 
