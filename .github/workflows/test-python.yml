@@ -18,6 +18,7 @@ jobs:
       matrix:
         project:
           - projects/energy-economics/merit-order-dispatch
+          - projects/energy-economics/storage-arbitrage
           - projects/power-systems/two-node-congestion
           - projects/econometrics/ols-energy-demand
     defaults:
