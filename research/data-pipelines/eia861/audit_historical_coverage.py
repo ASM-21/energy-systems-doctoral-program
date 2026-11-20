@@ -16,7 +16,10 @@ from openpyxl import load_workbook
 
 from extract_ppl_eia861 import TARGET_UTILITY_ID, find_header_row, build_headers
 
-BASE_URL = "https://www.eia.gov/electricity/data/eia861/zip/f861{year}.zip"
+def archive_url(year: int) -> str:
+    # EIA moved prior-year files under /archive/zip; the latest final release uses /zip.
+    prefix = "zip" if year >= 2025 else "archive/zip"
+    return f"https://www.eia.gov/electricity/data/eia861/{prefix}/f861{year}.zip"
 
 
 def inspect_workbook_bytes(data: bytes, year: int, workbook_name: str,
@@ -67,7 +70,7 @@ def inspect_workbook_bytes(data: bytes, year: int, workbook_name: str,
 def download_archive(year: int, cache_dir: Path) -> tuple[Path, dict]:
     cache_dir.mkdir(parents=True, exist_ok=True)
     destination = cache_dir / f"f861{year}.zip"
-    url = BASE_URL.format(year=year)
+    url = archive_url(year)
     if destination.exists():
         raw = destination.read_bytes()
         reused = True
