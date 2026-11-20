@@ -16,5 +16,6 @@ See [PJM/Pennsylvania distribution infrastructure and DER research proposal](pol
 ## Computational labs
 - [Battery arbitrage optimization](energy-economics/storage-arbitrage/README.md) — intertemporal storage scheduling, efficiency, and degradation
 - [Merit-order economic dispatch](energy-economics/merit-order-dispatch/README.md) — single-node least-cost dispatch and marginal price
+- [Three-bus DC power flow](power-systems/three-bus-dc-power-flow/README.md) — per-unit network matrix, slack bus, angles, and branch flows
 - [Two-node congestion and nodal prices](power-systems/two-node-congestion/README.md) — network-constrained dispatch and dual values
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
