@@ -33,3 +33,8 @@ At 3–5 hours/week, prioritize a small number of deep courses and substantial p
 
 ## Publication and website
 The website must clearly state the program is not accredited. It should be generated from canonical repository content, accessible, responsive, searchable, and maintainable. Do not copy third-party copyrighted materials into the repository.
+
+## Local validation commands
+- Run make test to install each computational lab's dependencies and execute its tests.
+- Run make docs to stage Markdown/static assets and build the MkDocs site in strict mode.
+- Keep Makefile, CI matrix, and project inventory synchronized when adding or removing a computational lab.
