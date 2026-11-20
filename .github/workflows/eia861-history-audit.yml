@@ -21,6 +21,7 @@ on:
       - "research/data-pipelines/eia861/test_historical_net_metering.py"
       - "research/data-pipelines/eia861/normalize_ppl_net_metering.py"
       - "research/data-pipelines/eia861/test_normalize_ppl_net_metering.py"
+      - "research/data-pipelines/eia861/plot_ppl_net_metering.py"
       - ".github/workflows/eia861-history-audit.yml"
 
 permissions:
@@ -56,7 +57,12 @@ jobs:
           python research/data-pipelines/eia861/normalize_ppl_net_metering.py \
             --input-csv /tmp/eia861-ppl-net-metering/ppl_net_metering_raw.csv \
             --output-dir /tmp/eia861-ppl-net-metering/harmonized
-      - name: Upload coverage and historical extraction
+      - name: Create PPL net-metered PV figure
+        run: |
+          python research/data-pipelines/eia861/plot_ppl_net_metering.py \
+            --input-csv /tmp/eia861-ppl-net-metering/harmonized/ppl_net_metering_harmonized.csv \
+            --output-dir /tmp/eia861-ppl-net-metering/figures
+      - name: Upload coverage, extraction, and figures
         uses: actions/upload-artifact@v4
         with:
           name: eia861-historical-coverage-and-extract
