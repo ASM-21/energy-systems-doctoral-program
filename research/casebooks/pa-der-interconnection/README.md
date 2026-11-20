@@ -55,6 +55,13 @@ The order establishes a framework for DER aggregations to participate in organiz
 
 Study this rule to understand transmission-provider generator interconnection reforms. Do not casually conflate its large- and small-generator transmission interconnection procedures with a state-regulated distribution DER process. Determine jurisdiction from the asset, transaction, tariff, and actual order language.
 
+## Working artifacts
+
+- [Versioned primary-source register](source-register.csv)
+- [Institutional responsibility matrix](responsibility-matrix.csv)
+
+The responsibility matrix is a research aid, not a legal opinion. Verify each assignment against the current controlling authority before relying on it.
+
 ## Research questions
 
 1. How do distribution interconnection requirements and wholesale aggregation requirements interact for a DER in Pennsylvania?
