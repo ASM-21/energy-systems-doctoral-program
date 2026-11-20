@@ -20,6 +20,7 @@ jobs:
           - projects/energy-economics/merit-order-dispatch
           - projects/energy-economics/storage-arbitrage
           - projects/power-systems/two-node-congestion
+          - projects/power-systems/three-bus-dc-power-flow
           - projects/econometrics/ols-energy-demand
     defaults:
       run:
