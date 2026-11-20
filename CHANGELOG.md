@@ -25,4 +25,4 @@
 - Added a Pennsylvania distribution DER interconnection / PJM wholesale aggregation casebook based on public tariff, FERC, and PJM sources, including a versioned source register and institutional responsibility matrix.
 - Added a Year 1 study plan and granular assessment tracker.
 - Corrected arithmetic and model-formulation issues identified during review.
-- Documentation site build passes in GitHub Actions. Deployment depends on repository Pages configuration.
+- Strict MkDocs build and GitHub Pages deployment both succeeded in GitHub Actions; published site URL: https://asm-21.github.io/energy-systems-doctoral-program/.
