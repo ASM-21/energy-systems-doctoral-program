@@ -76,12 +76,14 @@ nav:
       - Research protocol template: research/research-protocol-template.md
       - Casebooks: research/casebooks/README.md
       - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
+      - Pennsylvania data feasibility memo: research/casebooks/pa-der-interconnection/data-feasibility.md
       - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
       - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
       - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
+      - Radial DER hosting-capacity lab: projects/power-systems/radial-der-hosting-capacity/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
       - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
