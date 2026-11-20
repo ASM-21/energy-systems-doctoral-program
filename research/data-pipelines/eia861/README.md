@@ -38,6 +38,18 @@ Other utility-level measures include 1,292 distribution circuits (1,292 reported
 
 [First inventory workflow and artifact](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44832915360).
 
+## Historical utility-level coverage audit
+
+The 2025 package contains a utility-level net-metering worksheet even though EIA's public schedule description characterizes net-metering reporting at state, sector, and balancing-authority levels. Do not assume that this 2025 sheet exists in earlier annual releases. The historical audit scans the actual workbook/worksheet contents for EIA utility ID 14715 and records, by year, whether a worksheet has both a utility identity field and a PPL row.
+
+Run:
+
+    python audit_historical_coverage.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-coverage
+
+The script uses EIA's official annual ZIP archives, checks ZIP CRCs, records each archive's SHA-256, and writes a worksheet-level coverage CSV plus manifest. Historical files use EIA's `/archive/zip/` path; the latest 2025 final release uses `/zip/`. The audit deliberately does not harmonize variables or treat a missing utility row as zero. It is a prerequisite to a historical panel, not the panel itself.
+
+EIA warns that schedule definitions and coverage change over time. Examples include the 2016 change that renamed the non-net-metered distributed-generation schedule and added sector breakdowns, and the 2020 expansion of Form EIA-861S imputation. See the [official EIA-861 schedule descriptions and historical changes](https://www.eia.gov/electricity/data/eia861/). A valid panel must separately document reporting-form coverage, utility mergers/name changes, units, AC/DC adjustments, imputation, and survey redesigns.
+
 ## Research protocol
 
 1. Inspect the utility frame and verify EIA ID 14715, exact respondent name, reporting year, ownership, state, and form type.
