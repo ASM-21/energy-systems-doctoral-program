@@ -51,9 +51,9 @@ Annual O&M = $2.0 million. The present value of an end-of-year annuity is:
     PV = A * [1 - (1+r)^(-n)] / r
 
     PV = $2.0m * [1 - (1.05)^(-40)] / 0.05
-       ~= $34.28m
+       ~= $34.32m
 
-Total present cost including initial capital is approximately $134.28m.
+Total present cost including initial capital is approximately $134.32m.
 
 This is not automatically a marginal energy price: a substation is a lumpy network asset that provides capacity, reliability, voltage support, and option value. Cost allocation and tariff recovery are regulatory questions. Throughput, coincident peak, beneficiaries, and avoided alternatives matter.
 
