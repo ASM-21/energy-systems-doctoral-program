@@ -25,8 +25,13 @@ jobs:
         run: python -m unittest discover -s . -p "test_*.py" -v
       - name: Download and inventory official EIA-861 final data
         run: python research/data-pipelines/eia861/inventory_eia861.py --archive /tmp/f8612025.zip --output-dir /tmp/eia861-inventory
-      - name: Upload source inventory and schema previews
+      - name: Extract PPL utility-level rows by EIA ID 14715
+        run: python research/data-pipelines/eia861/extract_ppl_eia861.py --workbooks-dir /tmp/eia861-inventory/workbooks --output-dir /tmp/ppl-eia861-2025
+      - name: Upload source inventory and PPL extract
+
         uses: actions/upload-artifact@v4
         with:
           name: eia861-2025-inventory
-          path: /tmp/eia861-inventory/**
+          path: |
+            /tmp/eia861-inventory/**
+            /tmp/ppl-eia861-2025/**
