@@ -68,7 +68,7 @@ These are deterministic outputs of the stated synthetic LP, not measured utility
 
 ## Interpretation
 
-DOE distinguishes customer-controlled approaches (the customer adjusts its DER to a pre-published envelope) from utility-direct-controlled approaches (the utility sends or enforces operational curtailment/derate commands). California's Limited Generation Profiles are an example of pre-defined scheduled export limits; National Grid Massachusetts' Local Power Controller pilot is a customer-controlled approach. The present lab's fixed and scheduled cases are stylized customer-controlled arrangements; the dynamic case assumes an envelope is communicated and followed, but does not simulate either control architecture. See the DOE paper linked below.
+DOE distinguishes customer-controlled approaches (the customer adjusts its DER to a pre-published envelope) from utility-direct-controlled approaches (the utility sends or enforces operational curtailment/derate commands). California's Limited Generation Profiles are a pre-defined export schedule fixed through the interconnection process, not a continuously recalculated real-time envelope: CPUC Resolution E-5296 adopts a 24-value configuration per year, a 10% buffer, and monitoring/reporting. The utility may reduce the profile under specified safety/reliability conditions. National Grid Massachusetts' Local Power Controller pilot is a customer-controlled approach. The present lab's fixed and scheduled cases are stylized customer-controlled arrangements; the scheduled case is not an implementation of California LGP. The dynamic case assumes an hourly envelope is communicated and followed, but does not simulate either control architecture or a real-time utility calculation. See the DOE paper linked below.
 
 
 - A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high. The synthetic profile deliberately includes a large midday PV surplus so that the fixed, scheduled, dynamic, and upgrade cases can exhibit different curtailment outcomes.
@@ -86,6 +86,7 @@ A real flexible-interconnection design would need a transparent method for deter
 ## References
 
 - [U.S. Department of Energy, Flexible DER & EV Connections (July 2024)](https://www.energy.gov/sites/default/files/2024-08/Flexible%20DER%20%20EV%20Connections%20July%202024.pdf). Defines dynamic operating envelopes and flexible connections; discusses California Limited Generation Profiles and National Grid Massachusetts' Local Power Controller pilot.
+- [California Public Utilities Commission, Resolution E-5296 (March 21, 2024)](https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M527/K981/527981713.PDF). Controlling decision on California's Limited Generation Profile option; adopts a 24-value annual configuration and monitoring/reporting.
 - [U.S. Department of Energy, Distributed Resource Utilization](https://www.energy.gov/oe/distributed-resource-utilization). Overview of DER orchestration and distribution grid utilization resources.
 
 ## Extension assignment
