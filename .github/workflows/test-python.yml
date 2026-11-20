@@ -1,0 +1,31 @@
+name: Python project tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-dispatch-lab:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/energy-economics/merit-order-dispatch
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: projects/energy-economics/merit-order-dispatch/requirements.txt
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+      - name: Run unit tests
+        run: python -m unittest discover -s . -p "test_*.py" -v
+      - name: Run baseline example
+        run: python dispatch.py --demand 1000
