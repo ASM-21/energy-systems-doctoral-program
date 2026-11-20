@@ -25,6 +25,10 @@ class SweepSummaryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             summarize_sweep([])
 
+    def test_requires_zero_pv_baseline(self):
+        with self.assertRaises(ValueError):
+            summarize_sweep([self.row(100, 1.01)])
+
 
 if __name__ == "__main__":
     unittest.main()
