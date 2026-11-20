@@ -6,6 +6,8 @@ from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["svg.fonttype"] = "none"
+matplotlib.rcParams["svg.hashsalt"] = "ppl-eia861-series"
 import matplotlib.pyplot as plt
 
 
