@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from openpyxl import Workbook
-from extract_ppl_eia861 import extract_ppl_rows
+from extract_ppl_eia861 import extract_ppl_rows, build_headers
 
 
 class ExtractPPLRowsTests(unittest.TestCase):
