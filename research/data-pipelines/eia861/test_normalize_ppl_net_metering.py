@@ -27,6 +27,8 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
         self.assertEqual(row["pv_count_measure"], "customers")
         self.assertIsNone(row["virtual_pv_capacity_mw"])
         self.assertEqual(row["pv_capacity_basis"], "not separately reported")
+        self.assertEqual(row["capacity_basis_source_field"], "")
+        self.assertEqual(row["virtual_pv_source_field"], "")
 
     def test_normalizes_new_virtual_capacity_bands(self):
         raw = {
