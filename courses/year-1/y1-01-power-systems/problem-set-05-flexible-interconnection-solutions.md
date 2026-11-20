@@ -21,6 +21,18 @@ At hour 13 the dynamic envelope is 0.22 MW, below the fixed 0.35 MW cap and the 
 
 The firm-upgrade scenario expands physical capacity but has no capital cost in the model. It is a technical counterfactual, not a complete economic alternative.
 
+The checked-in synthetic profile has 23.200 MWh PV available. The CI-verified baseline outputs are:
+
+| Arrangement | PV absorbed (MWh) | Curtailed (MWh) | Imports (MWh) | Exports (MWh) |
+|---|---:|---:|---:|---:|
+| Fixed 0.35 MW | 14.148 | 9.052 | 2.895 | 3.240 |
+| Scheduled 0.40 / 0.90 MW | 14.918 | 8.282 | 2.895 | 4.010 |
+| Dynamic envelope | 15.278 | 7.922 | 2.895 | 4.370 |
+| Firm upgrade 1.50 MW | 19.138 | 4.062 | 2.895 | 8.230 |
+| Fixed 0.35 MW, no battery | 10.990 | 12.210 | 4.320 | 3.240 |
+
+The battery reduces fixed-cap curtailment by 3.158 MWh and grid imports by 1.425 MWh. The dynamic envelope absorbs 1.130 MWh more PV than the fixed cap in this daily profile. "PV absorbed" means direct PV plus PV charging; battery conversion losses mean this is not the same as final delivered energy. The results depend on the synthetic load, PV, feeder baseline, and price assumptions.
+
 ## Problem 3 — Battery dispatch
 
 The battery can absorb PV that would otherwise be curtailed during high-output hours and discharge later to serve site load. Cyclic SOC prevents the model from ending the day with free stored energy. The battery cannot charge from the grid. More energy capacity is useful only if there is sufficient charging power, discharge opportunity, export headroom, and temporal spread to use it.
