@@ -116,16 +116,19 @@ flowchart TD
     D -->|Yes| E[Upgrade scope and cost allocation]
     D -->|No| F[Interconnection approval]
     E --> F
-    F --> G[Commissioned component DER]
-    G --> H[DERA participation request]
+    F --> G[Physically interconnected component DER]
+    A --> H[DERA participation request to EDC]
     H --> I[EDC component DER review]
     I --> J{EDC approval?}
     J -->|No| K[Reasoned denial / revise request]
-    J -->|Yes| L[PJM DERA registration and market qualification]
-    L --> M[Wholesale dispatch and settlement]
-    M --> N[EDC distribution coordination / override if required]
-    G --> O[Operator consent for component DER data]
-    O --> P[EDC data access to DERA under approved format]
+    J -->|Yes| L[Participation approval]
+    G --> M[Physical interconnection + DERA approval]
+    L --> M
+    M --> N[PJM DERA registration and market qualification]
+    N --> O[Wholesale dispatch and settlement]
+    O --> P[EDC distribution coordination / override if required]
+    G --> Q[Operator consent for component DER data]
+    Q --> R[EDC data access to DERA under approved format]
 ```
 
 **Timing note:** The proposed 60-day review in § 57.264 concerns the EDC's review of a request for Component DER participation as a DERA resource. It is not a substitute for the Rule 12 physical interconnection process or its study timelines.
