@@ -51,14 +51,23 @@ nav:
       - Power systems problem set: courses/year-1/y1-01-power-systems/problem-set-01.md
       - Power systems solutions: courses/year-1/y1-01-power-systems/problem-set-01-solutions.md
       - Energy economics: courses/year-1/y1-02-energy-economics/README.md
+      - Energy economics problem set: courses/year-1/y1-02-energy-economics/problem-set-01.md
+      - Energy economics solutions: courses/year-1/y1-02-energy-economics/problem-set-01-solutions.md
       - Markets and regulation: courses/year-1/y1-03-markets-regulation-pjm/README.md
+      - Markets problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01.md
+      - Markets solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01-solutions.md
       - Quantitative methods: courses/year-1/y1-04-quantitative-methods/README.md
+      - Quantitative problem set: courses/year-1/y1-04-quantitative-methods/problem-set-01.md
+      - Quantitative solutions: courses/year-1/y1-04-quantitative-methods/problem-set-01-solutions.md
       - Course references: library/course-catalog.md
   - Research:
       - Research workflow: resources/research-workflow.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
       - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
+      - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
+      - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
+      - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
   - Assessment: assessments/README.md
   - Progress:
       - Getting started: docs/getting-started.md
