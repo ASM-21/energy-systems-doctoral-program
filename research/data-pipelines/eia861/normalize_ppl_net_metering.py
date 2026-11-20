@@ -165,7 +165,7 @@ def normalize_file(input_csv: Path, output_dir: Path) -> dict:
     }
     (output_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(f"PPL standard net-metered PV capacity: {summary['standard_net_metered_pv_capacity_start_mw']:.3f} MW ({summary['start_year']}) -> {summary['standard_net_metered_pv_capacity_end_mw']:.3f} MW ({summary['end_year']})")
-    print(f"Change: {summary['standard_net_metered_pv_capacity_change_mw']:.3f} MW; CAGR {summary['standard_net_metered_pv_capacity_cagr_pct']:.2f}%")
+    print(f"AC-basis change: {summary['ac_capacity_change_mw']:.3f} MW; CAGR {summary['ac_capacity_cagr_pct']:.2f}%")
     return summary
 
 
