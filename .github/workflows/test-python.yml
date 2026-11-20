@@ -19,6 +19,7 @@ jobs:
         project:
           - projects/energy-economics/merit-order-dispatch
           - projects/energy-economics/storage-arbitrage
+          - projects/energy-economics/non-exporting-btm-storage
           - projects/power-systems/two-node-congestion
           - projects/power-systems/three-bus-dc-power-flow
           - projects/power-systems/radial-der-hosting-capacity
@@ -41,6 +42,8 @@ jobs:
         run: |
           if [ -f dispatch.py ]; then
             python dispatch.py
+          elif [ -f btm_storage.py ]; then
+            python btm_storage.py --output-dir /tmp/btm-storage-results
           elif [ -f dc_power_flow.py ]; then
             python dc_power_flow.py
           elif [ -f feeder.py ]; then
