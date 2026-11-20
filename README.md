@@ -51,6 +51,7 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] GitHub Pages deployment and strict documentation build
 - [x] Pennsylvania DER / PJM casebook and preliminary public-data feasibility assessment
 - [x] Non-exporting BTM storage optimization lab and Pennsylvania storage-policy exercise
+- [x] EIA-861 2025 public-data inventory pipeline with source hash, workbook inventory, and schema previews
 - [ ] First independent research paper
 
 This repository is the program's source of truth. Chat discussions are not the academic record. See [repository guide](docs/repository-guide.md).
