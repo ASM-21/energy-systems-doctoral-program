@@ -32,6 +32,16 @@ This is a Commission Chairman's prepared testimony summarizing the order and its
 
 Source: [Prepared Testimony of PUC Chairman Stephen M. DeFrank, March 16, 2026](https://www.palegis.us/house/committees/committee-archives/archive-file?file=2026_0572_0009_TSTMNY.pdf), page 3 and footnote 5.
 
+### Pennsylvania PUC wholesale DER aggregation rulemaking
+
+The Commission's December 18, 2025 Notice of Proposed Rulemaking in Docket L-2023-3044115 was published April 11, 2026. It proposes 52 Pa. Code §§ 57.261–57.266 for DER Aggregation Resources participating in PJM markets. The official IRRC status page lists the regulation as **proposed**, with the comment period closed July 9, 2026, no final-form regulation received, and a final-form due date of July 9, 2028.
+
+The proposed framework is relevant to data feasibility because it contemplates DERA access to Component DER data with operator consent and a Commission-approved format. That is consent-based participant data access, not a public dataset. The NOPR also refers data-exchange protocol questions to the Electronic Data Exchange Working Group. The proposed EDC review process would require electronic submission, completion within 60 days, and detailed reasons for denials. Proposed fees would be tariff-based. These are proposed requirements and must not be described as binding until a final regulation is published.
+
+The NOPR expressly says that Component DER interconnection will be addressed in another proceeding. It therefore must be analyzed separately from PPL Rule 12 and the PPL Second DER Management Plan.
+
+Sources: [PA Bulletin NOPR, Doc. No. 26-527](https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol56/56-15/527.html) and [IRRC Regulation No. 57-346 status](https://www.irrc.state.pa.us/regulations/RegSrchRslts.cfm?ID=3496).
+
 ### Aggregate federal data: EIA Form 861
 
 The EIA-861 annual survey collects responses from U.S. electric utilities and publishes detailed files covering net metering, non-net-metered distributed generation, distribution circuits, service territories, and reliability. The EIA documentation describes net-metered generator counts and capacity by technology, state, sector, and balancing authority, and non-net-metered distributed generation under 1 MW in aggregate. The EIA data page now lists a 2025 final-data ZIP, so the 2025 release is the starting point for extraction as of this verification. The exact release timestamp and any later revision notices should be recorded from EIA metadata when the archive is downloaded.
@@ -69,7 +79,7 @@ Source: [Pennsylvania HB 2429, PN 3230](https://www.palegis.us/legislation/bills
 | DER capacity and counts at aggregate level | EIA-861 publishes net-metered and non-net-metered distributed generation measures with state/sector/balancing-authority dimensions; the final 2024 release is verified | Moderate for descriptive and comparative trends; low for feeder causality | Download relevant EIA-861 schedules, inspect respondent identifiers and definitions, document aggregation level, and avoid ecological inference |
 | Distribution reliability and circuit counts | EIA-861 includes distribution-circuit counts and reported SAIDI/SAIFI measures; detail and coverage vary by schedule | Moderate for system-level context; circuit-level coverage must be checked | Inspect the annual reliability and distribution-system schedules and their reporting definitions |
 | PJM wholesale prices and market outcomes | PJM publishes market data at defined market/geographic levels | Moderate for wholesale context, not distribution feeder attribution | Use PJM Data Miner only for variables with a documented geographic and temporal match |
-| Feeder loading, voltage, protection settings, DERMS telemetry | Not located as public operational datasets | Very low | Treat as unavailable absent explicit public release |
+| Feeder loading, voltage, protection settings, DERMS telemetry | Not located as public operational datasets; proposed Chapter 57 data access is consent-based for DERA participants, not public | Very low | Treat as unavailable absent explicit public release; analyze consent and confidentiality conditions separately |
 | Reliability outcomes | Public utility and regulatory reports may contain system-level metrics | Moderate at aggregate level; circuit granularity needs verification | Search PUC filings and any enacted HB 2429-related reporting requirements |
 
 ## 3. Recommended research design
@@ -81,7 +91,7 @@ Research question: How does Pennsylvania's regulatory framework allocate decisio
 Methods:
 1. Build a docket chronology for P-2024-3049223, including petition, interventions, testimony, settlement or stipulations, December 3, 2025 order, tariff compliance filings, and implementation updates.
 2. Retrieve and code the original Commission order. Record every directive, deadline, reporting requirement, cost-recovery decision, and RFP obligation.
-3. Crosswalk Rule 12, REMSI, the Commission order, the Commission's wholesale DER participation rulemaking (L-2023-3044115), PJM's Order 2222 compliance filings, and applicable FERC orders.
+3. Crosswalk Rule 12, REMSI, the Commission order, the proposed Chapter 57 wholesale DER aggregation rulemaking (L-2023-3044115) and current IRRC status, PJM's Order 2222 compliance filings, and applicable FERC orders.
 4. Separate distribution-system objectives (voltage, thermal limits, protection, reliability) from wholesale-market objectives (aggregation, dispatch, capacity, energy, ancillary services).
 5. Evaluate who bears costs and risks, what performance evidence is required, and how the Commission can assess whether projected benefits materialize.
 
@@ -113,6 +123,8 @@ Use only public documents and datasets. Do not use PPL internal work products, n
 - Any Commission-required DER orchestration plan or reporting under the Second DER Management Plan.
 - Public aggregate interconnection application and outcome statistics.
 - Whether HB 2429 advanced beyond committee referral after the version reviewed here.
+- Final-form status of proposed 52 Pa. Code §§ 57.261–57.266 and the EDEWG's data-exchange work.
+- Any final PUC rule or tariff filing specifying DERA data access, fees, review procedures, or dispatch overrides.
 - Current PJM/FERC compliance status and tariff/manual provisions for the DER Aggregator model.
 
 ## Preliminary conclusion
