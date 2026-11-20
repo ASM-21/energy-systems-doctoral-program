@@ -149,8 +149,8 @@ def solve_feeder(
 
 
 def run_sweep(buses, lines, der_bus, maximum_kw, step_kw, **kwargs):
-    if maximum_kw < 0 or step_kw <= 0:
-        raise ValueError("Sweep maximum must be nonnegative and step must be positive.")
+    if maximum_kw < 0 or step_kw <= 0 or int(step_kw) != step_kw:
+        raise ValueError("Sweep maximum must be nonnegative and step must be a positive whole number.")
     levels = list(range(0, int(maximum_kw) + 1, int(step_kw)))
     if not levels or levels[-1] != maximum_kw:
         levels.append(maximum_kw)
