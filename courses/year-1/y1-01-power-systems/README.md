@@ -63,6 +63,10 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
 
 
+## Applied benchmark assignment
+- [Problem Set 4 — IEEE 13-node OpenDSS benchmark](problem-set-04-ieee13-opendss.md)
+- [Solution guide](problem-set-04-ieee13-opendss-solutions.md)
+
 ## Computational labs
 - [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
 - [Radial feeder DER hosting-capacity screen](../../../projects/power-systems/radial-der-hosting-capacity/README.md)
