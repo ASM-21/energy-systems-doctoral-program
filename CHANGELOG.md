@@ -3,6 +3,7 @@
 ## 2026-11-20 — Year 1 curriculum and research infrastructure expansion
 
 - Added Problem Sets 1 and 2 with worked solution notes to all four Year 1 courses.
+- Added a battery arbitrage optimization lab with intertemporal state-of-charge constraints, efficiency, and degradation-cost scenarios.
 - Added a two-node congestion dispatch lab with nodal-price duals and automated tests.
 - Added a reproducible OLS / HC3 inference lab with deterministic synthetic data, data dictionary, and tests.
 - Expanded CI to test all three computational labs and run smoke tests.
