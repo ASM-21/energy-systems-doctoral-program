@@ -5,6 +5,7 @@ This folder records completed work and evidence. Do not mark an item complete me
 - academic-transcript.md: completed courses, dates, evidence, internal assessment.
 - course-tracker.csv: course status and time accounting.
 - year-1-assessment-tracker.csv: problem sets and computational lab completion evidence.
+- year-1-study-plan.md: weekly allocation and course sequencing.
 - reading-tracker.csv: source-level reading progress.
 - research-log.md: questions, decisions, results, next actions.
 - annual-review-template.md: annual audit and roadmap revision.
