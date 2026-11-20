@@ -18,30 +18,48 @@ They are related but not interchangeable. A DER's physical interconnection and d
 
 ## Primary-source packet
 
-### A. PPL Electric Utilities — current public tariff
+### A. PPL Electric Utilities — current Rule 12 tariff
 
-**Document:** PPL Electric Utilities Corporation, General Tariff, Electric Pa. P.U.C. No. 201, Supplement No. 414, issued March 31, 2026, effective April 10, 2026.  
-**Relevant section:** Rule 12, Distributed Energy Resource (DER) Interconnection Service, pages 14C.1–14C.3.  
-**Current Rule 12 pages:** [PPL Rule 12 PDF, Supplement No. 411](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/rule12.pdf).  
-**Full tariff context:** [PPL General Tariff, Supplement No. 414](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/Apr/master414-posted-2026-4-10.pdf).  
-**Implementation context:** [PPL DER Management Program](https://www.pplelectric.com/site/More/For-Construction/DER-Management) and [REMSI page](https://www.pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/REMSI).
+**Current document:** PPL Electric Utilities Corporation, Supplement No. 2 to Electric Pa. P.U.C. No. 202, Rule 12 — Distributed Energy Resource Interconnection Service. Issued June 30, 2026; effective July 1, 2026.  
+**Official PDF:** [Current Rule 12, Supplement No. 2 to Electric Pa. P.U.C. No. 202](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Rule-12---Distributed-Energy-Resource-Interconnection-Service.pdf).
 
-Initial observations from the public tariff:
-- Rule 12 states that DER Interconnection Service applies to new DER interconnections with the distribution system effective January 3, 2026.
-- The rule defines its applicability for inverter-based DER applications received on or after that date and identifies covered rate schedules.
-- The device provisions reference IEEE 1547-2018 and UL 1741 Supplement B (or current utility certification requirements).
-- The tariff describes a utility DER Management Device and the use of the utility's DERMS to monitor and manage inverter grid-support functions.
+The current tariff states that Rule 12 applies to new DER interconnections effective January 3, 2026 and to inverter-based DER applications received on or after that date, subject to the specified rate schedules. It specifies IEEE 1547-2018 and UL 1741 Supplement B (or current utility certification requirements) for smart inverters and describes utility-owned DER Management Devices and DERMS functions.
 
-These are summaries. Read the exact current tariff language and subsequent supplements before making a compliance claim. The tariff PDF is versioned; do not cite an older cached version as current.
+**Version-control note:** Earlier 2026 PUC No. 201 tariff supplements remain useful for historical chronology, but the current Rule 12 reference located in this review is Supplement No. 2 to PUC No. 202, effective July 1, 2026. Do not label the April 2026 PUC No. 201 tariff as the current Rule 12 document.
 
-### B. PJM — DER Aggregator Participation Model
+### B. PPL public DER Management Program and implementation
+
+- [PPL DER Management Program](https://www.pplelectric.com/site/More/For-Construction/DER-Management)
+- [PPL REMSI page](https://www.pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/REMSI)
+
+PPL describes its DERMS, utility-owned/maintained DER Management Devices, and communication with participating customer smart inverters. PPL's REMSI page states that implementation of its Second DER Management Program began January 5, 2026. Keep that implementation milestone separate from the Rule 12 tariff effective date of January 3, 2026.
+
+### C. Pennsylvania PUC — Second DER Management Plan order
+
+**Docket:** P-2024-3049223.  
+**Order date:** December 3, 2025, as cited in the PUC Chairman's prepared testimony to the House Energy Committee on March 16, 2026.  
+**Official public source located:** [Prepared Testimony of PUC Chairman Stephen M. DeFrank, March 16, 2026](https://www.palegis.us/house/committees/committee-archives/archive-file?file=2026_0572_0009_TSTMNY.pdf), page 3 and footnote 5.
+
+The Chairman's testimony states that the Commission approved PPL's Second DER Management Plan at its November 20, 2025 public meeting, with the order entered December 3, 2025. It reports that the plan is projected to increase hosting capacity by up to 258 MW and that the Commission directed PPL to conduct an RFP for third-party aggregators.
+
+**Evidence qualification:** The 258 MW figure is a projection reported in the Chairman's testimony, not an independently measured ex-post increase. The testimony is not a substitute for the controlling order. Retrieve the original order and docket record from the [PA PUC Document Search](https://www.puc.beta.pa.gov/search/document-search/) before making detailed claims about ordering paragraphs, cost recovery, evaluation requirements, reporting, or RFP terms.
+
+### D. PPL hosting-capacity transparency and Pennsylvania HB 2429
+
+PPL's [public interconnection FAQ](https://pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/Customer-Owned-Generation/frequently-asked-questions) states that it does not currently publish hosting-capacity maps or specific feeder hosting-capacity information. It says that limited site-specific information may be provided during pre-application, including substation name, feeder name and voltage, and line-distance information.
+
+[House Bill 2429, Printer's No. 3230](https://www.palegis.us/legislation/bills/text/PDF/2025/0/HB2429/PN3230) was introduced and referred to the House Energy Committee on April 20, 2026. As introduced, it would require EDC hosting-capacity maps by July 1, 2027, updated every two months, with DER and new-load capacity, queued DER, distribution constraints, feeder-level granularity, planned upgrades, voltage levels, and limiting criteria. The version reviewed shows committee referral, not enactment. Treat this as proposed legislation unless an updated official bill history confirms otherwise.
+
+See the [public-data feasibility assessment](data-feasibility.md) for the dataset inventory, research design, and unresolved evidence gaps.
+
+### E. PJM — DER Aggregator Participation Model
 
 **Document:** PJM, *DER Aggregator Participation Model: Full Model Design*, March 9, 2026.  
 **Official public PDF:** [PJM model design presentation](https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/disrs/2026/20260309/20260309-item-05---updated-der-aggregator-participation-model---full-model-design---informational-only.pdf).
 
-The presentation describes the PJM implementation timeline and the division between wholesale aggregation participation and distribution interconnection. It states that resources participating solely through the DER Aggregator model use the applicable state interconnection process rather than entering the PJM generation interconnection queue. The presentation identifies February 1, 2028 as the full model go-live date and includes interim capacity-market milestones. Treat the presentation as an implementation briefing; verify current tariff/manual language and later stakeholder/FERC actions before relying on dates or requirements.
+The presentation describes the PJM implementation timeline and the division between wholesale aggregation participation and distribution interconnection. It is an informational presentation, not itself a tariff. Verify current tariff/manual language and later stakeholder/FERC actions before relying on dates or requirements.
 
-### C. FERC — Order No. 2222
+### F. FERC — Order No. 2222
 
 - [FERC Order No. 2222 fact sheet](https://www.ferc.gov/media/ferc-order-no-2222-fact-sheet).
 - [FERC Order No. 2222 explainer](https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy).
@@ -49,7 +67,7 @@ The presentation describes the PJM implementation timeline and the division betw
 
 The order establishes a framework for DER aggregations to participate in organized wholesale markets. The fact sheet and explainer are useful orientation materials, but the order and subsequent compliance orders are the controlling sources.
 
-### D. FERC — Order No. 2023
+### G. FERC — Order No. 2023
 
 - [FERC explainer on the generator interconnection final rule](https://ferc.gov/explainer-interconnection-final-rule).
 - [Order No. 2023, Docket RM22-14-000](https://ferc.gov/sites/default/files/2023-07/20230728-3060.PDF).
@@ -61,6 +79,7 @@ Study this rule to understand transmission-provider generator interconnection re
 
 - [Versioned primary-source register](source-register.csv)
 - [Institutional responsibility matrix](responsibility-matrix.csv)
+- [Public-data feasibility assessment](data-feasibility.md)
 
 The responsibility matrix is a research aid, not a legal opinion. Verify each assignment against the current controlling authority before relying on it.
 
@@ -71,6 +90,7 @@ The responsibility matrix is a research aid, not a legal opinion. Verify each as
 3. What public evidence is available to evaluate interconnection process outcomes, operating constraints, and market participation?
 4. What information must be exchanged between utility, aggregator, PJM, and retail regulatory authority?
 5. Which aspects of the process are technically necessary, and which are institutional or economic design choices?
+6. What performance evidence would be required to validate the projected hosting-capacity benefits of active DER management?
 
 ## Required analysis
 
@@ -81,8 +101,9 @@ For each process stage, identify the decision-maker, governing source, data requ
 ### 2. Build a rule crosswalk
 
 Compare:
-- PPL tariff Rule 12;
-- applicable Pennsylvania PUC regulations and orders;
+- PPL current Rule 12 tariff and REMSI;
+- the December 3, 2025 PUC order in P-2024-3049223;
+- applicable Pennsylvania PUC regulations and the wholesale DER participation rulemaking;
 - PJM tariff and manuals for DER aggregations;
 - FERC Order 2222 and relevant compliance orders;
 - IEEE 1547 and applicable certification standards.
@@ -91,7 +112,7 @@ For each provision, identify its legal status, effective date, applicability, an
 
 ### 3. Draw the process map
 
-Show the physical interconnection pathway separately from wholesale market participation. Use explicit handoffs and mark where the two processes interact. Do not represent PJM as the distribution interconnection authority for resources in the PJM DER Aggregator model when the governing sources assign that process to the state/utility pathway.
+Show the physical interconnection pathway separately from wholesale market participation. Use explicit handoffs and mark where the two processes interact.
 
 ### 4. Conduct a data-feasibility review
 
