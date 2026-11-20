@@ -55,6 +55,14 @@ These provisions create a more tractable public-record research path than feeder
 
 Sources: [PPL rate-case settlement, R-2025-3057164](https://www.pplelectric.com/site/-/media/ppl-jss-app/assets/Home/Landing-Pages/Public-Utility-Commission/PDFs/2026/PPL--2025-Rate-Case--Joint-Petition-for-NonUnanimous-Settlement-of-All-Issues-FINAL.pdf); [PPL Q3 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/317187/000092222426000052/ppl-20260930.htm); [PPL Energy Storage Interconnection Policy and Guidance](https://www.pplelectric.com/site/-/media/ppl-jss-app/assets/Home/More/About-Us/Electric-rates-and-rules/Point-of-contact-requirements/PPL-Electric-Energy-Storage-Policy-Rev-0.ashx).
 
+### PPL-specific EIA-861 net-metering series (verified 2015–2025)
+
+The EIA historical archive audit found one PPL utility-level net-metering row in each annual archive from 2015 through 2025. This resolves the initial uncertainty about whether a utility-level PPL series existed historically. The row appears under different worksheet names across years, so the pipeline checks the actual workbook structure and EIA utility ID 14715 rather than relying on a fixed sheet name.
+
+The standard net-metered PV capacity series is 76.686 MW in 2015 (capacity basis not separately reported) and 505.746 MW in 2025 (AC). For a comparable AC-basis trend, use 2016–2025: 92.915 MW to 505.746 MW, +412.831 MW, +444.31%, 20.7149% CAGR. The 2015–2016 difference is excluded because the 2015 AC/DC basis is unknown. The count field is labeled Customers through 2020 and Installations from 2021; preserve that break. Virtual capacity is a combined field through 2022 and split into >=1 MW and <1 MW bands in 2023–2025.
+
+This series supports a PPL utility-level descriptive analysis of reported net-metered PV adoption. It does not establish total PV installed in PPL's territory, all DER adoption, interconnection performance, export energy, feeder hosting capacity, or the causal effect of any PPL program. See the [reproducible PPL trend note](eia861-ppl-net-metering-trend.md) and [pipeline code and instructions](../../data-pipelines/eia861/README.md).
+
 ### Aggregate federal data: EIA Form 861
 
 A reproducible [EIA-861 2025 inventory and PPL extraction pipeline](../../data-pipelines/eia861/README.md) has been run against the official final ZIP. The archive SHA-256 is `f59f6c732bf685fe0a1591b32227f5ce572dc0dfd26bb5caaeed128ac4e3a396`; it contains 20 workbooks and 60 worksheets. PPL Electric Utilities Corp is confirmed as EIA utility ID 14715 in `Frame_2025.xlsx`. The workflow emits a source manifest, workbook/sheet inventory, schema previews, utility-level extraction, and explicit schedule-coverage status.
