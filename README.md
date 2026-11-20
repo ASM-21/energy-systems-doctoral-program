@@ -10,6 +10,8 @@ Build the ability to understand, model, evaluate, and influence energy systems a
 The learner enters with graduate mechanical-engineering preparation, economics exposure, quantitative research experience, and utility-sector exposure. The curriculum therefore emphasizes power-system literacy, electricity-market economics, regulatory analysis, applied econometrics, optimization, and independent research rather than repeating a conventional undergraduate engineering sequence.
 
 ## Program at a glance
+
+**[Open the published academic site](https://asm-21.github.io/energy-systems-doctoral-program/)**
 - Workload: 3–5 hours/week; approximately 150–225 hours/year.
 - Horizon: Four-year initial sequence, followed by open-ended specialization and research.
 - Standard: Graduate/doctoral-level intellectual rigor, adapted for part-time independent study.
@@ -46,7 +48,7 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] Two problem sets and worked solution notes for all four Year 1 courses
 - [x] Six computational labs with automated tests (DC power flow, dispatch, storage arbitrage, congestion, radial DER feeder screening, and OLS)
 - [x] Initial verified course catalog, core reading list, and primary-source casebook
-- [ ] GitHub Pages deployment (site build passes; repository Pages enablement remains a settings dependency)
+- [x] GitHub Pages deployment and strict documentation build
 - [x] Pennsylvania DER / PJM casebook and preliminary public-data feasibility assessment
 - [ ] First independent research paper
 
