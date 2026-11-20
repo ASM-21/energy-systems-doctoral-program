@@ -2,7 +2,7 @@
 
 ## Time budget
 
-The four core courses contain approximately 155 planned hours. At 3 hours/week, that is about 52 weeks; at 5 hours/week, about 31 weeks. Add a 20–30 hour integration project and some buffer for difficult topics. The realistic Year 1 range is approximately 35–62 weeks depending on actual availability and remediation needs.
+The four core courses contain approximately 155 planned hours before optional applied extensions. The radial-feeder problem set and lab add approximately 8 hours to Y1-01. At 3 hours/week, that is about 52 weeks; at 5 hours/week, about 31 weeks. Add a 20–30 hour integration project and some buffer for difficult topics. The realistic Year 1 range is approximately 35–62 weeks for the core sequence, plus roughly 2–3 weeks for the radial-feeder extension depending on actual availability and remediation needs.
 
 Do not compress the work to meet an arbitrary calendar. The plan is designed around durable mastery, not completion speed.
 
@@ -20,7 +20,7 @@ If a problem set or lab needs more time, use the next week's allocation. Do not 
 
 ## Recommended sequence
 
-1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete both problem sets, and run the three-bus DC power-flow lab.
+1. **Y1-01 Power Systems and Electricity Infrastructure** — build the electrical engineering bridge, complete the two core problem sets plus the radial-feeder applied set, and run the three-bus and radial-feeder labs.
 2. **Y1-02 Energy Economics and Market Fundamentals** — complete welfare and externality analysis, merit-order dispatch, and storage arbitrage.
 3. **Y1-03 Electricity Markets, Utility Regulation, and PJM** — study market clearing, congestion, revenue requirements, and the Pennsylvania DER/PJM casebook.
 4. **Y1-04 Applied Quantitative Methods** — complete OLS and robust inference, then panel-data and causal-identification exercises.
