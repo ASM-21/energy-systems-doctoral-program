@@ -17,12 +17,12 @@ def generate_data(n: int = 500, seed: int = 20261120) -> pd.DataFrame:
     floor_area = np.clip(900 + 5.0 * income + rng.normal(0, 300, n), 400, 4500)
     hdd = np.clip(rng.normal(5000, 900, n), 2500, 8000)
     electric_heat = rng.binomial(1, 0.35, n)
-    sigma = 500 + 0.18 * income * 1000
+    sigma = 500 + 25 * income
     noise = rng.normal(0, sigma, n)
     annual_kwh = (
         1800
         + 1.25 * floor_area
-        + 3.0 * income * 1000
+        + 3.0 * income
         + 0.22 * hdd
         + 2800 * electric_heat
         + noise
