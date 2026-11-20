@@ -90,6 +90,7 @@ nav:
       - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
       - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
       - Radial DER hosting-capacity lab: projects/power-systems/radial-der-hosting-capacity/README.md
+      - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
       - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
