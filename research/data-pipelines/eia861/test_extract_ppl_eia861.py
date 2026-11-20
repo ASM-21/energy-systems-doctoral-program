@@ -42,6 +42,35 @@ class ExtractPPLRowsTests(unittest.TestCase):
             coverage = (root / "out" / "ppl_eia861_2025_coverage.csv").read_text()
             self.assertIn("absence is not zero", coverage)
 
+    def test_sheet_without_utility_identity_is_recorded_as_not_applicable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workbooks = root / "workbooks"
+            workbooks.mkdir()
+            workbook = Workbook()
+            sheet = workbook.active
+            sheet.append(["State", "Sector", "Capacity"])
+            sheet.append(["PA", "Residential", 12.5])
+            workbook.save(workbooks / "Aggregate.xlsx")
+            result = extract_ppl_rows(workbooks, root / "out")
+            self.assertEqual(result["sheets_scanned"], 1)
+            self.assertEqual(result["sheets_with_ppl_rows"], 0)
+            coverage = (root / "out" / "ppl_eia861_2025_coverage.csv").read_text()
+            self.assertIn("no utility-number/name header", coverage)
+
+    def test_rejects_unexpected_name_for_ppl_utility_id(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workbooks = root / "workbooks"
+            workbooks.mkdir()
+            workbook = Workbook()
+            sheet = workbook.active
+            sheet.append(["Utility Number", "Utility Name", "Capacity"])
+            sheet.append([14715, "Incorrect Utility Name", 1.0])
+            workbook.save(workbooks / "Bad.xlsx")
+            with self.assertRaises(ValueError):
+                extract_ppl_rows(workbooks, root / "out")
+
 
 if __name__ == "__main__":
     unittest.main()
