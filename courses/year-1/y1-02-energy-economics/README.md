@@ -45,3 +45,6 @@ Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page execu
 ## Problem sets and worked checks
 - [Problem Set 1](problem-set-01.md)
 - [Solution notes](problem-set-01-solutions.md)
+
+- [Problem Set 2](courses/year-1/y1-02-energy-economics/problem-set-02.md)
+- [Problem Set 2 solution notes](courses/year-1/y1-02-energy-economics/problem-set-02-solutions.md)
