@@ -43,14 +43,13 @@ def download_test_case_snapshot(target_root: Path, commit: str) -> Path:
     return target_root
 
 def locate_ieee13(root: Path) -> Path:
-    matches = list(root.rglob("IEEE13Nodeckt.dss"))
-    if not matches:
+    # Follow the canonical Version8 test-case path used in DSS-Python's own example.
+    master_file = root / "Version8" / "Distrib" / "IEEETestCases" / "13Bus" / "IEEE13Nodeckt.dss"
+    if not master_file.is_file():
         raise FileNotFoundError(
-            "IEEE 13-node master file was not found in the pinned electricdss-tst snapshot."
+            f"Canonical IEEE 13-node master file was not found: {master_file}"
         )
-    if len(matches) > 1:
-        raise RuntimeError(f"Expected one IEEE13Nodeckt.dss file; found {len(matches)}.")
-    return matches[0]
+    return master_file
 
 def solve_case(master_file: Path, pv_kw: float, load_multiplier: float, test_case_ref: str) -> dict:
     if pv_kw < 0 or load_multiplier <= 0:
