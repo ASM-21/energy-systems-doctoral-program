@@ -32,6 +32,22 @@ This is a Commission Chairman's prepared testimony summarizing the order and its
 
 Source: [Prepared Testimony of PUC Chairman Stephen M. DeFrank, March 16, 2026](https://www.palegis.us/house/committees/committee-archives/archive-file?file=2026_0572_0009_TSTMNY.pdf), page 3 and footnote 5.
 
+### Aggregate federal data: EIA Form 861
+
+The EIA-861 annual survey collects responses from U.S. electric utilities and publishes detailed files covering net metering, non-net-metered distributed generation, distribution circuits, service territories, and reliability. The EIA documentation describes net-metered generator counts and capacity by technology, state, sector, and balancing authority, and non-net-metered distributed generation under 1 MW in aggregate. The final 2024 annual data release was published October 7, 2025.
+
+These data are valuable for descriptive context and cross-state/sector comparisons. They do not supply the feeder-level engineering inputs or PPL project-level interconnection outcomes needed to estimate hosting capacity or interconnection performance at circuit level.
+
+Sources: [EIA Form EIA-861 detailed data files](https://www.eia.gov/electricity/data/eia861/) and [EIA final 2024 annual electric sales and revenue data announcement](https://www.eia.gov/about/new/?r=400).
+
+### Hosting-capacity methodology and comparative context
+
+DOE's U.S. Atlas of Electric Distribution System Hosting Capacity Maps was updated in July 2025. The DOE page describes the atlas as a directory of public utility maps, not a centrally maintained engineering dataset. DOE also cautions that maps do not answer site-specific interconnection questions. The atlas is useful for comparative research and identifying utilities with public maps, but its coverage is not comprehensive.
+
+DOE's 2025 report on state distribution-system planning requirements describes hosting-capacity analysis as requiring distribution feeder models and validated utility load and asset data before power-flow simulations can be interpreted. This supports the decision not to infer PPL feeder capacity from public aggregate DER totals or from the synthetic radial model.
+
+Sources: [DOE U.S. Atlas of Electric Distribution System Hosting Capacity Maps](https://www.energy.gov/cmei/vehicles/us-atlas-electric-distribution-system-hosting-capacity-maps) and [DOE, State Requirements for Electric Distribution System Planning (January 2025)](https://www.energy.gov/sites/default/files/2025-01/State%20Requirements%20for%20Electric%20Distribution%20System%20Planning%2020250103.pdf).
+
 ### Proposed hosting-capacity-map legislation
 
 Pennsylvania House Bill 2429, Printer's No. 3230, was introduced and referred to the House Energy Committee on April 20, 2026. As introduced, it would require EDC hosting-capacity maps by July 1, 2027, updated every two months, and would specify both DER and new-load hosting-capacity information, queued DER, constraints, feeder-level granularity, planned upgrades, voltage levels, and thermal/anti-islanding/voltage limiting criteria.
@@ -50,7 +66,8 @@ Source: [Pennsylvania HB 2429, PN 3230](https://www.palegis.us/legislation/bills
 | Site-specific locational pre-application facts | PPL identifies a limited set of fields available upon request | Low for broad empirical panel; potentially useful for a consenting project applicant | Record only applicant-authorized, non-confidential facts; do not collect employer/customer records |
 | Application counts, queue age, completion, withdrawal | No comprehensive public PPL dataset established in this review | Unproven | Search docket attachments and annual filings; consider a narrowly scoped public-records request if legally appropriate |
 | Upgrade type and cost | PPL FAQ explains categories and customer payment responsibilities; project-level cost data not established | Low to moderate | Extract public examples from adjudicated dockets only; avoid treating examples as representative |
-| DER capacity by state/utility | Federal EIA reporting is a candidate aggregate source | Moderate for contextual trends, not feeder causality | Inspect EIA-861 files, definitions, revisions, and utility identifiers |
+| DER capacity and counts at aggregate level | EIA-861 publishes net-metered and non-net-metered distributed generation measures with state/sector/balancing-authority dimensions; the final 2024 release is verified | Moderate for descriptive and comparative trends; low for feeder causality | Download relevant EIA-861 schedules, inspect respondent identifiers and definitions, document aggregation level, and avoid ecological inference |
+| Distribution reliability and circuit counts | EIA-861 includes distribution-circuit counts and reported SAIDI/SAIFI measures; detail and coverage vary by schedule | Moderate for system-level context; circuit-level coverage must be checked | Inspect the annual reliability and distribution-system schedules and their reporting definitions |
 | PJM wholesale prices and market outcomes | PJM publishes market data at defined market/geographic levels | Moderate for wholesale context, not distribution feeder attribution | Use PJM Data Miner only for variables with a documented geographic and temporal match |
 | Feeder loading, voltage, protection settings, DERMS telemetry | Not located as public operational datasets | Very low | Treat as unavailable absent explicit public release |
 | Reliability outcomes | Public utility and regulatory reports may contain system-level metrics | Moderate at aggregate level; circuit granularity needs verification | Search PUC filings and any enacted HB 2429-related reporting requirements |
@@ -70,7 +87,7 @@ Methods:
 
 ### Phase B — Quantitative descriptive analysis (conditional)
 
-Proceed only if an auditable public dataset is located. Potential outcomes include annual DER interconnection capacity, application counts, project-size distributions, queue duration, completion/withdrawal rates, upgrade incidence, or program enrollment. Define denominators and censoring rules before calculating rates. Do not combine annual utility-level totals with PJM nodal prices as if they were feeder-level observations.
+Proceed only if an auditable public dataset is located. Potential outcomes include EIA-861 net-metered installation counts/capacity and non-net-metered distributed-generation capacity at the reported aggregation level, plus any separately verified utility-level application counts, project-size distributions, queue duration, completion/withdrawal rates, upgrade incidence, or program enrollment. Define denominators and censoring rules before calculating rates. Do not combine annual utility-level totals with PJM nodal prices as if they were feeder-level observations.
 
 ### Phase C — Engineering model (available as a synthetic methods exercise)
 
