@@ -104,6 +104,32 @@ Study this rule to understand transmission-provider generator interconnection re
 
 The responsibility matrix is a research aid, not a legal opinion. Verify each assignment against the current controlling authority before relying on it.
 
+## Process map
+
+The two workflows below are related but legally and operationally distinct. The wholesale aggregation approval steps reflect the proposed Chapter 57 NOPR and must not be treated as final requirements.
+
+```mermaid
+flowchart TD
+    A[DER owner / developer] --> B[PPL Rule 12 application]
+    B --> C[Distribution screening and study]
+    C --> D{Upgrades required?}
+    D -->|Yes| E[Upgrade scope and cost allocation]
+    D -->|No| F[Interconnection approval]
+    E --> F
+    F --> G[Commissioned component DER]
+    G --> H[DERA participation request]
+    H --> I[EDC component DER review]
+    I --> J{EDC approval?}
+    J -->|No| K[Reasoned denial / revise request]
+    J -->|Yes| L[PJM DERA registration and market qualification]
+    L --> M[Wholesale dispatch and settlement]
+    M --> N[EDC distribution coordination / override if required]
+    G --> O[Operator consent for component DER data]
+    O --> P[EDC data access to DERA under approved format]
+```
+
+**Timing note:** The proposed 60-day review in § 57.264 concerns the EDC's review of a request for Component DER participation as a DERA resource. It is not a substitute for the Rule 12 physical interconnection process or its study timelines.
+
 ## Research questions
 
 1. How do distribution interconnection requirements and wholesale aggregation requirements interact for a DER in Pennsylvania?
