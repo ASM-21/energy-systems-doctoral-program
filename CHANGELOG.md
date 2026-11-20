@@ -10,6 +10,7 @@
 - Extended economic dispatch with carbon pricing and flexible-demand optimization, including cost/emissions decomposition and automated tests.
 - Added a carbon-pricing and demand-response problem set with worked solution notes to Y1-02.
 - Added a non-exporting behind-the-meter storage optimization lab with PV curtailment, grid-import no-export constraint, cyclic state of charge, throughput degradation cost, synthetic time-series inputs, and unit tests.
+- Added a Y1-02 assignment and solution notes that connect the BTM storage model to the Pennsylvania interconnection policy casebook.
 - Expanded continuous integration to test and smoke-run six computational projects.
 - Added a Pennsylvania public-data feasibility memo separating what can be observed from what remains unavailable or requires docket-level retrieval.
 - Updated the Pennsylvania DER casebook with the December 3, 2025 Commission-order milestone and the distinction between a proposed hosting-capacity increase and independently measured feeder headroom.
