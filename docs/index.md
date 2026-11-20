@@ -19,6 +19,8 @@ The objective is to understand energy infrastructure as a coupled technical, eco
 - [Academic standards and assessment](../ACADEMIC_STANDARDS.md)
 - [Year 1 course sequence](../courses/year-1/README.md)
 - [Verified university course references](../library/course-catalog.md)
+- [Core reading list](../library/reading-list.md)
+- [Pennsylvania DER / PJM casebook](../research/casebooks/pa-der-interconnection/README.md)
 - [Research workflow](../resources/research-workflow.md)
 
 ## The six departments
