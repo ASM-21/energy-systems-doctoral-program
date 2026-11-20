@@ -18,7 +18,7 @@ Run 100, 250, 500, 750, and 1,000 kW three-phase PV cases at bus 675. Keep the l
 2. Plot minimum and maximum node voltage against PV rating.
 3. Identify the nodes with the largest voltage increase relative to baseline.
 4. Determine whether losses increase or decrease over the tested range and explain why the relationship need not be monotonic.
-5. Apply a 1.05 pu upper-voltage screening criterion. State the first tested PV size that breaches it, if any. Do not interpolate a precise hosting-capacity value from a coarse sweep.
+5. Apply a 1.05 pu upper-voltage screening criterion, but first inspect the zero-PV baseline. The initial verified CI run has a baseline maximum node voltage of 1.05605 pu, so this threshold is already exceeded before PV is added. Explain why this prevents interpreting the first 1.05 pu crossing as a PV-created hosting-capacity limit. Identify incremental voltage changes and propose a defensible criterion that separates pre-existing baseline conditions from DER-caused changes. Do not interpolate a precise hosting-capacity value from a coarse sweep.
 
 ## Problem 3 — Load sensitivity
 
