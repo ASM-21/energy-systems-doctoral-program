@@ -83,12 +83,14 @@ nav:
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
   - Research:
+      - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
       - Literature review template: research/literature-review-template.md
       - Research protocol template: research/research-protocol-template.md
       - Casebooks: research/casebooks/README.md
       - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
       - Pennsylvania data feasibility memo: research/casebooks/pa-der-interconnection/data-feasibility.md
+      - EIA-861 2025 data pipeline: research/data-pipelines/eia861/README.md
       - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
