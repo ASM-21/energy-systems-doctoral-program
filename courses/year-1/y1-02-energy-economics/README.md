@@ -54,6 +54,10 @@ Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page execu
 - [Problem Set 3 — Carbon pricing and flexible demand](problem-set-03-carbon-demand-response.md)
 - [Solution notes for Problem Set 3](problem-set-03-carbon-demand-response-solutions.md)
 
+## Applied problem set
+- [Problem Set 4 — Non-exporting BTM storage](problem-set-04-non-exporting-btm-storage.md)
+- [Solution notes](problem-set-04-non-exporting-btm-storage-solutions.md)
+
 ## Computational labs
 - [Non-exporting behind-the-meter battery storage](../../../projects/energy-economics/non-exporting-btm-storage/README.md)
 - [Merit-order dispatch, carbon pricing, and flexible demand](../../../projects/energy-economics/merit-order-dispatch/README.md)
