@@ -53,21 +53,21 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
             source = root / "raw.csv"
             fields = ["year", "eia_utility_id", "utility_name", "source_workbook", "source_sheet",
                       "source_row", "archive_sha256", "Photovoltaic__Capacity_MW__Total",
-                      "Photovoltaic__Customers__Total", "Utility_Characteristics__State"]
+                      "Photovoltaic__Customers__Total", "Photovoltaic__Capacity_MW__Type", "Utility_Characteristics__State"]
             with source.open("w", newline="", encoding="utf-8") as handle:
                 writer = csv.DictWriter(handle, fieldnames=fields)
                 writer.writeheader()
                 writer.writerow({"year": 2015, "eia_utility_id": 14715, "utility_name": "PPL Electric Utilities Corp",
                                  "source_workbook": "2015.xlsx", "source_sheet": "States", "source_row": 1,
                                  "archive_sha256": "a", "Photovoltaic__Capacity_MW__Total": 76.686,
-                                 "Photovoltaic__Customers__Total": 3554, "Utility_Characteristics__State": "PA"})
+                                 "Photovoltaic__Customers__Total": 3554, "Photovoltaic__Capacity_MW__Type": "AC", "Utility_Characteristics__State": "PA"})
                 writer.writerow({"year": 2016, "eia_utility_id": 14715, "utility_name": "PPL Electric Utilities Corp",
                                  "source_workbook": "2016.xlsx", "source_sheet": "States", "source_row": 1,
                                  "archive_sha256": "b", "Photovoltaic__Capacity_MW__Total": 92.915,
-                                 "Photovoltaic__Customers__Total": 4496, "Utility_Characteristics__State": "PA"})
+                                 "Photovoltaic__Customers__Total": 4496, "Photovoltaic__Capacity_MW__Type": "AC", "Utility_Characteristics__State": "PA"})
             summary = normalize_file(source, root / "out")
             self.assertEqual(summary["observations"], 2)
-            self.assertAlmostEqual(summary["standard_net_metered_pv_capacity_change_mw"], 16.229)
+            self.assertAlmostEqual(summary["ac_capacity_change_mw"], 16.229)
             with (root / "out" / "ppl_net_metering_harmonized.csv").open(encoding="utf-8") as handle:
                 rows = list(csv.DictReader(handle))
             self.assertEqual(rows[1]["annual_standard_pv_capacity_change_mw"], "16.229")
@@ -87,6 +87,29 @@ class NormalizePPLNetMeteringTests(unittest.TestCase):
                                      "archive_sha256": "a", "Photovoltaic__Capacity_MW__Total": 1})
             with self.assertRaises(ValueError):
                 normalize_file(source, root / "out")
+
+    def test_does_not_calculate_change_across_unknown_to_ac_basis_break(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "raw.csv"
+            fields = ["year", "eia_utility_id", "utility_name", "source_workbook", "source_sheet",
+                      "source_row", "archive_sha256", "Photovoltaic__Capacity_MW__Total",
+                      "Photovoltaic__Capacity_MW__Type"]
+            with source.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields)
+                writer.writeheader()
+                writer.writerow({"year": 2015, "eia_utility_id": 14715, "utility_name": "PPL Electric Utilities Corp",
+                                 "source_workbook": "2015.xlsx", "source_sheet": "States", "source_row": 1,
+                                 "archive_sha256": "a", "Photovoltaic__Capacity_MW__Total": 76.686,
+                                 "Photovoltaic__Capacity_MW__Type": ""})
+                writer.writerow({"year": 2016, "eia_utility_id": 14715, "utility_name": "PPL Electric Utilities Corp",
+                                 "source_workbook": "2016.xlsx", "source_sheet": "States", "source_row": 1,
+                                 "archive_sha256": "b", "Photovoltaic__Capacity_MW__Total": 92.915,
+                                 "Photovoltaic__Capacity_MW__Type": "AC"})
+            normalize_file(source, root / "out")
+            with (root / "out" / "ppl_net_metering_harmonized.csv").open(encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(rows[1]["annual_standard_pv_capacity_change_mw"], "")
 
 
 if __name__ == "__main__":
