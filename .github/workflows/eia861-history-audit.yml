@@ -21,6 +21,9 @@ on:
       - "research/data-pipelines/eia861/test_historical_net_metering.py"
       - "research/data-pipelines/eia861/normalize_ppl_net_metering.py"
       - "research/data-pipelines/eia861/test_normalize_ppl_net_metering.py"
+      - "research/data-pipelines/eia861/test_plot_ppl_net_metering.py"
+      - "research/data-pipelines/eia861/README.md"
+      - "research/data-pipelines/eia861/research-design.md"
       - "research/data-pipelines/eia861/plot_ppl_net_metering.py"
       - ".github/workflows/eia861-history-audit.yml"
 
