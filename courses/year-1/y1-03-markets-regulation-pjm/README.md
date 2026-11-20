@@ -48,5 +48,5 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 - [Problem Set 1](problem-set-01.md)
 - [Solution notes](problem-set-01-solutions.md)
 
-- [Problem Set 2](courses/year-1/y1-03-markets-regulation-pjm/problem-set-02.md)
-- [Problem Set 2 solution notes](courses/year-1/y1-03-markets-regulation-pjm/problem-set-02-solutions.md)
+- [Problem Set 2](problem-set-02.md)
+- [Problem Set 2 solution notes](problem-set-02-solutions.md)
