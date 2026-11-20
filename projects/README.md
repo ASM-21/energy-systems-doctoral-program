@@ -18,7 +18,7 @@ See [PJM/Pennsylvania distribution infrastructure and DER research proposal](pol
 - [Merit-order economic dispatch](energy-economics/merit-order-dispatch/README.md) — single-node least-cost dispatch and marginal price
 - [Three-bus DC power flow](power-systems/three-bus-dc-power-flow/README.md) — per-unit network matrix, slack bus, angles, and branch flows
 - [Two-node congestion and nodal prices](power-systems/two-node-congestion/README.md) — network-constrained dispatch and dual values
-- [Radial feeder DER hosting-capacity screen](power-systems/radial-der-hosting-capacity/README.md) — LinDistFlow-style voltage approximation, branch loading, reverse flow, and PV penetration sweep
+- [Radial feeder DER hosting-capacity screen](power-systems/radial-der-hosting-capacity/README.md) — first-order radial voltage-drop approximation, branch loading, reverse flow, and PV penetration sweep
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
 
 The radial feeder lab is a synthetic screening model. It is not an AC power-flow, protection, or utility interconnection study.
