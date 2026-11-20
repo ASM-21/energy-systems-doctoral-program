@@ -61,3 +61,8 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 
 - [Problem Set 2](problem-set-02.md)
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
+
+
+## Computational lab
+- [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
+
