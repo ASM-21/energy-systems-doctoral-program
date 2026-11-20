@@ -8,7 +8,7 @@ A correct run should compile the IEEE 13-node master file, converge, and export 
 
 ## Problem 2 — PV sweep
 
-The PV element is added as a balanced three-phase resource at bus 675 with 4.16 kV line-to-line rating, unity power factor, and nameplate kVA equal to the specified kW rating. The experiment holds the published test-case loads constant. The first tested rating above 1.05 pu is only a bracket on the voltage-screening threshold for this snapshot and this PV connection. It is not a general hosting-capacity result.
+The PV element is added as a balanced three-phase resource at bus 675 with 4.16 kV line-to-line rating, unity power factor, and nameplate kVA equal to the specified kW rating. The experiment holds the published test-case loads constant. The first verified baseline run has a maximum node voltage of 1.05605 pu, already above 1.05 pu before PV is added. The 500 kW run has a maximum of 1.05608 pu. Thus a 1.05 pu absolute maximum-voltage criterion does not identify a PV-created violation in this operating point. The assignment should report the baseline condition, identify which nodes are responsible using the node-level comparison output, and use a clearly justified incremental or baseline-adjusted criterion if studying PV-caused changes. It must not relabel the pre-existing baseline condition as a PV impact.
 
 Voltage may rise at electrically remote nodes as PV injection offsets downstream real-power demand. Losses can fall initially as upstream current is reduced, then rise as reverse flow increases. The exact pattern depends on the case solution and must be taken from the generated output, not assumed in advance.
 
