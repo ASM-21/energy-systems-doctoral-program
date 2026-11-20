@@ -92,7 +92,8 @@ nav:
       - Casebooks: research/casebooks/README.md
       - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
       - Pennsylvania data feasibility memo: research/casebooks/pa-der-interconnection/data-feasibility.md
-      - EIA-861 2025 data pipeline: research/data-pipelines/eia861/README.md
+      - PPL net-metered PV trend 2015–2025: research/casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md
+      - EIA-861 data pipeline and PPL historical analysis: research/data-pipelines/eia861/README.md
       - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
