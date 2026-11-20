@@ -70,6 +70,11 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 ## Computational labs
 - [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
 - [Radial feeder DER hosting-capacity screen](../../../projects/power-systems/radial-der-hosting-capacity/README.md)
+- [Flexible interconnection and dynamic export envelopes](../../../projects/power-systems/flexible-interconnection/README.md)
+
+## Flexible interconnection assignment
+- [Problem Set 5 — Flexible interconnection and dynamic export envelopes](problem-set-05-flexible-interconnection.md)
+- [Solution notes](problem-set-05-flexible-interconnection-solutions.md)
 
 ## Additional applied problem set
 - [Problem Set 3 — Radial feeder DER integration](problem-set-03-radial-der.md)
