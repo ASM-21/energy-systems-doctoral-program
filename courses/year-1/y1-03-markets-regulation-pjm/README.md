@@ -43,3 +43,7 @@ For every tariff/regulatory claim, record exact document title, docket/manual se
 
 ## Completion evidence
 Institutional map, worked market exercises, regulatory source log, 2,000–3,000 word report, and one-page policy brief.
+
+## Problem sets and worked checks
+- [Problem Set 1](problem-set-01.md)
+- [Solution notes](problem-set-01-solutions.md)
