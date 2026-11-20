@@ -19,3 +19,12 @@ A topic is not complete because a summary exists. Record solved problems, tested
 ## How the program is maintained
 
 The curriculum is intentionally adaptive. New resources and courses are added only when they strengthen a defined competency. The maintainer should prioritize substantive course materials and validated project work over catalog size.
+
+## Local development
+
+Install Python 3.10 or newer. From the repository root:
+
+    make test
+    make docs
+
+The test target installs each lab's declared dependencies, runs its unit tests, and fails on the first unsuccessful project. The docs target stages Markdown and static assets, then builds the MkDocs site in strict mode. If Make is unavailable, see the commands in the individual project README files and run the documentation steps in the Makefile directly.
