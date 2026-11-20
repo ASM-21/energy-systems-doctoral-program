@@ -51,6 +51,14 @@ The script uses EIA's official annual ZIP archives, checks ZIP CRCs, records eac
 
 EIA warns that schedule definitions and coverage change over time. Examples include the 2016 change that renamed the non-net-metered distributed-generation schedule and added sector breakdowns, and the 2020 expansion of Form EIA-861S imputation. See the [official EIA-861 schedule descriptions and historical changes](https://www.eia.gov/electricity/data/eia861/). A valid panel must separately document reporting-form coverage, utility mergers/name changes, units, AC/DC adjustments, imputation, and survey redesigns.
 
+## Verified PPL net-metered PV series (2015–2025)
+
+The 2015–2025 historical extraction workflow completed successfully. It found exactly one PPL utility-level net-metering row in each annual archive. The normalized standard net-metered PV capacity series is 76.686 MW in 2015, rising to 505.746 MW in 2025, an increase of 429.060 MW (559.5%) and a 20.76% compound annual growth rate over ten years. These are EIA-reported utility-level standard net-metered PV capacity values, not feeder hosting capacity or all DER capacity.
+
+The annual PV customer/installations field is reported as `Customers` through 2020 and `Installations` beginning in 2021. The labels may describe similar cumulative measures, but they are retained as a measurement break pending confirmation from year-specific instructions. The capacity type is not separately reported in the 2015 PPL row; 2016–2025 report AC. Virtual PV capacity is not separately identified in the 2015 row, reported as a combined virtual capacity field in 2016–2022, and split into >=1 MW and <1 MW categories in 2023–2025. The standard PV capacity series excludes those virtual capacity categories.
+
+The EIA archive hashes and full source-row provenance are retained in the workflow artifact. The 2015–2025 values are suitable for a descriptive trend analysis after a final source-instruction review. They do not identify the causal effect of PPL's Second DER Management Plan, Rule 12, or any other policy, and they do not measure feeder-level interconnection performance.
+
 ## Research protocol
 
 1. Inspect the utility frame and verify EIA ID 14715, exact respondent name, reporting year, ownership, state, and form type.
