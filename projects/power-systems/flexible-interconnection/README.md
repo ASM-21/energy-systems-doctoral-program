@@ -9,7 +9,7 @@
 
 How much customer-sited PV energy can be utilized under different export arrangements when feeder export headroom varies over the day? Compare a fixed export cap, a pre-agreed scheduled cap, a dynamic operating envelope, and a hypothetical physical upgrade. Four arrangements are compared with a behind-the-meter battery, and a fifth fixed-cap reference is run without a battery.
 
-This lab demonstrates operational flexibility, not an actual PPL tariff or a utility-grade hosting-capacity analysis. All profiles and costs are synthetic.
+This lab follows the terminology in DOE's July 2024 Flexible DER & EV Connections paper: a **dynamic operating envelope** is a time-varying upper/lower import/export bound at a point of interconnection; **flexible interconnection** is a control arrangement that enables a DER to operate within those bounds. This model represents the export-envelope constraint and the customer's optimized response. It does not model the utility/customer control architecture, forecast production, or communication protocol. It is not an actual PPL tariff or a utility-grade hosting-capacity analysis. All profiles and costs are synthetic.
 
 ## Scenarios
 
@@ -68,6 +68,9 @@ These are deterministic outputs of the stated synthetic LP, not measured utility
 
 ## Interpretation
 
+DOE distinguishes customer-controlled approaches (the customer adjusts its DER to a pre-published envelope) from utility-direct-controlled approaches (the utility sends or enforces operational curtailment/derate commands). California's Limited Generation Profiles are an example of pre-defined scheduled export limits; National Grid Massachusetts' Local Power Controller pilot is a customer-controlled approach. The present lab's fixed and scheduled cases are stylized customer-controlled arrangements; the dynamic case assumes an envelope is communicated and followed, but does not simulate either control architecture. See the DOE paper linked below.
+
+
 - A dynamic envelope can be less restrictive than a fixed cap in hours with more feeder headroom and more restrictive when existing feeder export is high. The synthetic profile deliberately includes a large midday PV surplus so that the fixed, scheduled, dynamic, and upgrade cases can exhibit different curtailment outcomes.
 - A scheduled limit is predictable but may not reflect actual feeder conditions in every interval.
 - A firm upgrade increases physical capacity but is not costed in this model.
@@ -79,6 +82,11 @@ These are deterministic outputs of the stated synthetic LP, not measured utility
 This is a single-customer, single-feeder-headroom, balanced, 24-hour linear model. It omits AC power flow, phase imbalance, voltage constraints, line/transformer thermal constraints at individual branches, protection coordination, inverter volt-var/watt behavior, forecast error, communications failure, customer response, market settlement, and upgrade costs. The dynamic envelope is calculated from a synthetic baseline profile, not from a real utility operating system.
 
 A real flexible-interconnection design would need a transparent method for determining and updating export envelopes, measurement/telemetry requirements, fail-safe behavior, curtailment priority, customer notice, compensation, appeal mechanisms, and treatment of forecast and communication errors.
+
+## References
+
+- [U.S. Department of Energy, Flexible DER & EV Connections (July 2024)](https://www.energy.gov/sites/default/files/2024-08/Flexible%20DER%20%20EV%20Connections%20July%202024.pdf). Defines dynamic operating envelopes and flexible connections; discusses California Limited Generation Profiles and National Grid Massachusetts' Local Power Controller pilot.
+- [U.S. Department of Energy, Distributed Resource Utilization](https://www.energy.gov/oe/distributed-resource-utilization). Overview of DER orchestration and distribution grid utilization resources.
 
 ## Extension assignment
 
