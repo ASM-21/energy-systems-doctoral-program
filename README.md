@@ -43,10 +43,10 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] Program architecture and academic standards
 - [x] Initial four-course Year 1 sequence
 - [x] Source, research, and computational standards
-- [ ] Problem sets, solutions, and grading rubrics
-- [ ] Tested computational labs and datasets
-- [ ] Versioned research library
-- [ ] GitHub Pages dashboard
+- [x] Two problem sets and worked solution notes for all four Year 1 courses
+- [x] Three tested computational labs (dispatch, congestion, and OLS)
+- [x] Initial verified course catalog, core reading list, and primary-source casebook
+- [ ] GitHub Pages deployment (site build passes; repository Pages enablement remains a settings dependency)
 - [ ] First independent research paper
 
 This repository is the program's source of truth. Chat discussions are not the academic record. See [repository guide](docs/repository-guide.md).
