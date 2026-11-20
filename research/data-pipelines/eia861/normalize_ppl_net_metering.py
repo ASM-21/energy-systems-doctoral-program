@@ -15,17 +15,15 @@ def parse_number(value: str | None) -> float | None:
 def field_ending(row: dict, suffixes: tuple[str, ...]) -> tuple[str | None, str | None]:
     matches = [(key, row[key]) for key in row
                if any(key == suffix or key.endswith("__" + suffix) for suffix in suffixes)]
-    if not matches:
+    populated = [(key, value) for key, value in matches
+                 if value not in ("", ".", None)]
+    if not populated:
         return None, None
-    if len(matches) > 1:
-        populated = [(key, value) for key, value in matches if value not in ("", ".", None)]
-        if len(populated) == 1:
-            return populated[0]
-        if len(populated) > 1:
-            raise ValueError(f"Ambiguous populated fields for suffixes {suffixes}: {[key for key, _ in populated]}")
-        return None, None
-    return matches[0]
-
+    if len(populated) > 1:
+        raise ValueError(
+            f"Ambiguous populated fields for suffixes {suffixes}: {[key for key, _ in populated]}"
+        )
+    return populated[0]
 
 def normalized_row(row: dict) -> dict:
     year = int(row["year"])
