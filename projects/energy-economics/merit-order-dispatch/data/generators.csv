@@ -1,0 +1,4 @@
+name,marginal_cost_usd_per_mwh,capacity_mw,emissions_tco2_per_mwh
+Unit_A,20,500,0.40
+Unit_B,35,400,0.55
+Unit_C,60,300,0.90
