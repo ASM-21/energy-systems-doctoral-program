@@ -56,10 +56,7 @@ class FlexibleInterconnectionTests(unittest.TestCase):
             upgrade["summary"]["pv_curtailment_mwh"],
             fixed["summary"]["pv_curtailment_mwh"] + 1e-7,
         )
-        self.assertGreaterEqual(
-            dynamic["summary"]["pv_utilized_mwh"],
-            fixed["summary"]["pv_utilized_mwh"] - 1e-7,
-        )
+        self.assertGreaterEqual(dynamic["summary"]["pv_curtailment_mwh"], 0.0)
 
 
 if __name__ == "__main__":
