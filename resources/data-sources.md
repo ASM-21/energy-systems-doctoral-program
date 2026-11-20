@@ -22,3 +22,12 @@ A curated starting inventory, not a guarantee that every dataset is free or unre
 
 ## Dataset intake checklist
 Identify exact dataset/table/series; definition and collection method; unit, frequency, time zone, geography; preliminary/revised/estimated status; vintage; licensing; transformations; reproducibility; and sensitivity/confidentiality. Never commit API keys, credentials, restricted datasets, or proprietary employer information.
+
+## Additional Pennsylvania / PJM primary sources
+
+- PPL Electric Utilities current public tariff, including Rule 12 DER Interconnection Service: [Electric Pa. P.U.C. No. 201, Supplement No. 414](https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/Apr/master414-posted-2026-4-10.pdf). Check issue/effective dates and later supplements.
+- PJM, *DER Aggregator Participation Model: Full Model Design* (March 9, 2026): [official public presentation](https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/disrs/2026/20260309/20260309-item-05---updated-der-aggregator-participation-model---full-model-design---informational-only.pdf). Informational presentation; verify tariff/manual authority.
+- FERC Order No. 2222, Docket RM18-9-000: [original order](https://www.ferc.gov/sites/default/files/2020-09/E-1_0.pdf).
+- FERC Order No. 2023, Docket RM22-14-000: [final rule](https://ferc.gov/sites/default/files/2023-07/20230728-3060.PDF).
+
+See the [Pennsylvania DER/PJM casebook](../research/casebooks/pa-der-interconnection/README.md) and its [source register](../research/casebooks/pa-der-interconnection/source-register.csv) for a versioned source log.
