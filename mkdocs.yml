@@ -55,6 +55,8 @@ nav:
       - Power systems solutions: courses/year-1/y1-01-power-systems/problem-set-01-solutions.md
       - Radial DER problem set: courses/year-1/y1-01-power-systems/problem-set-03-radial-der.md
       - Radial DER solution notes: courses/year-1/y1-01-power-systems/problem-set-03-radial-der-solutions.md
+      - IEEE 13-node benchmark problem set: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss.md
+      - IEEE 13-node benchmark solution guide: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss-solutions.md
       - Energy economics: courses/year-1/y1-02-energy-economics/README.md
       - Energy economics problem set 2: courses/year-1/y1-02-energy-economics/problem-set-02.md
       - Energy economics solution 2: courses/year-1/y1-02-energy-economics/problem-set-02-solutions.md
