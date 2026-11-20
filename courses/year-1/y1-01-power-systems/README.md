@@ -54,3 +54,7 @@ Construct a small feeder model with baseline load, then add PV or storage and a 
 
 ## Completion evidence
 Problem-set solutions, code, data dictionary, figures, technical memo, final report, and self-assessment.
+
+## Problem sets and worked checks
+- [Problem Set 1 — Three-phase fundamentals and per-unit quantities](problem-set-01.md)
+- [Solution notes for Problem Set 1](problem-set-01-solutions.md)
