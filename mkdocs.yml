@@ -97,6 +97,7 @@ nav:
       - PPL net-metered PV trend 2015–2025: research/casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md
       - DER orchestration and BTM battery review: research/casebooks/pa-der-interconnection/der-orchestration-and-btm-storage-review.md
       - EIA-861 data pipeline and PPL historical analysis: research/data-pipelines/eia861/README.md
+      - PPL EIA-861 derived dataset: research/data-pipelines/eia861/data/README.md
       - Dataset intake template: resources/dataset-intake-template.md
       - Data sources: resources/data-sources.md
       - Question bank: research/research-question-bank/README.md
