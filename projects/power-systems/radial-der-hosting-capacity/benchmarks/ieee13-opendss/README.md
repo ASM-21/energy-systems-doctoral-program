@@ -25,12 +25,28 @@ From this directory:
     python run_benchmark.py --pv-kw 0 --output-dir outputs/baseline
     python run_benchmark.py --pv-kw 500 --output-dir outputs/pv-500kw
     python run_benchmark.py --pv-kw 1000 --output-dir outputs/pv-1000kw
+python compare_scenarios.py --baseline-dir outputs/baseline --scenario-dir outputs/pv-500kw --output-dir outputs/comparison
 
-The runner downloads the public test-case snapshot through the helper included with DSS-Python. It then compiles the IEEE 13-node circuit, solves a snapshot power flow, adds a balanced three-phase PVSystem at bus 675 for nonzero PV scenarios, solves again, and writes:
+The runner downloads the public test-case snapshot through the helper included with DSS-Python. The comparison script aligns node labels, checks that engine/source/load settings match, and writes a node-by-node voltage-delta CSV plus a machine-readable comparison summary. It then compiles the IEEE 13-node circuit, solves a snapshot power flow, adds a balanced three-phase PVSystem at bus 675 for nonzero PV scenarios, solves again, and writes:
 - `bus_voltages.csv`: node-level per-unit voltage magnitudes;
 - `summary.json`: convergence, engine version, voltage extrema, circuit losses, and scenario parameters.
 
 Use a fresh output directory for each run. Do not compare runs with different engine versions or different source snapshots without recording that difference.
+
+## Verified CI baseline and 500 kW scenario
+
+The initial GitHub Actions run completed successfully on 2026-11-20 using DSS-Python 0.15.4 and DSS C-API 0.14.3 (OpenDSS SVN 3723). Both cases converged:
+
+| Metric | Baseline, 0 kW PV | 500 kW PV at bus 675 |
+|---|---:|---:|
+| Solver iterations | 2 | 4 |
+| Minimum node voltage | 0.96084 pu | 0.96788 pu |
+| Maximum node voltage | 1.05605 pu | 1.05608 pu |
+| Real circuit losses | 112.392 kW | 86.471 kW |
+
+For this particular snapshot, 500 kW PV increased the minimum node voltage and reduced real losses. The maximum node voltage was already above a simple 1.05 pu screen in the zero-PV baseline and changed only slightly in the 500 kW case. Therefore, 1.05 pu cannot be interpreted as a PV-created violation threshold here. The maximum-voltage condition requires separate investigation of the benchmark's base controls, regulator settings, and node-level voltage profile before any hosting-capacity conclusion.
+
+These are reproducible outputs from the first successful workflow run, not generalized feeder performance claims. [Workflow run and downloadable artifact](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44831385326).
 
 ## Interpretation
 
