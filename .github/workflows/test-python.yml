@@ -45,7 +45,7 @@ jobs:
             python dc_power_flow.py
           elif [ -f feeder.py ]; then
             python feeder.py --output-dir /tmp/radial-feeder-results
-            python -m py_compile benchmarks/ieee13-opendss/run_benchmark.py benchmarks/ieee13-opendss/compare_scenarios.py
+            python -m py_compile benchmarks/ieee13-opendss/run_benchmark.py benchmarks/ieee13-opendss/compare_scenarios.py benchmarks/ieee13-opendss/test_compare_scenarios.py
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
