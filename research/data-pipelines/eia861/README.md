@@ -34,7 +34,7 @@ The PPL row is absent from the Non_Net_Metering_Distributed and Demand_Response 
 
 Other utility-level measures include 1,292 distribution circuits (1,292 reported with voltage optimization), 1,504,018 AMI meters, summer/winter peak demand of 7,366/7,840 MW, and reliability values of SAIDI 198.1 minutes and SAIFI 0.974 with major-event days (SAIDI 115.6 minutes and SAIFI 0.765 without major-event days). Keep each definition, reporting basis, and unit attached to the number.
 
-**Research implication:** A PPL utility-level descriptive panel is feasible for selected measures, including net-metered PV adoption, reliability, circuit counts, AMI, operational data, and sales. EIA-861 still does not provide feeder-level hosting capacity, interconnection queue outcomes, project-level upgrade costs, or realized DER curtailment. Do not infer those outcomes from aggregate utility measures.
+**Research implication:** A PPL utility-level cross-section is available for several 2025 measures. The historical 2015–2025 panel is currently established for net-metered PV capacity/counts and virtual PV capacity; historical comparability for reliability, circuit counts, AMI, operational data, and sales must be audited separately. EIA-861 still does not provide feeder-level hosting capacity, interconnection queue outcomes, project-level upgrade costs, or realized DER curtailment. Do not infer those outcomes from aggregate utility measures.
 
 [First inventory workflow and artifact](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44832915360).
 
