@@ -44,6 +44,14 @@ class PennsylvaniaPanelAuditTests(unittest.TestCase):
         self.assertTrue(ppl["name_changes_or_variants"])
         self.assertEqual(len(ppl["names_observed"]), 2)
 
+    def test_retains_utility_id_when_name_is_blank(self):
+        rows = [{"year": "2024", "eia_utility_id": "55555",
+                 "utility_name": "", "state": "PA"}]
+        result = audit_panel(rows, 2024, 2024)
+        self.assertEqual(result["utility_id_universe"], ["55555"])
+        self.assertEqual(result["identity_history"][0]["years_observed"], [2024])
+        self.assertEqual(result["identity_history"][0]["names_observed"], [])
+
     def test_flags_out_of_range_and_invalid_identity_rows(self):
         rows = self.rows + [
             {"year": "2025", "eia_utility_id": "1", "state": "PA"},
