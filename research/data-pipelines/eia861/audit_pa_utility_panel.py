@@ -44,8 +44,9 @@ def audit_panel(rows: list[dict[str, str]], start_year: int, end_year: int,
         year_ids[year].add(utility_id)
         duplicate_counts[(year, utility_id)] += 1
         name = str(row.get("utility_name", "")).strip()
+        names_for_year = id_names[utility_id][year]
         if name:
-            id_names[utility_id][year].add(name)
+            names_for_year.add(name)
         row_count_by_year[year] += 1
         fields_by_year[year].update(key for key, value in row.items()
                                     if value not in (None, ""))
