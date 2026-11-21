@@ -29,7 +29,7 @@ This is a successful coverage and identity audit, not yet an analytically compar
 | 2025 | 18 | 18 |
 | **Total** | **33 unique IDs** | **249** |
 
-The 2019 peak and subsequent coverage decline are reasons to investigate reporting coverage and respondent-frame changes. They are not evidence that utilities entered or exited net-metering activity. Missing utility-years are not zeros.
+The 2019 peak includes seven short-form respondents; the 2020–2025 rows are all full-form. The subsequent decline also includes fewer full-form respondents, so the coverage change needs more than one explanation. It is not evidence that utilities entered or exited net-metering activity. Missing utility-years are not zeros.
 
 ## Extraction controls and exclusions
 
@@ -41,6 +41,14 @@ The corrected extractor uses utility-level respondent sheets and excludes third-
 - **0 invalid rows** were flagged by the audit.
 
 These exclusions are explicit and reproducible. They correct a prior extraction that had inadvertently treated TPO schedules and adjustment rows as ordinary EDC utility respondents.
+
+## Respondent-frame linkage (2016–2025)
+
+The annual respondent-frame linkage was executed successfully for every year from 2016 through 2025. All **225** Pennsylvania utility-year IDs matched exactly one record in their corresponding annual frame: **zero unmatched IDs and zero duplicate frame IDs**. Every matched record had the net-metering schedule flag set to `X`.
+
+The frame audit adds a useful explanation for the coverage pattern. The 2019 panel contains 32 respondents, of which **7 were EIA-861S short-form respondents** and 25 were full-form respondents. Every respondent in the 2020–2025 panel is full-form: 21 per year in 2020–2023 and 18 per year in 2024–2025. Thus, the 2019 peak is not a homogeneous full-form panel, and the 2020 drop partly coincides with the disappearance of those seven short-form respondents. Four fewer full-form IDs also appear in 2020 than in 2019, so short-form status alone does not explain the full coverage change. EIA's short-form imputation note beginning in 2020 should be read alongside this actual frame result: no Pennsylvania net-metering respondents in this extract are marked short-form from 2020 onward.
+
+The identity history is also clear in the frame: PPL ID **14715** is present throughout 2016–2025; Pennsylvania Electric Co ID **14711** is present through 2023; FirstEnergy Pennsylvania Electric Co ID **66101** appears in 2024–2025. See the corporate-consolidation explanation below.
 
 ## Identifier continuity and respondent-name variants
 
@@ -58,8 +66,8 @@ Other discontinuities require review. EIA ID **14711** (Pennsylvania Electric Co
 The CSV is a union of raw columns across annual workbooks. Different years have different worksheet names, header structures, and fields. A field present in one year's schema may be absent in another; blank values must not be converted to zero. The extraction script preserves raw source fields and source-row metadata, but does not yet produce a harmonized variable dictionary.
 
 Before using any outcome across utilities or years, inspect:
-1. Annual respondent frames and EIA utility-ID continuity.
-2. Form type (full EIA-861 versus EIA-861S/short form) and reporting obligations.
+1. Annual respondent frames and EIA utility-ID continuity. The 2016–2025 linkage has no unmatched/duplicate IDs.
+2. Form type (full EIA-861 versus EIA-861S/short form) and reporting obligations. The 2019 panel includes seven short-form respondents; none of the 2020–2025 PA net-metering rows are short-form.
 3. Service-territory, ownership, and respondent changes.
 4. Capacity basis (AC/DC/unspecified), technology scope, and treatment of virtual net metering.
 5. Customer versus installation count definitions and schedule redesigns.
