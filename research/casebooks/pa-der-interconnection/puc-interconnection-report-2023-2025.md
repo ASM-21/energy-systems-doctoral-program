@@ -3,7 +3,7 @@
 **Primary source:** Pennsylvania Public Utility Commission, *Net-Metering and Interconnection Report 2023–2025*, 30 pages.  
 **Official PDF:** https://www.puc.pa.gov/media/3770/net-metering-interconnection-report-2023-2025_final.pdf  
 **Accessed:** 2026-11-21  
-**Data file:** [ppl_interconnection_2023_2025.csv](ppl_interconnection_2023_2025.csv)
+**Data files:** [PPL 2023–2025 detailed metrics](ppl_interconnection_2023_2025.csv); [all-EDC request-count panel](pa_edc_interconnection_2023_2025.csv)
 
 ## Why this source changes the research design
 
@@ -35,6 +35,31 @@ The 2025 Level 2 total is 2,425, comprising 2,290 requests below 500 kW and 135 
 Between the 2023 and 2025 reporting years, the reported PPL customer-generator count increased by approximately 46.4%, and total interconnected nameplate capacity increased by approximately 53.8%. Total annual requests declined by approximately 9.6% over the same interval. These are descriptive changes in reported counts and capacity, not a causal estimate of any tariff, program, or utility intervention.
 
 The 2025 table reports 592 PPL requests pending EDC action, compared with zero in the 2023 and 2024 tables. It also reports 852 customer cancellations in 2025, compared with 60 in 2024 and 5 in 2023. These are material signals for follow-up, but the report does not provide application-level cohort histories or cancellation reasons. Do not interpret the year-to-year status movement as a measured change in utility processing performance without resolving the report's status definitions and cohort accounting.
+
+## Pennsylvania EDC peer comparison
+
+The structured extract now covers all 11 EDC service territories for 2023–2025, not only PPL. Each EDC's review-level request counts reconcile to its reported total, and the 11 EDC totals reconcile to the statewide totals in the PUC report.
+
+| EDC service territory | 2023 requests | 2024 requests | 2025 requests |
+|---|---:|---:|---:|
+| Citizens | 17 | 15 | 17 |
+| Duquesne Light | 2,325 | 1,955 | 2,520 |
+| Met-Ed | 2,630 | 2,742 | 3,658 |
+| PECO | 4,527 | 4,071 | 3,776 |
+| Penelec | 561 | 772 | 1,226 |
+| Penn Power | 407 | 421 | 583 |
+| Pike | 12 | 9 | 6 |
+| PPL | 7,567 | 7,519 | 6,844 |
+| UGI | 82 | 82 | 183 |
+| Wellsboro | 5 | 13 | 13 |
+| West Penn | 1,069 | 983 | 1,376 |
+| **Statewide total** | **19,202** | **18,582** | **20,202** |
+
+PPL ranked first in total request volume in all three reporting years. Its share of statewide requests was 39.41% in 2023, 40.46% in 2024, and 33.88% in 2025. PPL remained the largest EDC by request volume even as its annual count fell by 9.55% from 2023 to 2025.
+
+In 2025, PPL accounted for 135 of the 196 Level 2 requests at or above 500 kW (68.88%) and 411 of the 954 Level 3 requests at or above 500 kW (43.08%). These are request counts, not unique-project counts, approvals, completed installations, or capacity totals. The 500 kW threshold split is only available in the 2025 tables.
+
+The complete 33-row, 11-EDC dataset is [pa_edc_interconnection_2023_2025.csv](pa_edc_interconnection_2023_2025.csv). The reproducible peer audit is analyze_pa_edc_interconnection.py, with unit tests in test_analyze_pa_edc_interconnection.py. It validates each EDC's review-level count sum, reconciles statewide totals to the PUC's reported totals, and computes PPL's rank/share without estimating causal effects.
 
 ## Review-level definitions
 
