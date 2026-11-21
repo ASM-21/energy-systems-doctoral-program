@@ -182,6 +182,8 @@ This report should be the primary public quantitative source for the interconnec
 | Approved | 5,175 | 5,568 | 5,043 |
 | Customer cancellations | 5 | 60 | 852 |
 
+The 2025 PPL status categories sum to 6,487, which is 357 fewer than the 6,844 submitted requests. The reported `Completed` value also includes the 592 pending-EDC cases, unlike the 2023–2024 arithmetic. This is an unresolved source-table accounting discrepancy; do not calculate a completion rate or infer a backlog transition until the PUC clarifies the definitions and missing 357 requests.
+
 The 2025 request count is split at 500 kW for Levels 2–4. PPL's Level 2 total consists of 2,290 requests below 500 kW and 135 at or above 500 kW. Its Level 3 total consists of 411 requests at or above 500 kW and none below 500 kW. The 2025 mean-time table is also split at 500 kW. Preserve these fields separately; do not compare them directly with the unsplit 2023–2024 tables.
 
 ### Important measurement gates
