@@ -5,7 +5,9 @@
 - Validated the corrected EIA-861 Pennsylvania extraction: 249 utility-year rows, 33 EIA IDs, zero duplicate year/ID keys, zero invalid rows, and 17 IDs observed in all 11 years; TPO worksheets and adjustment rows are explicitly excluded and logged.
 - Added annual EIA respondent-frame linkage for 2016–2025 to capture short-form status, ownership, and net-metering schedule participation, with unmatched/duplicate IDs retained as audit findings.
 - Resolved the major FirstEnergy EIA respondent discontinuity against its 2023 Form 10-K: Pennsylvania operating companies consolidated into FE PA effective 2024-01-01. Documented why EIA respondent IDs and legacy PUC service-territory series must not be treated as a one-to-one panel.
-- Added the Pennsylvania PUC 2023–2025 Net-Metering and Interconnection Report as the primary public interconnection-outcome source, including a PPL 2023–2025 structured extract, review-level metrics, mean-time caveats, status-table accounting caveat, and source register entries.
+- Added the Pennsylvania PUC 2023–2025 Net-Metering and Interconnection Report as the primary public interconnection-outcome source, including structured request counts for all 11 EDC service territories and detailed PPL metrics.
+- Added reproducible peer-ranking and PPL descriptive scripts with unit tests; all EDC review-level counts reconcile to published statewide totals and PPL ranks first in request volume in all three reporting years.
+- Flagged the PPL 2025 status-table discrepancy: status categories are 357 below submitted requests, and the reported Completed field includes pending-EDC cases. CI tests ensure this issue is exposed rather than silently normalized.
 - Revised the public-data research design: PUC EDC service territories are the preferred unit for interconnection-process analysis; EIA-861 is complementary for cumulative utility-level adoption and other indicators.
 
 ## 2026-11-21 — EIA-861 schedule population correction
