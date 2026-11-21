@@ -27,7 +27,7 @@ Explain roles of FERC, state commissions, RTOs/ISOs, NERC, utilities, and market
 
 ## Primary sources
 - FERC, *Wholesale Electricity Markets: Overview and Guide*: [official guide](https://www.ferc.gov/wholesale-electricity-markets-overview-and-guide).
-- PJM manuals and tariffs: [manuals](https://www.pjm.com/library/manuals); PJM data: [Data Miner](https://dataminer2.pjm.com/).
+- PJM manuals and tariffs: [manuals](https://www.pjm.com/library/manuals); PJM data: [Data Miner](https://dataminer2.pjm.com/). For capacity/resource adequacy, distinguish Manual 18 Rev. 63 (effective 2026-09-24), Manual 20A Rev. 3 (effective 2026-06-24), and Manual 21B Rev. 06 (effective 2026-11-18). Manuals 20 and 21A are retired effective 2025-06-01. The course requires version-specific citations and archived-version comparison where relevant.
 - PJM market-monitor reports: [Monitoring Analytics](https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/).
 - FERC dockets: [eLibrary](https://elibrary.ferc.gov/).
 - Pennsylvania Public Utility Commission: [PUC](https://www.puc.pa.gov/).
