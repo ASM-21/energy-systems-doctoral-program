@@ -42,6 +42,8 @@ Formula: `411 / 6,844 × 100 = 6.00%`.
 
 The PUC did not publish the 2023–2024 Level 2–4 request counts using the same 500 kW split. Do not infer or backfill the missing categories from the 2025 distribution. The report also records requests moved between levels; review level can change after screening or applicant changes, so it is not necessarily an immutable project attribute.
 
+There is a separate Level 3 eligibility conflict. The report's overview describes Level 3 as up to 5 MW, while its later review-time section describes non-inverter-based systems up to 2 MW. The current codified text also differs: 52 Pa. Code § 75.34(3) says 2 MW or less, while § 75.39(a)(1) says 5 MW or less (with subsections (2)–(3) using less than 5 MW). A rigorous answer identifies the conflict and cites the controlling provisions; it does not silently choose one threshold. The PUC's reported review-level counts can still be analyzed descriptively as published, but the categories should not be treated as a definitive legal classification of project eligibility.
+
 ## Part C — Stocks, flows, and approval times
 
 For customer-generators:
