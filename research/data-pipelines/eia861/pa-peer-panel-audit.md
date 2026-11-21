@@ -2,8 +2,8 @@
 
 **Audit window:** 2015–2025  
 **Source:** Official annual EIA-861 detailed-data ZIP archives  
-**Workflow run:** [Corrected historical coverage and extraction](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44915910602)  
-**Workflow commit:** `2a64ca6f855fd4e1f3f0182ec56fe6fe780290b6`  
+**Workflow run:** [Corrected historical coverage and extraction](https://github.com/ASM-21/energy-systems-doctoral-program/actions/runs/44927409077)  
+**Workflow commit:** `7aac4119095bdc58be123ee7482a6ba04bac862e`  
 **Status:** Coverage extraction validated; cross-utility variable harmonization not performed.
 
 ## Executive result
@@ -92,12 +92,14 @@ A stable ID is not proof of a stable service territory or stable variable defini
 
 ## Reproduction
 
-The workflow runs the tests, downloads and hashes official annual archives, extracts Pennsylvania utility rows, writes source manifests and schema inventories, audits coverage and identity continuity, and uploads the resulting files as a workflow artifact. The artifact for the run linked above contains the raw extract, annual coverage table, audit JSON, identity history, schema inventory, and the separate PPL harmonized series.
+The workflow runs the tests, downloads and hashes official annual archives, extracts Pennsylvania utility rows, writes source manifests and schema inventories, audits coverage and identity continuity, and uploads the resulting files as a workflow artifact. The artifact for the run linked above contains the raw extract, annual coverage table, audit JSON, identity history, the 2016–2025 respondent-frame linkage audit, schema inventory, and the separate PPL harmonized series.
 
 Primary script paths:
 - `extract_pa_utility_net_metering.py`
 - `audit_pa_utility_panel.py`
+- `extract_pa_eia861_frame.py`
 - `test_extract_pa_utility_net_metering.py`
+- `test_extract_pa_eia861_frame.py`
 - `test_audit_pa_utility_panel.py`
 
 The panel audit is intentionally diagnostic. It must not be mistaken for a panel-data preparation or estimation routine.
