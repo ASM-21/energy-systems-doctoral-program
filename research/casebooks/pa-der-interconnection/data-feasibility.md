@@ -157,3 +157,51 @@ Use only public documents and datasets. Do not use PPL internal work products, n
 ## Preliminary conclusion
 
 A publishable policy/institutional paper is feasible with the public record, subject to retrieval of the controlling PUC order and associated filings. A rigorous feeder-level econometric paper is not yet feasible on the evidence located. The appropriate response is to close the data gap transparently, not manufacture a panel from incompatible public aggregates.
+
+## 9. Higher-value public interconnection outcome data: PUC 2023–2025 report
+
+A primary PUC report materially improves the data position. The [Pennsylvania PUC Net-Metering and Interconnection Report 2023–2025](https://www.puc.pa.gov/media/3770/net-metering-interconnection-report-2023-2025_final.pdf) contains EDC service-territory-level counts of customer-generators, interconnected nameplate capacity, annual interconnection requests by review level, mean approval times, request status, and review-level movements. Reporting years run June 1 through May 31. Detailed tables cover 2023–2025, while trend figures extend requests and capacity back to 2016.
+
+This report should be the primary public quantitative source for the interconnection-process study. EIA-861 remains complementary: it provides utility-level cumulative net-metering and other utility indicators but does not directly measure interconnection requests, approvals, status, or review times.
+
+### PPL indicators reported by the PUC
+
+| Measure | 2023 | 2024 | 2025 |
+|---|---:|---:|---:|
+| Customer-generators | 19,685 | 25,252 | 28,819 |
+| Solar customer-generators | 19,535 | 25,100 | 28,654 |
+| Total interconnected nameplate capacity (kW) | 310,199 | 394,276 | 477,019 |
+| Solar capacity (kW) | 270,641 | 351,718 | 439,371 |
+| Total interconnection requests | 7,567 | 7,519 | 6,844 |
+| Level 1 requests | 4,698 | 4,732 | 4,008 |
+| Level 2 requests | 2,854 | 2,779 | 2,425 |
+| Level 3 requests | 15 | 8 | 411 |
+| Level 4 requests | 0 | 0 | 0 |
+| Pending EDC action | 0 | 0 | 592 |
+| Pending customer action | 2,385 | 1,891 | 0 |
+| Approved | 5,175 | 5,568 | 5,043 |
+| Customer cancellations | 5 | 60 | 852 |
+
+The 2025 request count is split at 500 kW for Levels 2–4. PPL's Level 2 total consists of 2,290 requests below 500 kW and 135 at or above 500 kW. Its Level 3 total consists of 411 requests at or above 500 kW and none below 500 kW. The 2025 mean-time table is also split at 500 kW. Preserve these fields separately; do not compare them directly with the unsplit 2023–2024 tables.
+
+### Important measurement gates
+
+- The PUC counts requests received during the reporting year, while mean approval time describes approvals completed during the reporting year. They are not necessarily the same application cohort.
+- Mean-time zeroes may represent no completed cases or non-applicable cells, not literal zero-day reviews.
+- Requests can move between review levels; the PUC provides separate tables on such movements.
+- The PUC status table's 2025 PPL "Completed" value (6,487) includes 592 requests listed as pending EDC action, unlike the 2023 and 2024 arithmetic. Do not compute completion rates until the PUC clarifies the status definition and accounting.
+- The report does not contain application-level records, feeder locations, study results, upgrade costs, or applicant characteristics. It cannot support feeder-level capacity analysis or causal attribution by itself.
+
+### Corporate-identity reconciliation
+
+FirstEnergy's 2023 Form 10-K states that the Pennsylvania operating companies were consolidated into FE PA effective January 1, 2024. The EIA 2025 respondent frame lists FirstEnergy Pennsylvania Electric Co (EIA ID 66101), whereas earlier EIA extracts include separate legacy utility IDs such as Pennsylvania Electric Co (14711). The PUC report continues to report the former territories/rate districts separately as Met-Ed, Penelec, Penn Power, and West Penn Power.
+
+This means the EIA utility-ID panel and the PUC EDC service-territory panel have different units of observation. A single EIA respondent may represent several PUC service territories after consolidation. Do not stitch EIA IDs or compare these two panels without a source-backed, time-varying crosswalk.
+
+### Reproducible artifacts
+
+- [PUC report analysis, definitions, caveats, and research questions](puc-interconnection-report-2023-2025.md)
+- [Structured PPL 2023–2025 data extract](ppl_interconnection_2023_2025.csv)
+- [Versioned source register](source-register.csv)
+
+**Revised research recommendation:** Build the primary descriptive panel from PUC EDC territory × reporting year × review level. Use EIA-861 as a secondary utility-level dataset for cumulative DER adoption and selected utility characteristics. A causal design remains premature until application cohorts, denominators, policy timing, and stable service-territory definitions are established.
