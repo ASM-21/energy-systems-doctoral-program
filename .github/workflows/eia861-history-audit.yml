@@ -19,6 +19,8 @@ on:
       - "research/data-pipelines/eia861/test_inventory_eia861.py"
       - "research/data-pipelines/eia861/extract_historical_net_metering.py"
       - "research/data-pipelines/eia861/extract_pa_utility_net_metering.py"
+      - "research/data-pipelines/eia861/audit_pa_utility_panel.py"
+      - "research/data-pipelines/eia861/test_audit_pa_utility_panel.py"
       - "research/data-pipelines/eia861/test_extract_pa_utility_net_metering.py"
       - "research/data-pipelines/eia861/test_historical_net_metering.py"
       - "research/data-pipelines/eia861/normalize_ppl_net_metering.py"
@@ -67,6 +69,14 @@ jobs:
             --end-year "${{ inputs.end_year || '2025' }}" \
             --cache-dir data/historical-archives \
             --output-dir /tmp/eia861-pa-utility-panel
+      - name: Audit Pennsylvania utility panel coverage and identifier continuity
+        run: |
+          python research/data-pipelines/eia861/audit_pa_utility_panel.py \
+            --input-csv /tmp/eia861-pa-utility-panel/pa_net_metering_utility_rows.csv \
+            --start-year "${{ inputs.start_year || '2015' }}" \
+            --end-year "${{ inputs.end_year || '2025' }}" \
+            --state PA \
+            --output-dir /tmp/eia861-pa-utility-panel/audit
       - name: Harmonize PPL net-metering series
         run: |
           python research/data-pipelines/eia861/normalize_ppl_net_metering.py \
