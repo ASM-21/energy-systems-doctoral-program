@@ -41,6 +41,8 @@ The 2025 report splits Levels 2–4 at 500 kW. For PPL, calculate:
 
 Explain why the 2025 size-band split cannot be backfilled into the 2023–2024 tables without source-level data. Also explain why a request that moves between review levels should not be treated as a fixed project characteristic.
 
+4. Compare the PUC report's two descriptions of Level 3 eligibility with 52 Pa. Code §§ 75.34(3) and 75.39(a). Identify the capacity-threshold inconsistency and explain why the table's review-level labels do not resolve it. Cite the exact statutory subsections.
+
 ## Part C — Interpret stocks, flows, and approval times
 
 For PPL, calculate the 2023–2025 percentage change in:
