@@ -56,3 +56,17 @@ jobs:
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
+
+  test-casebook-analyses:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test Pennsylvania PUC interconnection analysis
+        working-directory: research/casebooks/pa-der-interconnection
+        run: python -m unittest discover -s . -p "test_analyze_puc_interconnection.py" -v
+      - name: Run descriptive data-quality audit
+        working-directory: research/casebooks/pa-der-interconnection
+        run: python analyze_puc_interconnection.py --input-csv ppl_interconnection_2023_2025.csv --output-json /tmp/ppl_interconnection_summary.json
