@@ -66,7 +66,10 @@ jobs:
           python-version: "3.12"
       - name: Test Pennsylvania PUC interconnection analysis
         working-directory: research/casebooks/pa-der-interconnection
-        run: python -m unittest discover -s . -p "test_analyze_puc_interconnection.py" -v
-      - name: Run descriptive data-quality audit
+        run: python -m unittest discover -s . -p "test_*.py" -v
+      - name: Run PPL descriptive data-quality audit
         working-directory: research/casebooks/pa-der-interconnection
         run: python analyze_puc_interconnection.py --input-csv ppl_interconnection_2023_2025.csv --output-json /tmp/ppl_interconnection_summary.json
+      - name: Run all-EDC peer comparison
+        working-directory: research/casebooks/pa-der-interconnection
+        run: python analyze_pa_edc_interconnection.py --input-csv pa_edc_interconnection_2023_2025.csv --output-json /tmp/pa_edc_peer_summary.json
