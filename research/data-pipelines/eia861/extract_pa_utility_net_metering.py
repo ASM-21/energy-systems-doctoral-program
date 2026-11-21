@@ -29,9 +29,15 @@ def extract_state_workbook(data: bytes, year: int, workbook_name: str,
                            archive_sha256: str, state: str = "PA") -> tuple[list[dict], list[dict]]:
     from openpyxl import load_workbook
     workbook = load_workbook(BytesIO(data), read_only=False, data_only=True)
-    rows, schemas = [], []
+    rows, schemas, exclusions = [], [], []
     try:
         for sheet in workbook.worksheets:
+            if "tpo" in sheet.title.casefold():
+                exclusions.append({
+                    "year": year, "workbook": workbook_name, "sheet": sheet.title,
+                    "reason": "third-party-owned schedule; not the EDC utility respondent panel",
+                })
+                continue
             header_row = find_header_row(sheet)
             if header_row is None:
                 continue
@@ -55,10 +61,19 @@ def extract_state_workbook(data: bytes, year: int, workbook_name: str,
                     continue
                 utility_id = normalize_utility_id(raw_id)
                 raw_name = first_populated(values, name_cols)
+                utility_name = "" if raw_name is None else str(raw_name).strip()
+                if utility_id == "99999" or utility_name.casefold() == "adjustment":
+                    exclusions.append({
+                        "year": year, "workbook": workbook_name, "sheet": sheet.title,
+                        "source_row": row_number, "eia_utility_id": utility_id,
+                        "utility_name": utility_name,
+                        "reason": "EIA administrative adjustment row; not a utility respondent",
+                    })
+                    continue
                 record = {
                     "year": year,
                     "eia_utility_id": utility_id,
-                    "utility_name": "" if raw_name is None else str(raw_name).strip(),
+                    "utility_name": utility_name,
                     "state": state.upper(),
                     "source_workbook": workbook_name,
                     "source_sheet": sheet.title,
@@ -82,12 +97,12 @@ def extract_state_workbook(data: bytes, year: int, workbook_name: str,
                 })
     finally:
         workbook.close()
-    return rows, schemas
+    return rows, schemas, exclusions
 
 
 def extract_year(year: int, cache_dir: Path, state: str = "PA"):
     raw, manifest = download_archive(year, cache_dir)
-    rows, schemas = [], []
+    rows, schemas, exclusions = [], [], []
     with zipfile.ZipFile(BytesIO(raw)) as archive:
         bad = archive.testzip()
         if bad:
@@ -100,11 +115,12 @@ def extract_year(year: int, cache_dir: Path, state: str = "PA"):
         if not members:
             raise FileNotFoundError(f"No Net_Metering workbook found in EIA-861 {year} archive")
         for member in members:
-            extracted, schema = extract_state_workbook(
+            extracted, schema, excluded = extract_state_workbook(
                 archive.read(member), year, Path(member).name, manifest["sha256"], state
             )
             rows.extend(extracted)
             schemas.extend(schema)
+            exclusions.extend(excluded)
     counts = Counter(row["eia_utility_id"] for row in rows)
     manifest.update({
         "net_metering_workbooks": len(members),
@@ -113,6 +129,10 @@ def extract_year(year: int, cache_dir: Path, state: str = "PA"):
         "unique_utility_ids": len(counts),
         "duplicate_utility_ids": {key: value for key, value in counts.items() if value > 1},
         "sheets_with_state_rows": len({(row["source_workbook"], row["source_sheet"]) for row in rows}),
+        "excluded_tpo_sheets": [item for item in exclusions if "source_row" not in item],
+        "excluded_adjustment_rows": [item for item in exclusions if "source_row" in item],
+        "excluded_tpo_sheet_count": sum(1 for item in exclusions if "source_row" not in item),
+        "excluded_adjustment_row_count": sum(1 for item in exclusions if "source_row" in item),
     })
     return rows, schemas, manifest
 
