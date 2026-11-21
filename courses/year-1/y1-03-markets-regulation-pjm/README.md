@@ -62,3 +62,9 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 
 ## Computational lab
 - [Two-node congestion and nodal prices](../../../projects/power-systems/two-node-congestion/README.md)
+
+
+## Advanced market-design problem set
+
+- [Problem Set 5 — Scarcity pricing, resource adequacy, and ancillary-service co-optimization](problem-set-05-scarcity-resource-adequacy.md)
+- [Worked solution notes](problem-set-05-scarcity-resource-adequacy-solutions.md)
