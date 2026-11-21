@@ -21,6 +21,21 @@
 6. Joshua D. Angrist and Jörn-Steffen Pischke, *Mostly Harmless Econometrics: An Empiricist's Companion*, Princeton University Press, 2009. [Publisher page](https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics). A methods reference for applied identification and empirical design.
 7. Scott Cunningham, *Causal Inference: The Mixtape*, Yale University Press, 2021. [Open online text](https://mixtape.scunning.com/). Applied guide to causal inference methods; use alongside formal econometric treatments and original papers.
 
+
+## Advanced mathematical methods
+
+- Stephen Boyd and Lieven Vandenberghe, *Convex Optimization* (Cambridge University Press, 2004). [Author-hosted textbook and materials](https://web.stanford.edu/~boyd/cvxbook/). Core reference for convex sets/functions, duality, and optimization applications.
+- Dimitri P. Bertsekas, *Convex Optimization Theory* (Athena Scientific, 2009). A more theoretical companion for convex analysis and optimization.
+- Jorge Nocedal and Stephen J. Wright, *Numerical Optimization*, 2nd ed. (Springer, 2006). [Publisher record](https://link.springer.com/book/10.1007/978-0-387-40065-5). Numerical algorithms, convergence, and practical optimization.
+- Gilbert Strang, *Introduction to Linear Algebra*, 6th ed. (Wellesley-Cambridge Press, 2023). Linear algebra and geometric foundations.
+- Sheldon M. Ross, *Introduction to Probability Models*, 12th ed. (Academic Press, 2019). Probability and stochastic-process foundations.
+- Karl J. Åström and Richard M. Murray, *Feedback Systems: An Introduction for Scientists and Engineers*. [Free online text](https://fbsbook.org/). Dynamical systems and control.
+- MIT OpenCourseWare, [6.7220J Nonlinear Optimization (Spring 2025)](https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/), graduate-level reference for optimality conditions, convex analysis, duality, and algorithms.
+- MIT OpenCourseWare, [6.253 Convex Analysis and Optimization (Spring 2012)](https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/), graduate-level proof-based reference for convexity, duality, and algorithmic theory.
+- MIT OpenCourseWare, [15.094J Systems Optimization: Models and Computation](https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/), applied reference for network, discrete, nonlinear, and stochastic optimization.
+
+Use these sources in the planned [Year 2 advanced mathematics course](../courses/year-2/advanced-mathematics-energy-systems/README.md). They are a staged reference list, not a requirement to read every text cover to cover.
+
 ## Data and institutional references
 
 - [U.S. Energy Information Administration Open Data](https://www.eia.gov/opendata/) — U.S. energy statistics and series metadata.
