@@ -195,6 +195,7 @@ The 2025 request count is split at 500 kW for Levels 2–4. PPL's Level 2 total 
 - The PUC counts requests received during the reporting year, while mean approval time describes approvals completed during the reporting year. They are not necessarily the same application cohort.
 - Mean-time zeroes may represent no completed cases or non-applicable cells, not literal zero-day reviews.
 - Requests can move between review levels; the PUC provides separate tables on such movements.
+- Level 3 eligibility has conflicting capacity language. The PUC report's overview says up to 5 MW, its later review-time discussion says up to 2 MW, 52 Pa. Code § 75.34(3) says 2 MW or less, and § 75.39(a)(1) says 5 MW or less. Treat the reported review-level counts as source categories, but do not make definitive legal eligibility claims without clarification.
 - The PUC status table's 2025 PPL "Completed" value (6,487) includes 592 requests listed as pending EDC action, unlike the 2023 and 2024 arithmetic. Do not compute completion rates until the PUC clarifies the status definition and accounting.
 - The report does not contain application-level records, feeder locations, study results, upgrade costs, or applicant characteristics. It cannot support feeder-level capacity analysis or causal attribution by itself.
 
