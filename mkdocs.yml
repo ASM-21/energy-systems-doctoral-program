@@ -48,6 +48,8 @@ nav:
           - Infrastructure strategy: curriculum/departments/infrastructure-strategy.md
   - Curriculum:
       - Year 1: courses/year-1/README.md
+      - Year 2 advanced sequence: courses/year-2/README.md
+      - Advanced mathematical methods: courses/year-2/advanced-mathematics-energy-systems/README.md
       - Power systems: courses/year-1/y1-01-power-systems/README.md
       - Power systems problem set 2: courses/year-1/y1-01-power-systems/problem-set-02.md
       - Power systems solution 2: courses/year-1/y1-01-power-systems/problem-set-02-solutions.md
