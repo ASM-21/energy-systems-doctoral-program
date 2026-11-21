@@ -9,6 +9,7 @@
 - Added reproducible peer-ranking and PPL descriptive scripts with unit tests; all EDC review-level counts reconcile to published statewide totals and PPL ranks first in request volume in all three reporting years.
 - Flagged the PPL 2025 status-table discrepancy: status categories are 357 below submitted requests, and the reported Completed field includes pending-EDC cases. CI tests ensure this issue is exposed rather than silently normalized.
 - Added a Y1-03 empirical problem set and worked solutions on PUC interconnection outcomes, stock/flow distinctions, review-level counts, status reconciliation, policy timing, and causal-identification requirements.
+- Identified and documented conflicting Level 3 capacity thresholds in the PUC report and 52 Pa. Code §§ 75.34(3) and 75.39(a); added the relevant code sections to the primary-source register and the assignment.
 - Revised the public-data research design: PUC EDC service territories are the preferred unit for interconnection-process analysis; EIA-861 is complementary for cumulative utility-level adoption and other indicators.
 
 ## 2026-11-21 — EIA-861 schedule population correction
