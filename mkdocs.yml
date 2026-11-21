@@ -96,6 +96,7 @@ nav:
       - Casebooks: research/casebooks/README.md
       - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
       - Pennsylvania data feasibility memo: research/casebooks/pa-der-interconnection/data-feasibility.md
+      - PUC interconnection report 2023–2025: research/casebooks/pa-der-interconnection/puc-interconnection-report-2023-2025.md
       - PPL net-metered PV trend 2015–2025: research/casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md
       - DER orchestration and BTM battery review: research/casebooks/pa-der-interconnection/der-orchestration-and-btm-storage-review.md
       - EIA-861 data pipeline and PPL historical analysis: research/data-pipelines/eia861/README.md
