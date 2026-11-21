@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-21 — EIA-861 schedule population correction
+
+- Inspected the first Pennsylvania peer-panel artifact and found that TPO schedules and administrative adjustment rows were being counted alongside EDC utility respondents.
+- Tightened extraction to exclude TPO worksheets and adjustment rows (including EIA ID 99999), while recording exclusions in the annual manifests.
+- Expanded unit tests to cover duplicate TPO representations and administrative adjustment rows. The Pennsylvania peer panel remains a raw coverage audit until utility IDs, service territories, form status, and annual field definitions are reconciled.
+
+
 ## 2026-11-21 — PJM capacity-market source refresh
 
 - Added Peter Cramton's 2017 electricity-market-design article to the core reading list.
