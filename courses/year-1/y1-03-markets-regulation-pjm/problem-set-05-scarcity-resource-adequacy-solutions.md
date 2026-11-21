@@ -77,7 +77,15 @@ p_i+r_i\leq K_i,\quad p_i\geq0,\quad r_i\geq0.
 
 Here (c_i) is the energy offer, (q_i) the reserve offer, and (K_i) the unit capacity. This is a simplified single-period model: it omits ramp rates, minimum output, start costs, reserve response time, transmission constraints, reserve zones, and uncertainty.
 
-A useful solution check is to recognize that total capacity is 200 MW, so 170 MW must be committed as energy plus reserve. Unit C has the lowest reserve offer but the highest energy offer. Unit A has the lowest energy offer but the highest reserve offer. The optimizer trades off these opportunity costs. Use a solver rather than assuming that the lowest energy offer should always be fully dispatched: holding headroom on a low-cost unit can displace a more expensive energy unit, while awarding reserve to a unit with a low reserve offer can be costly if its energy offer is low and the system needs its output.
+A useful solution check is to recognize that total capacity is 200 MW, so 170 MW must be committed as energy plus reserve. The optimum is:
+
+| Unit | Energy (p_i) (MW) | Reserve (r_i) (MW) | Total (MW) |
+|---|---:|---:|---:|
+| A | 80 | 0 | 80 |
+| B | 70 | 0 | 70 |
+| C | 0 | 20 | 20 |
+
+The objective is (80(18)+70(32)+20(2)=4,840) dollars per hour. A and B capacity constraints bind, as do the energy-balance and reserve-requirement constraints. C supplies reserve because its reserve offer is lowest and it has sufficient unused capacity; displacing energy from A or B to hold reserve would require more expensive C energy. Under the stated LP and a conventional minimization-dual sign convention, the energy-balance marginal cost is $55/MWh and the reserve-requirement marginal cost is $2/MW-h over the local range where C has remaining headroom. Verify the dual sign and units in the selected solver.
 
 The energy-balance dual is the marginal system cost of serving one additional MW of demand under the model's assumptions. The reserve-constraint dual is the marginal cost of increasing the reserve requirement by one MW. A sequential reserve process can fail if energy dispatch consumes all available headroom or can be more expensive if it ignores the opportunity cost of withholding capacity during energy dispatch.
 
