@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-21 — Planned advanced mathematics sequence
+
+- Added a dedicated Year 2 course in Advanced Mathematical Methods for Energy Systems and Infrastructure Research, explicitly marked as planned rather than part of the current Year 1 workload.
+- Specified a two-semester modular sequence covering proof techniques, matrix analysis, multivariable calculus, real-analysis foundations, differential equations, dynamical systems, probability and stochastic processes, convex analysis, KKT conditions, duality, numerical optimization, graph theory, and stochastic/robust optimization.
+- Connected every mathematical block to energy-system applications including power flow, OPF, dispatch, storage, reliability, DER planning, congestion, and infrastructure investment.
+- Added prerequisite diagnostics, assessment standards, capstone directions, and graduate-level references including MIT OpenCourseWare benchmarks.
+- Integrated the course into the Year 2 roadmap, quantitative-methods department, prerequisites, reading list, and site navigation without increasing the planned 3–5 hour/week workload.
+
+
 ## 2026-11-21 — Pennsylvania interconnection outcomes and respondent-frame audit
 
 - Validated the corrected EIA-861 Pennsylvania extraction: 249 utility-year rows, 33 EIA IDs, zero duplicate year/ID keys, zero invalid rows, and 17 IDs observed in all 11 years; TPO worksheets and adjustment rows are explicitly excluded and logged.
