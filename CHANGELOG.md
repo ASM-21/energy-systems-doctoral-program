@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-21 — Advanced electricity-market design
+
+- Added a graduate-level Y1-03 problem set on scarcity pricing, energy and operating-reserve co-optimization, planning reserve margins, capacity procurement, resource accreditation, and reliability/market-design trade-offs.
+- Added a worked numerical solution for merit-order dispatch, reserve shortfall scenarios, capacity procurement arithmetic, and the co-optimization LP, including primal and dual interpretation checks.
+- Added primary-source guidance requiring delivery-year-specific PJM manuals, auction results, and FERC-approved rules rather than stale market parameters.
+
 ## 2026-11-20 — Distribution engineering and Pennsylvania research expansion
 
 - Added a radial distribution feeder DER hosting-capacity screening lab with synthetic inputs, first-order voltage calculations, branch thermal screening, reverse-flow flags, scenario sweeps, and regression tests.
