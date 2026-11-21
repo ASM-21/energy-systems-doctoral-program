@@ -18,6 +18,8 @@ The objective is to understand energy infrastructure as a coupled technical, eco
 - [Four-year roadmap](../ROADMAP.md)
 - [Academic standards and assessment](../ACADEMIC_STANDARDS.md)
 - [Year 1 course sequence](../courses/year-1/README.md)
+- [Planned Year 2 advanced analytical sequence](../courses/year-2/README.md)
+- [Advanced mathematical methods course](../courses/year-2/advanced-mathematics-energy-systems/README.md)
 - [Verified university course references](../library/course-catalog.md)
 - [Core reading list](../library/reading-list.md)
 - [Pennsylvania DER / PJM casebook](../research/casebooks/pa-der-interconnection/README.md)
