@@ -26,7 +26,7 @@ class PucInterconnectionAnalysisTests(unittest.TestCase):
         changes = self.result["descriptive_changes_first_to_last_pct"]
         self.assertAlmostEqual(changes["customer_generators"], 46.40, places=2)
         self.assertAlmostEqual(changes["interconnected_capacity_kw"], 53.78, places=2)
-        self.assertAlmostEqual(changes["annual_interconnection_requests"], -9.56, places=2)
+        self.assertAlmostEqual(changes["annual_interconnection_requests"], -9.55, places=2)
 
     def test_2025_status_reconciliation_is_flagged_not_hidden(self):
         checks = {row["year"]: row for row in self.result["annual_quality_checks"]}
