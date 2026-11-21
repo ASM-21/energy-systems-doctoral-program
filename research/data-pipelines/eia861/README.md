@@ -48,6 +48,7 @@ Run:
     python extract_historical_net_metering.py --start-year 2015 --end-year 2025 --output-dir outputs/historical-net-metering
     python extract_pa_utility_net_metering.py --start-year 2015 --end-year 2025 --output-dir outputs/pa-utility-net-metering
     python audit_pa_utility_panel.py --input-csv outputs/pa-utility-net-metering/pa_net_metering_utility_rows.csv --start-year 2015 --end-year 2025 --output-dir outputs/pa-utility-net-metering/audit
+    python extract_pa_eia861_frame.py --panel-csv outputs/pa-utility-net-metering/pa_net_metering_utility_rows.csv --start-year 2016 --end-year 2025 --output-dir outputs/pa-utility-net-metering/frame-audit
     python normalize_ppl_net_metering.py --input-csv outputs/historical-net-metering/ppl_net_metering_raw.csv --output-dir outputs/historical-net-metering/harmonized
     python plot_ppl_net_metering.py --input-csv outputs/historical-net-metering/harmonized/ppl_net_metering_harmonized.csv --output-dir outputs/historical-net-metering/figures
 
@@ -90,3 +91,8 @@ Every run writes a SHA-256 digest, retrieval timestamp, workbook inventory, and 
 ## Corrected peer-panel audit result
 
 The corrected 2015–2025 Pennsylvania extraction and coverage audit is complete. It yields 249 utility-year rows, 33 distinct EIA utility IDs, zero duplicate year/ID keys, and zero invalid rows. Annual coverage ranges from 18 to 32 IDs; 17 IDs are present in all 11 years. The extractor explicitly excludes TPO schedules and administrative adjustment rows and records those exclusions in the archive manifest. This is not a harmonized peer panel: respondent identity, service territories, form type, and variable definitions still require source-level review. See [Pennsylvania peer-panel audit](pa-peer-panel-audit.md) before attempting peer comparisons.
+
+
+### Respondent-frame linkage
+
+The EIA respondent frame is available from 2016 onward and identifies each respondent's short-form status, ownership, and schedule participation. `extract_pa_eia861_frame.py` joins the Pennsylvania net-metering utility IDs to each annual frame and records unmatched or duplicate IDs rather than inferring a match. This is a separate identity/reporting audit; it does not establish service-territory continuity or measurement comparability. EIA notes that EIA-861S is intended for smaller bundled-service utilities and has less detailed responses, and that short-form net-metering data were imputed beginning in 2020. The annual form and imputation flags must therefore be retained in any candidate peer panel. The workflow artifact includes the frame linkage outputs from 2016–2025.
