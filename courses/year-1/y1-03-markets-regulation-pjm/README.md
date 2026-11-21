@@ -68,3 +68,8 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 
 - [Problem Set 5 — Scarcity pricing, resource adequacy, and ancillary-service co-optimization](problem-set-05-scarcity-resource-adequacy.md)
 - [Worked solution notes](problem-set-05-scarcity-resource-adequacy-solutions.md)
+
+
+## Empirical interconnection problem set
+- [Problem Set 6 — Pennsylvania DER interconnection outcomes: measurement, peer comparison, and policy evaluation](problem-set-06-pa-interconnection-outcomes.md)
+- [Worked solution notes](problem-set-06-pa-interconnection-outcomes-solutions.md)
