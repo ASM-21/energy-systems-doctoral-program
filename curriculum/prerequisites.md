@@ -55,3 +55,7 @@ Use short, targeted remediation:
 5. Return to the main course.
 
 The goal is prerequisite fluency, not completion of another full degree.
+
+## Preparation for advanced mathematical methods (planned Year 2)
+
+The planned advanced mathematics course goes beyond routine engineering calculus and cookbook optimization. Before starting it, verify fluency in proof by contradiction and induction, vector-space reasoning, eigenvalue interpretation, multivariable differentiation, Taylor approximations, basic ODE solution methods, conditional probability, and numerical error/convergence concepts. A learner should be able to derive a least-squares estimator, explain the geometry of a projection, linearize a nonlinear function around an operating point, and interpret the eigenvalues of a small state matrix. Gaps should be addressed with targeted problem sets before attempting graduate convex analysis or stochastic optimization.
