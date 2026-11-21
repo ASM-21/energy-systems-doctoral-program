@@ -12,11 +12,14 @@ Understand the physical grid, economic logic of dispatch and investment, market/
 - Output: documented PJM/Pennsylvania infrastructure or DER analysis with technical appendix and policy brief.
 
 ## Year 2 — Advanced analytical tools
+- **Planned mathematical methods course:** matrix analysis, multivariable calculus, real-analysis foundations, differential equations, dynamical systems, probability/stochastic processes, convex analysis, duality, numerical optimization, graph theory, and stochastic/robust optimization. This is a two-semester modular sequence, not an additional full-time course.
 - Graduate econometrics: OLS, causal inference, panel data, event studies, IV, difference-in-differences, synthetic control, time series.
 - Electricity market design: LMP, congestion, ancillary services, capacity/resource adequacy, market power, transmission planning.
 - Optimization: LP, NLP, mixed-integer, stochastic optimization, unit commitment, dispatch, optimal power flow.
 - Infrastructure economics: cost of capital, rate base, revenue requirements, depreciation, risk allocation, investment incentives.
 - Output: reproducible empirical or optimization paper with sensitivity analysis and research presentation.
+
+The mathematical sequence should precede or run alongside advanced optimization. It must fit within the existing 3–5 hour/week workload by displacing or slowing other course work, not by quietly increasing total hours. See [Year 2 course sequence](courses/year-2/README.md) and the [advanced mathematical methods course](courses/year-2/advanced-mathematics-energy-systems/README.md).
 
 ## Year 3 — Policy, transition, and strategic systems
 - Climate economics and policy evaluation.
