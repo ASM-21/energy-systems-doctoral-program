@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-21 — PJM capacity-market source refresh
+
+- Added Peter Cramton's 2017 electricity-market-design article to the core reading list.
+- Verified the current PJM capacity/resource-adequacy manual sequence: Manual 18 Rev. 63 (effective 2026-09-24), Manual 20A Rev. 3 (effective 2026-06-24), and Manual 21B Rev. 06 (effective 2026-11-18).
+- Explicitly marked Manuals 20 and 21A as retired in the curriculum's source guidance and updated Y1-03 Problem Set 5 to require current, revision-specific citations.
+
+
 ## 2026-11-21 — Pennsylvania EIA-861 peer-panel audit
 
 - Added a raw utility-year coverage and respondent-identity audit for Pennsylvania EIA-861 net-metering rows.
