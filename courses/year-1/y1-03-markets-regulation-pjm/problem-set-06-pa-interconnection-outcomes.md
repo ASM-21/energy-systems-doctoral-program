@@ -20,6 +20,8 @@ By completing this assignment, you should be able to:
 - [All-EDC request-count and mean-time extract](../../../research/casebooks/pa-der-interconnection/pa_edc_interconnection_2023_2025.csv).
 - [PPL detailed metric and status extract](../../../research/casebooks/pa-der-interconnection/ppl_interconnection_2023_2025.csv).
 - [Research note and measurement caveats](../../../research/casebooks/pa-der-interconnection/puc-interconnection-report-2023-2025.md).
+- [52 Pa. Code § 75.34 — Review procedures](https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter75/s75.34.html).
+- [52 Pa. Code § 75.39 — Level 3 interconnection review](https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter75/s75.39.html).
 
 The report's reporting year runs from June 1 through May 31. The 2025 reporting year therefore covers June 1, 2024 through May 31, 2025.
 
