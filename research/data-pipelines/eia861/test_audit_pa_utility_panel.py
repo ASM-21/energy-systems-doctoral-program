@@ -50,7 +50,12 @@ class PennsylvaniaPanelAuditTests(unittest.TestCase):
             {"year": "bad", "eia_utility_id": "2", "state": "PA"},
         ]
         result = audit_panel(rows, 2022, 2023)
-        self.assertEqual(len(result["invalid_rows"]), 2)
+        self.assertEqual(len(result["invalid_rows"]), 3)
+        self.assertEqual(
+            {item["reason"] for item in result["invalid_rows"]},
+            {"year outside requested range", "invalid year",
+             "missing utility ID or state mismatch"},
+        )
         self.assertIn("no variable harmonization", result["measurement_status"])
 
 
