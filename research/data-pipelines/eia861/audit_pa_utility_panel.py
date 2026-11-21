@@ -118,7 +118,7 @@ def main() -> None:
     report = audit_panel(rows, args.start_year, args.end_year, args.state)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / "panel_coverage_audit.json").write_text(
-        json.dumps(report, indent=2) + "\\n", encoding="utf-8"
+        json.dumps(report, indent=2) + "\n", encoding="utf-8"
     )
     with (args.output_dir / "utility_identity_history.csv").open(
         "w", newline="", encoding="utf-8"
