@@ -12,7 +12,7 @@ Study energy infrastructure as a coupled system. Physical constraints shape mark
 6. How do infrastructure choices affect national security and industrial competitiveness?
 
 ## Competency outcomes
-The learner should be able to interpret one-line diagrams, per-unit quantities, power-flow concepts, and distribution constraints; explain dispatch, congestion, LMP, ancillary services, and resource adequacy; trace federal/state jurisdiction; explain utility revenue requirements and rate design; formulate basic dispatch/optimization models; conduct reproducible regression analysis; critically evaluate policy claims; and write for technical and policy audiences.
+The learner should be able to interpret one-line diagrams, per-unit quantities, power-flow concepts, and distribution constraints; explain dispatch, congestion, LMP, ancillary services, and resource adequacy; trace federal/state jurisdiction; explain utility revenue requirements and rate design; formulate and analyze dispatch/optimization models; interpret matrix and network formulations, dual variables, uncertainty, and numerical limitations; conduct reproducible regression analysis; critically evaluate policy claims; and write for technical and policy audiences. Advanced mathematical maturity is developed in a planned Year 2 sequence rather than assumed at entry.
 
 ## Geographic focus
 The U.S. system is the default context. PJM is a recurring case for wholesale markets, transmission, resource adequacy, interconnection, and state-federal interactions. Pennsylvania provides a state-level case. Comparisons with other regions and countries should illuminate differences rather than add breadth without purpose.
