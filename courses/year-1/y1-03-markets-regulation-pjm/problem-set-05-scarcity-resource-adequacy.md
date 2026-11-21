@@ -92,7 +92,7 @@ Write a 1,200–1,800 word analytical memo addressing the following:
 
 ## Suggested primary sources
 
-- [PJM Manuals and Governing Documents](https://www.pjm.com/library/manuals) — identify the exact manual, revision, and effective date used.
+- [PJM Manuals and Governing Documents](https://www.pjm.com/library/manuals) — as checked 2026-11-21, use Manual 18 Rev. 63 (effective 2026-09-24) for the capacity market, Manual 20A Rev. 3 (effective 2026-06-24) for resource-adequacy studies, and Manual 21B Rev. 06 (effective 2026-11-18) for generating capability/accreditation/ELCC classifications. Manuals 20 and 21A are retired effective 2025-06-01. Read the current revisions and cite exact sections; do not rely on archived or retired procedures.
 - [PJM Data Miner](https://dataminer2.pjm.com/) — public market and system data, subject to product-specific definitions and access conditions.
 - [Monitoring Analytics, PJM State of the Market](https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/) — independent market-monitor analysis.
 - [FERC, Wholesale Electricity Markets: Overview and Guide](https://www.ferc.gov/wholesale-electricity-markets-overview-and-guide).
