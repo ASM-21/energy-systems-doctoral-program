@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-21 — Pennsylvania EIA-861 peer-panel audit
+
+- Added a raw utility-year coverage and respondent-identity audit for Pennsylvania EIA-861 net-metering rows.
+- The audit reports annual utility-ID coverage, missing years, duplicate year/utility keys, respondent-name variants, and invalid/out-of-range records.
+- Integrated the audit into the historical EIA-861 workflow and artifact bundle; added unit tests and documented that the output is not a harmonized panel or causal dataset.
+
+
 ## 2026-11-21 — Advanced electricity-market design
 
 - Added a graduate-level Y1-03 problem set on scarcity pricing, energy and operating-reserve co-optimization, planning reserve margins, capacity procurement, resource accreditation, and reliability/market-design trade-offs.
