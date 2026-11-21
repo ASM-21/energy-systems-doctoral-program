@@ -14,9 +14,7 @@ The request-level totals reconcile in all three years.
 
 PPL's 2023–2025 request change is:
 
-\[
-\left(\frac{6{,}844}{7{,}567}-1\right)\times100=-9.55\%.
-\]
+Formula: `(6,844 / 7,567 - 1) × 100 = -9.55%`.
 
 | Year | PPL requests | Statewide requests | PPL share | PPL rank |
 |---|---:|---:|---:|---:|
@@ -32,21 +30,15 @@ Annual requests are a **flow** received during a defined reporting period. Custo
 
 For Level 2 at or above 500 kW:
 
-\[
-\frac{135}{196}\times100=68.88\%.
-\]
+Formula: `135 / 196 × 100 = 68.88%`.
 
 For Level 3 at or above 500 kW:
 
-\[
-\frac{411}{954}\times100=43.08\%.
-\]
+Formula: `411 / 954 × 100 = 43.08%`.
 
 PPL's Level 3 at-or-above-500-kW requests as a share of all PPL requests:
 
-\[
-\frac{411}{6{,}844}\times100=6.00\%.
-\]
+Formula: `411 / 6,844 × 100 = 6.00%`.
 
 The PUC did not publish the 2023–2024 Level 2–4 request counts using the same 500 kW split. Do not infer or backfill the missing categories from the 2025 distribution. The report also records requests moved between levels; review level can change after screening or applicant changes, so it is not necessarily an immutable project attribute.
 
@@ -54,15 +46,11 @@ The PUC did not publish the 2023–2024 Level 2–4 request counts using the sam
 
 For customer-generators:
 
-\[
-\left(\frac{28{,}819}{19{,}685}-1\right)\times100=46.40\%.
-\]
+Formula: `(28,819 / 19,685 - 1) × 100 = 46.40%`.
 
 For total interconnected nameplate capacity:
 
-\[
-\left(\frac{477{,}019}{310{,}199}-1\right)\times100=53.78\%.
-\]
+Formula: `(477,019 / 310,199 - 1) × 100 = 53.78%`.
 
 For annual requests, the change is -9.55% as calculated in Part A. These statistics describe different concepts and should not be interpreted as a contradiction.
 
@@ -72,15 +60,11 @@ The reported Level 1 mean approval times are 1, 1, and 10 days. The report state
 
 For 2025, the listed PPL status categories sum to:
 
-\[
-5{,}043+0+852+0+592=6{,}487.
-\]
+Formula: `5,043 + 0 + 852 + 0 + 592 = 6,487`.
 
 This is 357 fewer than the 6,844 submitted requests. The reported Completed field is 6,487, and:
 
-\[
-6{,}487-(5{,}043+0+852)=592,
-\]
+Formula: `6,487 - (5,043 + 0 + 852) = 592`.
 
 which equals pending EDC action. By contrast, in 2023 and 2024, the reported Completed field equals approved + denied + cancelled, without adding pending EDC action.
 
