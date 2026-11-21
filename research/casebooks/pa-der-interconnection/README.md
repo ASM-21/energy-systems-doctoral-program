@@ -136,12 +136,28 @@ Research tasks:
 - Assess whether an energy-storage-specific process is technically justified and proportionate to actual export risk.
 - Locate evidence of the paragraph 123 review and any resulting policy, tariff, or guidance changes.
 
+### I. Pennsylvania PUC — Net-Metering and Interconnection Report 2023–2025
+
+**Official report:** [Net-Metering and Interconnection Report 2023–2025 (PDF)](https://www.puc.pa.gov/media/3770/net-metering-interconnection-report-2023-2025_final.pdf).
+
+This is the strongest public source located so far for utility-level interconnection process outcomes. The report covers reporting years June 1 through May 31 and provides EDC service-territory data on customer-generators, interconnected nameplate capacity, request counts by review level, mean approval times, request status, and review-level changes. Detailed tables cover 2023–2025; trend figures extend request and capacity histories to 2016.
+
+For PPL, the report records 6,844 requests in the 2025 reporting year, including 4,008 Level 1, 2,425 Level 2, and 411 Level 3 requests. It reports 592 requests pending EDC action and 852 cancelled by customers. These status counts require careful interpretation; the report's 2025 "Completed" field includes pending-EDC cases in the PPL row. Do not calculate a completion rate from the label without resolving its definition.
+
+The report also shows PPL's customer-generator count increasing from 19,685 in 2023 to 28,819 in 2025, while total annual request counts moved from 7,567 to 6,844. These are descriptive reporting statistics, not a causal assessment of Rule 12 or the Second DER Management Plan.
+
+See [PUC report analysis and measurement notes](puc-interconnection-report-2023-2025.md) and the [structured PPL data extract](ppl_interconnection_2023_2025.csv). The casebook documents reporting-period definitions, 500 kW schema changes, request reclassification, mean-time denominator limitations, status-table arithmetic, and the distinction between EDC service territories and EIA utility IDs.
+
+**FirstEnergy identity break:** FirstEnergy's 2023 Form 10-K states that the Pennsylvania operating companies were consolidated into FE PA effective January 1, 2024. The PUC report continues to report former service territories/rate districts separately (Met-Ed, Penelec, Penn Power, and West Penn Power), while EIA's 2025 frame lists FirstEnergy Pennsylvania Electric Co as a single respondent (EIA ID 66101). Do not compare the EIA respondent panel to the PUC territory panel without an explicit time-varying entity/territory crosswalk.
+
 ## Working artifacts
 
 - [Versioned primary-source register](source-register.csv)
 - [Institutional responsibility matrix](responsibility-matrix.csv)
 - [Public-data feasibility assessment](data-feasibility.md)
 - [PA PUC wholesale DER aggregation NOPR, L-2023-3044115](https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol56/56-15/527.html)
+- [PUC Net-Metering and Interconnection Report 2023–2025 analysis](puc-interconnection-report-2023-2025.md)
+- [PPL interconnection metrics CSV, 2023–2025](ppl_interconnection_2023_2025.csv)
 
 The responsibility matrix is a research aid, not a legal opinion. Verify each assignment against the current controlling authority before relying on it.
 
