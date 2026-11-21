@@ -1,6 +1,6 @@
 # Y1-03 — Electricity Markets, Utility Regulation, and PJM
 
-**Level:** Graduate / applied institutional analysis | **Duration:** 10–12 weeks | **Effort:** 35–45 hours  
+**Level:** Graduate / applied institutional analysis | **Duration:** 10–13 weeks | **Effort:** 40–52 hours  
 **Prerequisites:** Y1-02 or equivalent microeconomics and basic electricity-system literacy.
 
 ## Purpose
