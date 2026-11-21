@@ -186,6 +186,8 @@ The 2025 PPL status categories sum to 6,487, which is 357 fewer than the 6,844 s
 
 A structured 33-row panel now covers all 11 EDC service territories for 2023–2025. PPL ranked first in total request volume in all three years, with 7,567 requests in 2023, 7,519 in 2024, and 6,844 in 2025. Its 2025 share was 33.88% of statewide requests. The all-EDC review-level counts reconcile to the PUC's published statewide totals (19,202; 18,582; 20,202). The 2025 PPL count includes 411 Level 3 requests at or above 500 kW, 43.08% of the statewide 954 requests in that cell. See [the all-EDC dataset](pa_edc_interconnection_2023_2025.csv) and [reproducible peer audit](analyze_pa_edc_interconnection.py).
 
+**Policy timing:** The PUC's detailed 2023–2025 tables end on May 31, 2025, before PPL Rule 12's January 3, 2026 applicability date and the January 5, 2026 start of the Second DER Management Program. These observations are a pre-implementation baseline, not post-policy outcome data. The next annual period (June 1, 2025–May 31, 2026) would include only partial exposure and cannot isolate cohorts without application-received and completion dates.
+
 The 2025 request count is split at 500 kW for Levels 2–4. PPL's Level 2 total consists of 2,290 requests below 500 kW and 135 at or above 500 kW. Its Level 3 total consists of 411 requests at or above 500 kW and none below 500 kW. The 2025 mean-time table is also split at 500 kW. Preserve these fields separately; do not compare them directly with the unsplit 2023–2024 tables.
 
 ### Important measurement gates
