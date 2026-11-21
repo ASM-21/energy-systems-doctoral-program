@@ -61,6 +61,12 @@ In 2025, PPL accounted for 135 of the 196 Level 2 requests at or above 500 kW (6
 
 The complete 33-row, 11-EDC dataset is [pa_edc_interconnection_2023_2025.csv](pa_edc_interconnection_2023_2025.csv). The reproducible peer audit is analyze_pa_edc_interconnection.py, with unit tests in test_analyze_pa_edc_interconnection.py. It validates each EDC's review-level count sum, reconciles statewide totals to the PUC's reported totals, and computes PPL's rank/share without estimating causal effects.
 
+## Policy timing: these data are a pre-implementation baseline
+
+All three detailed reporting years in this report end on May 31, 2025. They therefore predate PPL's Rule 12 applicability date of January 3, 2026 and the stated January 5, 2026 implementation start of the Second DER Management Program. The 2023–2025 tables cannot measure the effects of either 2026 change.
+
+The next reporting year (June 1, 2025–May 31, 2026) would contain only a partial post-implementation window beginning in January 2026. Even that aggregate annual table would not cleanly identify treatment exposure: applications received before January 3 may be completed after that date, while new applications may be reviewed under the new process. Application-level received dates, completion dates, review level, and policy applicability would be needed to distinguish cohorts. Treat the current data as a baseline and avoid before/after causal language.
+
 ## Review-level definitions
 
 The report describes four Pennsylvania interconnection review levels:
