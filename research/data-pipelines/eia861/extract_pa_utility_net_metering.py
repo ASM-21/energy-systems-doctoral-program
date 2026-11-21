@@ -26,7 +26,7 @@ def normalize_utility_id(value) -> str:
 
 
 def extract_state_workbook(data: bytes, year: int, workbook_name: str,
-                           archive_sha256: str, state: str = "PA") -> tuple[list[dict], list[dict]]:
+                           archive_sha256: str, state: str = "PA") -> tuple[list[dict], list[dict], list[dict]]:
     from openpyxl import load_workbook
     workbook = load_workbook(BytesIO(data), read_only=False, data_only=True)
     rows, schemas, exclusions = [], [], []
