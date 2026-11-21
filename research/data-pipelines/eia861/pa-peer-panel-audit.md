@@ -51,7 +51,7 @@ Seventeen IDs are present in every year. Two of those IDs have respondent-name v
 
 The audit records the variants but does not assume that the names prove a legal or territorial change. The name variants may be formatting or respondent-label changes; confirm against EIA respondent frames and source instructions before harmonization.
 
-Other discontinuities require review. EIA ID **14711** (Pennsylvania Electric Co) is observed through 2023, while ID **66101** (FirstEnergy Pennsylvania Electric Co) appears in 2024–2025. Do not automatically stitch these IDs together. Determine whether this reflects an EIA respondent-ID change, reporting-frame revision, organizational change, or another cause using the annual respondent frames and EIA documentation. Similarly, some municipal/cooperative IDs appear only in selected years. These may reflect changing coverage, respondent reporting, or schedule availability rather than true service-territory entry/exit.
+Other discontinuities require review. EIA ID **14711** (Pennsylvania Electric Co) is observed through 2023, while ID **66101** (FirstEnergy Pennsylvania Electric Co) appears in 2024–2025. This timing aligns with FirstEnergy's disclosed consolidation of the Pennsylvania operating companies into FE PA effective January 1, 2024. FirstEnergy's 2023 Form 10-K describes FE PA as the successor to the Pennsylvania companies' assets and liabilities. This makes ID 66101 a consolidated successor respondent, not a one-for-one continuation of ID 14711. Do not combine the pre-2024 IDs into 66101 without a documented territory crosswalk. The Pennsylvania PUC's 2023–2025 Net-Metering and Interconnection Report continues to present legacy EDC service territories/rate districts separately (Met-Ed, Penelec, Penn Power, West Penn), which is a more suitable unit for the interconnection process analysis. See [the PUC report casebook](../../casebooks/pa-der-interconnection/puc-interconnection-report-2023-2025.md). Similarly, some municipal/cooperative IDs appear only in selected years. These may reflect changing coverage, respondent reporting, or schedule availability rather than true service-territory entry/exit.
 
 ## Measurement and schema limitations
 
@@ -93,3 +93,8 @@ Primary script paths:
 - `test_audit_pa_utility_panel.py`
 
 The panel audit is intentionally diagnostic. It must not be mistaken for a panel-data preparation or estimation routine.
+
+
+## Additional source-based interpretation of the FirstEnergy ID break
+
+FirstEnergy's 2023 Form 10-K states that its Pennsylvania operating companies were consolidated into FE PA effective January 1, 2024, with FE PA as successor to the prior Pennsylvania companies' assets and liabilities: https://www.sec.gov/Archives/edgar/data/1031296/000103129624000008/fe-20231231.htm. This explains why EIA respondent 66101 appears while legacy Pennsylvania utility respondents disappear from later annual frames, but it does not make their historical observations a homogeneous single-utility series. The PUC's aggregated report preserves separate EDC service-territory/rate-district statistics for the former companies. Use the PUC unit for interconnection comparisons and retain the EIA ID discontinuity in any EIA-861 analysis.
