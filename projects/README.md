@@ -28,5 +28,6 @@ Projects are the main evidence of applied mastery. Each project should have a de
 - [IEEE 13-node OpenDSS benchmark](power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md) — AC-capable, unbalanced three-phase benchmark with PV scenario comparisons
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
 - [Competing-risks survival analysis](econometrics/competing-risks-survival/README.md) — Kaplan-Meier net risk, Aalen-Johansen cumulative incidence, censoring, and interconnection outcome design
+- [Randomized experiments and power](econometrics/randomized-experiments/README.md) — complete randomization, ITT, Neyman standard errors, randomization inference, MDE, and cluster design effects
 
 The radial feeder lab is a synthetic screening model. It is not an AC power-flow, protection, or utility interconnection study.
