@@ -21,6 +21,13 @@ Each record needs a unique application identifier, a defensible time origin (for
 
 The example CSV contains synthetic identifiers and durations only. It must never be merged with or described as actual utility application data.
 
+## Core references
+
+- Aalen, O. O. and Johansen, S. (1978). “An empirical transition matrix for non-homogeneous Markov chains based on censored observations.” *Scandinavian Journal of Statistics*, 5, 141–150. [Journal record](https://www.jstor.org/stable/4615704). Foundational transition-matrix estimator.
+- Putter, H., Fiocco, M., and Geskus, R. B. (2007). “Tutorial in biostatistics: competing risks and multi-state models.” *Statistics in Medicine*, 26(11), 2389–2430. [DOI](https://doi.org/10.1002/sim.2712). Practical review of data preparation, cumulative incidence, and multi-state models.
+- Fine, J. P. and Gray, R. J. (1999). “A proportional hazards model for the subdistribution of a competing risk.” *Journal of the American Statistical Association*, 94, 496–509. [DOI](https://doi.org/10.1080/01621459.1999.10474144). Regression model for subdistribution hazards; not implemented in this basic lab.
+- Gray, R. J. (1988). “A class of K-sample tests for comparing the cumulative incidence of a competing risk.” *The Annals of Statistics*, 16(3), 1141–1154. [DOI](https://doi.org/10.1214/aos/1176350951). Group comparison for cumulative-incidence functions.
+
 ## Statistical limitations
 
 - Non-informative censoring is required for the relevant estimator; censoring may be informative if difficult applications remain open longer.
