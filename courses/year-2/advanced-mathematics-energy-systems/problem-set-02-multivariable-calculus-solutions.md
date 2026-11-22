@@ -119,7 +119,7 @@ The second-order Taylor polynomial is therefore
 T_2(x,y)=1+x+\tfrac12(x^2-y^2).
 \]
 
-At \((0.1,0.2)\), this is \(1+0.1+0.5(0.01-0.04)=1.085\). The exact value is \(e^{0.1}\cos(0.2)\approx1.0853\), so the approximation error is approximately 0.0003 (the precise value depends on rounding).
+At \((0.1,0.2)\), this is \(1+0.1+0.5(0.01-0.04)=1.085\). The exact value is \(e^{0.1}\cos(0.2)\approx1.08314\), so the approximation error is approximately 0.00186.
 
 The Hessian encodes local curvature, including directions of positive and negative curvature. A Taylor polynomial is local: higher-order terms can become material as the displacement grows. A standard second-order Taylor result with a remainder applies when the function has sufficiently regular second derivatives in a neighborhood of the expansion point; continuity of the second partial derivatives is a common sufficient condition.
 
