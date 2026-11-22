@@ -8,6 +8,8 @@ PROJECTS := \
 	projects/power-systems/three-bus-dc-power-flow \
 	projects/power-systems/radial-der-hosting-capacity \
 	projects/power-systems/flexible-interconnection \
+	projects/power-systems/frequency-response-dynamics \
+	projects/power-systems/stochastic-adequacy \
 	projects/econometrics/ols-energy-demand
 
 .PHONY: test docs clean
