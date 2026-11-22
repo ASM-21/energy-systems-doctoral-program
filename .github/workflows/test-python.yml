@@ -47,7 +47,9 @@ jobs:
         run: python -m unittest discover -s . -p "test_*.py" -v
       - name: Run smoke test
         run: |
-          if [ -f run_capstone.py ]; then
+          if [ -f run_example.py ]; then
+            python run_example.py
+          elif [ -f run_capstone.py ]; then
             python run_capstone.py --output-dir /tmp/pa-interconnection-capstone
           elif [ -f capacity_planning.py ]; then
             python capacity_planning.py
