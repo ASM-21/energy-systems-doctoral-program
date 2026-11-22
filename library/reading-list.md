@@ -45,7 +45,7 @@
 - Hein Putter, Marta Fiocco, and R. B. Geskus, “Tutorial in Biostatistics: Competing Risks and Multi-State Models,” *Statistics in Medicine*, 26(11), 2389–2430 (2007). [DOI](https://doi.org/10.1002/sim.2712). Practical treatment of cumulative incidence and multi-state event histories.
 - Jason P. Fine and Robert J. Gray, “A Proportional Hazards Model for the Subdistribution of a Competing Risk,” *Journal of the American Statistical Association*, 94, 496–509 (1999). [DOI](https://doi.org/10.1080/01621459.1999.10474144). Regression framework for subdistribution hazards.
 
-Use these sources in the planned [Year 2 advanced mathematics course](../courses/year-2/advanced-mathematics-energy-systems/README.md). They are a staged reference list, not a requirement to read every text cover to cover.
+Use these sources in the planned [Year 2 advanced mathematics course](../courses/year-2/advanced-mathematics-energy-systems/README.md) and [graduate econometrics and causal inference course](../courses/year-2/graduate-econometrics-causal-inference/README.md). They are a staged reference list, not a requirement to read every text cover to cover.
 
 ## Data and institutional references
 
