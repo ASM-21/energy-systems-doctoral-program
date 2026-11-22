@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-22 — Quantitative methods department integration
+- Linked the graduate econometrics course and its randomized, DID, and competing-risk computational companions from the department competency framework.
+
+
 ## 2026-11-22 — Instrumental variables and regression discontinuity assessment
 - Added Problem Set 4 and worked solutions on Wald/LATE, 2SLS, weak instruments, exclusion restrictions, sharp/fuzzy RD, manipulation, and threshold validity.
 - Explicitly distinguished descriptive reporting thresholds from legal/program treatment-assignment rules.
