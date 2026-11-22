@@ -24,7 +24,7 @@ python analyze.py --output-dir outputs
 
 The analysis uses only Python's standard library. It reads the source panel from the casebook rather than maintaining a second copy of the data. Outputs:
 
-- `summary.json`: annual summary, interpretation limits, and 2025 large-request composition.
+- `summary.json`: annual summary, interpretation limits, 2025 large-request composition, and a provenance record containing the source file's SHA-256 hash, byte size, source URL, access date, reporting period, and transformation notes.
 - `annual_summary.csv`: statewide totals, PPL rank/share, request-count HHI, and top-three EDC share.
 - `edc_year_panel.csv`: 33 EDC-year observations with request mix, statewide share, and prior-year change.
 
