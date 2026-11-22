@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Graduate econometrics and causal inference course
+- Added a Year 2 graduate course spanning potential outcomes, randomized experiments, panel methods, difference-in-differences, IV, RD, synthetic controls, survival analysis, time series, and interference.
+- Added Problem Set 1 and worked solutions on estimands, selection bias, conditional independence, DAGs, randomized encouragement, and feeder-level interference.
+- Connected the course to the Pennsylvania DER interconnection capstone and competing-risks methods lab.
+
+
 ## 2026-11-22 — Advanced mathematics pacing plan
 - Added a 24–30 week paced schedule for Problem Sets 1–9, capstone implementation, validation, and defense.
 - Explicitly preserves the 2–3 hour weekly target within the overall 3–5 hour program budget; extensions shift later blocks rather than increasing weekly load.
