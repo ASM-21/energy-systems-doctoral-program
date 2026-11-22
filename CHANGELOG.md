@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Capstone publication and defense templates
+- Added structured templates for the 6,000–8,000 word research paper, two-page policy brief, oral defense, and reproducibility checklist.
+- Added an evidence classification framework to prevent descriptive results, provisional interpretation, and proposed recommendations from being conflated.
+
+
 ## 2026-11-22 — Application-level interconnection evaluation protocol
 - Added a relational event-history data specification for DER applications, review episodes, policy regimes, feeder snapshots, and network upgrades.
 - Defined outcomes, time origins, censoring, competing events, target-trial elements, causal structure, statistical method selection, and privacy/data-quality safeguards.
