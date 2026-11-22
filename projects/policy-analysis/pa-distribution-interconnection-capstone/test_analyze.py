@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from analyze import DEFAULT_INPUT, analyze, load_panel, validate_panel
+from analyze import DEFAULT_INPUT, analyze, build_provenance, load_panel, validate_panel
 
 
 class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
@@ -41,6 +41,12 @@ class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
         self.assertEqual(large["statewide_level2_ge500kw_requests"], 196)
         self.assertEqual(large["level3_ge500kw_requests"], 411)
         self.assertEqual(large["statewide_level3_ge500kw_requests"], 954)
+
+    def test_provenance_hash_is_reproducible_sha256(self):
+        provenance = build_provenance(DEFAULT_INPUT)
+        self.assertEqual(len(provenance["source_dataset_sha256"]), 64)
+        self.assertEqual(provenance["reporting_period"], "June 1 through May 31; reporting years 2023-2025")
+        self.assertEqual(provenance["source_dataset_path"], "research/casebooks/pa-der-interconnection/pa_edc_interconnection_2023_2025.csv")
 
     def test_duplicate_and_nonreconciling_rows_fail(self):
         duplicate = self.rows + [dict(self.rows[0])]
