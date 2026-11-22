@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-21 — Planned advanced mathematics sequence
+- Added a reproducible frequency-response state-space lab with eigenvalue calculations, analytical steady-state response, RK4 integration, explicit-Euler stability bounds, and unit tests; added it to the CI test matrix and research project index. The model uses synthetic normalized inputs and explicitly disclaims operational-security use.
 - Added four assessed advanced-mathematics problem sets with worked solutions: matrix analysis and network structure; multivariable calculus and local models; constrained optimization, KKT conditions and electricity-market duality; and differential equations, state-space dynamics and numerical stability.
 - Added mathematical derivations that connect abstract results to three-bus network equations, nonlinear model linearization, economic dispatch shadow prices, storage dynamics, and frequency-response stability. Corrected and checked the Taylor approximation numerical comparison in the calculus solutions.
 
