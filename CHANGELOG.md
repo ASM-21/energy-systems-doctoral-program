@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Instrumental variables and regression discontinuity assessment
+- Added Problem Set 4 and worked solutions on Wald/LATE, 2SLS, weak instruments, exclusion restrictions, sharp/fuzzy RD, manipulation, and threshold validity.
+- Explicitly distinguished descriptive reporting thresholds from legal/program treatment-assignment rules.
+- Integrated the assignment into the graduate econometrics course and MkDocs navigation.
+
+
 ## 2026-11-22 — Staggered-adoption DID computational lab
 - Added a transparent 2×2 DID contrast and cohort-time ATT estimator using never-treated controls and cohort-specific pre-treatment baselines.
 - Added a synthetic staggered-adoption panel with heterogeneous effects, unit tests, and explicit limitations on balance, controls, inference, and parallel trends.
