@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-21 — Planned advanced mathematics sequence
+- Added four assessed advanced-mathematics problem sets with worked solutions: matrix analysis and network structure; multivariable calculus and local models; constrained optimization, KKT conditions and electricity-market duality; and differential equations, state-space dynamics and numerical stability.
+- Added mathematical derivations that connect abstract results to three-bus network equations, nonlinear model linearization, economic dispatch shadow prices, storage dynamics, and frequency-response stability. Corrected and checked the Taylor approximation numerical comparison in the calculus solutions.
 
 - Added a dedicated Year 2 course in Advanced Mathematical Methods for Energy Systems and Infrastructure Research, explicitly marked as planned rather than part of the current Year 1 workload.
 - Specified a two-semester modular sequence covering proof techniques, matrix analysis, multivariable calculus, real-analysis foundations, differential equations, dynamical systems, probability and stochastic processes, convex analysis, KKT conditions, duality, numerical optimization, graph theory, and stochastic/robust optimization.
