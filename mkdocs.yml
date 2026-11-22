@@ -114,6 +114,7 @@ nav:
       - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
       - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
       - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
+      - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
