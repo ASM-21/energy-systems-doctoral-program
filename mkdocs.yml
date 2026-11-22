@@ -122,6 +122,7 @@ nav:
       - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
       - Radial DER hosting-capacity lab: projects/power-systems/radial-der-hosting-capacity/README.md
       - Flexible interconnection lab: projects/power-systems/flexible-interconnection/README.md
+      - Frequency response dynamics lab: projects/power-systems/frequency-response-dynamics/README.md
       - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
       - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
       - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
