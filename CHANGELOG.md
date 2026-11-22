@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Staggered-adoption DID computational lab
+- Added a transparent 2×2 DID contrast and cohort-time ATT estimator using never-treated controls and cohort-specific pre-treatment baselines.
+- Added a synthetic staggered-adoption panel with heterogeneous effects, unit tests, and explicit limitations on balance, controls, inference, and parallel trends.
+- Integrated the lab into Makefile, CI, project index, and graduate econometrics course.
+
+
 ## 2026-11-22 — Panel data and difference-in-differences assessment
 - Added Problem Set 3 and worked solutions on 2×2 DID, parallel-trends violations, event-study specifications, staggered adoption, heterogeneous effects, TWFE weighting, and small-cluster inference.
 - Applied the design critique to Pennsylvania's 2023–2025 pre-policy aggregate panel and documented why it cannot estimate a 2026 treatment effect.
