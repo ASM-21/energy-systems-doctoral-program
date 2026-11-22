@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Competing-risks estimator validation
+- Extended the survival methods lab with deterministic exponential competing-risk cohort simulation, closed-form cause-specific cumulative incidence, and step-curve evaluation.
+- Added a 20,000-record seeded Monte Carlo test that checks Aalen-Johansen and Kaplan-Meier net-risk estimates against their respective analytic targets.
+- Added validation for simulation inputs and retained the explicit distinction between observed cumulative incidence and hypothetical net approval risk.
+
+
 ## 2026-11-22 — Competing-risks literature integration
 - Added foundational Aalen-Johansen, Putter-Fiocco-Geskus, Fine-Gray, and Gray references to the methods lab and core reading list.
 - Distinguished the nonparametric estimator implemented in the lab from regression methods that remain outside its scope.
