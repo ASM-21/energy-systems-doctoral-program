@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Stochastic and robust optimization assessment
+- Added Problem Set 8 and worked solutions on two-stage stochastic capacity planning, expected-value and wait-and-see comparisons, VSS/EVPI, budgeted uncertainty, chance constraints, CVaR, and nonanticipativity.
+- Added SIAM references for stochastic programming and robust optimization to the course and core reading list.
+- Integrated the assignment into the advanced mathematics course sequence and MkDocs navigation.
+
+
 ## 2026-11-22 — Graph theory and network-flow resilience
 - Added Problem Set 7 and worked solutions on incidence matrices, cycle spaces, graph Laplacians, maximum flow/minimum cut, connectivity, contingencies, and the limits of graph-based power-system screening.
 - Added a standard-library Edmonds-Karp lab with arc-flow outputs, residual-reachable minimum-cut certificates, contingency experiments, and unit tests.
