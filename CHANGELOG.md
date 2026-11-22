@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-22 — Randomized experiment reproducibility outputs
+- Documented fixed-seed synthetic example outputs for the randomized experiments lab so users can verify the CLI run without treating the simulation as empirical evidence.
+
+
 ## 2026-11-22 — Randomized experiments computational lab
 - Added a standard-library implementation of complete randomization, difference-in-means ITT, Neyman standard errors, Monte Carlo Fisher randomization inference, MDE, and cluster design effects.
 - Added deterministic unit tests and a synthetic smoke example; explicitly documented the sharp-null, assignment-mechanism, and cluster-design limitations.
