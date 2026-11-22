@@ -94,7 +94,7 @@ The problem sets are designed to require derivation, interpretation, and reprodu
 
 1. [Problem Set 1: Matrix Analysis and Network Structure](problem-set-01-matrix-analysis.md) and [worked solutions](problem-set-01-matrix-analysis-solutions.md). Covers vector spaces, rank-nullity, incidence matrices, graph Laplacians, DC network equations, eigenvalues, positive definiteness, conditioning, and sensitivity.
 2. [Problem Set 2: Multivariable Calculus, Curvature, and Local Models](problem-set-02-multivariable-calculus.md) and [worked solutions](problem-set-02-multivariable-calculus-solutions.md). Covers gradients, directional derivatives, Hessian convexity, Jacobians, Newton linearization, Taylor error, and local dynamical stability.
-3. Problem Set 3 (to be developed): constrained optimization, KKT conditions, Lagrangian duality, and shadow-price interpretation in economic dispatch and network-constrained operation.
+3. [Problem Set 3: Constrained Optimization, KKT Conditions, and Electricity-Market Duality](problem-set-03-constrained-optimization-duality.md) and [worked solutions](problem-set-03-constrained-optimization-duality-solutions.md). Covers convex quadratic dispatch, primal and dual linear programs, KKT conditions, complementary slackness, value functions, and electricity-market price interpretation.
 
 Do not treat access to worked solutions as a substitute for attempting the derivations. For a useful assessment, complete the assignment first, record uncertainty or errors, then compare against the solution notes and revise the derivation.
 
