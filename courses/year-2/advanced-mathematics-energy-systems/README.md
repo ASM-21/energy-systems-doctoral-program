@@ -88,6 +88,16 @@ A passing project must show that the learner can explain why the mathematical fo
 - MIT OpenCourseWare, [6.253 Convex Analysis and Optimization](https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/). Graduate benchmark emphasizing proofs, convexity, duality, and algorithmic theory.
 - MIT OpenCourseWare, [15.094J Systems Optimization: Models and Computation](https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/). Application-oriented reference for network, discrete, nonlinear, stochastic, and large-scale optimization.
 
+## Problem sets and assessment sequence
+
+The problem sets are designed to require derivation, interpretation, and reproducible numerical checks. They are deliberately spaced so the mathematics can be learned alongside energy-system applications.
+
+1. [Problem Set 1: Matrix Analysis and Network Structure](problem-set-01-matrix-analysis.md) and [worked solutions](problem-set-01-matrix-analysis-solutions.md). Covers vector spaces, rank-nullity, incidence matrices, graph Laplacians, DC network equations, eigenvalues, positive definiteness, conditioning, and sensitivity.
+2. Problem Set 2 (to be developed): multivariable calculus, Jacobians, Hessians, Taylor approximation, and local linearization of nonlinear energy-system models.
+3. Problem Set 3 (to be developed): constrained optimization, KKT conditions, Lagrangian duality, and shadow-price interpretation in economic dispatch and network-constrained operation.
+
+Do not treat access to worked solutions as a substitute for attempting the derivations. For a useful assessment, complete the assignment first, record uncertainty or errors, then compare against the solution notes and revise the derivation.
+
 ## Sequencing and scope control
 
 This is a planned advanced course, not a prerequisite to the current Year 1 work. Do not attempt to complete every module before making progress in energy systems. The recommended order is to finish Year 1 foundations, complete targeted mathematics remediation, then take Modules 1–6 before advanced OPF and stochastic planning. Modules 7–9 can follow or run as research needs dictate.
