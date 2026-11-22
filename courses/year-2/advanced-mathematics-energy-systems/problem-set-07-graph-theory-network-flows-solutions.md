@@ -2,7 +2,7 @@
 
 ## Problem 1. Incidence matrices, cycle space, and Laplacians
 
-With rows ordered `(s,a,b,t)` and columns ordered `(s→a,s→b,a→b,a→t,b→t)), the incidence matrix is
+With rows ordered `(s,a,b,t)` and columns ordered `(s→a,s→b,a→b,a→t,b→t)`, the incidence matrix is
 
 \[
 A=\begin{bmatrix}
