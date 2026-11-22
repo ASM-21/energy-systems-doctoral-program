@@ -98,6 +98,8 @@ The problem sets are designed to require derivation, interpretation, and reprodu
 4. [Problem Set 4: Differential Equations, State-Space Models, and Numerical Stability](problem-set-04-differential-equations-dynamics.md) and [worked solutions](problem-set-04-differential-equations-dynamics-solutions.md). Covers storage dynamics, a simplified frequency-response model, eigenmode interpretation, matrix exponentials, explicit-Euler stability, and model validation.
 5. [Problem Set 5: Probability, Stochastic Processes, and Reliability Modeling](problem-set-05-probability-stochastic-processes.md) and [worked solutions](problem-set-05-probability-stochastic-processes-solutions.md). Covers correlated net-load uncertainty, Bayes' theorem, Poisson outage arrivals, Markov weather regimes, chance constraints, and Monte Carlo precision.
 
+**Computational companion:** [Stochastic resource-adequacy screening lab](../../../projects/power-systems/stochastic-adequacy/README.md), with reproducible Markov weather and repairable-unit Monte Carlo simulation. The lab is synthetic and is not an operational reliability assessment.
+
 Do not treat access to worked solutions as a substitute for attempting the derivations. For a useful assessment, complete the assignment first, record uncertainty or errors, then compare against the solution notes and revise the derivation.
 
 ## Sequencing and scope control
