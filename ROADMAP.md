@@ -13,7 +13,7 @@ Understand the physical grid, economic logic of dispatch and investment, market/
 
 ## Year 2 — Advanced analytical tools
 - **Planned mathematical methods course:** matrix analysis, multivariable calculus, real-analysis foundations, differential equations, dynamical systems, probability/stochastic processes, convex analysis, duality, numerical optimization, graph theory, and stochastic/robust optimization. This is a two-semester modular sequence, not an additional full-time course.
-- Graduate econometrics: OLS, causal inference, panel data, event studies, IV, difference-in-differences, synthetic control, time series.
+- [Graduate econometrics and causal inference](courses/year-2/graduate-econometrics-causal-inference/README.md): potential outcomes, OLS, panel data, event studies, IV, difference-in-differences, regression discontinuity, synthetic control, survival/competing risks, and time series.
 - Electricity market design: LMP, congestion, ancillary services, capacity/resource adequacy, market power, transmission planning.
 - Optimization: LP, NLP, mixed-integer, stochastic optimization, unit commitment, dispatch, optimal power flow.
 - Infrastructure economics: cost of capital, rate base, revenue requirements, depreciation, risk allocation, investment incentives.
