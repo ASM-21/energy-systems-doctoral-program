@@ -26,7 +26,7 @@ Random assignment makes assignment independent of potential outcomes in expectat
 
 A strong pre-treatment predictor of Y can reduce residual variance and improve precision. In a randomized experiment, D is independent of potential outcomes by design, so the unadjusted difference in means is unbiased in expectation. Covariate adjustment is a precision strategy, not a substitute for randomization.
 
-A post-assignment variable may be affected by treatment or share causes with the outcome. Conditioning on it can block a mediated effect or induce collider bias. Upgrade-study requests are likely downstream of application and network conditions and should not be automatically included as a baseline control.
+If treatment effects vary with X, pre-specify treatment-by-X interactions or estimate conditional treatment effects and standardize them over the target population's X distribution. Report the target population and weighting rule; do not present a single additive coefficient as a universal effect without justification. A post-assignment variable may be affected by treatment or share causes with the outcome. Conditioning on it can block a mediated effect or induce collider bias. Upgrade-study requests are likely downstream of application and network conditions and should not be automatically included as a baseline control.
 
 Missing baseline covariates should be described by treatment arm and handled using a pre-specified strategy such as missingness indicators, multiple imputation under defensible assumptions, or complete-case analysis with sensitivity checks. Missing outcomes require explicit follow-up and missing-data assumptions; withdrawals are not automatically missing outcomes.
 
