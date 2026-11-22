@@ -108,6 +108,26 @@ The problem sets are designed to require derivation, interpretation, and reprodu
 
 Do not treat access to worked solutions as a substitute for attempting the derivations. For a useful assessment, complete the assignment first, record uncertainty or errors, then compare against the solution notes and revise the derivation.
 
+## Suggested 24–30 week pacing
+
+This is a single course sequence, not nine assignments to complete concurrently. At 2–3 hours per week, use the following pacing and extend any block that requires more derivation time.
+
+| Weeks | Focus | Evidence |
+|---|---|---|
+| 1–2 | PS1 matrix analysis | Derivations and network matrix check |
+| 3–4 | PS2 multivariable calculus | Gradient/Hessian and linearization work |
+| 5–6 | PS3 constrained optimization | KKT and primal/dual derivations |
+| 7–8 | PS4 dynamical systems | Stability analysis and numerical simulation |
+| 9–10 | PS5 probability and stochastic processes | Probability calculations and Monte Carlo check |
+| 11–12 | PS6 numerical optimization | Convergence and conditioning experiments |
+| 13–14 | PS7 graph theory and network flow | Max-flow/min-cut certificate and contingency analysis |
+| 15–17 | PS8 stochastic and robust optimization | Recourse formulation and risk comparison |
+| 18–21 | PS9 integrated research design | Data audit, network formulation, identification plan |
+| 22–24 | Capstone implementation and revision | Tested reproducibility package and technical draft |
+| 25–30 (optional) | Validation, defense, and extension | Benchmark comparison, oral defense, or revised paper |
+
+The minimum path is 24 weeks. Weeks 25–30 are reserved for topics that require deeper derivation or model validation. If a problem set takes longer, shift later blocks rather than increasing the weekly workload. Do not treat the full 6,000–8,000 word capstone as a one-week assignment.
+
 ## Sequencing and scope control
 
 This is a planned advanced course, not a prerequisite to the current Year 1 work. Do not attempt to complete every module before making progress in energy systems. The recommended order is to finish Year 1 foundations, complete targeted mathematics remediation, then take Modules 1–6 before advanced OPF and stochastic planning. Modules 7–9 can follow or run as research needs dictate.
