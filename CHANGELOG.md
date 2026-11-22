@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Stochastic and robust capacity-planning lab
+- Added SciPy/HiGHS linear-programming formulations for two-stage stochastic capacity procurement, deterministic expected-value benchmarking, wait-and-see information value, and min-max robust capacity planning.
+- Added unit tests for the 80 MW stochastic optimum, 104 MW expected-value decision, 120 MW robust decision, $312 value of the stochastic solution, and $600 expected value of perfect information.
+- Integrated the lab into the project index, Year 2 computational companions, Makefile, Python CI matrix, and MkDocs navigation. All parameters and outputs are explicitly synthetic.
+
+
 ## 2026-11-22 — Stochastic and robust optimization assessment
 - Added Problem Set 8 and worked solutions on two-stage stochastic capacity planning, expected-value and wait-and-see comparisons, VSS/EVPI, budgeted uncertainty, chance constraints, CVaR, and nonanticipativity.
 - Added SIAM references for stochastic programming and robust optimization to the course and core reading list.
