@@ -10,8 +10,9 @@ Projects are the main evidence of applied mastery. Each project should have a de
 - Use versioned assumptions and explain scenario choices.
 - Provide a short policy/decision summary alongside technical artifacts.
 
-## Initial flagship project
-See [PJM/Pennsylvania distribution infrastructure and DER research proposal](policy-analysis/pjm-distribution-der-research-proposal.md). This is a candidate project, not a completed finding or predetermined conclusion.
+## Initial flagship research projects
+- [Pennsylvania distribution DER interconnection capstone](policy-analysis/pa-distribution-interconnection-capstone/README.md) — reproducible 11-EDC, three-year descriptive baseline, peer comparisons, and a defensible design for follow-on application-level evaluation.
+- [PJM/Pennsylvania distribution infrastructure and DER research proposal](policy-analysis/pjm-distribution-der-research-proposal.md) — broader candidate project connecting distribution constraints, utility investment, and DER market participation. It is a proposal, not a completed finding or predetermined conclusion.
 
 ## Computational labs
 - [Battery arbitrage optimization](energy-economics/storage-arbitrage/README.md) — intertemporal storage scheduling, efficiency, and degradation
