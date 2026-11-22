@@ -1,3 +1,4 @@
+import math
 import unittest
 
 from survival import (
@@ -67,7 +68,7 @@ class CompetingRiskTests(unittest.TestCase):
         estimated_cif = curve_value_at(aj, horizon, "cif_approval")
         estimated_net = curve_value_at(km, horizon, "net_approval_probability")
         true_cif = exponential_competing_risk_cif("approval", rates, horizon)
-        true_net = 1.0 - __import__("math").exp(-rates["approval"] * horizon)
+        true_net = 1.0 - math.exp(-rates["approval"] * horizon)
         self.assertAlmostEqual(estimated_cif, true_cif, delta=0.015)
         self.assertAlmostEqual(estimated_net, true_net, delta=0.015)
         self.assertGreater(estimated_net, estimated_cif + 0.15)
