@@ -22,6 +22,7 @@ See [PJM/Pennsylvania distribution infrastructure and DER research proposal](pol
 - [Flexible interconnection and dynamic export envelopes](power-systems/flexible-interconnection/README.md) — compare fixed, scheduled, and dynamic export limits with PV and behind-the-meter storage
 - [Frequency response and state-space dynamics](power-systems/frequency-response-dynamics/README.md) — eigenvalue stability, governor response, RK4 simulation, and explicit-Euler numerical stability
 - [Stochastic resource-adequacy screen](power-systems/stochastic-adequacy/README.md) — Markov weather regimes, repairable unit outages, Monte Carlo LOLE/EUE, and simulation uncertainty
+- [Network-flow and resilience screen](power-systems/network-flow-resilience/README.md) — Edmonds-Karp maximum flow, minimum-cut certificates, and capacity-aware contingency screening
 - [IEEE 13-node OpenDSS benchmark](power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md) — AC-capable, unbalanced three-phase benchmark with PV scenario comparisons
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
 
