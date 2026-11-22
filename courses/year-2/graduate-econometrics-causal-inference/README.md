@@ -91,7 +91,7 @@ A passing assignment must state the estimand and identification assumptions befo
 6. Future: survival analysis, competing risks, and multi-state models.
 7. Future: interference, spatial exposure, and energy infrastructure case study.
 
-**Computational companion:** [Randomized experiments and power lab](../../../projects/econometrics/randomized-experiments/README.md), with complete randomization, ITT estimation, Neyman standard errors, randomization inference, MDE, and cluster design-effect calculations.
+**Computational companions:** [Randomized experiments and power lab](../../../projects/econometrics/randomized-experiments/README.md), with complete randomization, ITT estimation, Neyman standard errors, randomization inference, MDE, and cluster design-effect calculations; and [difference-in-differences lab](../../../projects/econometrics/difference-in-differences/README.md), with cohort-time ATT estimation under staggered adoption and heterogeneous effects.
 
 ## Core texts and references
 
