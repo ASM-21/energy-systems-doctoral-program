@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Probability and stochastic-process foundations
+- Added a fifth advanced-mathematics problem set and worked solutions covering covariance in net-load uncertainty, conditional probability, Poisson outage arrivals, Markov weather regimes, chance-constrained reserve sizing, and Monte Carlo precision.
+- Added the assignment to the Year 2 course sequence and published navigation.
+- Emphasized model-risk distinctions: stochastic sampling error is not model validity, a one-hour chance constraint is not a system-wide adequacy guarantee, and event counts do not alone measure customer reliability.
+
+
 ## 2026-11-21 — Planned advanced mathematics sequence
 - Added a reproducible frequency-response state-space lab with eigenvalue calculations, analytical steady-state response, RK4 integration, explicit-Euler stability bounds, and unit tests; added it to the CI test matrix and research project index. The model uses synthetic normalized inputs and explicitly disclaims operational-security use.
 - Added four assessed advanced-mathematics problem sets with worked solutions: matrix analysis and network structure; multivariable calculus and local models; constrained optimization, KKT conditions and electricity-market duality; and differential equations, state-space dynamics and numerical stability.
