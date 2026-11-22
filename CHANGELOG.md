@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22 — Graph theory and network-flow resilience
+- Added Problem Set 7 and worked solutions on incidence matrices, cycle spaces, graph Laplacians, maximum flow/minimum cut, connectivity, contingencies, and the limits of graph-based power-system screening.
+- Added a standard-library Edmonds-Karp lab with arc-flow outputs, residual-reachable minimum-cut certificates, contingency experiments, and unit tests.
+- Integrated the assignment and lab into the Year 2 course guide, project index, Makefile, Python CI matrix, and MkDocs navigation.
+- Explicitly separated structural connectivity and abstract transfer bounds from AC/DC electrical feasibility and operational N-1 security.
+
+
 ## 2026-11-22 — Numerical optimization assessment
 - Added a sixth advanced-mathematics problem set with worked solutions on gradient descent, strong convexity, Newton updates, Armijo line search, scaling and preconditioning, least-squares conditioning, and solver diagnostics.
 - Integrated the assignment into the Year 2 course sequence and MkDocs navigation. Emphasis is on deriving convergence conditions and distinguishing solver termination from optimality and model validity.
