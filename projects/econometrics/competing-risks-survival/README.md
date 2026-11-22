@@ -1,0 +1,33 @@
+# Competing-Risks Survival Analysis for DER Interconnection
+
+A transparent standard-library implementation of the Kaplan-Meier net-approval curve and Aalen-Johansen cause-specific cumulative-incidence functions. The examples are synthetic. This lab exists to teach the methods needed for future application-level interconnection data; it does not estimate PPL or Pennsylvania processing outcomes.
+
+## Run
+
+```bash
+python -m unittest -v
+python run_example.py
+```
+
+## Why competing risks matter
+
+An application may end in approval, withdrawal, or denial. These are distinct terminal events. An application still open at the data cutoff is right-censored. Treating withdrawal and denial as ordinary independent censoring in a Kaplan-Meier analysis estimates a hypothetical net approval risk under an independent-censoring assumption. It does not estimate the observed probability that an application is approved by time t in the presence of competing outcomes.
+
+The Aalen-Johansen estimator updates the event-free probability using all observed causes and allocates probability mass to each cause-specific cumulative-incidence function. With the included six-record test fixture, the approval cumulative incidence is 5/12 at day 3, while one-minus-Kaplan-Meier net approval risk is 7/12. The difference is not a coding defect; it is a different estimand.
+
+## Data structure required for a real application cohort
+
+Each record needs a unique application identifier, a defensible time origin (for example, complete-application date), elapsed follow-up time, terminal event type, censoring date, and covariates known at or before the relevant decision point. Repeated applications from the same project/customer, EDC/feeder clustering, review-level transitions, and changing rule eligibility require explicit treatment.
+
+The example CSV contains synthetic identifiers and durations only. It must never be merged with or described as actual utility application data.
+
+## Statistical limitations
+
+- Non-informative censoring is required for the relevant estimator; censoring may be informative if difficult applications remain open longer.
+- Cause definitions must be mutually exclusive and consistently recorded.
+- Time origin and eligibility must be consistent across cohorts.
+- The basic estimators are unadjusted. Covariate adjustment, competing-risks regression, frailty, time-varying treatment, and cluster-robust inference require additional methods and diagnostics.
+- The simple implementation assumes events at tied times occur before censoring removals at that time.
+- Aalen-Johansen estimates descriptive cumulative incidence; it does not identify a causal effect of a policy change.
+
+See the [Pennsylvania DER interconnection capstone](../../policy-analysis/pa-distribution-interconnection-capstone/README.md) for the public aggregate-data baseline and the application-level data requirements.
