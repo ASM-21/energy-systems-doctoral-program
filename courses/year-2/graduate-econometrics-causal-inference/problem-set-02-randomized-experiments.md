@@ -27,8 +27,9 @@ Y_i=\alpha+\tau D_i+\beta(X_i-\bar X)+\epsilon_i.
 
 1. Explain why including a pre-treatment covariate can improve precision in a randomized experiment.
 2. Explain why regression adjustment is not required for unbiasedness under valid random assignment.
-3. Explain why controlling for a post-assignment variable such as whether an applicant requested an upgrade study may change the estimand or induce bias.
-4. Describe how you would handle missing baseline X and missing outcome Y.
+3. If treatment-effect heterogeneity is plausible, explain how you would pre-specify interactions and standardize predictions to a target population.
+4. Explain why controlling for a post-assignment variable such as whether an applicant requested an upgrade study may change the estimand or induce bias.
+5. Describe how you would handle missing baseline X and missing outcome Y.
 
 ## Problem 3. Randomized encouragement and treatment-on-the-treated
 
