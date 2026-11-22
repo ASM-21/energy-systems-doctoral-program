@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Competing-risks survival methods lab
+- Added standard-library Kaplan-Meier net-approval and Aalen-Johansen cause-specific cumulative-incidence estimators for a synthetic interconnection cohort.
+- Added tests for tied events, right censoring, competing risks, probability-mass conservation, and the difference between net risk and observed cumulative incidence.
+- Linked the methods lab to the Pennsylvania interconnection capstone and integrated it into Makefile, CI, and MkDocs navigation.
+
+
 ## 2026-11-22 — Integrated doctoral research design capstone
 - Added Problem Set 9 and a detailed assessment guide integrating empirical data validation, causal identification, distribution network equations, two-stage stochastic and robust investment, dual interpretation, numerical verification, and regulatory institutions.
 - Connected the assessment to the public Pennsylvania EDC interconnection capstone and documented a strict rubric that rejects unsupported causal claims or invalid physical formulations.
