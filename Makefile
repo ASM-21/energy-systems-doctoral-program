@@ -13,7 +13,8 @@ PROJECTS := \
 	projects/power-systems/frequency-response-dynamics \
 	projects/power-systems/stochastic-adequacy \
 	projects/power-systems/network-flow-resilience \
-	projects/econometrics/ols-energy-demand
+	projects/econometrics/ols-energy-demand \
+	projects/econometrics/competing-risks-survival
 
 .PHONY: test docs clean
 
