@@ -7,6 +7,10 @@
 !!! warning "Public-source research only"
     Use only publicly available tariffs, orders, manuals, data, and publications. Do not use employer-confidential processes, internal system data, customer information, nonpublic project records, or work product. This casebook is an independent academic exercise, not an assessment of any employer's performance.
 
+## Application-level evaluation specification
+
+See [Application-Level Evaluation Data Specification](application-level-evaluation-data-spec.md) for the relational data schema, event-history definitions, outcome estimands, target-trial protocol, causal structure, survival/competing-risk method selection, and privacy controls. No application-level dataset is currently available in this casebook.
+
 ## Why this case matters
 
 Two different institutional processes can affect a distributed resource:
