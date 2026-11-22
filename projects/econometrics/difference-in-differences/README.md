@@ -13,12 +13,12 @@ python run_example.py
 
 Each unit has a first treatment period (cohort) or is never treated. For cohort g, the estimator uses period g-1 as its baseline and never-treated units as controls to estimate ATT(g,t) for periods t at or after g:
 
-[
+\[
 ATT(g,t)=
-left[ar Y_{g,t}-ar Y_{g,g-1}ight]
+\left[\bar Y_{g,t}-\bar Y_{g,g-1}\right]
 -
-left[ar Y_{C,t}-ar Y_{C,g-1}ight].
-]
+\left[\bar Y_{C,t}-\bar Y_{C,g-1}\right].
+\]
 
 The synthetic panel includes two adoption cohorts and a never-treated group. Treatment effects grow over event time and differ across cohorts. The estimator recovers the known cohort-time effects because the synthetic data satisfy common untreated trends by construction.
 
