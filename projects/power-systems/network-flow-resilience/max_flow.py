@@ -4,6 +4,7 @@ This is a graph algorithm for abstract directed capacitated networks.
 It is not an electrical power-flow solver.
 """
 from collections import deque
+from math import isfinite
 
 
 def maximum_flow(nodes, edges, source, sink):
@@ -29,7 +30,7 @@ def maximum_flow(nodes, edges, source, sink):
             raise ValueError("edge endpoint is not in nodes")
         if tail == head:
             raise ValueError("self-loops are not supported")
-        if not isinstance(capacity, (int, float)) or capacity < 0:
+        if not isinstance(capacity, (int, float)) or not isfinite(capacity) or capacity < 0:
             raise ValueError("capacities must be nonnegative numbers")
         forward_index = len(adjacency[tail])
         reverse_index = len(adjacency[head])
