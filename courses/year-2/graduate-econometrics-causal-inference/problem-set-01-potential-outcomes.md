@@ -7,7 +7,7 @@
 
 ## Problem 1. Potential outcomes and estimands
 
-Let \(D_i\in\{0,1\}\) denote whether application i is exposed to an expedited interconnection review process. Let \(Y_i(1)\) and \(Y_i(0)\) be potential outcomes, where Y is an indicator for receiving a first disposition within 90 days of a complete application.
+Let \(D_i\in\{0,1\}\) denote whether application i is exposed to an expedited interconnection review process. Let \(Y_i(1)\) and \(Y_i(0)\) be potential outcomes, where Y is an indicator for receiving a utility decision (approval or denial, excluding applicant withdrawal) within 90 days of a complete application.
 
 1. Define the individual treatment effect, average treatment effect (ATE), average treatment effect on the treated (ATT), and average treatment effect on the untreated (ATU).
 2. State the fundamental problem of causal inference.
