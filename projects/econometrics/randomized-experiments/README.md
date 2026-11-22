@@ -18,6 +18,10 @@ python run_example.py
 - **MDE:** uses a normal approximation for a two-sided 5% test and 80% power.
 - **Cluster design effect:** uses (1+(m-1)ho) as a first-order approximation; it does not replace cluster-level power analysis.
 
+## Deterministic example check
+
+With the fixed example seeds, the synthetic run produces an ITT near 0.1174, Neyman standard error near 0.0379, Monte Carlo randomization p-value near 0.0015, approximate MDE near 0.0863, and cluster design effect 1.95. These values are a reproducibility check for one synthetic realization, not an empirical estimate or a calibrated power analysis.
+
 ## Scope and limitations
 
 The code uses synthetic continuous outcomes and is not an empirical evaluation. The randomization test assumes the assignment mechanism implemented in the code; stratified or cluster randomization requires corresponding constrained permutations. The MDE approximation assumes a known/estimated standard deviation and ignores small-sample degrees-of-freedom adjustments. Cluster design effect is only a rough approximation and can be misleading with few clusters, unequal cluster sizes, or heterogeneous ICCs.
