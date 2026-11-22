@@ -26,7 +26,7 @@ class MaximumFlowTests(unittest.TestCase):
         )
         value, source_side, _, cut = maximum_flow(nodes, edges, "s", "t")
         self.assertAlmostEqual(value, 9.0)
-        self.assertIn("t", {"t"})  # Sink remains a node; reachability is certified by positive flow.
+        self.assertNotIn("t", source_side)  # No residual s-t path remains.
         self.assertAlmostEqual(sum(edge[2] for edge in cut), value)
 
     def test_source_arc_outage(self):
