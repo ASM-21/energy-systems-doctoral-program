@@ -20,6 +20,7 @@ jobs:
           - projects/energy-economics/merit-order-dispatch
           - projects/energy-economics/storage-arbitrage
           - projects/energy-economics/non-exporting-btm-storage
+          - projects/energy-economics/stochastic-robust-capacity-planning
           - projects/power-systems/two-node-congestion
           - projects/power-systems/three-bus-dc-power-flow
           - projects/power-systems/radial-der-hosting-capacity
@@ -44,7 +45,9 @@ jobs:
         run: python -m unittest discover -s . -p "test_*.py" -v
       - name: Run smoke test
         run: |
-          if [ -f dispatch.py ]; then
+          if [ -f capacity_planning.py ]; then
+            python capacity_planning.py
+          elif [ -f dispatch.py ]; then
             python dispatch.py
           elif [ -f btm_storage.py ]; then
             python btm_storage.py --power-kw 0 --energy-kwh 0 --output-dir /tmp/btm-storage-baseline
