@@ -25,6 +25,7 @@ jobs:
           - projects/power-systems/radial-der-hosting-capacity
           - projects/power-systems/flexible-interconnection
           - projects/power-systems/frequency-response-dynamics
+          - projects/power-systems/stochastic-adequacy
           - projects/econometrics/ols-energy-demand
     defaults:
       run:
@@ -56,6 +57,8 @@ jobs:
             python flexible_interconnection.py --output-dir /tmp/flexible-interconnection-results
           elif [ -f frequency_response.py ]; then
             python frequency_response.py --output-dir /tmp/frequency-response-results
+          elif [ -f adequacy.py ]; then
+            python adequacy.py --years 2 --output-dir /tmp/stochastic-adequacy-results
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
