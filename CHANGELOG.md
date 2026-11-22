@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Randomized experiments computational lab
+- Added a standard-library implementation of complete randomization, difference-in-means ITT, Neyman standard errors, Monte Carlo Fisher randomization inference, MDE, and cluster design effects.
+- Added deterministic unit tests and a synthetic smoke example; explicitly documented the sharp-null, assignment-mechanism, and cluster-design limitations.
+- Integrated the lab into Makefile, CI, project index, and graduate econometrics course.
+
+
 ## 2026-11-22 — Randomized experiments and power assessment
 - Added Problem Set 2 and worked solutions covering ITT, Neyman standard errors, regression adjustment, treatment-effect heterogeneity, randomized encouragement/LATE, MDE and power, cluster design effects, interference, and pre-analysis plans.
 - Integrated the assignment into the graduate econometrics course and site navigation.
