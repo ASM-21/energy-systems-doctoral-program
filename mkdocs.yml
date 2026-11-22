@@ -130,6 +130,7 @@ nav:
       - Capstone model-risk register: projects/policy-analysis/pa-distribution-interconnection-capstone/model-risk-register.csv
       - Competing-risks survival analysis: projects/econometrics/competing-risks-survival/README.md
       - Randomized experiments and power: projects/econometrics/randomized-experiments/README.md
+      - Difference-in-differences: projects/econometrics/difference-in-differences/README.md
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
