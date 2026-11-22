@@ -7,7 +7,8 @@ At tied times, events are processed before censoring removals.
 from __future__ import annotations
 
 from collections import defaultdict
-from math import isfinite
+from math import exp, isfinite
+import random
 
 CAUSES = ("approval", "withdrawal", "denial")
 ALLOWED = set(CAUSES) | {"censored"}
@@ -105,6 +106,69 @@ def aalen_johansen(records):
         })
         at_risk -= total_events + counts["censored"]
     return output
+
+
+
+def simulate_exponential_competing_risks(n, rates, censor_time, seed=21):
+    """Generate a synthetic cohort with independent exponential cause hazards.
+
+    rates maps each cause in CAUSES to a nonnegative constant hazard per time
+    unit. Administrative censoring occurs at censor_time. This generator is
+    for estimator validation and teaching, not an empirical data model.
+    """
+    if not isinstance(n, int) or n <= 0:
+        raise ValueError("n must be a positive integer")
+    if not isinstance(censor_time, (int, float)) or not isfinite(censor_time) or censor_time <= 0:
+        raise ValueError("censor_time must be finite and positive")
+    if set(rates) != set(CAUSES):
+        raise ValueError(f"rates must contain exactly {CAUSES}")
+    if any(not isinstance(value, (int, float)) or not isfinite(value) or value < 0
+           for value in rates.values()):
+        raise ValueError("cause-specific rates must be finite and nonnegative")
+    total_rate = sum(rates.values())
+    if total_rate <= 0:
+        raise ValueError("at least one cause-specific rate must be positive")
+
+    rng = random.Random(seed)
+    cumulative = []
+    running = 0.0
+    for cause in CAUSES:
+        running += rates[cause] / total_rate
+        cumulative.append((running, cause))
+
+    records = []
+    for _ in range(n):
+        event_time = rng.expovariate(total_rate)
+        if event_time > censor_time:
+            records.append({"time": float(censor_time), "event": "censored"})
+            continue
+        draw = rng.random()
+        event = next(cause for cutoff, cause in cumulative if draw <= cutoff)
+        records.append({"time": event_time, "event": event})
+    return records
+
+
+def curve_value_at(curve, time, field):
+    """Return the last right-continuous step-curve value at or before time."""
+    if not isinstance(time, (int, float)) or not isfinite(time) or time < 0:
+        raise ValueError("evaluation time must be finite and nonnegative")
+    eligible = [row for row in curve if row["time"] <= time]
+    return float(eligible[-1][field]) if eligible else 0.0
+
+
+def exponential_competing_risk_cif(cause_rate, rates, horizon):
+    """Analytic cause-specific CIF for constant independent exponential hazards."""
+    if set(rates) != set(CAUSES):
+        raise ValueError(f"rates must contain exactly {CAUSES}")
+    if any(not isinstance(value, (int, float)) or not isfinite(value) or value < 0
+           for value in rates.values()):
+        raise ValueError("cause-specific rates must be finite and nonnegative")
+    total_rate = sum(rates.values())
+    if total_rate <= 0 or cause_rate not in rates:
+        raise ValueError("positive total hazard and a named cause are required")
+    if not isinstance(horizon, (int, float)) or not isfinite(horizon) or horizon < 0:
+        raise ValueError("horizon must be finite and nonnegative")
+    return rates[cause_rate] / total_rate * (1.0 - exp(-total_rate * horizon))
 
 
 def check_probability_mass(curve, tolerance=1e-10):
