@@ -53,6 +53,10 @@ class MaximumFlowTests(unittest.TestCase):
             maximum_flow(("s", "t"), (), "s", "s")
         with self.assertRaises(ValueError):
             maximum_flow(("s", "t"), (("s", "x", 1),), "s", "t")
+        with self.assertRaises(ValueError):
+            maximum_flow(("s", "t"), (("s", "t", float("nan")),), "s", "t")
+        with self.assertRaises(ValueError):
+            maximum_flow(("s", "t"), (("s", "t", float("inf")),), "s", "t")
 
 
 if __name__ == "__main__":
