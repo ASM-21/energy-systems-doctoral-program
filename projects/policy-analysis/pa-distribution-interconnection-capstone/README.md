@@ -56,6 +56,8 @@ Do not estimate approval rates from aggregate request counts. The PUC report's s
 
 ### 4. Follow-on identification design
 
+The full [application-level evaluation data specification](../../../research/casebooks/pa-der-interconnection/application-level-evaluation-data-spec.md) defines the relational event-history schema, target-trial elements, policy-regime assignment, competing outcomes, and privacy safeguards. It is a proposed data specification, not evidence that these data are available.
+
 A credible evaluation of a process change would require application-level records with, at minimum:
 
 - application identifier and EDC/feeder identifiers (appropriately de-identified);
