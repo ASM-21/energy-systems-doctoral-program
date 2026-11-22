@@ -10,6 +10,7 @@ PROJECTS := \
 	projects/power-systems/flexible-interconnection \
 	projects/power-systems/frequency-response-dynamics \
 	projects/power-systems/stochastic-adequacy \
+	projects/power-systems/network-flow-resilience \
 	projects/econometrics/ols-energy-demand
 
 .PHONY: test docs clean
