@@ -36,6 +36,10 @@ The HHI calculated from EDC shares of reported request counts was approximately 
 
 In 2025, PPL reported 135 Level 2 requests at or above 500 kW out of 196 statewide, and 411 Level 3 requests at or above 500 kW out of 954 statewide. The 500 kW split is not reported on a comparable basis in the 2023 and 2024 tables.
 
+## Data dictionary and model-risk register
+
+The [data dictionary](data-dictionary.md) documents every source field, unit, blank/zero rule, and prohibited inference. The initial [model-risk register](model-risk-register.csv) records ten engineering, statistical, regulatory, and data risks with diagnostics and mitigations. Update it as the model and data evolve.
+
 ## Empirical design
 
 ### 1. Measurement and data validation
