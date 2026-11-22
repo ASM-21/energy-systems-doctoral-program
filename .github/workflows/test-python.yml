@@ -24,6 +24,7 @@ jobs:
           - projects/power-systems/three-bus-dc-power-flow
           - projects/power-systems/radial-der-hosting-capacity
           - projects/power-systems/flexible-interconnection
+          - projects/power-systems/frequency-response-dynamics
           - projects/econometrics/ols-energy-demand
     defaults:
       run:
@@ -53,6 +54,8 @@ jobs:
             python -m py_compile benchmarks/ieee13-opendss/run_benchmark.py benchmarks/ieee13-opendss/compare_scenarios.py benchmarks/ieee13-opendss/test_compare_scenarios.py
           elif [ -f flexible_interconnection.py ]; then
             python flexible_interconnection.py --output-dir /tmp/flexible-interconnection-results
+          elif [ -f frequency_response.py ]; then
+            python frequency_response.py --output-dir /tmp/frequency-response-results
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
