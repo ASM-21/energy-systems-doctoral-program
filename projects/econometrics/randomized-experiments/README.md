@@ -16,7 +16,7 @@ python run_example.py
 - **Neyman standard error:** uses separate sample variances for treatment and control groups.
 - **Randomization inference:** permutes assignment labels while preserving the complete-randomization design and tests the sharp null of no effect for any unit.
 - **MDE:** uses a normal approximation for a two-sided 5% test and 80% power.
-- **Cluster design effect:** uses (1+(m-1)ho) as a first-order approximation; it does not replace cluster-level power analysis.
+- **Cluster design effect:** uses (1+(m-1)\rho) as a first-order approximation; it does not replace cluster-level power analysis.
 
 ## Deterministic example check
 
