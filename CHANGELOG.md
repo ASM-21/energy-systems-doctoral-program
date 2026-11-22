@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Advanced mathematics pacing plan
+- Added a 24–30 week paced schedule for Problem Sets 1–9, capstone implementation, validation, and defense.
+- Explicitly preserves the 2–3 hour weekly target within the overall 3–5 hour program budget; extensions shift later blocks rather than increasing weekly load.
+
+
 ## 2026-11-22 — Competing-risks estimator validation
 - Extended the survival methods lab with deterministic exponential competing-risk cohort simulation, closed-form cause-specific cumulative incidence, and step-curve evaluation.
 - Added a 20,000-record seeded Monte Carlo test that checks Aalen-Johansen and Kaplan-Meier net-risk estimates against their respective analytic targets.
