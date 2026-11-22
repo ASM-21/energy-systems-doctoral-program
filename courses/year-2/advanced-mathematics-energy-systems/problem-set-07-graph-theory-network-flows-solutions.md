@@ -77,7 +77,7 @@ The cut identifies a set of facilities whose combined capacity limits transfer. 
 
 ## Problem 3. Connectivity, contingencies, and resilience
 
-Two edge-disjoint paths are \(s-a-t\) and \(s-b-t\). By the edge form of Menger's theorem, at least two edge failures are required to disconnect s from t. Removing \(a\to b\) leaves both paths intact and does not change the maximum flow of 11 MW: the feasible flow above uses that arc, but a 10 MW alternative can route 7 MW on \(s\to a\to t\) and 3 MW on \(s\to b\to t\); in fact, the cut after removal has capacity \(5+4=9\) MW, so the maximum becomes 9 MW. The connectivity remains, but transfer capability falls.
+Two edge-disjoint paths are \(s-a-t\) and \(s-b-t\). By the edge form of Menger's theorem, at least two edge failures are required to disconnect s from t. Removing \(a\to b\) leaves both paths intact, so s-t connectivity is preserved. However, the maximum flow falls from 11 MW to 9 MW: the cut \(S=\{s,a\}, T=\{b,t\}\) then has capacity \(5+4=9\) MW, and 9 MW is feasible by sending 4 MW on \(s\to a\to t\) and 5 MW on \(s\to b\to t\). Connectivity remains, but transfer capability falls.
 
 If \(s\to a\) is removed, only \(s\to b\to t\) can carry source flow, so the maximum is \(\min(5,8)=5\) MW. This flow is feasible.
 
