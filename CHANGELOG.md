@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Panel data and difference-in-differences assessment
+- Added Problem Set 3 and worked solutions on 2×2 DID, parallel-trends violations, event-study specifications, staggered adoption, heterogeneous effects, TWFE weighting, and small-cluster inference.
+- Applied the design critique to Pennsylvania's 2023–2025 pre-policy aggregate panel and documented why it cannot estimate a 2026 treatment effect.
+
+
 ## 2026-11-22 — Energy policy pre-analysis plan template
 - Added a pre-analysis plan template covering estimands, assignment, treatment timing, outcomes, identification, inference, censoring, power, robustness, model risk, and deviations.
 - Linked the template to the graduate econometrics course to reinforce design-first empirical practice.
