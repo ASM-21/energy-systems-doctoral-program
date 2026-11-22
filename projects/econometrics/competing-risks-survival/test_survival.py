@@ -61,6 +61,10 @@ class CompetingRiskTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             aalen_johansen([{"time": 1, "event": "unknown"}])
         with self.assertRaises(ValueError):
+            aalen_johansen([{"time": float("nan"), "event": "approval"}])
+        with self.assertRaises(ValueError):
+            aalen_johansen([{"time": float("inf"), "event": "approval"}])
+        with self.assertRaises(ValueError):
             aalen_johansen([{"time": 1}])
 
 
