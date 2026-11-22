@@ -29,5 +29,6 @@ Projects are the main evidence of applied mastery. Each project should have a de
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
 - [Competing-risks survival analysis](econometrics/competing-risks-survival/README.md) — Kaplan-Meier net risk, Aalen-Johansen cumulative incidence, censoring, and interconnection outcome design
 - [Randomized experiments and power](econometrics/randomized-experiments/README.md) — complete randomization, ITT, Neyman standard errors, randomization inference, MDE, and cluster design effects
+- [Difference-in-differences and staggered adoption](econometrics/difference-in-differences/README.md) — 2×2 DID, cohort-time ATT, never-treated controls, and heterogeneous treatment effects
 
 The radial feeder lab is a synthetic screening model. It is not an AC power-flow, protection, or utility interconnection study.
