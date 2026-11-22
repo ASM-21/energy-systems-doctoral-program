@@ -85,6 +85,8 @@ A policy brief should distinguish:
 
 Do not conflate the 60-day review for a DERA participation request under the proposed Pennsylvania Chapter 57 framework with physical interconnection study timelines under Rule 12.
 
+Use the [deliverable templates](deliverable-templates.md) for the research paper, policy brief, oral defense, and final reproducibility checklist.
+
 ## Required final deliverables
 
 1. A 6,000–8,000 word research paper with abstract, literature review, institutional map, data section, descriptive results, limitations, and a future identification design.
