@@ -15,7 +15,8 @@ PROJECTS := \
 	projects/power-systems/network-flow-resilience \
 	projects/econometrics/ols-energy-demand \
 	projects/econometrics/competing-risks-survival \
-	projects/econometrics/randomized-experiments
+	projects/econometrics/randomized-experiments \
+	projects/econometrics/difference-in-differences
 
 .PHONY: test docs clean
 
