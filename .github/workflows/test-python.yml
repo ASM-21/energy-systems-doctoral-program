@@ -32,6 +32,7 @@ jobs:
           - projects/econometrics/ols-energy-demand
           - projects/econometrics/competing-risks-survival
           - projects/econometrics/randomized-experiments
+          - projects/econometrics/difference-in-differences
     defaults:
       run:
         working-directory: ${{ matrix.project }}
