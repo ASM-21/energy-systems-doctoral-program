@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22 — Integrated doctoral research design capstone
+- Added Problem Set 9 and a detailed assessment guide integrating empirical data validation, causal identification, distribution network equations, two-stage stochastic and robust investment, dual interpretation, numerical verification, and regulatory institutions.
+- Connected the assessment to the public Pennsylvania EDC interconnection capstone and documented a strict rubric that rejects unsupported causal claims or invalid physical formulations.
+- Integrated the capstone into the advanced mathematics course, Year 2 evidence plan, and MkDocs navigation.
+
+
 ## 2026-11-22 — Pennsylvania distribution interconnection research capstone
 - Added a reproducible 11-EDC, 2023–2025 PUC request-count analysis using the existing casebook source dataset without duplicating the raw data.
 - Added balanced-panel and statewide reconciliation checks, PPL peer rank/share, request-count concentration, top-three share, year-over-year changes, and the 2025 >=500 kW review-level composition.
