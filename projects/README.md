@@ -27,5 +27,6 @@ Projects are the main evidence of applied mastery. Each project should have a de
 - [Network-flow and resilience screen](power-systems/network-flow-resilience/README.md) — Edmonds-Karp maximum flow, minimum-cut certificates, and capacity-aware contingency screening
 - [IEEE 13-node OpenDSS benchmark](power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md) — AC-capable, unbalanced three-phase benchmark with PV scenario comparisons
 - [OLS and robust inference](econometrics/ols-energy-demand/README.md) — reproducible synthetic regression workflow
+- [Competing-risks survival analysis](econometrics/competing-risks-survival/README.md) — Kaplan-Meier net risk, Aalen-Johansen cumulative incidence, censoring, and interconnection outcome design
 
 The radial feeder lab is a synthetic screening model. It is not an AC power-flow, protection, or utility interconnection study.
