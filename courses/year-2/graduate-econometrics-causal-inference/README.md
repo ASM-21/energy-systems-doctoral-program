@@ -86,7 +86,7 @@ A passing assignment must state the estimand and identification assumptions befo
 1. [Problem Set 1: Potential Outcomes, Selection, and Causal Graphs](problem-set-01-potential-outcomes.md) and [worked solutions](problem-set-01-potential-outcomes-solutions.md).
 2. [Problem Set 2: Randomized Experiments, Regression Adjustment, and Power](problem-set-02-randomized-experiments.md) and [worked solutions](problem-set-02-randomized-experiments-solutions.md). Covers ITT, Neyman standard errors, regression adjustment, LATE, MDE/power, clustering, interference, and pre-analysis plans.
 3. [Problem Set 3: Panel Data, Difference-in-Differences, and Event Studies](problem-set-03-panel-did-event-studies.md) and [worked solutions](problem-set-03-panel-did-event-studies-solutions.md). Covers 2×2 DID, parallel trends, event-study estimands, staggered adoption, heterogeneous effects, and small-cluster inference.
-4. Future: instrumental variables and regression discontinuity.
+4. [Problem Set 4: Instrumental Variables and Regression Discontinuity](problem-set-04-instrumental-variables-rd.md) and [worked solutions](problem-set-04-instrumental-variables-rd-solutions.md). Covers LATE, 2SLS, weak instruments, exclusion restrictions, sharp/fuzzy RD, sorting, and cutoff validity.
 5. Future: event studies, staggered adoption, and synthetic controls.
 6. Future: survival analysis, competing risks, and multi-state models.
 7. Future: interference, spatial exposure, and energy infrastructure case study.
