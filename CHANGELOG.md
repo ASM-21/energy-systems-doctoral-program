@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Energy policy pre-analysis plan template
+- Added a pre-analysis plan template covering estimands, assignment, treatment timing, outcomes, identification, inference, censoring, power, robustness, model risk, and deviations.
+- Linked the template to the graduate econometrics course to reinforce design-first empirical practice.
+
+
 ## 2026-11-22 — Randomized experiment reproducibility outputs
 - Documented fixed-seed synthetic example outputs for the randomized experiments lab so users can verify the CLI run without treating the simulation as empirical evidence.
 
