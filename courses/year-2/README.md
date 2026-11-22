@@ -10,7 +10,7 @@ Move from competent use of energy models toward independent formulation, mathema
 ## Planned courses
 
 1. [Advanced Mathematical Methods for Energy Systems and Infrastructure Research](advanced-mathematics-energy-systems/README.md) — planned two-semester sequence covering matrix analysis, calculus and analysis, dynamical systems, probability, convex optimization, numerical methods, graph theory, and stochastic/robust optimization.
-2. Graduate Econometrics and Causal Inference — panel data, event studies, instrumental variables, difference-in-differences, synthetic control, time series, survival analysis, competing risks, identification, and inference. The competing-risks lab provides an initial implementation benchmark.
+2. [Graduate Econometrics and Causal Inference for Energy Policy](graduate-econometrics-causal-inference/README.md) — potential outcomes, randomized designs, panel methods, difference-in-differences, IV, RD, synthetic control, survival analysis, competing risks, time series, and interference. Begin with [Problem Set 1](graduate-econometrics-causal-inference/problem-set-01-potential-outcomes.md) and its [worked solutions](graduate-econometrics-causal-inference/problem-set-01-potential-outcomes-solutions.md).
 3. Electricity Market Design and Optimization — OPF, unit commitment, reserve co-optimization, market power, transmission constraints, capacity mechanisms, and equilibrium.
 4. Infrastructure Economics and Utility Investment — revenue requirements, cost of capital, rate design, regulatory incentives, planning, and risk allocation.
 
