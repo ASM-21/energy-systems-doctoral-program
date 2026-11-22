@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22 — Application-level interconnection evaluation protocol
+- Added a relational event-history data specification for DER applications, review episodes, policy regimes, feeder snapshots, and network upgrades.
+- Defined outcomes, time origins, censoring, competing events, target-trial elements, causal structure, statistical method selection, and privacy/data-quality safeguards.
+- Explicitly separated tariff applicability, tariff document effective dates, and DER Management Program implementation milestones.
+- Linked the protocol to the Pennsylvania casebook, capstone, and published research navigation.
+
+
 ## 2026-11-22 — Competing-risks survival methods lab
 - Added standard-library Kaplan-Meier net-approval and Aalen-Johansen cause-specific cumulative-incidence estimators for a synthetic interconnection cohort.
 - Added tests for tied events, right censoring, competing risks, probability-mass conservation, and the difference between net risk and observed cumulative incidence.
