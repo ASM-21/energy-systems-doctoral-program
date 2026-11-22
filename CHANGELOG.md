@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Causal inference literature expansion
+- Added potential-outcomes, target-trial, staggered difference-in-differences, event-study, regression-discontinuity, and synthetic-control references to the Year 2 core reading list.
+- Linked the expanded reading list to the graduate econometrics course.
+
+
 ## 2026-11-22 — Graduate econometrics and causal inference course
 - Added a Year 2 graduate course spanning potential outcomes, randomized experiments, panel methods, difference-in-differences, IV, RD, synthetic controls, survival analysis, time series, and interference.
 - Added Problem Set 1 and worked solutions on estimands, selection bias, conditional independence, DAGs, randomized encouragement, and feeder-level interference.
