@@ -7,6 +7,7 @@ At tied times, events are processed before censoring removals.
 from __future__ import annotations
 
 from collections import defaultdict
+from math import isfinite
 
 CAUSES = ("approval", "withdrawal", "denial")
 ALLOWED = set(CAUSES) | {"censored"}
@@ -21,7 +22,7 @@ def validate_records(records):
             raise ValueError(f"Record {index} requires time and event")
         time = row["time"]
         event = row["event"]
-        if not isinstance(time, (int, float)) or time <= 0:
+        if not isinstance(time, (int, float)) or not isfinite(time) or time <= 0:
             raise ValueError(f"Record {index} time must be positive")
         if event not in ALLOWED:
             raise ValueError(f"Record {index} has unknown event: {event}")
