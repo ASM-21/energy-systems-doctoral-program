@@ -62,6 +62,8 @@ nav:
       - Advanced mathematics solutions 5: courses/year-2/advanced-mathematics-energy-systems/problem-set-05-probability-stochastic-processes-solutions.md
       - Advanced mathematics problem set 6: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization.md
       - Advanced mathematics solutions 6: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization-solutions.md
+      - Advanced mathematics problem set 7: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows.md
+      - Advanced mathematics solutions 7: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows-solutions.md
       - Power systems: courses/year-1/y1-01-power-systems/README.md
       - Power systems problem set 2: courses/year-1/y1-01-power-systems/problem-set-02.md
       - Power systems solution 2: courses/year-1/y1-01-power-systems/problem-set-02-solutions.md
@@ -108,6 +110,7 @@ nav:
       - Project index: projects/README.md
       - Frequency response dynamics: projects/power-systems/frequency-response-dynamics/README.md
       - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
+      - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
