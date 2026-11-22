@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Randomized experiments and power assessment
+- Added Problem Set 2 and worked solutions covering ITT, Neyman standard errors, regression adjustment, treatment-effect heterogeneity, randomized encouragement/LATE, MDE and power, cluster design effects, interference, and pre-analysis plans.
+- Integrated the assignment into the graduate econometrics course and site navigation.
+
+
 ## 2026-11-22 — Year 2 program integration
 - Integrated graduate econometrics and causal research design into the Year 2 roadmap and program learning outcomes.
 
