@@ -143,7 +143,7 @@ def simulate_exponential_competing_risks(n, rates, censor_time, seed=21):
             records.append({"time": float(censor_time), "event": "censored"})
             continue
         draw = rng.random()
-        event = next(cause for cutoff, cause in cumulative if draw <= cutoff)
+        event = next((cause for cutoff, cause in cumulative if draw <= cutoff), CAUSES[-1])
         records.append({"time": event_time, "event": event})
     return records
 
