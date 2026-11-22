@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Capstone measurement and model-risk controls
+- Added a field-level data dictionary documenting units, source table provenance, comparability breaks, missingness, and prohibited inferences for the 33-row PA EDC panel.
+- Added a ten-item model-risk register covering engineering approximation, policy exposure, project selection, censoring, correlated uncertainty, input validity, and synthetic parameter misuse.
+
+
 ## 2026-11-22 — Capstone publication and defense templates
 - Added structured templates for the 6,000–8,000 word research paper, two-page policy brief, oral defense, and reproducibility checklist.
 - Added an evidence classification framework to prevent descriptive results, provisional interpretation, and proposed recommendations from being conflated.
