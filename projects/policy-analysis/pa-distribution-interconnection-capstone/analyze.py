@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import hashlib
 from pathlib import Path
 from typing import Iterable
 
@@ -174,6 +175,35 @@ def analyze(rows: Iterable[dict]) -> dict:
     }
 
 
+def build_provenance(input_path: Path) -> dict:
+    digest = hashlib.sha256(input_path.read_bytes()).hexdigest()
+    try:
+        relative_path = str(input_path.resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        relative_path = str(input_path.resolve())
+    return {
+        "source_title": "Pennsylvania PUC Net-Metering and Interconnection Report 2023-2025",
+        "source_url": "https://www.puc.pa.gov/media/3770/net-metering-interconnection-report-2023-2025_final.pdf",
+        "source_access_date": "2026-11-21",
+        "source_dataset_path": relative_path,
+        "source_dataset_sha256": digest,
+        "source_dataset_bytes": input_path.stat().st_size,
+        "reporting_period": "June 1 through May 31; reporting years 2023-2025",
+        "unit_of_analysis": "EDC service territory by PUC reporting year",
+        "transformations": [
+            "Structured transcription of PUC EDC-level request-count tables into one row per EDC and reporting year.",
+            "Blank size-band cells in 2023-2024 are retained as unavailable and are treated as zero only in arithmetic that explicitly sums reported count fields.",
+            "Review-level counts are reconciled to each EDC total and statewide totals are reconciled to the PUC report.",
+            "Shares, ranks, HHI, top-three share, and year-over-year changes are derived by this script.",
+        ],
+        "exclusions_and_caveats": [
+            "No application-level records or linked status cohorts are present.",
+            "No approval rate, completion rate, or causal effect is estimated.",
+            "The 500 kW subcategory split is only reported comparably in the 2025 table.",
+        ],
+    }
+
+
 def write_outputs(result: dict, output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "summary.json").write_text(
@@ -197,6 +227,7 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, default=Path("outputs"))
     args = parser.parse_args()
     result = analyze(load_panel(args.input_csv))
+    result["data_provenance"] = build_provenance(args.input_csv)
     write_outputs(result, args.output_dir)
     print(f"Wrote {len(result['edc_year_panel'])} EDC-year rows to {args.output_dir}")
 
