@@ -55,6 +55,8 @@ By the end, the learner should be able to:
 | 10. Interference and spatial designs | Spillovers, network exposure, partial interference, spatial dependence | Shared feeders, neighboring projects, congestion displacement |
 | 11. Research synthesis | Design-based reasoning, robustness, sensitivity, external validity, replication | Integrated energy-policy evaluation |
 
+Use the [pre-analysis plan template](pre-analysis-plan-template.md) to freeze the estimand, treatment definition, identification assumptions, primary outcome, inference method, censoring rules, power assumptions, and robustness checks before inspecting outcomes.
+
 ## Assessment
 
 - Problem sets and derivations: 30%.
