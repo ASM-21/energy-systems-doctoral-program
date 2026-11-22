@@ -68,7 +68,7 @@ A credible evaluation of a process change would require application-level record
 - relevant feeder/substation conditions or defensible public proxies;
 - customer, project, and application cohorts to distinguish right-censoring from final outcomes.
 
-Potential designs include survival analysis for time-to-decision with right-censoring, competing-risks models for approval/withdrawal/denial, and carefully justified difference-in-differences only if there is a defensible comparison group, stable measurement, credible parallel trends, and no material concurrent intervention. An aggregate annual EDC panel is not enough to establish those conditions.
+Potential designs include survival analysis for time-to-decision with right-censoring, competing-risks models for approval/withdrawal/denial, and carefully justified difference-in-differences only if there is a defensible comparison group, stable measurement, credible parallel trends, and no material concurrent intervention. The [competing-risks survival lab](../../econometrics/competing-risks-survival/README.md) implements Kaplan-Meier and Aalen-Johansen estimators on synthetic data and explains why they answer different questions. An aggregate annual EDC panel is not enough to establish those conditions.
 
 ## Economic and regulatory interpretation
 
