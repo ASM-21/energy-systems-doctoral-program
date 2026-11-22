@@ -93,7 +93,7 @@ A passing project must show that the learner can explain why the mathematical fo
 The problem sets are designed to require derivation, interpretation, and reproducible numerical checks. They are deliberately spaced so the mathematics can be learned alongside energy-system applications.
 
 1. [Problem Set 1: Matrix Analysis and Network Structure](problem-set-01-matrix-analysis.md) and [worked solutions](problem-set-01-matrix-analysis-solutions.md). Covers vector spaces, rank-nullity, incidence matrices, graph Laplacians, DC network equations, eigenvalues, positive definiteness, conditioning, and sensitivity.
-2. Problem Set 2 (to be developed): multivariable calculus, Jacobians, Hessians, Taylor approximation, and local linearization of nonlinear energy-system models.
+2. [Problem Set 2: Multivariable Calculus, Curvature, and Local Models](problem-set-02-multivariable-calculus.md) and [worked solutions](problem-set-02-multivariable-calculus-solutions.md). Covers gradients, directional derivatives, Hessian convexity, Jacobians, Newton linearization, Taylor error, and local dynamical stability.
 3. Problem Set 3 (to be developed): constrained optimization, KKT conditions, Lagrangian duality, and shadow-price interpretation in economic dispatch and network-constrained operation.
 
 Do not treat access to worked solutions as a substitute for attempting the derivations. For a useful assessment, complete the assignment first, record uncertainty or errors, then compare against the solution notes and revise the derivation.
