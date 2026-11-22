@@ -35,6 +35,9 @@
 - MIT OpenCourseWare, [15.094J Systems Optimization: Models and Computation](https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/), applied reference for network, discrete, nonlinear, and stochastic optimization.
 - Alexander Shapiro, Darinka Dentcheva, and Andrzej Ruszczyński, *Lectures on Stochastic Programming: Modeling and Theory*, 2nd ed., SIAM, 2014. [SIAM book record](https://doi.org/10.1137/1.9781611973433). A rigorous treatment of stochastic programming, risk, and multistage decision models.
 - Dimitris Bertsimas, David B. Brown, and Constantine Caramanis, “Theory and Applications of Robust Optimization,” *SIAM Review*, 53(3), 464–501 (2011). [DOI](https://doi.org/10.1137/080734510). Survey of robust optimization theory, tractability, and applications, including adaptable decisions.
+- Odd O. Aalen and Søren Johansen, “An Empirical Transition Matrix for Non-homogeneous Markov Chains Based on Censored Observations,” *Scandinavian Journal of Statistics*, 5, 141–150 (1978). [Journal record](https://www.jstor.org/stable/4615704). Foundational reference for the Aalen-Johansen estimator.
+- Hein Putter, Marta Fiocco, and R. B. Geskus, “Tutorial in Biostatistics: Competing Risks and Multi-State Models,” *Statistics in Medicine*, 26(11), 2389–2430 (2007). [DOI](https://doi.org/10.1002/sim.2712). Practical treatment of cumulative incidence and multi-state event histories.
+- Jason P. Fine and Robert J. Gray, “A Proportional Hazards Model for the Subdistribution of a Competing Risk,” *Journal of the American Statistical Association*, 94, 496–509 (1999). [DOI](https://doi.org/10.1080/01621459.1999.10474144). Regression framework for subdistribution hazards.
 
 Use these sources in the planned [Year 2 advanced mathematics course](../courses/year-2/advanced-mathematics-energy-systems/README.md). They are a staged reference list, not a requirement to read every text cover to cover.
 
