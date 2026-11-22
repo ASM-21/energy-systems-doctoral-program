@@ -21,6 +21,10 @@ Each record needs a unique application identifier, a defensible time origin (for
 
 The example CSV contains synthetic identifiers and durations only. It must never be merged with or described as actual utility application data.
 
+## Monte Carlo estimator validation
+
+The example also simulates 10,000 synthetic applications under constant independent exponential cause-specific hazards, applies administrative censoring, and compares the estimated approval cumulative incidence with its closed-form value. The one-minus-Kaplan-Meier curve is compared with the corresponding net-risk quantity. This tests the estimators against a known data-generating process and demonstrates that the two curves target different probabilities. The simulation is deterministic for a fixed seed and remains a teaching example, not a calibration to Pennsylvania applications.
+
 ## Core references
 
 - Aalen, O. O. and Johansen, S. (1978). “An empirical transition matrix for non-homogeneous Markov chains based on censored observations.” *Scandinavian Journal of Statistics*, 5, 141–150. [Journal record](https://www.jstor.org/stable/4615704). Foundational transition-matrix estimator.
