@@ -39,6 +39,10 @@ class AdequacyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             Parameters(hours_per_year=0).validate()
         with self.assertRaises(ValueError):
+            Parameters(firm_capacity_mw=50, outage_block_mw=100).validate()
+        with self.assertRaises(ValueError):
+            Parameters(renewable_low_mw=200, renewable_high_mw=100).validate()
+        with self.assertRaises(ValueError):
             stationary_high_probability(0, 0)
 
     def test_single_year_metrics(self):
