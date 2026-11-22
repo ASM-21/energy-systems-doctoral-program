@@ -35,6 +35,10 @@ class Parameters:
         if min(self.renewable_low_mw, self.renewable_high_mw, self.firm_capacity_mw,
                self.outage_block_mw) < 0:
             raise ValueError("capacities and renewable outputs must be nonnegative")
+        if self.renewable_high_mw < self.renewable_low_mw:
+            raise ValueError("high-regime renewable output must not be below low-regime output")
+        if self.outage_block_mw > self.firm_capacity_mw:
+            raise ValueError("outage block cannot exceed total firm capacity")
         probabilities = (
             self.weather_low_to_high, self.weather_high_to_low,
             self.unit_failure_probability_per_hour,
