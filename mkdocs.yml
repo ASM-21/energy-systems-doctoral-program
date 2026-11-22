@@ -112,6 +112,7 @@ nav:
       - Project index: projects/README.md
       - Frequency response dynamics: projects/power-systems/frequency-response-dynamics/README.md
       - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
+      - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
       - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
   - Research:
       - Research hub: research/README.md
