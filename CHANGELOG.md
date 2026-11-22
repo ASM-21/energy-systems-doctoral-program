@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Numerical optimization assessment
+- Added a sixth advanced-mathematics problem set with worked solutions on gradient descent, strong convexity, Newton updates, Armijo line search, scaling and preconditioning, least-squares conditioning, and solver diagnostics.
+- Integrated the assignment into the Year 2 course sequence and MkDocs navigation. Emphasis is on deriving convergence conditions and distinguishing solver termination from optimality and model validity.
+
+
 ## 2026-11-22 — Stochastic adequacy simulation lab
 - Added a standard-library-only Monte Carlo resource-adequacy screening model with persistent two-state weather regimes and a repairable generation outage block.
 - Added deterministic seeded simulation, annual LOLE/EUE distributions, cross-year sampling-error summaries, parameter validation, and unit tests.
