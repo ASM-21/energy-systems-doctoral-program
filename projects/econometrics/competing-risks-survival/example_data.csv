@@ -1,0 +1,11 @@
+application_id,days_from_complete_application,event
+SYN-001,1,approval
+SYN-002,1,withdrawal
+SYN-003,2,denial
+SYN-004,2,censored
+SYN-005,3,approval
+SYN-006,4,censored
+SYN-007,5,approval
+SYN-008,5,withdrawal
+SYN-009,6,censored
+SYN-010,7,denial
