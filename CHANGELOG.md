@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-22 — Year 2 program integration
+- Integrated graduate econometrics and causal research design into the Year 2 roadmap and program learning outcomes.
+
+
 ## 2026-11-22 — Causal inference literature expansion
 - Added potential-outcomes, target-trial, staggered difference-in-differences, event-study, regression-discontinuity, and synthetic-control references to the Year 2 core reading list.
 - Linked the expanded reading list to the graduate econometrics course.
