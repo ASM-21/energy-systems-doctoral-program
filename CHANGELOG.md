@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-22 — Competing-risks literature integration
+- Added foundational Aalen-Johansen, Putter-Fiocco-Geskus, Fine-Gray, and Gray references to the methods lab and core reading list.
+- Distinguished the nonparametric estimator implemented in the lab from regression methods that remain outside its scope.
+
+
 ## 2026-11-22 — Capstone measurement and model-risk controls
 - Added a field-level data dictionary documenting units, source table provenance, comparability breaks, missingness, and prohibited inferences for the 33-row PA EDC panel.
 - Added a ten-item model-risk register covering engineering approximation, policy exposure, project selection, censoring, correlated uncertainty, input validity, and synthetic parameter misuse.
