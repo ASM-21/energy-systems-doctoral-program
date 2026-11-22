@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22 — Pennsylvania distribution interconnection research capstone
+- Added a reproducible 11-EDC, 2023–2025 PUC request-count analysis using the existing casebook source dataset without duplicating the raw data.
+- Added balanced-panel and statewide reconciliation checks, PPL peer rank/share, request-count concentration, top-three share, year-over-year changes, and the 2025 >=500 kW review-level composition.
+- Added explicit measurement and identification limits: request counts are not outcomes or rates; the request-count HHI is not market power; aggregate annual data do not identify causal effects.
+- Added tests, a standalone CLI, Makefile and CI integration, and the published project index.
+
+
 ## 2026-11-22 — Stochastic and robust capacity-planning lab
 - Added SciPy/HiGHS linear-programming formulations for two-stage stochastic capacity procurement, deterministic expected-value benchmarking, wait-and-see information value, and min-max robust capacity planning.
 - Added unit tests for the 80 MW stochastic optimum, 104 MW expected-value decision, 120 MW robust decision, $312 value of the stochastic solution, and $600 expected value of perfect information.
