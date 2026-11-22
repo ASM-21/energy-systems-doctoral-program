@@ -21,9 +21,10 @@ class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
         self.assertEqual([x["ppl_rank"] for x in annual], [1, 1, 1])
         self.assertEqual([x["ppl_requests"] for x in annual], [7567, 7519, 6844])
         self.assertEqual([x["ppl_request_share_pct"] for x in annual], [39.41, 40.46, 33.88])
+        ppl_2025 = next(row for row in self.result["edc_year_panel"]
+                        if row["reporting_year"] == 2025 and row["edc"] == "PPL")
         self.assertAlmostEqual(
-            self.result["edc_year_panel"][-1]["change_from_prior_reporting_year_pct"],
-            39.47, places=2
+            ppl_2025["change_from_prior_reporting_year_pct"], -8.98, places=2
         )
 
     def test_request_count_concentration_is_not_market_hhi(self):
