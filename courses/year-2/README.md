@@ -23,7 +23,7 @@ Move from competent use of energy models toward independent formulation, mathema
 
 ## Year 2 evidence
 
-The year should culminate in a reproducible paper or technical study that contains:
+The year should culminate in a reproducible paper or technical study. The [Pennsylvania distribution DER interconnection capstone](../../projects/policy-analysis/pa-distribution-interconnection-capstone/README.md) is a concrete public-data case study connecting network engineering, utility regulation, empirical identification, and stochastic investment design. The year-end study should contain:
 - a clearly defined research question and literature positioning;
 - explicit mathematical formulation and assumptions;
 - an appropriate empirical or computational method;
