@@ -4,6 +4,7 @@ PROJECTS := \
 	projects/energy-economics/merit-order-dispatch \
 	projects/energy-economics/storage-arbitrage \
 	projects/energy-economics/non-exporting-btm-storage \
+	projects/energy-economics/stochastic-robust-capacity-planning \
 	projects/power-systems/two-node-congestion \
 	projects/power-systems/three-bus-dc-power-flow \
 	projects/power-systems/radial-der-hosting-capacity \
