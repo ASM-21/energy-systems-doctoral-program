@@ -118,6 +118,8 @@ nav:
       - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
       - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
       - Capstone deliverable templates: projects/policy-analysis/pa-distribution-interconnection-capstone/deliverable-templates.md
+      - Capstone data dictionary: projects/policy-analysis/pa-distribution-interconnection-capstone/data-dictionary.md
+      - Capstone model-risk register: projects/policy-analysis/pa-distribution-interconnection-capstone/model-risk-register.csv
       - Competing-risks survival analysis: projects/econometrics/competing-risks-survival/README.md
   - Research:
       - Research hub: research/README.md
