@@ -1,6 +1,6 @@
 # Core Reading List
 
-**Last bibliographic verification:** 2026-11-21. Links point to publishers or original journal records where possible. Availability, prices, and edition status can change; check a library before purchasing.
+**Last bibliographic verification:** 2026-11-22. Links point to publishers or original journal records where possible. Availability, prices, and edition status can change; check a library before purchasing.
 
 ## Power systems and electricity economics
 
@@ -33,6 +33,8 @@
 - MIT OpenCourseWare, [6.7220J Nonlinear Optimization (Spring 2025)](https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/), graduate-level reference for optimality conditions, convex analysis, duality, and algorithms.
 - MIT OpenCourseWare, [6.253 Convex Analysis and Optimization (Spring 2012)](https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/), graduate-level proof-based reference for convexity, duality, and algorithmic theory.
 - MIT OpenCourseWare, [15.094J Systems Optimization: Models and Computation](https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/), applied reference for network, discrete, nonlinear, and stochastic optimization.
+- Alexander Shapiro, Darinka Dentcheva, and Andrzej Ruszczyński, *Lectures on Stochastic Programming: Modeling and Theory*, 2nd ed., SIAM, 2014. [SIAM book record](https://doi.org/10.1137/1.9781611973433). A rigorous treatment of stochastic programming, risk, and multistage decision models.
+- Dimitris Bertsimas, David B. Brown, and Constantine Caramanis, “Theory and Applications of Robust Optimization,” *SIAM Review*, 53(3), 464–501 (2011). [DOI](https://doi.org/10.1137/080734510). Survey of robust optimization theory, tractability, and applications, including adaptable decisions.
 
 Use these sources in the planned [Year 2 advanced mathematics course](../courses/year-2/advanced-mathematics-energy-systems/README.md). They are a staged reference list, not a requirement to read every text cover to cover.
 
