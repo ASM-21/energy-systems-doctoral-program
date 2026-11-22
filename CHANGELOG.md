@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22 — Stochastic adequacy simulation lab
+- Added a standard-library-only Monte Carlo resource-adequacy screening model with persistent two-state weather regimes and a repairable generation outage block.
+- Added deterministic seeded simulation, annual LOLE/EUE distributions, cross-year sampling-error summaries, parameter validation, and unit tests.
+- Connected the lab to the probability/stochastic-processes assignment, project index, MkDocs navigation, Makefile, and Python CI matrix.
+- Documented that the model is synthetic and omits weather-load dependence, spatial correlation, transmission, storage, demand response, and common-cause failures; its outputs are not PJM or utility reliability metrics.
+
+
 ## 2026-11-22 — Probability and stochastic-process foundations
 - Added a fifth advanced-mathematics problem set and worked solutions covering covariance in net-load uncertainty, conditional probability, Poisson outage arrivals, Markov weather regimes, chance-constrained reserve sizing, and Monte Carlo precision.
 - Added the assignment to the Year 2 course sequence and published navigation.
