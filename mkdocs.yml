@@ -49,6 +49,9 @@ nav:
   - Curriculum:
       - Year 1: courses/year-1/README.md
       - Year 2 advanced sequence: courses/year-2/README.md
+      - Graduate econometrics and causal inference: courses/year-2/graduate-econometrics-causal-inference/README.md
+      - Econometrics problem set 1: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes.md
+      - Econometrics solutions 1: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes-solutions.md
       - Advanced mathematical methods: courses/year-2/advanced-mathematics-energy-systems/README.md
       - Advanced mathematics problem set 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis.md
       - Advanced mathematics solutions 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis-solutions.md
