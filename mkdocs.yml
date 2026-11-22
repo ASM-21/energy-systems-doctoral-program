@@ -102,6 +102,10 @@ nav:
       - Quantitative solutions: courses/year-1/y1-04-quantitative-methods/problem-set-01-solutions.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
+  - Computational projects:
+      - Project index: projects/README.md
+      - Frequency response dynamics: projects/power-systems/frequency-response-dynamics/README.md
+      - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
