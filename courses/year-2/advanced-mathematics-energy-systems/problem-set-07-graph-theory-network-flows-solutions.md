@@ -2,7 +2,7 @@
 
 ## Problem 1. Incidence matrices, cycle space, and Laplacians
 
-With rows ordered ((s,a,b,t)) and columns ((s\to a,s\to b,a\to b,a\to t,b\to t)), the incidence matrix is
+With rows ordered `(s,a,b,t)` and columns ordered `(s→a,s→b,a→b,a→t,b→t)), the incidence matrix is
 
 \[
 A=\begin{bmatrix}
@@ -13,9 +13,9 @@ A=\begin{bmatrix}
 \end{bmatrix}.
 \]
 
-The graph is connected, so the incidence matrix of this graph has rank (n-c=4-1=3). By rank-nullity, its right null space has dimension (m-\operatorname{rank}(A)=5-3=2). This is the dimension of the cycle space. The graph has two independent cycles, for example (s-a-b-s) and (a-b-t-a). A cycle basis is not unique.
+The graph is connected, so the incidence matrix has rank \(n-c=4-1=3\). By rank-nullity, its right null space has dimension \(m-\operatorname{rank}(A)=5-3=2\), the dimension of the cycle space. Two independent cycles are \(s-a-b-s\) and \(a-b-t-a\).
 
-The unweighted Laplacian is
+The unweighted graph Laplacian is
 
 \[
 L=AA^T=
@@ -27,18 +27,18 @@ L=AA^T=
 \end{bmatrix}.
 \]
 
-Each row sums to zero, so (L\mathbf 1=0). More generally,
+Every row sums to zero. More generally,
 
 \[
 z^TLz=z^TAA^Tz=\|A^Tz\|_2^2
 =\sum_{(i,j)\in E}(z_j-z_i)^2.
 \]
 
-The expression is nonnegative, so L is positive semidefinite. It is zero exactly when adjacent nodes have equal potentials. In a connected graph, this forces all node potentials to be equal. Thus \(\operatorname{null}(L)=\operatorname{span}\{\mathbf 1\}\) and \(\operatorname{rank}(L)=3\).
+Thus L is positive semidefinite. In a connected graph, \(A^Tz=0\) requires equal values at every pair of adjacent nodes, hence z is constant. Therefore \(\operatorname{null}(L)=\operatorname{span}\{\mathbf 1\}\) and \(\operatorname{rank}(L)=3\).
 
 ## Problem 2. Maximum flow and minimum-cut certificate
 
-A valid LP is
+A valid linear program is
 
 \[
 \max F
@@ -50,86 +50,62 @@ f_1=f_3+f_4,\quad
 f_2+f_3=f_5,
 \]
 \[
-0\leq f_1\leq7,\;
-0\leq f_2\leq5,\;
-0\leq f_3\leq2,\;
-0\leq f_4\leq4,\;
+0\leq f_1\leq7,\quad
+0\leq f_2\leq5,\quad
+0\leq f_3\leq2,\quad
+0\leq f_4\leq4,\quad
 0\leq f_5\leq8.
 \]
 
-The conservation equations apply at a and b. One feasible maximum flow is
+The conservation equations apply at a and b. A feasible flow is
 
 \[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,5,6)
+(f_1,f_2,f_3,f_4,f_5)=(6,5,2,4,7).
 \]
 
-which is **not** feasible because it violates the (a\to t) capacity. A correct maximum flow is
+At node a, inflow is 6 and outflow is \(2+4=6\). At node b, inflow is \(5+2=7\) and outflow is 7. All arc capacities are respected, and the total source flow is \(F=6+5=11\) MW.
+
+Consider the cut \(S=\{s,a\}\), \(T=\{b,t\}\). The arcs directed from S to T are \(s\to b\), \(a\to b\), and \(a\to t\), with total capacity
 
 \[
-(f_1,f_2,f_3,f_4,f_5)=(7,5,2,5,7).
+c(S,T)=5+2+4=11\text{ MW}.
 \]
 
-This also violates the (a\to t) capacity. The correct feasible flow is
+Every feasible flow is bounded above by every s-t cut capacity. Since a feasible flow of 11 MW matches this cut bound, the max-flow/min-cut theorem certifies that the maximum flow is exactly 11 MW.
 
-\[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,5,6)
-\]
-
-but again (f_4=5>4). The maximum feasible assignment is instead
-
-\[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,5,6)
-\]
-
-with arc 4 reduced to 4 and arc 5 to 7, yielding
-
-\[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,4,6),\qquad F=11.
-\]
-
-Check conservation: at a, inflow 7 equals outflow (2+4=6), so this assignment is still not feasible. The consistent maximum flow is
-
-\[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,5,6)
-\]
-
-No assignment with these values can satisfy all constraints. A feasible flow of 11 is
-
-\[
-(f_1,f_2,f_3,f_4,f_5)=(7,4,2,5,6)
-\]
-
-The minimum cut calculation provides a capacity of 11 for (S=\{s,a\}), (T=\{b,t\}): arcs (s\to b), (a\to b), and (a\to t) cross the cut, giving (5+2+4=11). Therefore no flow can exceed 11. A feasible flow must be supplied by the solver or a corrected arc assignment; do not treat the cut bound alone as proof that 11 is attainable.
+The cut identifies a set of facilities whose combined capacity limits transfer. Increasing an arc capacity that does not cross the active minimum cut may not increase maximum transfer; the bottleneck must be relieved or another cut may become binding.
 
 ## Problem 3. Connectivity, contingencies, and resilience
 
-Two edge-disjoint paths are (s-a-t) and (s-b-t). By the edge version of Menger's theorem, at least two edge failures are required to disconnect s from t. Removing (a\to b) leaves both paths intact. Removing (s\to a) leaves the path (s-b-t), whose capacity is at most \(\min(5,8)=5\), and 5 MW is feasible.
+Two edge-disjoint paths are \(s-a-t\) and \(s-b-t\). By the edge form of Menger's theorem, at least two edge failures are required to disconnect s from t. Removing \(a\to b\) leaves both paths intact and does not change the maximum flow of 11 MW: the feasible flow above uses that arc, but a 10 MW alternative can route 7 MW on \(s\to a\to t\) and 3 MW on \(s\to b\to t\); in fact, the cut after removal has capacity \(5+4=9\) MW, so the maximum becomes 9 MW. The connectivity remains, but transfer capability falls.
 
-Edge connectivity counts paths or edge failures without accounting for ratings. Capacity-aware transfer is constrained by the minimum cut. Operational N-1 security requires a defined base case and contingency set, and asks whether the system can continue to satisfy relevant operating limits after any specified single contingency, potentially with corrective actions. It is not equivalent to simple graph connectivity.
+If \(s\to a\) is removed, only \(s\to b\to t\) can carry source flow, so the maximum is \(\min(5,8)=5\) MW. This flow is feasible.
 
-A credible power-system study also needs electrical impedances and voltage/phase behavior, thermal ratings and time dependence, generator redispatch and ramp limits, voltage/reactive constraints, protection and stability constraints, and potentially load shedding or switching actions.
+Edge connectivity counts independent paths or failures without accounting for ratings. Capacity-aware transfer depends on the minimum cut. Operational N-1 security is a system criterion defined over a base case, specified contingencies, operating limits, and permitted corrective actions. It is not equivalent to simple graph connectivity.
+
+A credible power-system contingency study also needs impedances and voltage/phase behavior, thermal ratings and their time dependence, generator redispatch and ramp limits, voltage/reactive constraints, protection and stability constraints, and potentially load shedding or switching actions.
 
 ## Problem 4. Weighted Laplacians and sensitivity
 
-Since
+For positive weights,
 
 \[
 z^TL_wz=(A^Tz)^TW(A^Tz)
-=\sum_e w_e(z_i-z_j)^2,
+=\sum_e w_e(z_i-z_j)^2\geq0,
 \]
 
-positive edge weights imply (L_w\succeq0). For a connected graph, the null space is the constant-vector span and the rank is (n-1). The second-smallest eigenvalue (algebraic connectivity) is positive and becomes small when the graph has a weakly connected partition. Its value depends on the chosen weights and is not itself a MW limit: it does not include a source/sink injection pattern, thermal capacities, or electrical operating constraints.
+so \(L_w\) is positive semidefinite. For a connected graph, its null space is the span of the all-ones vector and its rank is \(n-1\). The second-smallest eigenvalue (algebraic connectivity) is positive and becomes small when the graph has a weakly connected partition. This is a spectral/topological diagnostic, not an MW transfer limit: it does not encode a source/sink injection pattern, thermal capacities, or operating constraints.
 
-For a lossless DC power-flow model, a susceptance-weighted Laplacian can represent the reduced nodal susceptance matrix under a consistent sign convention. This requires, among other assumptions, voltage magnitudes near 1 per unit, small angle differences, negligible resistance/losses, and a fixed network topology. The branch weights must represent the appropriate series susceptances and transformer treatment. The graph Laplacian is therefore a structural starting point, not a complete AC network model.
+For a lossless DC power-flow model, a susceptance-weighted Laplacian can represent the nodal susceptance matrix under a consistent sign convention. This requires assumptions such as voltage magnitudes near 1 per unit, small angle differences, negligible resistance/losses, and fixed topology. The branch weights must represent the appropriate series susceptances and transformer treatment. The graph Laplacian is a structural starting point, not a complete AC network model.
 
 ## Problem 5. Modeling judgment
 
-A max-flow model enforces conservation and arc capacities but permits arbitrary routing within those constraints. In an electrical network, flows are coupled by voltage angles and line reactances; they cannot generally be assigned independently. Kirchhoff's voltage law imposes cycle consistency. AC feasibility additionally depends on voltage magnitudes, reactive power, losses, generator capability, and nonlinear power-flow equations.
+A max-flow model enforces conservation and arc capacities but permits arbitrary routing subject to those constraints. In an electrical network, flows are coupled by voltage angles and line reactances; they cannot generally be assigned independently. Kirchhoff's voltage law imposes cycle consistency. AC feasibility additionally depends on voltage magnitudes, reactive power, losses, generator capability, and nonlinear power-flow equations.
 
-A max-flow model can overstate transfer when it routes power along a path that would cause a parallel path to overload under the electrical distribution of flows, or when voltage/reactive limits bind before thermal limits. A staged workflow can use public topology/capacity data for a graph screen, then a DC power-flow or DC-OPF model with validated impedances and injections, then AC power flow and contingency analysis with voltage, reactive, protection, and stability checks. Each stage requires documented data provenance, base-case reconciliation, unit checks, and comparison with an accepted benchmark or independently validated model.
+A max-flow model can overstate transfer when it routes power along a path that would cause a parallel path to overload under the electrical distribution of flows, or when voltage/reactive limits bind before thermal limits. A staged workflow can use documented topology/capacity data for a graph screen, then a DC power-flow or DC-OPF model with validated impedances and injections, then AC power flow and contingency analysis with voltage, reactive, protection, and stability checks. Each stage requires documented data provenance, base-case reconciliation, unit checks, and comparison with an accepted benchmark or independently validated model.
 
 A graph screen can identify structural bottlenecks, candidate cut sets, and hypothetical upper bounds under its assumptions. It cannot establish that a proposed transfer is electrically feasible, that a facility is available, or that an actual system meets reliability criteria.
 
 ## Problem 6. Research translation
 
-There is no single numerical solution. A strong note defines a bounded network, documents why the chosen nodes and edges represent the infrastructure of interest, identifies the public-data coverage gap, and explains the meaning of each metric. It distinguishes a structural vulnerability indicator from outage probability, customer minutes interrupted, or a formal reliability standard. The proposed next model should be driven by the missing physics and operational data, not by adding complexity for its own sake.
+There is no single numerical solution. A strong note defines a bounded network, documents why the chosen nodes and edges represent the infrastructure of interest, identifies public-data coverage gaps, and explains the meaning of each metric. It distinguishes a structural vulnerability indicator from outage probability, customer minutes interrupted, or a formal reliability standard. The proposed next model should be driven by missing physics and operational data, not by adding complexity for its own sake.
