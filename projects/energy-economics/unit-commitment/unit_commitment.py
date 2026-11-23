@@ -59,7 +59,7 @@ def solve_unit_commitment(
         startup.append(_finite_nonnegative(unit["startup_cost"], "startup_cost"))
     if any(lo > hi for lo, hi in zip(minimum, maximum)):
         raise ValueError("Minimum output cannot exceed maximum output")
-    if any(maximum) <= 0:
+    if max(maximum) <= 0:
         raise ValueError("At least one generator must have positive capacity")
 
     # Flatten in blocks: p[i,t], y[i,t], u[i,t].
