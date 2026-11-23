@@ -46,7 +46,7 @@ Year 2 is deliberately modular. The target remains 3–5 hours per week for the 
 | [Advanced Mathematical Methods](../courses/year-2/advanced-mathematics-energy-systems/README.md) | Year 1 math foundations; prerequisite diagnostic | Proof, matrix analysis, probability, dynamics, convexity, duality, numerical methods, graph theory | Planned |
 | [Graduate Econometrics and Causal Inference](../courses/year-2/graduate-econometrics-causal-inference/README.md) | Y1-04, regression, probability, Python/R | Identification, panel data, experiments, IV/RD, synthetic control, time series, interference | Planned |
 | Electricity Market Design and Optimization | Power systems and energy economics; linear algebra and optimization | OPF, unit commitment, reserves, market power, equilibrium, transmission | Planned |
-| Infrastructure Economics and Utility Investment | Energy economics and regulatory foundations | Rate base, cost of capital, revenue requirements, incentives, risk allocation | Planned |
+| [Infrastructure Economics and Utility Investment](../courses/year-2/infrastructure-economics-utility-investment/README.md) | Energy economics and regulatory foundations | Rate base, cost of capital, revenue requirements, incentives, risk allocation | Planned |
 
 **Recommended order:** complete a targeted mathematics diagnostic; strengthen linear algebra, calculus, probability, and optimization; then study econometrics and market design in a staggered sequence. The queueing theory module is an optional extension, not a prerequisite for the core sequence.
 
