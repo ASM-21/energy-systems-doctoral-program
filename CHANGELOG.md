@@ -1,3 +1,9 @@
+## 2026-11-23 — Y2-04 network-constrained dispatch and DC-OPF validation
+
+- Added Y2-04 Problem Set 2 and worked solutions for a three-bus meshed DC-OPF, including nodal balance, branch flow, LMP, congestion shadow values, and finite-difference checks.
+- Added a SciPy/HiGHS implementation with automated benchmark tests for dispatch, angles, branch flows, nodal prices, line shadow values, demand perturbations, and line-limit relaxation.
+- Added the computational lab to CI, project indexes, course navigation, and the Y2-04 guide. The course remains planned pending AC/security, unit commitment, reserves, market power, resource adequacy, and a current PJM case.
+
 ## 2026-11-23 — Y2-04 three-bus DC-OPF and LMP model
 
 - Added Problem Set 2 with a fully specified three-bus DC-OPF, nodal balance equations, line constraints, LMP interpretation, and finite-difference checks.
