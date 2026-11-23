@@ -46,11 +46,12 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 - [x] Program architecture and academic standards
 - [x] Initial four-course Year 1 sequence
 - [x] Source, research, and computational standards
-- [x] Two problem sets and worked solution notes for all four Year 1 courses
-- [x] Seven computational labs with automated tests, plus a pinned IEEE 13-node OpenDSS benchmark (DC power flow, dispatch, storage arbitrage, non-exporting BTM storage, congestion, radial DER feeder screening, and OLS)
+- [x] Structured problem sets, worked solution notes, and applied assessments across the Year 1 courses
+- [x] Computational labs across power systems, energy economics, econometrics, and policy analysis, with automated tests and documented model limitations
 - [x] Initial verified course catalog, core reading list, and primary-source casebook
 - [x] GitHub Pages deployment and strict documentation build
 - [x] Pennsylvania DER / PJM casebook and preliminary public-data feasibility assessment
+- [x] Advanced mathematical methods sequence and graduate econometrics / causal-inference course architecture, including problem sets and worked solutions
 - [x] Non-exporting BTM storage optimization lab and Pennsylvania storage-policy exercise
 - [x] EIA-861 2025 public-data inventory pipeline with source hash, workbook inventory, and schema previews
 - [ ] First independent research paper
