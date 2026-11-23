@@ -7,12 +7,12 @@ These projects move from network equations to distribution screening, operating 
 1. [Three-bus DC power flow](three-bus-dc-power-flow/README.md) — start with nodal injections, per-unit reactance, slack bus, and branch-flow signs.
 2. [Two-node congestion](two-node-congestion/README.md) — connect constrained transfer to dispatch and nodal-price duals.
 3. [Three-bus DC-OPF](three-bus-dc-opf/README.md) — combine nodal balances, line limits, dispatch, LMP duals, and finite-difference validation.
-3. [Radial DER hosting-capacity screen](radial-der-hosting-capacity/README.md) — apply downstream aggregation, approximate voltage drop, thermal screening, and reverse flow.
-4. [IEEE 13-node OpenDSS benchmark](radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md) — move to an unbalanced three-phase AC-capable benchmark. This is a separate network, not a matched validation of the synthetic radial feeder.
-5. [Flexible interconnection](flexible-interconnection/README.md) — add export envelopes and PV-plus-storage scheduling to a synthetic 24-hour customer/feeder model.
-6. [Frequency response](frequency-response-dynamics/README.md) — study state-space dynamics, eigenvalues, and numerical integration.
-7. [Stochastic resource adequacy](stochastic-adequacy/README.md) — introduce Monte Carlo adequacy metrics and simulation uncertainty.
-8. [Network-flow resilience](network-flow-resilience/README.md) — study graph connectivity and transfer bottlenecks as a structural screen.
+4. [Radial DER hosting-capacity screen](radial-der-hosting-capacity/README.md) — apply downstream aggregation, approximate voltage drop, thermal screening, and reverse flow.
+5. [IEEE 13-node OpenDSS benchmark](radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md) — move to an unbalanced three-phase AC-capable benchmark. This is a separate network, not a matched validation of the synthetic radial feeder.
+6. [Flexible interconnection](flexible-interconnection/README.md) — add export envelopes and PV-plus-storage scheduling to a synthetic 24-hour customer/feeder model.
+7. [Frequency response](frequency-response-dynamics/README.md) — study state-space dynamics, eigenvalues, and numerical integration.
+8. [Stochastic resource adequacy](stochastic-adequacy/README.md) — introduce Monte Carlo adequacy metrics and simulation uncertainty.
+9. [Network-flow resilience](network-flow-resilience/README.md) — study graph connectivity and transfer bottlenecks as a structural screen.
 
 ## Entry requirements
 
