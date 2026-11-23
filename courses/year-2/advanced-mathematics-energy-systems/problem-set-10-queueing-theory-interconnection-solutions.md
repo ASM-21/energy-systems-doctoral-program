@@ -203,3 +203,38 @@ Changing arrivals to a non-homogeneous process or service times to a heavy-taile
 ## General warning
 
 Queueing models describe the relationship between arrivals, service capacity, routing, and delay under explicit assumptions. They do not establish why applications arrive, whether staffing changes are feasible, what delay costs customers, or whether a policy intervention caused an outcome. Those questions require separate empirical and institutional evidence.
+
+
+## Problem 9. M/G/1 and service-time variability
+
+The utilization remains \(\rho=\lambda E[S]=6(1/8)=0.75\). For M/G/1,
+
+\[
+W_q=\frac{\lambda E[S]^2(1+CV_S^2)}{2(1-\rho)}.
+\]
+
+At \(CV_S=1\),
+
+\[
+W_q=\frac{6(1/8)^2(2)}{2(0.25)}
+=0.375\text{ business day},
+\]
+
+which agrees with the M/M/1 result.
+
+At \(CV_S=2\),
+
+\[
+W_q=\frac{6(1/8)^2(5)}{0.5}
+=0.9375\text{ business day}.
+\]
+
+The increase is
+
+\[
+\frac{0.9375}{0.375}-1=1.5,
+\]
+
+or 150%. The expected queue wait is 2.5 times as large even though mean service time, arrival rate, and utilization are unchanged. The second moment captures service-time dispersion; long, unusually complex cases can occupy the only reviewer for extended periods and cause following cases to wait.
+
+The Pollaczek–Khinchine mean-wait formula requires a finite second moment. If \(E[S^2]\) is infinite, the theoretical mean queue wait is infinite under the stable M/G/1 assumptions. Empirical use requires event-level service intervals, a defensible stage definition, tests for right-censoring and rework, distributional diagnostics, and checks that arrivals are approximately Poisson and independent of service requirements. A sample mean alone is not enough to estimate service-time variability reliably.
