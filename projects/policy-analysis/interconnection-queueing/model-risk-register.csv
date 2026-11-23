@@ -1,0 +1,13 @@
+risk_id,failure_mode,possible_consequence,diagnostic_or_test,mitigation
+Q-01,Nonstationary or seasonal arrivals,Understates peak queueing and tail delays,Plot arrival counts by hour week month and fit time-varying rates,Use nonhomogeneous Poisson or empirical arrival replay
+Q-02,Overdispersed or bursty arrivals,Understates clustering and waiting time,Compare count variance with mean and inspect interarrival autocorrelation,Use renewal or batch-arrival process where supported
+Q-03,Non-exponential service durations,Changes tail delays and Erlang-C accuracy,Compare empirical service-time survival and hazard plots,Fit suitable distributions and validate with discrete-event simulation
+Q-04,Reviewers are not interchangeable,Overstates effective pooled capacity,Map reviewer skills and routing constraints,Model skill-based queues and shared specialist resources
+Q-05,Multiple sequential review stages omitted,Hides bottlenecks and rework loops,Reconcile event timestamps by process stage,Use queueing networks or process-level discrete-event simulation
+Q-06,Applicant-controlled pauses treated as utility service,Overstates utility service time and misattributes delay,Record pause start/end and clock-stop rules,Separate active service queue time and external/customer time
+Q-07,Priority classes or triage omitted,Can understate delay for lower-priority applications,Compare waiting distributions by class and discipline,Model priority discipline and report distributional effects
+Q-08,Open applications dropped from data,Understates durations and biases throughput,Audit open-case share and follow-up by cohort,Use right-censoring and competing outcome methods
+Q-09,Arrival rates respond to faster processing,Understates induced demand after capacity expansion,Compare arrival trends and applicant behavior before/after changes,Model endogenous demand or use explicit sensitivity scenarios
+Q-10,Waiting penalty is arbitrary,Produces false precision in staffing recommendations,Show break-even thresholds and full sensitivity curves,Do not call illustrative penalty a measured customer or utility cost
+Q-11,Simulation warm-up and finite sample bias,Distorts simulated steady-state metrics,Repeat seeds and test longer runs and alternative warm-up periods,Report Monte Carlo uncertainty and validate against analytic cases
+Q-12,Policy regime and project mix change,Creates misleading comparisons across time or EDCs,Stratify by eligibility size technology and review pathway,Version eligibility rules and standardize only with defensible covariates
