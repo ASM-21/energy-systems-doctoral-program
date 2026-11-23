@@ -167,7 +167,7 @@ nav:
           - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
       - Energy economics:
           - Merit-order dispatch: projects/energy-economics/merit-order-dispatch/README.md
-                 Energy and reserve co-optimization: projects/energy-economics/energy-reserve-cooptimization/README.md
+          - Energy and reserve co-optimization: projects/energy-economics/energy-reserve-cooptimization/README.md
           - Battery arbitrage: projects/energy-economics/storage-arbitrage/README.md
           - Non-exporting BTM storage: projects/energy-economics/non-exporting-btm-storage/README.md
           - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
