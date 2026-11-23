@@ -1,5 +1,7 @@
 # Y1-02 — Energy Economics and Market Fundamentals
 
+**Status:** Active Year 1 course
+
 **Level:** Graduate | **Duration:** 8–10 weeks | **Effort:** 30–40 hours  
 **Prerequisites:** Intermediate microeconomics or equivalent; calculus and basic statistics.
 
@@ -62,3 +64,11 @@ Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page execu
 - [Non-exporting behind-the-meter battery storage](../../../projects/energy-economics/non-exporting-btm-storage/README.md)
 - [Merit-order dispatch, carbon pricing, and flexible demand](../../../projects/energy-economics/merit-order-dispatch/README.md)
 - [Battery arbitrage and intertemporal optimization](../../../projects/energy-economics/storage-arbitrage/README.md)
+
+## How to use the assessments
+
+Attempt each problem set before opening the linked worked solution. For computational work, reproduce the stated result, inspect the assumptions, change at least one parameter, and explain the effect. Retain corrected derivations, code, and short technical explanations as completion evidence.
+
+## Next step
+
+Proceed to [Y1-04 — Applied Quantitative Methods](../y1-04-quantitative-methods/README.md) when the data and programming prerequisites are comfortable. Then take [Y1-03 — Markets, Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md).
