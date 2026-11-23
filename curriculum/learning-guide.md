@@ -82,7 +82,7 @@ A passing test suite verifies specified software behavior. It does not establish
 
 ## 7. Evidence and completion
 
-Use the [academic standards](../ACADEMIC_STANDARDS.md) and the progress trackers. Record actual study time and link completed work. A course completion claim should be supported by:
+Use the [academic standards](../ACADEMIC_STANDARDS.md), [competency framework](competency-framework.md), and the progress trackers. Record actual study time and link completed work. A course completion claim should be supported by:
 
 - Demonstrated learning outcomes.
 - Attempted and corrected assessments.
