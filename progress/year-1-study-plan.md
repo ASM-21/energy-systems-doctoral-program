@@ -2,9 +2,9 @@
 
 ## Workload and calendar
 
-The four course guides estimate 140–182 hours in total. The current progress tracker uses a planning baseline of approximately **165 hours** across the required problem sets, computational work, source analysis, and course deliverables. The Year 1 integration project is planned at a further **20–30 hours**.
+The four course guides estimate 140–182 hours in total. The current progress tracker uses a planning baseline of approximately **168 hours** across the required problem sets, computational work, source analysis, and course deliverables. The Year 1 integration project is planned at a further **20–30 hours**.
 
-At 3–5 hours per week, plan for roughly **37–65 weeks**, including the integration project. This is a range, not a deadline. Prerequisite remediation, difficult derivations, and optional extensions may increase it. Do not compress the work by skipping assessments or solution review.
+At 3–5 hours per week, plan for roughly **38–66 weeks**, including the integration project. This is a range, not a deadline. Prerequisite remediation, difficult derivations, and optional extensions may increase it. Do not compress the work by skipping assessments or solution review.
 
 The estimates are planning aids. Record actual time in the tracker and adjust future estimates from experience.
 
