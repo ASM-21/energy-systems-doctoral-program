@@ -4,7 +4,8 @@
 **Level:** Graduate / applied institutional analysis  
 **Prerequisites:** Y1-01 and Y1-02, or equivalent power-system and microeconomic literacy; basic quantitative methods. Y1-04 may be taken before or alongside this course.  
 **Planned effort:** **51 hours** (40–52 hour planning range), normally 10–13 weeks at 3–5 hours per week.  
-**Position in sequence:** Integrative Year 1 course. Applies engineering and economics to real institutions, rules, and infrastructure decisions.
+**Position in sequence:** Integrative Year 1 course. Applies engineering and economics to real institutions, rules, and infrastructure decisions.  
+**Last content review:** 2026-11-23; recheck all cited manual revisions before future use.
 
 ## Purpose
 
@@ -67,6 +68,15 @@ For capacity and resource-adequacy assignments, use the manual revision and effe
 | COURSE | Regulatory/market analysis and policy brief | 19 | Integrated final submission |
 
 Total planned effort: **51 hours**. The progress tracker is the planning baseline.
+
+## Assessment structure
+
+- Problem sets and analytical exercises: 35%.
+- Computational market models: 12%.
+- Primary-source regulatory/manual analysis: 13%.
+- Final report and policy brief: 40%.
+
+Use the [program rubric](../../../ACADEMIC_STANDARDS.md). These are internal self-assessment weights, not university grades.
 
 ## Final project
 
