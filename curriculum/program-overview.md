@@ -1,5 +1,9 @@
 # Program Overview
 
+## How to navigate the curriculum
+
+Use the [learner guide](learning-guide.md), [curriculum map](course-map.md), and [glossary](glossary.md) before selecting coursework. The map distinguishes active Year 1 courses from planned Year 2 study and optional extensions.
+
 ## Intellectual objective
 Study energy infrastructure as a coupled system. Physical constraints shape market outcomes; market rules shape investment; regulation distributes costs and risks; public policy changes technology incentives; and strategic choices affect security, resilience, and industrial competitiveness.
 
