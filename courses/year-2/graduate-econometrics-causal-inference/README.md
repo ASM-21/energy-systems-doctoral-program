@@ -3,7 +3,7 @@
 **Status:** Planned; activate after Y1-04 and the Year 1 progression gate.  
 **Level:** Advanced graduate / doctoral preparation  
 **Prerequisites:** Y1-04 or equivalent introductory econometrics; OLS, probability, statistical inference, linear algebra, and Python or R. Review the [OLS and robust inference lab](../../../projects/econometrics/ols-energy-demand/README.md) and complete the [pre-analysis plan template](pre-analysis-plan-template.md) before the applied modules.  
-**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, normally 2–3 hours per week within the program's total 3–5 hour budget. Study this as the primary course rather than stacking it with another full 2–3 hour course.  
+**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, averaging about 2.5 hours per week within the program's total 3–5 hour budget. Study this as the primary course rather than stacking it with another full 2–3 hour course.  
 **Position in sequence:** Second Year 2 methods course. It builds on Y1-04 and supports original policy evaluation and the Pennsylvania DER research program.
 
 ## Why this course is necessary
