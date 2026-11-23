@@ -62,6 +62,15 @@ Textbooks are the main conceptual references. University course pages are benchm
 
 Total planned effort: **35 hours**. The course tracker is the source for this planning baseline.
 
+## Assessment structure
+
+- Problem sets and written derivations: 30%.
+- Computational labs and scenario interpretation: 25%.
+- Final analytical project: 35%.
+- Executive summary, reproducibility review, and self-assessment: 10%.
+
+Use the [program rubric](../../../ACADEMIC_STANDARDS.md) for technical accuracy, evidence, reproducibility, interpretation, and communication. These are internal self-assessment weights, not university grades.
+
 ## Final project
 
 Choose a dispatch, storage, demand-response, or retail-tariff question. Submit a reproducible numerical model or calculation workbook and a 1,500–2,000 word analysis with:
