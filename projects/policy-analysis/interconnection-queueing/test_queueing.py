@@ -1,6 +1,6 @@
 import unittest
 
-from queueing import mmc_metrics, simulate_mmc, staffing_cost
+from queueing import mg1_metrics, mmc_metrics, simulate_mmc, staffing_cost
 
 
 class QueueingTests(unittest.TestCase):
@@ -43,6 +43,29 @@ class QueueingTests(unittest.TestCase):
         self.assertLess(cost_three, cost_two)
         self.assertAlmostEqual(cost_two, 1578.5714285714)
         self.assertAlmostEqual(cost_three, 1571.0526315789)
+
+    def test_mg1_exponential_service_matches_mm1(self):
+        result = mg1_metrics(6, 1 / 8, 1)
+        self.assertAlmostEqual(result["utilization"], 0.75)
+        self.assertAlmostEqual(result["mean_queue_wait"], 0.375)
+        self.assertAlmostEqual(result["mean_system_time"], 0.5)
+        self.assertAlmostEqual(result["mean_queue_length"], 2.25)
+
+    def test_mg1_service_variability_increases_queue_wait(self):
+        exponential = mg1_metrics(6, 1 / 8, 1)
+        variable = mg1_metrics(6, 1 / 8, 2)
+        self.assertAlmostEqual(variable["mean_queue_wait"], 0.9375)
+        self.assertAlmostEqual(variable["mean_system_time"], 1.0625)
+        self.assertAlmostEqual(variable["mean_queue_length"], 5.625)
+        self.assertAlmostEqual(
+            variable["mean_queue_wait"] / exponential["mean_queue_wait"], 2.5
+        )
+
+    def test_mg1_rejects_invalid_or_unstable_inputs(self):
+        for args in ((0, 0.125, 1), (6, 0, 1), (6, 0.125, -1),
+                     (8, 0.125, 1), (6, 0.125, float("nan"))):
+            with self.assertRaises(ValueError):
+                mg1_metrics(*args)
 
     def test_simulation_is_reproducible(self):
         first = simulate_mmc(12, 8, 2, customers=5000, warmup=500, seed=42)
