@@ -3,6 +3,8 @@
 Projects are the main evidence of applied mastery. Each project should have a defined question, scope, inputs, methods, deliverables, reproducibility instructions, and limitations.
 
 ## Project standards
+
+Use the [computational project template](project-template.md) for new or substantially revised project pages. The template is a quality checklist, not a requirement to force every project type into an identical report. Data pipelines and empirical studies must add provenance, schema, and identification details; engineering models must add equations, units, boundary conditions, and benchmark cases.
 - Separate synthetic demonstrations from empirical results using real-world data.
 - Document data licensing and provenance before downloading or committing data.
 - Avoid confidential utility/employer/customer data.
