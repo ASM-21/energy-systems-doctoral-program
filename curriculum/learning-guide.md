@@ -101,6 +101,7 @@ Do not place confidential employer information, customer information, nonpublic 
 ## 9. Where to go next
 
 - [Curriculum map](course-map.md): course dependencies, sequence, and expected outputs.
+- [Glossary](glossary.md): definitions of grid, market, regulatory, and econometric terms.
 - [Year 1 sequence](../courses/year-1/README.md): current foundation courses.
 - [Year 2 sequence](../courses/year-2/README.md): planned advanced methods.
 - [Research workflow](../resources/research-workflow.md): moving from a question to a defensible study.
