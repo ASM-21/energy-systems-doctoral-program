@@ -164,6 +164,7 @@ nav:
       - Project index: projects/README.md
       - Project page template: projects/project-template.md
       - Power systems:
+          - Learning path: projects/power-systems/README.md
           - Three-bus DC power flow: projects/power-systems/three-bus-dc-power-flow/README.md
           - Two-node congestion: projects/power-systems/two-node-congestion/README.md
           - Radial DER hosting capacity: projects/power-systems/radial-der-hosting-capacity/README.md
@@ -173,12 +174,14 @@ nav:
           - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
           - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
       - Energy economics:
+          - Learning path: projects/energy-economics/README.md
           - Merit-order dispatch: projects/energy-economics/merit-order-dispatch/README.md
           - Energy and reserve co-optimization: projects/energy-economics/energy-reserve-cooptimization/README.md
           - Battery arbitrage: projects/energy-economics/storage-arbitrage/README.md
           - Non-exporting BTM storage: projects/energy-economics/non-exporting-btm-storage/README.md
           - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
       - Econometrics:
+          - Learning path: projects/econometrics/README.md
           - OLS and robust inference: projects/econometrics/ols-energy-demand/README.md
           - Randomized experiments: projects/econometrics/randomized-experiments/README.md
           - Difference-in-differences: projects/econometrics/difference-in-differences/README.md
@@ -186,6 +189,7 @@ nav:
           - Competing-risks survival analysis: projects/econometrics/competing-risks-survival/README.md
           - Interrupted time series: projects/econometrics/interrupted-time-series/README.md
       - Policy and infrastructure:
+          - Learning path: projects/policy-analysis/README.md
           - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
           - Interconnection queueing and process capacity: projects/policy-analysis/interconnection-queueing/README.md
           - Data requirements: projects/policy-analysis/interconnection-queueing/data-requirements.md
