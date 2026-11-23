@@ -14,14 +14,14 @@ This page is the program's navigation map. It distinguishes the current foundati
 
 ## Year 1: foundation sequence
 
-The four courses are designed to fit approximately 168 hours in total, before any optional extensions. At 3–5 hours per week, distribute them over the year and adjust the calendar to the actual workload. The integration project should use the same topic and evidence base as course work where practical, rather than creating an unrelated fifth course.
+The four course guides allow approximately 140–182 hours combined. The assessment tracker uses a 168-hour planning baseline, plus 25 hours for the Year 1 integration project. At 3–5 hours per week, the current planning calendar is approximately 38–66 weeks including the project. The [Year 1 study plan](../progress/year-1-study-plan.md) reconciles each course estimate and explains the range. The integration project should reuse course methods and evidence rather than become an unrelated fifth course.
 
 | Course | Prerequisites | Planned effort | Main output | Role in sequence |
 |---|---|---:|---|---|
-| [Y1-01 Power Systems](../courses/year-1/y1-01-power-systems/README.md) | Calculus, linear algebra, ODE basics, circuits, probability, programming | 35–45 h | Small network/feeder model and technical report | Establishes physical and engineering foundations |
-| [Y1-02 Energy Economics](../courses/year-1/y1-02-energy-economics/README.md) | Intermediate microeconomics, calculus, basic statistics | 30–40 h | Dispatch, welfare, or tariff analysis | Connects physical constraints to incentives and costs |
-| [Y1-04 Quantitative Methods](../courses/year-1/y1-04-quantitative-methods/README.md) | Calculus, linear algebra, probability/statistics, Python or R | 35–45 h | Reproducible descriptive or OLS analysis | Can overlap with Y1-01/Y1-02 after basic data setup |
-| [Y1-03 Markets, Regulation, and PJM](../courses/year-1/y1-03-markets-regulation-pjm/README.md) | Y1-02 or equivalent; basic electricity-system literacy | 40–52 h | Source-supported regulatory and market analysis | Applies engineering and economics to real institutions |
+| [Y1-01 Power Systems](../courses/year-1/y1-01-power-systems/README.md) | Calculus, linear algebra, ODE basics, circuits, probability, programming | 42 h (35–45 h range) | Small network/feeder model and technical report | Establishes physical and engineering foundations |
+| [Y1-02 Energy Economics](../courses/year-1/y1-02-energy-economics/README.md) | Intermediate microeconomics, calculus, basic statistics | 35 h (30–40 h range) | Dispatch, welfare, or tariff analysis | Connects physical constraints to incentives and costs |
+| [Y1-04 Quantitative Methods](../courses/year-1/y1-04-quantitative-methods/README.md) | Calculus, linear algebra, probability/statistics, Python or R | 40 h (35–45 h range) | Reproducible descriptive or OLS analysis | Can overlap with Y1-01/Y1-02 after basic data setup |
+| [Y1-03 Markets, Regulation, and PJM](../courses/year-1/y1-03-markets-regulation-pjm/README.md) | Y1-02 or equivalent; basic electricity-system literacy | 51 h (40–52 h range) | Source-supported regulatory and market analysis | Applies engineering and economics to real institutions |
 
 **Recommended order:** Y1-01, then Y1-02; begin Y1-04 once the data/programming prerequisites are comfortable; complete Y1-03 after the basic engineering and economic concepts are established. Limited overlap is acceptable. Do not run all four at full intensity simultaneously.
 
