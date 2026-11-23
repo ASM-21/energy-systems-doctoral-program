@@ -37,6 +37,29 @@ class FrequencyResponseTests(unittest.TestCase):
         unstable = simulate_euler((1.0, 0.0), 5.0, 0.3)
         self.assertGreater(abs(unstable[0]) + abs(unstable[1]), 1.0)
 
+    def test_custom_inertia_is_used_consistently(self):
+        expected = steady_state(0.01)
+        actual = simulate_rk4(
+            load_step=0.01, duration=10.0, step=0.001, inertia=10.0
+        )
+        self.assertAlmostEqual(actual[0], expected[0], delta=2e-6)
+        self.assertAlmostEqual(actual[1], expected[1], delta=2e-6)
+        self.assertNotEqual(state_matrix(inertia=10.0), state_matrix())
+
+    def test_euler_integrates_fractional_final_step(self):
+        matrix = ((-1.0, 0.0), (0.0, -2.0))
+        actual = simulate_euler((1.0, 1.0), duration=0.25, step=0.1, matrix=matrix)
+        self.assertAlmostEqual(actual[0], 0.9 * 0.9 * 0.95)
+        self.assertAlmostEqual(actual[1], 0.8 * 0.8 * 0.9)
+
+    def test_nonfinite_inputs_rejected(self):
+        with self.assertRaises(ValueError):
+            state_matrix(inertia=float("inf"))
+        with self.assertRaises(ValueError):
+            simulate_rk4(duration=float("nan"))
+        with self.assertRaises(ValueError):
+            simulate_euler((1.0, 0.0), duration=1.0, step=float("inf"))
+
     def test_invalid_parameters(self):
         with self.assertRaises(ValueError):
             state_matrix(inertia=0)
