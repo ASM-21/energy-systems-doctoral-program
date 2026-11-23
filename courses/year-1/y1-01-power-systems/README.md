@@ -1,5 +1,7 @@
 # Y1-01 — Power Systems and Electricity Infrastructure
 
+**Status:** Active Year 1 course
+
 **Level:** Graduate foundation / early doctoral preparation  
 **Duration:** 10–12 weeks | **Effort:** 35–45 hours  
 **Prerequisites:** Calculus, linear algebra, differential equations, basic circuits, probability, programming familiarity.
@@ -80,3 +82,10 @@ Problem-set solutions, code, data dictionary, figures, technical memo, final rep
 - [Problem Set 3 — Radial feeder DER integration](problem-set-03-radial-der.md)
 - [Solution notes for Problem Set 3](problem-set-03-radial-der-solutions.md)
 
+## How to use the assessments
+
+Attempt each problem set before opening the linked worked solution. For computational work, reproduce the stated result, inspect the assumptions, change at least one parameter, and explain the effect. Retain corrected derivations, code, and short technical explanations as completion evidence.
+
+## Next step
+
+Proceed to [Y1-02 — Energy Economics and Market Fundamentals](../y1-02-energy-economics/README.md). Use the [curriculum map](../../../curriculum/course-map.md) if prerequisite gaps suggest a different pace.
