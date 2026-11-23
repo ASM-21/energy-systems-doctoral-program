@@ -16,6 +16,10 @@ Move from competent use of energy models toward independent formulation, mathema
 
 The advanced mathematics course includes an optional [queueing theory extension](advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection.md) for process-capacity and interconnection-review research. It is not part of the minimum Year 2 workload.
 
+## How to use Year 2 materials
+
+The advanced course pages and assignments are a growing curriculum, not a signal to start every module immediately. Begin with the prerequisite diagnostic, then follow the [course map](../../curriculum/course-map.md). Work through the mathematical sequence in order; use econometrics alongside it only when the total weekly workload remains realistic. The [learning guide](../../curriculum/learning-guide.md) explains how to approach problem sets, solutions, and computational labs.
+
 ## Recommended sequencing
 
 - First: mathematical prerequisite diagnostic and targeted remediation.
