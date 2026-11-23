@@ -6,6 +6,7 @@ PROJECTS := \
 	projects/energy-economics/non-exporting-btm-storage \
 	projects/energy-economics/stochastic-robust-capacity-planning \
 	projects/policy-analysis/pa-distribution-interconnection-capstone \
+	projects/policy-analysis/interconnection-queueing \
 	projects/power-systems/two-node-congestion \
 	projects/power-systems/three-bus-dc-power-flow \
 	projects/power-systems/radial-der-hosting-capacity \
