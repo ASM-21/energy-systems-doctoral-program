@@ -1,0 +1,37 @@
+# Synthetic Control: Energy-Policy Counterfactual Lab
+
+A deterministic synthetic teaching example of a single treated utility and a donor pool. The lab estimates nonnegative donor weights summing to one using only pre-intervention outcomes, constructs a post-intervention counterfactual, and runs in-space placebo fits.
+
+**This is synthetic data.** It does not estimate any Pennsylvania utility policy effect, and its placebo rank is not a design-based randomization p-value.
+
+## Run
+
+```bash
+python -m pip install -r requirements.txt
+python synthetic_control.py --output-dir /tmp/synthetic-control
+python -m unittest discover -s . -p 'test_*.py' -v
+```
+
+## Model
+
+For treated unit 0 and donors \(j=1,\ldots,J\), choose weights
+
+\[
+\min_w \|Y_{1,pre}-Y_{0,pre}w\|_2^2
+\quad\text{s.t.}\quad w\geq0,\;\mathbf{1}'w=1.
+\]
+
+Weights are fit exclusively on pre-intervention observations. The estimated gap after intervention is observed treated outcome less the weighted donor outcome. The lab reports donor weights, pre/post RMSPE, the post/pre RMSPE ratio, and placebo ratios.
+
+## Diagnostics and limitations
+
+- Nonnegative weights and a sum-to-one constraint prevent extrapolation beyond the donor convex hull.
+- The synthetic treated series is generated from a known donor mixture plus a post-period effect, so the example can test recovery under favorable conditions.
+- Placebo ratios are descriptive diagnostics; units are not randomized and need not be exchangeable.
+- Poor pre-fit placebo units are flagged rather than silently treated as equivalent.
+- The model does not handle multiple treated units, spillovers, time-varying donor weights, missing panels, staggered treatment, or latent factor estimation.
+- A good pre-fit does not prove parallel untreated dynamics or eliminate concurrent treated-unit shocks.
+
+## Research use
+
+Before using SCM on real energy-policy data, document a donor eligibility rule, harmonize outcome definitions, pre-specify the intervention date and predictors, define a minimum pre-fit threshold, and report all donor weights and exclusions. Run in-space and in-time placebos, leave-one-out analysis, and alternative donor-pool specifications. Do not treat a descriptive PUC EDC panel as an identified counterfactual without a post-treatment series and defensible comparison units.
