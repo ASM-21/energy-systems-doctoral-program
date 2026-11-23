@@ -14,7 +14,7 @@ Let f be positive flow from node 1 to node 2. Nodal balances:
 
     g1 - f = 100
     g2 + f = 100
-    0 <= g1,g2 <= 150
+    0 <= g1 <= 250, 0 <= g2 <= 150
     -50 <= f <= 50
 
 The cheap generator at node 1 is dispatched to 150 MW, the line carries 50 MW, and the expensive generator at node 2 produces 50 MW. Total cost is $6,500/hour. The node 1 marginal price is $20/MWh; node 2 marginal price is $70/MWh. The $50/MWh difference is the shadow value of the binding transfer limit in this simplified lossless model. Node 1's generator has spare capacity, so one additional MW of node 1 demand can be served locally at $20/MWh. One additional MW of node 2 demand requires an additional MW from the $70/MWh local generator because the line is at its 50 MW transfer limit.
