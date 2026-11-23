@@ -82,6 +82,19 @@ A standard-library Python companion now implements separate cost-pool allocation
 
 Useful public sources include [FERC Form 1](https://www.ferc.gov/industries-data/electric/general-information/electric-industry-forms/form-1), [EIA electricity data](https://www.eia.gov/electricity/data/), and the [Pennsylvania PUC](https://www.puc.pa.gov/). The applied case must identify the proceeding's legal status and test year, and must not use confidential employer or customer records.
 
+## Assessment architecture
+
+| Assessment | Weight | Course modules |
+|---|---:|---|
+| Problem Set 1: Revenue requirement, rate base, and WACC | 15% | 1–3 |
+| Problem Set 2: Cost allocation and rate design | 15% | 4 |
+| Problem Set 3: Regulatory lag and performance regulation | 15% | 5 |
+| Problem Set 4: Capital budgeting under uncertainty | 15% | 6 |
+| Problem Set 5: Pennsylvania distribution investment case | 40% | 7–8 |
+| **Total** | **100%** | |
+
+The weights are the planned grading architecture for the complete course. Problem Sets 1–4 test transferable analytical methods; Problem Set 5 is the integrative applied case. A submission must meet the [program rubric](../../../ACADEMIC_STANDARDS.md), regardless of numerical score. The course is not activated until the case materials and computational companion pass review.
+
 ## Assessment standard
 
 A strong submission:
@@ -96,7 +109,7 @@ A strong submission:
 
 ## Completion evidence
 
-Submit a revenue-requirement workbook or script, a short rate-design comparison, a source register for one public regulatory proceeding, and a 1,500–2,000 word investment memo. A model without a clear institutional interpretation is incomplete.
+Submit a revenue-requirement workbook or script, a short rate-design comparison, a source register for one public regulatory proceeding, and a 2,000–3,000 word investment memo consistent with Problem Set 5. A model without a clear institutional interpretation is incomplete.
 
 
 ## Completion gate
@@ -106,7 +119,7 @@ The course remains planned until the computational companion is independently re
 - a reproducible revenue-requirement and rate-design model;
 - a primary-source review of one public rate proceeding;
 - a sensitivity analysis that identifies who bears material risks;
-- a 1,500–2,000 word investment/regulatory memo;
+- a 2,000–3,000 word investment/regulatory memo;
 - a self-assessment against the [program rubric](../../../ACADEMIC_STANDARDS.md).
 
 The currently published Problem Sets 1–5 are assessed modules, not evidence that the full course is ready or complete.
