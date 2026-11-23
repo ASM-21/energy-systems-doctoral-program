@@ -1,3 +1,10 @@
+## 2026-11-23 — Time-series interventions and dynamic econometrics
+
+- Added Problem Set 6 and worked solutions on segmented regression, level and slope estimands, serial correlation, Newey–West HAC inference, unit roots, cointegration, error-correction models, forecast validation, and structural-break testing.
+- Added a reproducible synthetic monthly interrupted-time-series lab with AR(1) disturbances, HAC covariance estimation, Ljung–Box residual diagnostics, bandwidth sensitivity, and placebo intervention dates.
+- Explicitly separated descriptive intervention gaps, predictive performance, and causal effects; documented that HAC inference does not solve confounding or counterfactual validity.
+- Integrated the assessment and lab into the econometrics course, MkDocs navigation, project index, Makefile, and Python CI.
+
 ## 2026-11-23 — Synthetic control and comparative case studies
 
 - Added Problem Set 5 and worked solutions on convex-hull geometry, simplex-constrained weights, predictor balance, pre-fit diagnostics, in-space placebo comparisons, donor-pool design, augmented methods, and inference limitations.
