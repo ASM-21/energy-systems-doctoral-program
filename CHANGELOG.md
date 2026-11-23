@@ -1,3 +1,10 @@
+## 2026-11-23 — Spatial interference and dynamic error models
+
+- Added Problem Set 7 and worked solutions on network exposure mappings, direct and spillover estimands, two-stage randomized saturation designs, reflection, interference in difference-in-differences, and the distinction between spatial error dependence and causal spillovers.
+- Extended the interrupted-time-series lab to compare segmented OLS with HAC covariance against feasible GLS with AR(1) errors; added raw and whitened residual diagnostics, model-risk interpretation, and deterministic regression tests.
+- Clarified that HAC changes covariance estimates but does not remove serial correlation, and that parametric AR(1) GLS introduces additional error-process assumptions.
+- Integrated the new assessment into course guidance and MkDocs navigation.
+
 ## 2026-11-23 — Time-series interventions and dynamic econometrics
 
 - Added Problem Set 6 and worked solutions on segmented regression, level and slope estimands, serial correlation, Newey–West HAC inference, unit roots, cointegration, error-correction models, forecast validation, and structural-break testing.
