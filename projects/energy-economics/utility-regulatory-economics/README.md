@@ -13,7 +13,7 @@ This project provides small, transparent functions for the calculations in Y2-03
 ## Model components
 
 - **Cost allocation:** allocates separate customer-, demand-, and energy-related pools using their stated class determinants; checks pool reconciliation.
-- **Three-part rate design:** calculates fixed, demand, and volumetric rates from aggregate billing determinants.
+- **Rate design:** compares volumetric-only, fixed-plus-volumetric, and three-part rates, with aggregate revenue-reconciliation checks.
 - **Representative bills:** separates fixed, demand, and energy components.
 - **Regulatory incentive comparison:** compares a fixed operating-cost allowance, a stylized annual cost reset, and an earnings-sharing allocation.
 - **Capital budgeting:** calculates annuity factors, NPV, and scenario-weighted NPV when a discrete benefit state is assumed to persist over the modeled horizon.
@@ -34,7 +34,7 @@ No third-party package is required.
 
 The tests check:
 - pool-level and class-level cost reconciliation;
-- the three-part tariff's aggregate recovery of the stipulated $100 million;
+- aggregate revenue recovery under all three tariff designs for the stipulated $100 million;
 - a representative residential bill against the hand calculation;
 - the three-year savings-sharing example;
 - annuity factors, base-case NPV, scenario NPVs, and expected NPV;
