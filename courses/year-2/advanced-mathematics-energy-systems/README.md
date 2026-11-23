@@ -140,6 +140,18 @@ This is a planned advanced course, not a prerequisite to the current Year 1 work
 At 3–5 hours/week, the full course should be spread across two academic years if necessary. Depth and retention take priority over calendar completion. The course should be revised after the first Year 2 optimization and econometrics assignments reveal actual mathematical gaps.
 
 
+## Completion gate
+
+When this course is activated, completion requires:
+- attempted and corrected work for required Problem Sets 1–9; Problem Set 10 remains optional;
+- a proof/derivation portfolio covering matrix analysis, calculus, optimization, probability, dynamics, and graph methods;
+- at least two computational studies selected to support the learner's research pathway, with tests and independent numerical checks;
+- a technical examination or equivalent closed-book derivation assessment;
+- a final research project with mathematical formulation, reproducible implementation, sensitivity analysis, and a limitations statement;
+- a self-assessment against the [program rubric](../../../ACADEMIC_STANDARDS.md).
+
+The course remains planned until its problem solutions, computational benchmarks, and assessment instructions have been reviewed as a complete sequence. Repository materials alone do not establish learner completion.
+
 ## Next step
 
 After completing the required mathematical modules and targeted remediation, proceed to [Y2-02 — Graduate Econometrics and Causal Inference](../graduate-econometrics-causal-inference/README.md) or the planned [Y2-04 — Electricity Market Design and Optimization](../electricity-market-design-optimization/README.md), depending on the research question. Do not begin advanced optimization assignments until the relevant linear algebra, calculus, probability, and constrained-optimization modules are secure.
