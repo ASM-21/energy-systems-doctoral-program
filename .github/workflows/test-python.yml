@@ -45,6 +45,7 @@ jobs:
           - projects/energy-economics/non-exporting-btm-storage
           - projects/energy-economics/stochastic-robust-capacity-planning
           - projects/energy-economics/utility-regulatory-economics
+          - projects/energy-economics/unit-commitment
           - projects/policy-analysis/pa-distribution-interconnection-capstone
           - projects/policy-analysis/interconnection-queueing
           - projects/power-systems/two-node-congestion
@@ -85,6 +86,8 @@ jobs:
             python capacity_planning.py
           elif [ -f cooptimization.py ]; then
             python cooptimization.py
+          elif [ -f unit_commitment.py ]; then
+            python unit_commitment.py --output-json /tmp/unit-commitment-example.json
           elif [ -f utility_regulation.py ]; then
             python utility_regulation.py --output-json /tmp/utility-regulation-example.json
           elif [ -f dispatch.py ]; then
