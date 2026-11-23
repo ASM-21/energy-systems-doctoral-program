@@ -17,7 +17,8 @@ PROJECTS := \
 	projects/econometrics/ols-energy-demand \
 	projects/econometrics/competing-risks-survival \
 	projects/econometrics/randomized-experiments \
-	projects/econometrics/difference-in-differences
+	projects/econometrics/difference-in-differences \
+	projects/econometrics/synthetic-control
 
 .PHONY: test docs clean
 
