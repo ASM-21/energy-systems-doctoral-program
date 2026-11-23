@@ -1,10 +1,10 @@
-# Advanced Mathematical Methods for Energy Systems and Infrastructure Research
+# Y2-01 — Advanced Mathematical Methods for Energy Systems and Infrastructure Research
 
-**Status:** Planned future course; not part of the current Year 1 workload  
-**Placement:** Year 2, before or alongside advanced optimization and system-modeling work  
-**Suggested duration:** 2 semesters or 24–30 modular weeks  
-**Target study time:** Approximately 2–3 hours/week within the existing 3–5 hour weekly program budget; reduce parallel course load rather than treating this as extra required time  
-**Level:** Advanced graduate / doctoral preparation
+**Status:** Planned; not yet a course to mark as completed or begin before the Year 1 progression gate.  
+**Level:** Advanced graduate / doctoral preparation  
+**Prerequisites:** Year 1 mathematical foundations or equivalent; working fluency in calculus, linear algebra, introductory ODEs, probability, and Python numerical computing. Use the [prerequisite diagnostic](../../../curriculum/prerequisites.md).  
+**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, usually 2–3 hours per week. This is one primary course within the total 3–5 hour weekly program budget, not an additional workload.  
+**Position in sequence:** First Year 2 methods course. It supports advanced optimization, power-system modeling, stochastic planning, and econometrics.
 
 ## Purpose
 
@@ -138,3 +138,8 @@ The minimum path is 24 weeks. Weeks 25–30 are optional and can be used for que
 This is a planned advanced course, not a prerequisite to the current Year 1 work. Do not attempt to complete every module before making progress in energy systems. The recommended order is to finish Year 1 foundations, complete targeted mathematics remediation, then take Modules 1–6 before advanced OPF and stochastic planning. Modules 7–9 can follow or run as research needs dictate. Module 10 is optional and is most useful when studying process capacity, queues, and review-system design.
 
 At 3–5 hours/week, the full course should be spread across two academic years if necessary. Depth and retention take priority over calendar completion. The course should be revised after the first Year 2 optimization and econometrics assignments reveal actual mathematical gaps.
+
+
+## Next step
+
+After completing the required mathematical modules and targeted remediation, proceed to [Y2-02 — Graduate Econometrics and Causal Inference](../graduate-econometrics-causal-inference/README.md) or the planned [Y2-04 — Electricity Market Design and Optimization](../electricity-market-design-optimization/README.md), depending on the research question. Do not begin advanced optimization assignments until the relevant linear algebra, calculus, probability, and constrained-optimization modules are secure.
