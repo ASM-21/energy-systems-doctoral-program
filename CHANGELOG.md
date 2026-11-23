@@ -1,3 +1,10 @@
+## 2026-11-23 — Y2-04 three-bus DC-OPF and LMP model
+
+- Added Problem Set 2 with a fully specified three-bus DC-OPF, nodal balance equations, line constraints, LMP interpretation, and finite-difference checks.
+- Added a SciPy/HiGHS computational lab with benchmark dispatch, angles, flows, nodal prices, line shadow values, and automated tests for the primal solution and dual sensitivities.
+- Added the lab to the power-systems learning path, project index, CI matrix, and site navigation. Updated Y2-04 course maturity and competency records.
+- Y2-04 remains planned. The AC/security-constrained, unit-commitment, reserve, market-power, capacity, and PJM-specific components remain incomplete.
+
 ## 2026-11-23 — Y2-04 economic dispatch and duality assessment
 
 - Started the Y2-04 assessment sequence with a graduate-level dispatch LP, explicit Lagrangian/KKT derivation, capacity shadow prices, finite-difference validation, scarcity boundary, and a bridge to network-constrained LMPs.
