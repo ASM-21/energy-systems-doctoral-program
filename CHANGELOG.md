@@ -7,6 +7,7 @@
 - Corrected the Y1-01 DC power-flow net-flow explanation and organized all five Y1-01 problem sets and solutions in a single course table.
 - Added a SciPy/HiGHS energy and operating-reserve co-optimization lab with primal, dual, capacity-shadow-value, finite-difference, alternative-offer, and input-validation tests.
 - Added the lab to the project index, course guide, Makefile, Python CI matrix, and MkDocs navigation.
+- Added the lab to the Year 1 assessment tracker and increased the planned Year 1 course-work baseline from 165 to 168 hours (plus the separate 20–30 hour integration project).
 - Added an internal Year 1 technical quality review documenting verified calculations, corrections, model safeguards, and remaining audit scope.
 
 ## 2026-11-23 — Spatial interference and dynamic error models
