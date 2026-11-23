@@ -35,11 +35,11 @@ The joint capacity constraint is the key coupling: a MW held as upward reserve c
 
 ## Run
 
-\`\`\`bash
+```bash
 python -m pip install -r requirements.txt
 python cooptimization.py
 python -m unittest discover -s . -p "test_*.py" -v
-\`\`\`
+```
 
 ## Reproducible benchmark
 
