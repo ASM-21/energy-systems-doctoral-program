@@ -7,6 +7,8 @@ Use the [learner guide](learning-guide.md), [curriculum map](course-map.md), and
 ## Intellectual objective
 Study energy infrastructure as a coupled system. Physical constraints shape market outcomes; market rules shape investment; regulation distributes costs and risks; public policy changes technology incentives; and strategic choices affect security, resilience, and industrial competitiveness.
 
+Use the [competency framework](competency-framework.md) to see the measurable outcomes, course coverage, progression levels, and current gaps. Use the [course quality review checklist](course-review-checklist.md) to audit whether course materials actually assess those outcomes.
+
 ## Core questions
 1. How do electricity systems physically operate, and what constraints bind?
 2. How are energy, capacity, ancillary services, and transmission valued and procured?
