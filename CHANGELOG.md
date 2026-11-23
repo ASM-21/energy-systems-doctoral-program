@@ -15,7 +15,8 @@
 - Corrected the frequency-response model's custom-inertia disturbance scaling, exposed model parameters in the CLI, and fixed explicit-Euler integration of a final partial step. Added regression tests for parameter consistency, fractional durations, and nonfinite inputs.
 - Corrected DC power-flow per-branch thermal-limit reporting and added finite/positive validation for model inputs. Regression tests cover invalid injections, reactances, base values, and ratings.
 - Strengthened radial feeder validation for tree topology, finite nonnegative loads, finite branch parameters, DER inputs, and sweep controls.
-- Added project records to the frequency-response and radial feeder pages and documented the implementation audit. Latest test and documentation workflows are being checked against the final commit.
+- Added project records to the frequency-response and radial feeder pages and documented the implementation audit.
+- Verified all 21 Python project and casebook-analysis CI jobs passed on code commit `6f07d95`; subsequent changes in this pass were documentation-only. Strict MkDocs build and GitHub Pages deployment passed on commit `b90b71f`.
 
 ## 2026-11-23 — Curriculum structure, course sequencing, and learner experience
 
