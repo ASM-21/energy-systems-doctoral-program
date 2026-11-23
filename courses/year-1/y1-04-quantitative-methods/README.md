@@ -1,59 +1,83 @@
 # Y1-04 — Applied Quantitative Methods for Energy Research
 
-**Status:** Active Year 1 course
-
-**Level:** Graduate methods foundation | **Duration:** 10–12 weeks | **Effort:** 35–45 hours  
-**Prerequisites:** Calculus, linear algebra, probability/statistics, Python or R.
+**Status:** Active Year 1 course  
+**Level:** Graduate methods foundation  
+**Prerequisites:** Calculus, linear algebra, introductory probability/statistics, and Python or R. Basic Git is recommended; use the [software setup guide](../../../resources/software-setup.md) if needed.  
+**Planned effort:** **40 hours** (35–45 hour planning range), normally 10–12 weeks at 3–5 hours per week.  
+**Position in sequence:** May begin after the basic quantitative prerequisites are comfortable. It can overlap with Y1-01/Y1-02 and should precede the Year 2 econometrics sequence.
 
 ## Purpose
-Establish a reproducible quantitative workflow for energy-sector analysis. This introduces empirical reasoning and regression; it does not claim to provide doctoral-level econometric mastery. Advanced causal inference, panel data, and time series belong in Year 2.
+
+Establish a reproducible quantitative workflow for energy-sector analysis. The course covers measurement, data provenance, descriptive statistics, OLS, uncertainty, diagnostics, and responsible interpretation. It deliberately stops short of advanced causal estimation: panel identification, difference-in-differences estimators, instrumental variables, regression discontinuity, and advanced time-series methods are developed in Year 2.
 
 ## Learning outcomes
-Formulate a quantitative question and identify its unit of analysis; acquire, inspect, clean, and document public data; distinguish description, prediction, and causal inference; fit and interpret OLS; explain assumptions and failure modes; diagnose missingness, outliers, heteroskedasticity, multicollinearity, and serial dependence; use version control; communicate uncertainty without causal overclaiming.
 
-## Weekly sequence
-| Week | Topic | Work |
+By the end, the learner should be able to:
+
+1. Translate a substantive energy question into a defined unit of analysis, outcome, explanatory variables, and estimand or descriptive target.
+2. Acquire, inspect, clean, and document public data while preserving provenance and raw source files.
+3. Audit schemas, missingness, units, respondent identity, aggregation levels, and changes in measurement definitions.
+4. Calculate and interpret descriptive statistics, sampling uncertainty, confidence intervals, and basic hypothesis tests.
+5. Derive and interpret simple and multiple OLS regression, including coefficients, fitted values, residuals, and uncertainty.
+6. Explain omitted-variable bias, functional-form problems, heteroskedasticity, and multicollinearity at an introductory level.
+7. Distinguish descriptive, predictive, and causal claims and identify why a proposed causal design may fail.
+8. Build a reproducible analysis with documented software, version control, tests, data dictionary, and clean rerun instructions.
+
+## Learning sequence
+
+| Stage | Topic | Required evidence |
 |---|---|---|
-| 1 | Research questions, estimands, units, provenance | Design worksheet |
+| 1 | Research questions, units, estimands, and data provenance | Design worksheet |
 | 2 | Data acquisition, schemas, missingness, cleaning | Data audit |
-| 3 | Descriptive statistics and visualization | Exploratory notebook |
-| 4 | Probability, sampling, confidence intervals, tests | Problem set 1 |
-| 5 | Simple and multiple OLS | Regression notebook |
-| 6 | Functional form, interactions, interpretation | Problem set 2 |
-| 7 | Diagnostics, robust errors, specification | Diagnostic report |
-| 8 | Time-indexed data, seasonality, autocorrelation | Time-series exploration |
-| 9 | Prediction versus causal inference | Identification memo |
-| 10 | Reproducibility, Git, testing, documentation | Clean rerun |
-| 11 | Sensitivity and uncertainty communication | Results review |
-| 12 | Final empirical project | Paper and repository |
+| 3 | Descriptive statistics, sampling, and uncertainty | PS1 and exploratory notebook |
+| 4 | Simple/multiple OLS, functional form, interpretation | PS2 and regression notebook |
+| 5 | Diagnostics, robust standard errors, specification | Diagnostic memo |
+| 6 | Public-data measurement and panel feasibility | PS3 and EIA-861 audit |
+| 7 | Reproducibility, sensitivity, and communication | Clean rerun and final project |
 
-## References
-Wooldridge, *Introductory Econometrics: A Modern Approach*, 8th ed. (2025; [publisher page](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-8e-wooldridge/9780357900161)); Angrist & Pischke, *Mostly Harmless Econometrics* (selected chapters); [OpenIntro Statistics](https://www.openintro.org/book/os/); [NIST/SEMATECH Statistical Methods](https://www.itl.nist.gov/div898/handbook/); [EIA Open Data](https://www.eia.gov/opendata/); [FRED](https://fred.stlouisfed.org/).
+## Core materials
 
-## Assessments
-Data provenance/quality audit; descriptive analysis with defensible plots; OLS derivation and interpretation; diagnostic/specification memo; final reproducible empirical analysis using public data.
+- Wooldridge, Jeffrey M. *Introductory Econometrics: A Modern Approach*, 8th ed. Cengage, 2025. [Publisher page](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-8e-wooldridge/9780357900161).
+- Diez, David M., Christopher D. Barr, and Mine Çetinkaya-Rundel. *OpenIntro Statistics*. [Free online text](https://www.openintro.org/book/os/).
+- NIST/SEMATECH, *e-Handbook of Statistical Methods*. [Online handbook](https://www.itl.nist.gov/div898/handbook/).
+- Angrist, Joshua D., and Jörn-Steffen Pischke. *Mostly Harmless Econometrics*. Princeton University Press, 2009. Selected conceptual chapters; the full causal toolkit belongs to Year 2.
+- U.S. Energy Information Administration, [Open Data](https://www.eia.gov/opendata/) and [Form EIA-861](https://www.eia.gov/electricity/data/eia861/).
 
-## Final project
-Select a narrow descriptive or associational question using public energy, economic, or infrastructure data. State clearly whether the design supports causal inference. Include question, data dictionary, cleaning and analysis scripts, exploratory figures, model and diagnostics, uncertainty, limitations, and concise interpretation.
+## Required assessments
+
+| ID | Assignment | Planned hours | Purpose |
+|---|---|---:|---|
+| PS1 | [Statistical reasoning and OLS](problem-set-01.md) / [solution notes](problem-set-01-solutions.md) | 3 | Sampling, regression derivation, inference |
+| PS2 | [Multiple regression and model diagnostics](problem-set-02.md) / [solution notes](problem-set-02-solutions.md) | 3 | Specification and interpretation |
+| PS3 | [EIA-861 measurement and panel feasibility](problem-set-03-eia861-panel-design.md) / [solution notes](problem-set-03-eia861-panel-design-solutions.md) | 4 | Data measurement and identification audit |
+| LAB1 | [OLS and robust inference](../../../projects/econometrics/ols-energy-demand/README.md) | 4 | Reproducible regression workflow |
+| LAB2 | [EIA-861 data audit and reproducible pipeline](../../../research/data-pipelines/eia861/README.md) | 5 | Source ingestion, schema, identity, coverage |
+| COURSE | Empirical analysis and self-assessment | 21 | Integrated final project |
+
+Total planned effort: **40 hours**. The course tracker is the planning baseline.
+
+## Required final project
+
+Select a narrow descriptive or associational question using public energy, economic, or infrastructure data. The EIA-861 project may be used if the data feasibility review supports it. Submit:
+- a research question and unit-of-analysis statement;
+- a data dictionary and source register;
+- raw-data provenance and documented cleaning scripts;
+- exploratory figures and descriptive analysis;
+- an OLS model where appropriate, with interpretation and diagnostics;
+- uncertainty and sensitivity discussion;
+- a limitations section explaining why causal language is or is not justified;
+- clean rerun instructions and a concise written report.
 
 A clean environment must reproduce tables and figures from raw or documented source data. Statistical significance is not proof of causality.
 
-## Problem sets and worked checks
-- [Problem Set 1](problem-set-01.md)
-- [Solution notes](problem-set-01-solutions.md)
+## Scope boundary
 
-- [Problem Set 2](problem-set-02.md)
-- [Problem Set 2 solution notes](problem-set-02-solutions.md)
+The EIA-861 panel exercise is primarily a measurement and feasibility assignment. It introduces treatment/control and parallel-trends concepts as a critique of research design, but it does not require the learner to estimate a difference-in-differences model. Advanced causal estimators belong to the Year 2 econometrics course. Do not promote a public aggregate series into a project-level or feeder-level outcome.
 
+## Completion gate
 
-## Computational and empirical workflows
-- [OLS and robust inference on synthetic energy-demand data](../../../projects/econometrics/ols-energy-demand/README.md)
-- [EIA-861 public-data ingestion and panel audit](../../../research/data-pipelines/eia861/README.md) — inspect source workbooks, schema changes, utility identity, coverage, exclusions, and panel limitations. The pipeline is a data-engineering and measurement exercise; it does not by itself identify causal effects.
-
-## How to use the assessments
-
-Attempt each problem set before opening the linked worked solution. For empirical work, define the unit of analysis, preserve data provenance, inspect missingness and measurement changes, and distinguish description from causal identification. Re-run the analysis from a clean environment and retain the code and data dictionary.
+Attempt and correct all three problem sets; reproduce and modify both computational/data workflows; submit the final reproducible analysis and self-assessment; and record actual hours and evidence in the progress tracker. Use the [program rubric](../../../ACADEMIC_STANDARDS.md). Reading a solution or running a prebuilt pipeline without explaining its measurement choices is not completion evidence.
 
 ## Next step
 
-Proceed to [Y1-03 — Electricity Markets, Utility Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md), then complete the [Year 1 integration project](../README.md#integration-project).
+Proceed to [Y1-03 — Electricity Markets, Utility Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md). Then complete the [Year 1 integration project](../README.md#integration-project) before entering the advanced Year 2 econometrics sequence.
