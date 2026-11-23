@@ -134,6 +134,7 @@ def expected_npv(initial_cost: float, scenario_annual_net_benefits: Mapping[str,
         raise ValueError("Probabilities must be finite and nonnegative")
     if not math.isclose(sum(probs.values()), 1.0, rel_tol=0, abs_tol=1e-9):
         raise ValueError("Probabilities must sum to one")
+    annuity_factor(discount_rate, years)  # Validate the horizon even when benefits are zero.
     state_values = {k: npv(initial_cost, [float(b)] * years, discount_rate)
                     for k, b in scenario_annual_net_benefits.items()}
     return {"expected_npv": sum(probs[k] * state_values[k] for k in state_values),
