@@ -73,7 +73,10 @@ The models are intentionally simplified. Their READMEs state the assumptions and
 - [Problem Set 1: Economic dispatch, Lagrangian duality, and marginal prices](problem-set-01-economic-dispatch-duality.md)
 - [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)
 - [Problem Set 2: Three-bus DC optimal power flow and LMPs](problem-set-02-three-bus-dc-opf.md)
-- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)\n- [Problem Set 3: Energy and operating-reserve co-optimization](problem-set-03-energy-reserve-cooptimization.md)\n- [Problem Set 3 solution notes](problem-set-03-energy-reserve-cooptimization-solutions.md)\n- [Computational lab: Energy and reserve co-optimization](../../../projects/energy-economics/energy-reserve-cooptimization/README.md)
+- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)
+- [Problem Set 3: Energy and operating-reserve co-optimization](problem-set-03-energy-reserve-cooptimization.md)
+- [Problem Set 3 solution notes](problem-set-03-energy-reserve-cooptimization-solutions.md)
+- [Computational lab: Energy and reserve co-optimization](../../../projects/energy-economics/energy-reserve-cooptimization/README.md)
 - [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 
 The first assignment is an advanced convex dispatch/KKT exercise. It is not a substitute for the later network-constrained, intertemporal, and institutional modules.
