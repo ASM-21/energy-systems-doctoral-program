@@ -1,3 +1,15 @@
+## 2026-11-23 — Curriculum structure, course sequencing, and learner experience
+
+- Standardized the four active Year 1 course guides around a consistent structure: course identity/status, prerequisites, planned hours, position in sequence, observable outcomes, learning sequence, core materials, required assessments, final project, completion gate, and next step.
+- Reconciled Year 1 workload across the course guides, course tracker, assessment tracker, course map, and study plan: 168 planned course hours plus a 25-hour integration-project baseline. Clarified the combined 140–182 hour course range and realistic 3–5 hour weekly calendar.
+- Replaced the Year 1 quantitative-methods Problem Set 2, which had prematurely required panel/DID/time-series methods, with a foundational multiple-regression, functional-form, diagnostics, and prediction assignment. Advanced causal estimators remain in Year 2; the EIA-861 assignment retains research-design critique without requiring a DID estimate.
+- Assigned stable Y2-01 through Y2-04 course IDs and aligned the Year 2 guide, curriculum map, roadmap, competency framework, homepage links, and MkDocs navigation.
+- Clarified that Year 2 is a flexible 195–250 hour advanced-study stage, taken in sequential blocks within the overall 3–5 hour weekly budget rather than as concurrent courses.
+- Added the initial Y2-03 infrastructure economics course guide and revenue-requirement problem set; explicitly marked the remaining assessment sequence as incomplete.
+- Added the Y2-04 electricity market design and optimization course specification and explicitly marked it roadmap-stage, with no active assessments yet.
+- Strengthened the shared course template and Year 2 completion gates; updated the competency gap register to reflect actual course maturity rather than planned work as completed.
+- Checked 136 relative links across the revised course and curriculum pages; no broken targets were found in that scan.
+
 ## 2026-11-23 — Year 1 technical audit and energy/reserve co-optimization
 
 - Audited selected Year 1 worked solutions for arithmetic, sign conventions, primal feasibility, active constraints, and marginal-value interpretation.
