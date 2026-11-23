@@ -117,7 +117,7 @@ The queue-wait reduction is
 \[
 1-\frac{W_{q,3}}{W_{q,2}}
 =1-\frac{3/152}{9/56}
-\approx87.73\%.
+\approx87.72%.
 \]
 
 Nominal capacity rises from 16 to 24 applications per day, a 50% increase, while queue wait falls by about 87.7%. Waiting is nonlinear in utilization because the probability all servers are busy and the expected residual congestion both change. A real process may not realize this idealized gain if qualified reviewers are not interchangeable, work is routed by discipline, service times are non-exponential, cases require multiple sequential approvals, or incoming demand changes in response to faster processing.
