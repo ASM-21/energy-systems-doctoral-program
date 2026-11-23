@@ -106,7 +106,7 @@ The table identifies the primary contribution of each course. A dash means the c
 | Y1-03 Markets, Regulation, and PJM | Medium | High | High | Medium | Medium | Medium | 2, 3, 5, 8 |
 | Y2-01 Advanced Mathematical Methods | High | Medium | Low | High | Medium | Medium | 1, 4, 7 |
 | Y2-02 Graduate Econometrics and Causal Inference | Low | Medium | Medium | High | Medium | Medium | 3, 4, 5, 7, 8 |
-| Y2-04 Market Design and Optimization (roadmap) | High | High | Medium | High | Medium | Medium | 1, 2, 4, 8 |
+| Y2-04 Market Design and Optimization (planned; PS1 available) | High | High | Medium | High | Medium | Medium | 1, 2, 4, 8 |
 | Y2-03 Infrastructure Economics and Utility Investment (planned) | Medium | High | High | Medium | Medium | High | 2, 3, 5, 6, 8 |
 
 **Interpretation:** High = a central assessed outcome; Medium = supporting or applied contribution; Low = contextual contribution. Planned courses do not count as completed evidence. The matrix describes intended design coverage, not demonstrated learner attainment.
@@ -130,7 +130,7 @@ The current repository is strongest in introductory power-system models, energy 
 |---|---|---|---|
 | 1 | AC power flow, unbalanced distribution, and validation beyond simplified screens | Simplified DC and first-order models omit voltage/reactive behavior, losses, and phase imbalance | Complete a matched reduced-network comparison between the radial approximation and an AC-capable solution; the current IEEE 13-node benchmark is not a matched validation pair |
 | 1 | Utility finance, revenue requirements, and rate design | Investment incentives and customer cost allocation cannot be evaluated from dispatch economics alone | Y2-03 PS1–5 and the tested Python companion now cover revenue requirements, cost allocation, tariff design, regulatory incentives, capital budgeting, and a public-record Pennsylvania investment case; the final integrated synthesis and independent review remain before course activation |
-| 1 | Market design, unit commitment, OPF, reserves, and market power | Current labs cover selected dispatch/congestion mechanics, not full market clearing or strategic behavior | Y2-04 course specification exists; develop and validate problem sets, unit-commitment and OPF labs, and a version-specific PJM case before activation |
+| 1 | Market design, unit commitment, OPF, reserves, and market power | Current labs cover selected dispatch/congestion mechanics, not full market clearing or strategic behavior | Y2-04 course specification and PS1 on dispatch/KKT/duality exist; develop and validate network-constrained OPF, unit commitment, reserve, and market-design assessments plus a version-specific PJM case before activation |
 | 2 | Advanced panel/event-study estimators and spatial/network interference | DER and infrastructure policies have spillovers, staggered implementation, and nonrandom exposure | Extend graduate econometrics with diagnostics and design comparisons |
 | 2 | Climate policy evaluation and lifecycle system boundaries | Carbon and LCA questions require counterfactuals, marginal impacts, and distributional analysis | Develop a climate-economics module with empirical and scenario assignments |
 | 2 | Project finance, cost of capital, and public investment appraisal | Infrastructure projects require financing, risk allocation, and social-versus-private return analysis | Add capital budgeting and regulatory finance problem sets |
