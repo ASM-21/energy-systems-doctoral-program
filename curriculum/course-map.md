@@ -46,7 +46,7 @@ Year 2 is a flexible advanced-study stage rather than a fixed 12-month calendar.
 | Y2-01 | [Advanced Mathematical Methods](../courses/year-2/advanced-mathematics-energy-systems/README.md) | Year 1 math foundations; prerequisite diagnostic | 60–75 h | Planned |
 | Y2-02 | [Graduate Econometrics and Causal Inference](../courses/year-2/graduate-econometrics-causal-inference/README.md) | Y1-04 regression, probability, Python/R | 60–75 h | Planned |
 | Y2-03 | [Infrastructure Economics and Utility Investment](../courses/year-2/infrastructure-economics-utility-investment/README.md) | Y1-02 economics, Y1-03 regulation, introductory finance | 30–40 h | Planned; PS1–5 and assessment guidance available |
-| Y2-04 | [Electricity Market Design and Optimization](../courses/year-2/electricity-market-design-optimization/README.md) | Y1-01/Y1-02/Y1-03 and relevant Y2-01 optimization modules | 45–60 h | Planned; PS1–2 and solutions available |
+| Y2-04 | [Electricity Market Design and Optimization](../courses/year-2/electricity-market-design-optimization/README.md) | Y1-01/Y1-02/Y1-03 and relevant Y2-01 optimization modules | 45–60 h | Planned; PS1–3 and solutions available |
 
 **Recommended order:** meet the Year 1 progression gate; begin Y2-01 mathematics; then choose Y2-02 econometrics or Y2-04 market design as the primary methods branch. Add Y2-03 when the research question requires utility finance, rate design, or investment incentives. At most one course should be the primary weekly workload. Do not stack two nominal 2–3 hour courses inside the total 3–5 hour program budget.
 
