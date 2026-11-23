@@ -20,12 +20,12 @@ Demand is 250 MW. Assume a perfectly competitive, single-node, unconstrained sys
 
 ## Problem 2 — Two-node congestion
 
-Node 1 has a generator with marginal cost $20/MWh and capacity 150 MW. Node 2 has a generator with marginal cost $70/MWh and capacity 150 MW. Demand is 100 MW at each node. A lossless line connects the nodes with a 50 MW flow limit. Ignore minimum generation, ramping, reserves, and commitment costs.
+Node 1 has a generator with marginal cost $20/MWh and capacity 250 MW. Node 2 has a generator with marginal cost $70/MWh and capacity 150 MW. Demand is 100 MW at each node. A lossless line connects the nodes with a 50 MW flow limit. Ignore minimum generation, ramping, reserves, and commitment costs.
 
 1. Formulate the least-cost dispatch and power-balance constraints.
 2. Determine optimal generation at each node and line flow.
 3. Explain the economic meaning of the two nodal marginal prices.
-4. What changes if line capacity rises to 100 MW?
+4. What changes if line capacity rises to 150 MW?
 5. Why is this still not a full security-constrained unit commitment or production-cost model?
 
 ## Problem 3 — Institutional jurisdiction
