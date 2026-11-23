@@ -1,9 +1,10 @@
-# Infrastructure Economics and Utility Investment
+# Y2-03 — Infrastructure Economics and Utility Investment
 
-**Status:** Planned Year 2 course.  
-**Prerequisites:** Y1-02 Energy Economics; Y1-03 Markets, Regulation, and PJM; introductory corporate finance; calculus and statistics.  
-**Effort:** 30–40 hours over 10–14 weeks, integrated into the existing 3–5 hour weekly program budget.  
-**Role:** Connect engineering needs, utility finance, regulatory accounting, rate design, investment incentives, and risk allocation.
+**Status:** Planned; the initial course guide and Problem Set 1 are available, but the full assessment sequence is not yet developed.  
+**Level:** Graduate / applied regulatory economics  
+**Prerequisites:** Y1-02 Energy Economics and Y1-03 Markets, Regulation, and PJM or equivalent; introductory corporate finance, calculus, and statistics.  
+**Planned effort:** 30–40 hours over 10–14 weeks, studied as the primary course within the total 3–5 hour weekly program budget.  
+**Position in sequence:** Applied bridge between energy economics, utility regulation, infrastructure capital planning, and investment policy.
 
 ## Course question
 
@@ -90,3 +91,8 @@ A strong submission:
 ## Completion evidence
 
 Submit a revenue-requirement workbook or script, a short rate-design comparison, a source register for one public regulatory proceeding, and a 1,500–2,000 word investment memo. A model without a clear institutional interpretation is incomplete.
+
+
+## Next step
+
+Complete the remaining rate-design, regulatory-incentive, and investment-risk modules as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
