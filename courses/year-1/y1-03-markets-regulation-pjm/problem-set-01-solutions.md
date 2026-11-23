@@ -17,9 +17,9 @@ Let f be positive flow from node 1 to node 2. Nodal balances:
     0 <= g1,g2 <= 150
     -50 <= f <= 50
 
-The cheap generator at node 1 is dispatched to 150 MW, the line carries 50 MW, and the expensive generator at node 2 produces 50 MW. Total cost is $6,500/hour. The node 1 marginal price is $20/MWh; node 2 marginal price is $70/MWh. The $50/MWh difference reflects the binding transfer constraint in this simplified lossless model.
+The cheap generator at node 1 is dispatched to 150 MW, the line carries 50 MW, and the expensive generator at node 2 produces 50 MW. Total cost is $6,500/hour. The node 1 marginal price is $20/MWh; node 2 marginal price is $70/MWh. The $50/MWh difference is the shadow value of the binding transfer limit in this simplified lossless model. Node 1's generator has spare capacity, so one additional MW of node 1 demand can be served locally at $20/MWh. One additional MW of node 2 demand requires an additional MW from the $70/MWh local generator because the line is at its 50 MW transfer limit.
 
-If line capacity rises to 100 MW, the cheap unit can serve all 200 MW of demand only if its own capacity also permits it. Its capacity is 150 MW, so dispatch is still 150 MW at node 1 and 50 MW at node 2; the line limit is no longer binding, but generator capacity is. Prices remain $20/MWh at node 1 and $70/MWh at node 2 for this marginal configuration. This highlights that relieving one constraint does not eliminate all scarcity.
+If line capacity rises to 150 MW, the line is no longer binding at the optimal 100 MW transfer. The low-cost node 1 generator supplies all 200 MW of system demand, node 2 generation falls to zero, and 100 MW flows from node 1 to node 2. Both nodal marginal prices are $20/MWh. The node 1 generator's 250 MW capacity is sufficient to serve one additional MW, and the line has 50 MW of unused transfer capability. This comparison isolates the effect of congestion without simultaneously binding the cheap generator's capacity.
 
 A full security-constrained model would include network topology and contingencies, AC power-flow/voltage constraints or a validated approximation, reserve requirements, unit commitment, ramping, uncertainty, losses, and market settlement rules.
 
