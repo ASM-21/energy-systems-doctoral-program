@@ -27,7 +27,8 @@ Use the [computational project template](project-template.md) for new or substan
 ## Computational labs
 - [Battery arbitrage optimization](energy-economics/storage-arbitrage/README.md) — intertemporal storage scheduling, efficiency, and degradation
 - [Merit-order economic dispatch](energy-economics/merit-order-dispatch/README.md) — single-node least-cost dispatch and marginal price
-- [Energy and operating-reserve co-optimization](energy-economics/energy-reserve-cooptimization/README.md) — joint energy/reserve LP, capacity coupling, dual prices, and finite-difference validation\n- [Utility regulatory economics](energy-economics/utility-regulatory-economics/README.md) — cost allocation, tariff arithmetic, regulatory incentive comparisons, and capital budgeting under uncertainty
+- [Energy and operating-reserve co-optimization](energy-economics/energy-reserve-cooptimization/README.md) — joint energy/reserve LP, capacity coupling, dual prices, and finite-difference validation
+- [Utility regulatory economics](energy-economics/utility-regulatory-economics/README.md) — cost allocation, tariff arithmetic, regulatory incentive comparisons, and capital budgeting under uncertainty
 - [Stochastic and robust capacity planning](energy-economics/stochastic-robust-capacity-planning/README.md) — two-stage recourse, expected-value benchmarking, EVPI/VSS, and min-max robust capacity
 - [Three-bus DC power flow](power-systems/three-bus-dc-power-flow/README.md) — per-unit network matrix, slack bus, angles, and branch flows
 - [Two-node congestion and nodal prices](power-systems/two-node-congestion/README.md) — network-constrained dispatch and dual values
