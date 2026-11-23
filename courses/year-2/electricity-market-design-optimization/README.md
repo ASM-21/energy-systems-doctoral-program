@@ -87,7 +87,7 @@ The full course should include:
 - one market-monitoring or market-power critique;
 - a final paper or technical study with reproducible code, sensitivity analysis, and model-risk discussion.
 
-Problem Set 1 on economic dispatch and duality is the first published assessment. The full assessment sequence remains incomplete. Do not mark this course active or schedule it as required work until the remaining assignments, solution notes, and validation checks are complete.
+Problem Sets 1–2 establish the convex single-node dispatch and three-bus DC-OPF foundations. The full assessment sequence remains incomplete. Do not mark this course active or schedule it as required work until the remaining assignments, solution notes, and validation checks are complete.
 
 ## Completion standard
 
