@@ -36,7 +36,7 @@ class InterruptedTimeSeriesTests(unittest.TestCase):
         result, *_ = analyze(12)
         self.assertEqual(set(result["hac_bandwidth_sensitivity"]), {"0", "3", "6", "12"})
         self.assertEqual(set(result["placebo_dates"]), {"48", "60", "84", "96"})
-        self.assertIn("does not establish causal", result["warning"])
+        self.assertIn("establishes causal identification", result["warning"])
 
     def test_reproducibility(self):
         a, *_ = analyze(123)
