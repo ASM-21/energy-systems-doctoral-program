@@ -6,7 +6,7 @@
 
 ## What Year 2 is
 
-Year 2 is a flexible advanced-study stage, not a requirement to finish every course in a single calendar year. The current course architecture represents approximately 195–250 hours before a research capstone. At 3–5 hours per week, this is roughly 10–22 months of study, depending on prerequisite remediation, pace, and project scope.
+Year 2 is a flexible advanced-study stage, not a requirement to finish every course in a single calendar year. The current course architecture represents approximately 195–250 hours before a research capstone, or roughly 9–19 months at 3–5 hours per week. Allow another 25–40 hours for a substantial research synthesis; the full stage can therefore take approximately 10–22 months, depending on prerequisite remediation, pace, and project scope.
 
 The learner should choose a primary analytical pathway based on the research question. Do not treat every topic in the repository as a required assignment.
 
