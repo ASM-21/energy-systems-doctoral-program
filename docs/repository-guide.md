@@ -13,4 +13,4 @@ For material curriculum changes, explain rationale; identify affected prerequisi
 Use feature branches for substantial curriculum or software changes. Keep main stable. Review generated content for accuracy, citations, licensing, and consistency.
 
 ## Website
-The planned GitHub Pages site should be generated from repository content. The site is a navigable view, not a second source of truth. Avoid duplicating course text in manually maintained HTML.
+The published [GitHub Pages site](https://asm-21.github.io/energy-systems-doctoral-program/) is generated from repository content. The site is a navigable view, not a second source of truth. Avoid duplicating course text in manually maintained HTML.
