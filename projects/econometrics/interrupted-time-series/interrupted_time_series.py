@@ -101,7 +101,7 @@ def analyze(seed=20261123):
         "intervention_period": intervention,
         "coefficients": coefficients,
         "hac_ols_r_squared": float(hac_model.rsquared),
-        "ar1_gls_rho": float(np.asarray(ar1_model.modelrho).reshape(-1)[0]),
+        "ar1_gls_rho": float(np.asarray(ar1_model.model.rho).reshape(-1)[0]),
         "residual_diagnostics": {
             "lag": lb_lag,
             "hac_ols_raw_residuals": _ljung_box(hac_residuals, lb_lag),
