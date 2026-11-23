@@ -8,11 +8,13 @@ The predictor set and \(V\) matrix determine which dimensions receive emphasis. 
 
 ## Problem 2. Numerical geometry
 
-The target is in the convex hull. One exact solution is \(w=(0.5,0.5,0)\), because \(0.5(10,20)+0.5(8,18)=(9,19)\), which does not equal the target. A correct exact solution is \(w=(0.375,0.25,0.375)\):
-- first coordinate: \(10(0.375)+8(0.25)+12(0.375)=10.25\), not 9.5.
-This demonstrates why numerical verification is required rather than guessing weights.
+The adding-up and predictor equations are
+\[
+a+b+c=1,\quad 10a+8b+12c=9.5,\quad 20a+18b+24c=20.5.
+\]
+Subtract twice the second predictor equation from the third: \(2b=1.5\), so \(b=0.75\). Then \(a+c=0.25\). Substituting into the first predictor equation gives \(10a+12c=3.5\), hence \(c=0.50\) and \(a=-0.25\). The unique affine solution has a negative weight, so the target is outside the donors' convex hull and no simplex-feasible exact match exists.
 
-Solve the two equations plus the adding-up constraint. Let \(w_1+w_2+w_3=1\), \(10w_1+8w_2+12w_3=9.5\), and \(20w_1+18w_2+24w_3=20.5\). Subtracting twice the second-coordinate equation from the third gives \(-?\); the constraints are not independent in the way a casual inspection might suggest. In fact, the second coordinate is exactly twice the first for every donor, whereas the target's second coordinate 20.5 is not twice 9.5. Therefore no exact convex combination exists. The target lies outside the affine line containing the donors. This is a deliberate convex-hull diagnostic: an exact fit is impossible.
+A constrained synthetic-control optimizer must therefore accept predictor imbalance. Report that residual rather than silently allowing a negative weight. This is precisely why the convex-hull restriction matters.
 
 A model can match two predictors and miss a third. Always report the full predictor-balance table and standardized gaps, not a selected two-dimensional visualization.
 
