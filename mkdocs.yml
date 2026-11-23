@@ -107,7 +107,7 @@ nav:
                   - PS3 EIA-861 panel design: courses/year-1/y1-04-quantitative-methods/problem-set-03-eia861-panel-design-solutions.md
       - Year 2 — Advanced analytical methods:
           - Overview: courses/year-2/README.md
-          - Advanced mathematical methods:
+          - Y2-01 Advanced mathematical methods:
               - Course guide: courses/year-2/advanced-mathematics-energy-systems/README.md
               - Problem sets:
                   - PS1 Matrix analysis: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis.md
@@ -131,12 +131,7 @@ nav:
                   - PS8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization-solutions.md
                   - PS9 Capstone guide: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design-guide.md
                   - PS10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection-solutions.md
-          - Electricity market design and optimization: courses/year-2/electricity-market-design-optimization/README.md
-          - Infrastructure economics and utility investment:
-              - Course guide: courses/year-2/infrastructure-economics-utility-investment/README.md
-              - Problem Set 1: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement.md
-              - Problem Set 1 solutions: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement-solutions.md
-          - Graduate econometrics and causal inference:
+          - Y2-02 Graduate econometrics and causal inference:
               - Course guide: courses/year-2/graduate-econometrics-causal-inference/README.md
               - Pre-analysis plan template: courses/year-2/graduate-econometrics-causal-inference/pre-analysis-plan-template.md
               - Problem sets:
@@ -155,6 +150,12 @@ nav:
                   - PS5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control-solutions.md
                   - PS6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions-solutions.md
                   - PS7: courses/year-2/graduate-econometrics-causal-inference/problem-set-07-spatial-interference-solutions.md
+          - Y2-03 Infrastructure economics and utility investment:
+              - Course guide: courses/year-2/infrastructure-economics-utility-investment/README.md
+              - Problem Set 1: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement.md
+              - Problem Set 1 solutions: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement-solutions.md
+          - Y2-04 Electricity market design and optimization:
+              - Course guide: courses/year-2/electricity-market-design-optimization/README.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
       - Course page template: curriculum/course-template.md
