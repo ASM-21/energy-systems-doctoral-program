@@ -52,7 +52,7 @@ Expected annual net benefit:
 
 Expected NPV:
 
--$30m + $5.25m × 7.02358 = + $6.8738m
+-$30m + $5.25m × 7.02358 = +$6.8738m
 
 State NPVs:
 - Low: -30 + 3 × 7.02358 = -$8.929m.
