@@ -66,6 +66,10 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 - [Two-node congestion and nodal prices](../../../projects/power-systems/two-node-congestion/README.md)
 
 
+## Computational companion
+
+- [Energy and operating-reserve co-optimization lab](../../../projects/energy-economics/energy-reserve-cooptimization/README.md) — independently reproduces the Problem Set 5 primal solution, dual values, and finite-difference checks.
+
 ## Advanced market-design problem set
 
 - [Problem Set 5 — Scarcity pricing, resource adequacy, and ancillary-service co-optimization](problem-set-05-scarcity-resource-adequacy.md)
