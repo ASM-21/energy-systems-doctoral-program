@@ -51,6 +51,23 @@ class RadialFeederTests(unittest.TestCase):
         result = solve_feeder(self.buses, self.lines, 4, 5000)
         self.assertTrue(any(v["voltage_pu"] > 1.05 for v in result["voltage_violations"]))
 
+    def test_rejects_nonfinite_and_negative_physical_inputs(self):
+        with self.assertRaises(ValueError):
+            solve_feeder(self.buses, self.lines, 4, float("nan"))
+        with self.assertRaises(ValueError):
+            solve_feeder(self.buses, self.lines, 4, 100, v_base_kv=float("inf"))
+        bad_buses = dict(self.buses)
+        bad_buses[2] = type(bad_buses[2])(2, -1.0, 0.0)
+        with self.assertRaises(ValueError):
+            solve_feeder(bad_buses, self.lines, 4, 100)
+        bad_lines = list(self.lines)
+        bad_lines[0] = type(bad_lines[0])(
+            bad_lines[0].from_bus, bad_lines[0].to_bus, float("nan"),
+            bad_lines[0].x_ohm, bad_lines[0].thermal_limit_mva
+        )
+        with self.assertRaises(ValueError):
+            solve_feeder(self.buses, bad_lines, 4, 100)
+
     def test_rejects_non_radial_or_invalid_inputs(self):
         with self.assertRaises(ValueError):
             solve_feeder(self.buses, self.lines, der_bus=99, der_kw=100)
@@ -58,6 +75,8 @@ class RadialFeederTests(unittest.TestCase):
             run_sweep(self.buses, self.lines, 4, 100, 0)
         with self.assertRaises(ValueError):
             run_sweep(self.buses, self.lines, 4, 100, 0.5)
+        with self.assertRaises(ValueError):
+            run_sweep(self.buses, self.lines, 4, float("inf"), 100)
 
 
 if __name__ == "__main__":
