@@ -85,3 +85,14 @@ The following are not certified by this targeted pass:
 A worked solution is not considered verified merely because it is internally consistent or a CI test passes. For numerical models, retain an independent calculation or benchmark. For optimization, check primal feasibility, objective arithmetic, active constraints, and dual interpretation. For empirical work, check estimands, measurement, assignment mechanisms, and inference separately. For legal and regulatory analysis, cite the controlling document and distinguish binding authority from explanatory or proposed material.
 
 The next review should prioritize the remaining Y1-03 market-clearing exercises and Y1-04 quantitative methods solutions, followed by the Year 2 advanced mathematics and econometrics problem sets.
+
+## November 23 computational implementation audit
+
+A targeted implementation review found three issues that were corrected and covered with regression tests:
+
+1. **Frequency response:** The disturbance term in the state derivative used the module-level default inertia even when a different inertia was used to construct the state matrix. This made custom-inertia simulations internally inconsistent. The integrators now use the same inertia as the state matrix, the CLI exposes inertia/damping/governor-time/droop parameters, and explicit Euler now integrates the final partial time step rather than silently stopping at the last full step.
+2. **DC power flow:** The branch-limit reporting loop reused the final branch's limit for every line. It now reads and reports each branch's own limit. Finite positive validation was added for base MVA, tolerance, reactance, and optional branch ratings, and finite bus injections are required.
+3. **Radial DER screen:** The solver now validates the rooted radial topology and physical inputs even when called directly rather than through the CSV loader. Bus loads and line parameters must be finite and physically admissible; DER, voltage-base, voltage-band, and sweep inputs are checked before calculation.
+
+The associated Python test matrix is being rerun against the latest commit. These changes improve numerical and input integrity but do not change the models' documented teaching-only scope. A passing test suite is not an independent AC validation or an external peer review.
+
