@@ -61,6 +61,8 @@ nav:
       - Econometrics solutions 4: courses/year-2/graduate-econometrics-causal-inference/problem-set-04-instrumental-variables-rd-solutions.md
       - Econometrics problem set 5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control.md
       - Econometrics solutions 5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control-solutions.md
+      - Econometrics problem set 6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions.md
+      - Econometrics solutions 6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions-solutions.md
       - Advanced mathematical methods: courses/year-2/advanced-mathematics-energy-systems/README.md
       - Advanced mathematics problem set 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis.md
       - Advanced mathematics solutions 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis-solutions.md
@@ -141,6 +143,7 @@ nav:
       - Randomized experiments and power: projects/econometrics/randomized-experiments/README.md
       - Difference-in-differences: projects/econometrics/difference-in-differences/README.md
       - Synthetic control: projects/econometrics/synthetic-control/README.md
+      - Interrupted time series: projects/econometrics/interrupted-time-series/README.md
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
