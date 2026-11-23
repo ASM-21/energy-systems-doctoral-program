@@ -1,3 +1,9 @@
+## 2026-11-23 — Y2-03 assessment architecture and course reconciliation
+
+- Added an explicit five-assessment grading architecture: PS1–PS4 at 15% each and the Pennsylvania investment case at 40%, totaling 100%.
+- Reconciled the final memo length to the Pennsylvania case specification and added direct links between the computational model, course assignments, and public DER casebook.
+- Kept the course marked planned; a passing automated test suite does not substitute for independent academic review or learner mastery.
+
 ## 2026-11-23 — Y2-03 Pennsylvania investment case and computational model
 
 - Added Problem Set 5: a public-record Pennsylvania distribution investment and DER integration case, with a detailed assessment guide and explicit source-status, jurisdiction, engineering-need, cost-allocation, and risk-allocation requirements.
