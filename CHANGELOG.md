@@ -1,3 +1,9 @@
+## 2026-11-23 — Y2-04 economic dispatch and duality assessment
+
+- Started the Y2-04 assessment sequence with a graduate-level dispatch LP, explicit Lagrangian/KKT derivation, capacity shadow prices, finite-difference validation, scarcity boundary, and a bridge to network-constrained LMPs.
+- Added worked solutions with hand-checked dispatch costs and sensitivities, linked the assignment to existing congestion and reserve-co-optimization labs, and published navigation.
+- Updated Year 2 and competency status. Y2-04 remains planned; one assignment does not constitute a complete course.
+
 ## 2026-11-23 — Y2-03 assessment architecture and course reconciliation
 
 - Added an explicit five-assessment grading architecture: PS1–PS4 at 15% each and the Pennsylvania investment case at 40%, totaling 100%.
