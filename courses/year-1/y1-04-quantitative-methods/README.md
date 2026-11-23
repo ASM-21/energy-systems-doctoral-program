@@ -56,6 +56,15 @@ By the end, the learner should be able to:
 
 Total planned effort: **40 hours**. The course tracker is the planning baseline.
 
+## Assessment structure
+
+- Problem sets and derivations: 25%.
+- Computational/data workflows: 25%.
+- Final reproducible empirical project: 40%.
+- Provenance, clean rerun, and self-assessment: 10%.
+
+Use the [program rubric](../../../ACADEMIC_STANDARDS.md). These are internal self-assessment weights, not university grades.
+
 ## Required final project
 
 Select a narrow descriptive or associational question using public energy, economic, or infrastructure data. The EIA-861 project may be used if the data feasibility review supports it. Submit:
