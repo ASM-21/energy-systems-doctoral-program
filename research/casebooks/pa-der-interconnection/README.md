@@ -247,3 +247,18 @@ Analyze how interconnection costs, upgrade allocation, operating requirements, a
 ## Research integrity
 
 The goal is to understand the public regulatory and technical framework. Do not attempt to reconstruct internal employer procedures from memory or include any nonpublic details. If public data are insufficient, reframe the project as a regulatory design and institutional analysis rather than implying empirical results.
+
+## Casebook governance and update protocol
+
+**Evidence hierarchy:** Prefer controlling statutes, regulations, tariffs, Commission orders, and official datasets for legal or quantitative claims. Use agency testimony, utility webpages, stakeholder presentations, and issuer filings only for the claims those sources can support. Clearly label proposals, approved settlements, effective tariff provisions, projections, and measured outcomes separately.
+
+**Source register:** Maintain the [source register](source-register.csv) as the index of primary evidence. Each material claim in a new analysis should identify its source ID, document version, effective or publication date, retrieval date, and evidentiary status. A source's presence in the register does not mean every statement in it is independently verified.
+
+**Institutional boundary:** Keep physical distribution interconnection, utility distribution operations, state regulatory oversight, and PJM/FERC wholesale aggregation participation as separate processes. Explain the interface between them without treating one process's timeline, approval, or authority as another's.
+
+**Data and inference gate:** Aggregate EDC-year reporting supports descriptive comparisons only unless the unit, denominator, measurement definitions, and cohort linkage justify more. Do not infer application-level processing time, approval probability, hosting capacity, upgrade cost, or causal policy effects from aggregate request counts.
+
+**Refresh cadence:** Recheck live tariffs, docket status, proposed rules, PJM manuals, and annual EIA/PUC datasets before each substantive update. Record both the retrieval date and the document's own effective/publication date. When no later filing is found, describe that as the result of a bounded search, not proof that no filing exists.
+
+**Research safety:** Use public records only. Do not supplement public evidence with employer-confidential procedures, internal system data, customer records, or nonpublic project details.
+
