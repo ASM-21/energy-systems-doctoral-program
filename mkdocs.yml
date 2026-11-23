@@ -198,6 +198,7 @@ nav:
           - Non-exporting BTM storage: projects/energy-economics/non-exporting-btm-storage/README.md
           - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
           - Utility regulatory economics: projects/energy-economics/utility-regulatory-economics/README.md
+          - Unit commitment: projects/energy-economics/unit-commitment/README.md
       - Econometrics:
           - Learning path: projects/econometrics/README.md
           - OLS and robust inference: projects/econometrics/ols-energy-demand/README.md
