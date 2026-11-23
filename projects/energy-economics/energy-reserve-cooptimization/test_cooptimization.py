@@ -27,7 +27,7 @@ class CooptimizationTests(unittest.TestCase):
 
     def test_energy_dual_matches_one_mw_finite_difference(self):
         base = solve_cooptimization()
-        perturbed = solve_cooptimization(demand_mw=151.0)
+        perturbed = solve_cooptimization(demand_mw=161.0)
         delta = perturbed["objective_usd_for_interval"] - base["objective_usd_for_interval"]
         self.assertAlmostEqual(delta, base["energy_balance_dual_usd_per_mwh"])
 
