@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 from dataclasses import dataclass
+from math import isfinite
 from pathlib import Path
 
 
@@ -46,6 +47,12 @@ def read_inputs(data_dir: Path) -> tuple[dict[int, Bus], list[Line]]:
 def validate_radial_network(buses: dict[int, Bus], lines: list[Line]) -> None:
     if not buses or 1 not in buses:
         raise ValueError("Bus 1 must be the slack/root bus.")
+    for bus_id, bus in buses.items():
+        if bus_id != bus.bus_id or not isinstance(bus_id, int) or bus_id <= 0:
+            raise ValueError("Bus dictionary keys must match positive integer bus IDs.")
+        if any(not isfinite(value) or value < 0
+               for value in (bus.load_p_kw, bus.load_q_kvar)):
+            raise ValueError("Bus active and reactive loads must be finite and nonnegative.")
     if len(lines) != len(buses) - 1:
         raise ValueError("A connected radial tree must have n_bus - 1 branches.")
     seen = {1}
@@ -55,6 +62,9 @@ def validate_radial_network(buses: dict[int, Bus], lines: list[Line]) -> None:
         for line in remaining[:]:
             if line.from_bus not in buses or line.to_bus not in buses:
                 raise ValueError("Every branch endpoint must exist in buses.csv.")
+            line_values = (line.r_ohm, line.x_ohm, line.thermal_limit_mva)
+            if any(not isfinite(value) for value in line_values):
+                raise ValueError("Line parameters must be finite.")
             if line.r_ohm < 0 or line.x_ohm < 0 or line.thermal_limit_mva <= 0:
                 raise ValueError("Line impedances must be nonnegative and ratings positive.")
             if line.from_bus in seen and line.to_bus not in seen:
@@ -79,8 +89,12 @@ def solve_feeder(
     v_max_pu: float = 1.05,
 ) -> dict:
     """Solve a single snapshot; positive P/Q are consumption, DER is positive injection."""
+    validate_radial_network(buses, lines)
     if der_bus not in buses:
         raise ValueError(f"DER bus {der_bus} is not in the feeder.")
+    parameters = (der_kw, v_base_kv, v_min_pu, v_max_pu)
+    if any(not isfinite(value) for value in parameters):
+        raise ValueError("DER, base-voltage, and voltage-band inputs must be finite.")
     if der_kw < 0 or v_base_kv <= 0 or not (0 < v_min_pu < v_max_pu):
         raise ValueError("Invalid DER, base-voltage, or voltage-band input.")
 
@@ -149,8 +163,9 @@ def solve_feeder(
 
 
 def run_sweep(buses, lines, der_bus, maximum_kw, step_kw, **kwargs):
-    if maximum_kw < 0 or step_kw <= 0 or int(step_kw) != step_kw:
-        raise ValueError("Sweep maximum must be nonnegative and step must be a positive whole number.")
+    if (not isfinite(maximum_kw) or not isfinite(step_kw)
+            or maximum_kw < 0 or step_kw <= 0 or int(step_kw) != step_kw):
+        raise ValueError("Sweep maximum must be finite and nonnegative; step must be a finite positive whole number.")
     levels = list(range(0, int(maximum_kw) + 1, int(step_kw)))
     if not levels or levels[-1] != maximum_kw:
         levels.append(maximum_kw)
