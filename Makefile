@@ -18,7 +18,8 @@ PROJECTS := \
 	projects/econometrics/competing-risks-survival \
 	projects/econometrics/randomized-experiments \
 	projects/econometrics/difference-in-differences \
-	projects/econometrics/synthetic-control
+	projects/econometrics/synthetic-control \
+	projects/econometrics/interrupted-time-series
 
 .PHONY: test docs clean
 
