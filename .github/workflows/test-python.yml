@@ -40,6 +40,7 @@ jobs:
       matrix:
         project:
           - projects/energy-economics/merit-order-dispatch
+          - projects/energy-economics/energy-reserve-cooptimization
           - projects/energy-economics/storage-arbitrage
           - projects/energy-economics/non-exporting-btm-storage
           - projects/energy-economics/stochastic-robust-capacity-planning
@@ -80,6 +81,8 @@ jobs:
             python run_capstone.py --output-dir /tmp/pa-interconnection-capstone
           elif [ -f capacity_planning.py ]; then
             python capacity_planning.py
+          elif [ -f cooptimization.py ]; then
+            python cooptimization.py
           elif [ -f dispatch.py ]; then
             python dispatch.py
           elif [ -f btm_storage.py ]; then
