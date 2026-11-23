@@ -53,3 +53,11 @@ The implementation integrates the state equations with fourth-order Runge-Kutta 
 ## Limitations
 
 This is a deliberately small, linear, single-area illustration. It omits network topology, multiple machines, inverter-based resources, detailed governor/turbine and load dynamics, deadbands, saturation, delays, protection, voltage behavior, and spatial modes. The parameter values are synthetic. The results are not a forecast, operating limit, or frequency-security assessment for PJM or any utility system.
+
+## Project record
+
+- **Type/status:** Numerical dynamics lab; synthetic reproducible baseline.
+- **Prerequisites:** Linear ODEs, state-space representation, eigenvalues, and numerical integration. Use Y2-01 differential-equations and dynamics material first.
+- **Parameter consistency:** Inertia appears in both the swing-equation state matrix and disturbance-input coefficient. The CLI exposes all four model parameters; a parameter change must update the analytical equilibrium and numerical trajectory consistently.
+- **Validation:** Compare RK4 with the closed-form equilibrium, compare eigenvalues with the stated matrix, verify explicit-Euler stability below/above its theoretical boundary, and test a non-integral final time step.
+- **Assessment link:** Supports Y2-01 Problem Set 4. Submit the derivation, parameter sensitivity table, integration-step sensitivity, and model-calibration discussion.
