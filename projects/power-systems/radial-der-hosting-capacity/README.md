@@ -47,3 +47,11 @@ The script reads the synthetic feeder from `data/buses.csv` and `data/lines.csv`
 The model assumes balanced three-phase operation, fixed voltage magnitude in the impedance denominator, constant-P/Q loads, no losses in branch-power aggregation, unity-power-factor DER, no regulator/capacitor controls, no unbalanced phases, no protection constraints, and no time-series coincidence. It uses an approximate voltage-drop equation and does not solve nonlinear AC DistFlow equations. Thermal screening uses apparent power, not conductor ampacity adjusted for weather or installation.
 
 A separate [IEEE 13-node OpenDSS benchmark](benchmarks/ieee13-opendss/README.md) now provides a reproducible nonlinear, unbalanced three-phase simulation baseline. It is not a direct numerical validation of this synthetic feeder because the network topology and model assumptions differ. The next research step is to extract matched operating points and compare a reduced balanced approximation against an AC-capable solution on a deliberately aligned network. Do not describe either teaching model as a utility-grade study.
+
+## Project record
+
+- **Type/status:** Distribution engineering screen; synthetic reproducible baseline.
+- **Prerequisites:** Three-phase power, per-unit voltage, radial feeder topology, and basic Python. Review Y1-01 radial distribution and DER problem sets.
+- **Boundary:** One balanced steady-state snapshot with constant-P/Q loads, one unity-power-factor DER injection, and first-order voltage-drop and branch-MVA screens.
+- **Validation:** Check tree connectivity/orientation, nodal downstream aggregation, branch apparent-power arithmetic, and voltage/thermal threshold crossings. The supplied test cases verify the first thermal violation at 900 kW for this particular synthetic snapshot.
+- **Assessment link:** Supports Y1-01 radial DER hosting-capacity assessment. Submit equations, branch-by-branch results, threshold sensitivity, and an explicit explanation of why the result is not utility hosting capacity.
