@@ -67,7 +67,7 @@ One valid linear program is:
 subject to:
 
 \[
-\sum_i p_i=150,
+\sum_i p_i=160,
 \qquad \sum_i r_i\geq20,
 \]
 
