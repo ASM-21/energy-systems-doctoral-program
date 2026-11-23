@@ -24,7 +24,7 @@ Using flow i-to-j = (theta_i-theta_j)/x_ij:
 - Flow 1 to 3: 0.075 pu = 7.5 MW.
 - Flow 2 to 3: -0.175 pu = -17.5 MW, i.e. 17.5 MW from bus 3 to bus 2.
 
-Check balances: bus 2 receives 32.5+17.5=50 MW; bus 3's 60 MW generation supplies its 50 MW load and exports 10 MW net (7.5 MW to bus 1 and 17.5 MW to bus 2), while bus 1 exports 40 MW. The network balances.
+Check balances: bus 2 receives 32.5+17.5=50 MW; bus 3's 60 MW generation supplies its 50 MW load and exports 10 MW net (7.5 MW to bus 1 and 17.5 MW to bus 2), while bus 1 exports 40 MW. At bus 3, the 17.5 MW flow to bus 2 is partly offset by the 7.5 MW inflow from bus 1, leaving a net export of 10 MW, consistent with the 60 MW generation and 50 MW local load. The network balances.
 
 The DC approximation uses fixed voltage magnitudes, small angle differences, lossless branches, and a simplified relationship between active power and angles. It does not calculate voltage magnitude, reactive power, or losses.
 
