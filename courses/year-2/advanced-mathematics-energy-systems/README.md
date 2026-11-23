@@ -3,7 +3,7 @@
 **Status:** Planned; not yet a course to mark as completed or begin before the Year 1 progression gate.  
 **Level:** Advanced graduate / doctoral preparation  
 **Prerequisites:** Year 1 mathematical foundations or equivalent; working fluency in calculus, linear algebra, introductory ODEs, probability, and Python numerical computing. Use the [prerequisite diagnostic](../../../curriculum/prerequisites.md).  
-**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, usually 2–3 hours per week. This is one primary course within the total 3–5 hour weekly program budget, not an additional workload.  
+**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, averaging about 2.5 hours per week. This is one primary course within the total 3–5 hour weekly program budget, not an additional workload.  
 **Position in sequence:** First Year 2 methods course. It supports advanced optimization, power-system modeling, stochastic planning, and econometrics.
 
 ## Purpose
