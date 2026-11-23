@@ -191,6 +191,13 @@ def main() -> None:
     result = {
         "allocated_class_costs": class_totals(allocations),
         "three_part_rates": rates,
+        "rate_design_comparison": compare_rate_designs(
+            100_000_000, 120_000, 300_000, 2_000_000_000,
+            40_000_000, 35_000_000, 25_000_000
+        ),
+        "regulatory_incentive_example": incentive_scenarios(
+            [104, 108.16, 112.49], [5, 5, 5], [2, 0, 0], 100, 0.5
+        ),
         "residential_representative_bill": representative_bill(rates, 10_000, 5),
         "capital_budgeting_example_npv": npv(30_000_000, [5_000_000] * 10, 0.07),
         "limitations": "Stylized teaching calculations only; not a tariff, cost-of-service study, rate-case model, or investment recommendation.",
