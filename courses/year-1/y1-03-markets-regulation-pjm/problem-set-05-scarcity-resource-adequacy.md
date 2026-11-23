@@ -57,7 +57,7 @@ A system operator must serve fixed demand while procuring upward operating reser
 | B | 32 | 5 | 70 |
 | C | 55 | 2 | 50 |
 
-Demand is 150 MW and the upward reserve requirement is 20 MW. Let (p_i) be energy dispatch and (r_i) be upward reserve awarded to unit (i).
+Demand is 160 MW and the upward reserve requirement is 20 MW. Let (p_i) be energy dispatch and (r_i) be upward reserve awarded to unit (i).
 
 Formulate a linear optimization model that minimizes total energy and reserve offer cost, subject to:
 
