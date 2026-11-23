@@ -114,7 +114,7 @@ Study this rule to understand transmission-provider generator interconnection re
 
 #### DER orchestration plan and DERMS cost-effectiveness
 
-Settlement paragraph 118 (Appendix D, proposed findings 386–390) addresses the DER Orchestration Plan referenced in P-2024-3049223. It provides for one stakeholder working group before PPL files the plan, with substantive updates, stakeholder questions, feedback, and PPL's good-faith consideration of that feedback. The PUC's June 11, 2026 order approved the settlement with a minor modification related to net-metering eligibility.
+Settlement body paragraph 119 (Appendix D proposed findings 386–390 cross-reference it as paragraph 118) addresses the DER Orchestration Plan referenced in P-2024-3049223. It provides for one stakeholder working group before PPL files the plan, with substantive updates, stakeholder questions, feedback, and PPL's good-faith consideration of that feedback. The PUC's June 11, 2026 order approved the settlement with a minor modification related to net-metering eligibility.
 
 Environmental Intervenors' testimony, as summarized in proposed finding 386, argued that the orchestration plan could reduce Second DER Management Plan costs and cited a figure of $1,700 per device. PPL's rebuttal, summarized in proposed finding 387, argued that the plan's timing could not affect capital costs in the fully projected future test year. **The $1,700 figure is an intervenor's position cited in proposed findings, not a Commission finding or independently verified unit cost.** Treat the cost-effectiveness question as open.
 
@@ -128,7 +128,7 @@ Research tasks:
 
 #### Non-exporting behind-the-meter battery storage
 
-Settlement paragraph 123 requires PPL to review, within 120 days of the Commission's final order, BTM non-exporting battery projects then under interconnection review and determine whether the requirements being imposed align with industry best practices and available studies. The settlement's proposed findings record a disagreement: Convergent argued that PPL lacked a distinct non-exporting BTM BESS interconnection rule and applied requirements designed for generation resources; PPL responded that its Energy Storage Interconnection Policy and Guidance provided clear technical standards.
+Settlement body paragraph 124 (Appendix D proposed finding 443 cross-references it as paragraph 123) requires PPL to review, within 120 days of the Commission's final order, BTM non-exporting battery projects then under interconnection review and determine whether the requirements being imposed align with industry best practices and available studies. The settlement's proposed findings record a disagreement: Convergent argued that PPL lacked a distinct non-exporting BTM BESS interconnection rule and applied requirements designed for generation resources; PPL responded that its Energy Storage Interconnection Policy and Guidance provided clear technical standards.
 
 The Commission order was entered June 11, 2026. A straightforward 120-calendar-day count points to October 9, 2026, but confirm the applicable time-computation rule and any later docket direction. This review obligation is narrower than a general promise to create a new tariff or a new BESS interconnection rule; do not overstate it.
 
