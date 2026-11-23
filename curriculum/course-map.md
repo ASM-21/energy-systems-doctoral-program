@@ -14,7 +14,7 @@ This page is the program's navigation map. It distinguishes the current foundati
 
 ## Year 1: foundation sequence
 
-The four courses are designed to fit approximately 140–182 hours in total, before any optional extensions. At 3–5 hours per week, distribute them over the year and adjust the calendar to the actual workload. The integration project should use the same topic and evidence base as course work where practical, rather than creating an unrelated fifth course.
+The four courses are designed to fit approximately 168 hours in total, before any optional extensions. At 3–5 hours per week, distribute them over the year and adjust the calendar to the actual workload. The integration project should use the same topic and evidence base as course work where practical, rather than creating an unrelated fifth course.
 
 | Course | Prerequisites | Planned effort | Main output | Role in sequence |
 |---|---|---:|---|---|
