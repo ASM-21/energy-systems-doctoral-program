@@ -164,6 +164,8 @@ nav:
               - Problem Set 5 assessment guide: courses/year-2/infrastructure-economics-utility-investment/problem-set-05-pennsylvania-distribution-investment-case-guide.md
           - Y2-04 Electricity market design and optimization:
               - Course guide: courses/year-2/electricity-market-design-optimization/README.md
+              - "Problem Set 1: Economic dispatch and duality": courses/year-2/electricity-market-design-optimization/problem-set-01-economic-dispatch-duality.md
+              - Problem Set 1 solutions: courses/year-2/electricity-market-design-optimization/problem-set-01-economic-dispatch-duality-solutions.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
       - Course page template: curriculum/course-template.md
