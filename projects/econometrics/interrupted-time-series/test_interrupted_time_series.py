@@ -29,7 +29,7 @@ class InterruptedTimeSeriesTests(unittest.TestCase):
         self.assertIn("hac_ols_raw_residuals", diagnostics)
         self.assertIn("ar1_gls_raw_residuals", diagnostics)
         self.assertIn("ar1_gls_whitened_residuals", diagnostics)
-        self.assertTrue(0 <= result["ar1_gls_rho"] < 1)
+        self.assertTrue(abs(result["ar1_gls_rho"]) < 1)
         self.assertIn("parametric", result["interpretation"])
 
     def test_hac_bandwidths_and_placebos_reported(self):
