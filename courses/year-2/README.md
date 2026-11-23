@@ -14,6 +14,8 @@ Move from competent use of energy models toward independent formulation, mathema
 3. Electricity Market Design and Optimization — OPF, unit commitment, reserve co-optimization, market power, transmission constraints, capacity mechanisms, and equilibrium.
 4. Infrastructure Economics and Utility Investment — revenue requirements, cost of capital, rate design, regulatory incentives, planning, and risk allocation.
 
+The advanced mathematics course includes an optional [queueing theory extension](advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection.md) for process-capacity and interconnection-review research. It is not part of the minimum Year 2 workload.
+
 ## Recommended sequencing
 
 - First: mathematical prerequisite diagnostic and targeted remediation.
