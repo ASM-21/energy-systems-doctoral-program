@@ -44,7 +44,7 @@ def _validate(units: list[dict], demand_mw: float, reserve_mw: float) -> None:
 
 def solve_cooptimization(
     units: Iterable[dict] = DEFAULT_UNITS,
-    demand_mw: float = 150.0,
+    demand_mw: float = 160.0,
     reserve_mw: float = 20.0,
 ) -> dict:
     """Solve energy and upward reserve together for one modeled hour.
