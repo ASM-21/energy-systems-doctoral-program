@@ -1,3 +1,10 @@
+## 2026-11-23 — Y2-03 regulatory incentives and capital budgeting
+
+- Added Problem Set 3 on regulatory lag, cost-of-service resets, earnings sharing, formula rates, revenue decoupling, performance-based regulation, and service-quality safeguards, with worked solutions.
+- Added Problem Set 4 on utility capital budgeting under uncertainty, NPV and sensitivity, scenario-weighted benefits, utility/customer/societal perspectives, real options, and prudence/risk allocation, with worked solutions.
+- Reconciled the Y2-03 guide, Year 2 overview, competency framework, course map, and site navigation. The course remains planned pending the Pennsylvania applied case and computational synthesis.
+- Checked the scenario-weighted NPV arithmetic independently and corrected the expected-value result.
+
 ## 2026-11-23 — Year 2 utility cost allocation and rate design
 
 - Added Y2-03 Problem Set 2 and worked solutions covering class cost allocation, customer/demand/energy functional pools, three-part tariff construction, representative bill calculations, alternative rate designs, cost-causation judgment, and regulatory evidence hierarchy.
