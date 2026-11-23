@@ -102,6 +102,7 @@ def solve_dc_power_flow(
     for line in lines:
         i_bus, j_bus = line["from_bus"], line["to_bus"]
         flow = (angles[i_bus] - angles[j_bus]) / line["x_pu"] * base_mva
+        limit = line["limit_mw"]
         limit = None if limit is None else float(limit)
         branch_results.append(
             {
