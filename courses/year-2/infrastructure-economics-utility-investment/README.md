@@ -76,6 +76,12 @@ Future assignments will cover cost allocation and tariff design, regulatory lag 
 
 The course's applied work should use public commission dockets, utility annual reports, FERC Form 1, EIA data, tariff sheets, and publicly available planning documents. A Pennsylvania case may examine how distribution investment is proposed, reviewed, allocated, and recovered, but must distinguish PPL's public filings from internal utility information. Never use confidential customer, operational, or employer data.
 
+## Computational and empirical work
+
+No dedicated computational lab or complete assessment sequence has yet been published for this course. The first applied case should use public commission dockets, approved tariff sheets, utility annual reports, FERC Form 1, EIA data, and public planning documents. A future workbook or script should calculate a simplified revenue requirement, reconcile rate-base components, model class cost allocation, and test bill impacts under alternative tariff structures.
+
+Useful public sources include [FERC Form 1](https://www.ferc.gov/industries-data/electric/general-information/electric-industry-forms/form-1), [EIA electricity data](https://www.eia.gov/electricity/data/), and the [Pennsylvania PUC](https://www.puc.pa.gov/). The applied case must identify the proceeding's legal status and test year, and must not use confidential employer or customer records.
+
 ## Assessment standard
 
 A strong submission:
