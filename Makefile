@@ -2,6 +2,7 @@ PYTHON ?= python
 
 PROJECTS := \
 	projects/energy-economics/merit-order-dispatch \
+	projects/energy-economics/energy-reserve-cooptimization \
 	projects/energy-economics/storage-arbitrage \
 	projects/energy-economics/non-exporting-btm-storage \
 	projects/energy-economics/stochastic-robust-capacity-planning \
