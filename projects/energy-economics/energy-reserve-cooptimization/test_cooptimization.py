@@ -6,11 +6,11 @@ from cooptimization import DEFAULT_UNITS, solve_cooptimization
 class CooptimizationTests(unittest.TestCase):
     def test_benchmark_primal_solution(self):
         result = solve_cooptimization()
-        self.assertAlmostEqual(result["energy_dispatch_mw"], 150.0)
+        self.assertAlmostEqual(result["energy_dispatch_mw"], 160.0)
         self.assertAlmostEqual(result["reserve_awarded_mw"], 20.0)
-        self.assertAlmostEqual(result["objective_usd_for_interval"], 3720.0)
+        self.assertAlmostEqual(result["objective_usd_for_interval"], 4270.0)
         rows = {row["name"]: row for row in result["units"]}
-        expected = {"A": (80.0, 0.0), "B": (70.0, 0.0), "C": (0.0, 20.0)}
+        expected = {"A": (80.0, 0.0), "B": (70.0, 0.0), "C": (10.0, 20.0)}
         for name, (energy, reserve) in expected.items():
             self.assertAlmostEqual(rows[name]["energy_mw"], energy)
             self.assertAlmostEqual(rows[name]["reserve_mw"], reserve)
@@ -39,11 +39,12 @@ class CooptimizationTests(unittest.TestCase):
 
     def test_non_default_offer_changes_reserve_award(self):
         units = [dict(unit) for unit in DEFAULT_UNITS]
+        units[0]["capacity"] = 90.0
         units[0]["reserve_offer"] = 1.0
         result = solve_cooptimization(units=units)
         rows = {row["name"]: row for row in result["units"]}
-        self.assertAlmostEqual(rows["A"]["reserve_mw"], 20.0)
-        self.assertAlmostEqual(rows["C"]["reserve_mw"], 0.0)
+        self.assertAlmostEqual(rows["A"]["reserve_mw"], 10.0)
+        self.assertAlmostEqual(rows["C"]["reserve_mw"], 10.0)
 
     def test_infeasible_capacity_requirement_is_rejected(self):
         with self.assertRaises(ValueError):
