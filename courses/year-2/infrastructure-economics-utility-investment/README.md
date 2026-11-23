@@ -59,7 +59,16 @@ for a simplified debt/equity capital structure with tax-deductible interest. Reg
 ## Problem sets and evidence
 
 - [Problem Set 1: Revenue requirement, rate base, and WACC](problem-set-01-revenue-requirement.md)
-- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)\n- [Problem Set 2: Cost allocation and retail rate design](problem-set-02-cost-allocation-rate-design.md)\n- [Problem Set 2 solution notes](problem-set-02-cost-allocation-rate-design-solutions.md)\n- [Problem Set 3: Regulatory lag, incentives, and performance regulation](problem-set-03-regulatory-lag-incentives.md)\n- [Problem Set 3 solution notes](problem-set-03-regulatory-lag-incentives-solutions.md)\n- [Problem Set 4: Utility capital budgeting under uncertainty](problem-set-04-capital-budgeting-uncertainty.md)\n- [Problem Set 4 solution notes](problem-set-04-capital-budgeting-uncertainty-solutions.md)\n- [Problem Set 5: Pennsylvania distribution investment and DER integration case](problem-set-05-pennsylvania-distribution-investment-case.md)\n- [Problem Set 5 assessment guide](problem-set-05-pennsylvania-distribution-investment-case-guide.md)\n- [Computational companion: utility regulatory economics](../../../projects/energy-economics/utility-regulatory-economics/README.md)
+- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)
+- [Problem Set 2: Cost allocation and retail rate design](problem-set-02-cost-allocation-rate-design.md)
+- [Problem Set 2 solution notes](problem-set-02-cost-allocation-rate-design-solutions.md)
+- [Problem Set 3: Regulatory lag, incentives, and performance regulation](problem-set-03-regulatory-lag-incentives.md)
+- [Problem Set 3 solution notes](problem-set-03-regulatory-lag-incentives-solutions.md)
+- [Problem Set 4: Utility capital budgeting under uncertainty](problem-set-04-capital-budgeting-uncertainty.md)
+- [Problem Set 4 solution notes](problem-set-04-capital-budgeting-uncertainty-solutions.md)
+- [Problem Set 5: Pennsylvania distribution investment and DER integration case](problem-set-05-pennsylvania-distribution-investment-case.md)
+- [Problem Set 5 assessment guide](problem-set-05-pennsylvania-distribution-investment-case-guide.md)
+- [Computational companion: utility regulatory economics](../../../projects/energy-economics/utility-regulatory-economics/README.md)
 
 The Pennsylvania distribution investment case is now specified with a detailed evidence rubric. A computational companion makes the cost-allocation, rate-design, incentive, and capital-budgeting calculations reproducible. The final course synthesis must integrate the case memo, source register, risk register, and tested model. Each assignment distinguishes accounting identities from economic welfare claims.
 
