@@ -11,6 +11,12 @@
 
 Complete at least 80% of core work, all major assessments, and the final project. Demonstrate outcomes using the rubric in ACADEMIC_STANDARDS.md. Record actual hours and evidence in progress/.
 
+## How to work through Year 1
+
+Use the [learning guide](../../curriculum/learning-guide.md) for the weekly study cycle and solution workflow. The recommended sequence is Y1-01, Y1-02, then Y1-03, with Y1-04 beginning once the data and programming prerequisites are comfortable. Limited overlap is appropriate; completing every course simultaneously is not.
+
+Each course page links to its problem sets, worked solutions, and computational resources. Attempt assignments before opening solutions and retain corrected work as evidence. Use the [curriculum map](../../curriculum/course-map.md) for prerequisite dependencies and the Year 1 progression gate.
+
 ## Integration project
 At year end, select one focused question on infrastructure, DERs, interconnection, utility incentives, or PJM. Produce a 2,000–3,000 word literature/institutional review, documented dataset or transparent model, empirical/engineering analysis, 1,000–1,500 word policy brief, reproducibility package, and presentation.
 
