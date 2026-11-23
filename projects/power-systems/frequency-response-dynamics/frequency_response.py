@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import cmath
 import json
+from math import isfinite
 from pathlib import Path
 
 M = 5.0
@@ -18,8 +19,11 @@ R = 0.05
 
 def state_matrix(inertia: float = M, damping: float = D,
                  governor_time: float = T_G, droop: float = R) -> tuple[tuple[float, float], tuple[float, float]]:
-    if min(inertia, governor_time, droop) <= 0:
-        raise ValueError("inertia, governor_time, and droop must be positive")
+    parameters = (inertia, damping, governor_time, droop)
+    if any(not isfinite(value) for value in parameters):
+        raise ValueError("state-matrix parameters must be finite")
+    if min(inertia, damping, governor_time, droop) <= 0:
+        raise ValueError("inertia, damping, governor_time, and droop must be positive")
     return (
         (-damping / inertia, 1.0 / inertia),
         (-1.0 / (governor_time * droop), -1.0 / governor_time),
@@ -37,18 +41,24 @@ def eigenvalues_2x2(matrix: tuple[tuple[float, float], tuple[float, float]]) -> 
 
 
 def steady_state(load_step: float, damping: float = D, droop: float = R) -> tuple[float, float]:
-    if droop <= 0:
-        raise ValueError("droop must be positive")
+    if any(not isfinite(value) for value in (load_step, damping, droop)):
+        raise ValueError("load step, damping, and droop must be finite")
+    if damping <= 0 or droop <= 0:
+        raise ValueError("damping and droop must be positive")
     frequency = -load_step / (damping + 1.0 / droop)
     mechanical_power = -frequency / droop
     return frequency, mechanical_power
 
 
 def derivative(state: tuple[float, float], load_step: float,
-               matrix: tuple[tuple[float, float], tuple[float, float]]) -> tuple[float, float]:
+               matrix: tuple[tuple[float, float], tuple[float, float]],
+               inertia: float = M) -> tuple[float, float]:
+    """Evaluate the state equation; inertia must match the supplied matrix."""
+    if not isfinite(inertia) or inertia <= 0 or not isfinite(load_step):
+        raise ValueError("inertia must be positive and load_step must be finite")
     frequency, mechanical_power = state
     return (
-        matrix[0][0] * frequency + matrix[0][1] * mechanical_power - load_step / M,
+        matrix[0][0] * frequency + matrix[0][1] * mechanical_power - load_step / inertia,
         matrix[1][0] * frequency + matrix[1][1] * mechanical_power,
     )
 
@@ -59,11 +69,12 @@ def add_scaled(state: tuple[float, float], slope: tuple[float, float],
 
 
 def rk4_step(state: tuple[float, float], load_step: float, step: float,
-             matrix: tuple[tuple[float, float], tuple[float, float]]) -> tuple[float, float]:
-    k1 = derivative(state, load_step, matrix)
-    k2 = derivative(add_scaled(state, k1, step / 2), load_step, matrix)
-    k3 = derivative(add_scaled(state, k2, step / 2), load_step, matrix)
-    k4 = derivative(add_scaled(state, k3, step), load_step, matrix)
+             matrix: tuple[tuple[float, float], tuple[float, float]],
+             inertia: float = M) -> tuple[float, float]:
+    k1 = derivative(state, load_step, matrix, inertia)
+    k2 = derivative(add_scaled(state, k1, step / 2), load_step, matrix, inertia)
+    k3 = derivative(add_scaled(state, k2, step / 2), load_step, matrix, inertia)
+    k4 = derivative(add_scaled(state, k3, step), load_step, matrix, inertia)
     return (
         state[0] + step * (k1[0] + 2*k2[0] + 2*k3[0] + k4[0]) / 6,
         state[1] + step * (k1[1] + 2*k2[1] + 2*k3[1] + k4[1]) / 6,
@@ -71,17 +82,20 @@ def rk4_step(state: tuple[float, float], load_step: float, step: float,
 
 
 def simulate_rk4(load_step: float = 0.01, duration: float = 10.0,
-                 step: float = 0.001) -> tuple[float, float]:
+                 step: float = 0.001, *, inertia: float = M, damping: float = D,
+                 governor_time: float = T_G, droop: float = R) -> tuple[float, float]:
+    if any(not isfinite(value) for value in (load_step, duration, step)):
+        raise ValueError("load step, duration, and step must be finite")
     if duration < 0 or step <= 0:
         raise ValueError("duration must be nonnegative and step must be positive")
-    matrix = state_matrix()
+    matrix = state_matrix(inertia, damping, governor_time, droop)
     state = (0.0, 0.0)
     count = int(duration / step)
     for _ in range(count):
-        state = rk4_step(state, load_step, step, matrix)
+        state = rk4_step(state, load_step, step, matrix, inertia)
     remainder = duration - count * step
     if remainder > 1e-12:
-        state = rk4_step(state, load_step, remainder, matrix)
+        state = rk4_step(state, load_step, remainder, matrix, inertia)
     return state
 
 
@@ -97,15 +111,25 @@ def euler_stability_limit(matrix: tuple[tuple[float, float], tuple[float, float]
 
 
 def simulate_euler(initial: tuple[float, float], duration: float, step: float,
-                   matrix: tuple[tuple[float, float], tuple[float, float]] | None = None) -> tuple[float, float]:
+                   matrix: tuple[tuple[float, float], tuple[float, float]] | None = None,
+                   inertia: float = M) -> tuple[float, float]:
+    if any(not isfinite(value) for value in (*initial, duration, step)):
+        raise ValueError("initial state, duration, and step must be finite")
     if duration < 0 or step <= 0:
         raise ValueError("duration must be nonnegative and step must be positive")
-    matrix = matrix or state_matrix()
+    if not isfinite(inertia) or inertia <= 0:
+        raise ValueError("inertia must be finite and positive")
+    if matrix is None:
+        matrix = state_matrix(inertia=inertia)
     state = initial
     count = int(duration / step)
     for _ in range(count):
-        slope = derivative(state, 0.0, matrix)
+        slope = derivative(state, 0.0, matrix, inertia)
         state = add_scaled(state, slope, step)
+    remainder = duration - count * step
+    if remainder > 1e-12:
+        slope = derivative(state, 0.0, matrix, inertia)
+        state = add_scaled(state, slope, remainder)
     return state
 
 
