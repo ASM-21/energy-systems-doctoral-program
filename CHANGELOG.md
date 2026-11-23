@@ -1,3 +1,9 @@
+## 2026-11-23 — Guided project learning paths
+
+- Added subject-area project indexes for power systems, energy economics, econometrics, and policy/infrastructure.
+- Each index gives a recommended progression, prerequisites, course connections, and model/evidence boundaries so learners can select the next project without navigating a flat catalogue.
+- Added the four indexes to MkDocs navigation and linked them from the main project hub.
+
 ## 2026-11-23 — Computational model correctness and validation
 
 - Corrected the frequency-response model's custom-inertia disturbance scaling, exposed model parameters in the CLI, and fixed explicit-Euler integration of a final partial step. Added regression tests for parameter consistency, fractional durations, and nonfinite inputs.
