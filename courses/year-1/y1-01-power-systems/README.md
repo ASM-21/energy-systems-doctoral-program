@@ -3,7 +3,7 @@
 **Status:** Active Year 1 course  
 **Level:** Graduate foundation / early doctoral preparation  
 **Prerequisites:** Calculus, linear algebra, introductory differential equations, basic circuits, probability, and programming familiarity. Use the [prerequisite diagnostic](../../../curriculum/prerequisites.md) to identify targeted gaps.  
-**Planned effort:** **42 hours** (35–45 hour planning range), normally 10–12 weeks at 3–5 hours per week.  
+**Planned effort:** **42 hours** (35–45 hour planning range), normally 9–14 weeks at 3–5 hours per week.
 **Position in sequence:** First technical course. Its network and constraint concepts support energy economics, market design, and distribution DER analysis.
 
 ## Purpose
