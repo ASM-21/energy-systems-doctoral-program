@@ -87,11 +87,11 @@ A passing assignment must state the estimand and identification assumptions befo
 2. [Problem Set 2: Randomized Experiments, Regression Adjustment, and Power](problem-set-02-randomized-experiments.md) and [worked solutions](problem-set-02-randomized-experiments-solutions.md). Covers ITT, Neyman standard errors, regression adjustment, LATE, MDE/power, clustering, interference, and pre-analysis plans.
 3. [Problem Set 3: Panel Data, Difference-in-Differences, and Event Studies](problem-set-03-panel-did-event-studies.md) and [worked solutions](problem-set-03-panel-did-event-studies-solutions.md). Covers 2×2 DID, parallel trends, event-study estimands, staggered adoption, heterogeneous effects, and small-cluster inference.
 4. [Problem Set 4: Instrumental Variables and Regression Discontinuity](problem-set-04-instrumental-variables-rd.md) and [worked solutions](problem-set-04-instrumental-variables-rd-solutions.md). Covers LATE, 2SLS, weak instruments, exclusion restrictions, sharp/fuzzy RD, sorting, and cutoff validity.
-5. Future: event studies, staggered adoption, and synthetic controls.
-6. Future: survival analysis, competing risks, and multi-state models.
+5. [Problem Set 5: Synthetic Control and Comparative Case Studies](problem-set-05-synthetic-control.md) and [worked solutions](problem-set-05-synthetic-control-solutions.md). Covers simplex-constrained weights, convex-hull support, pre-fit, in-space placebos, donor-pool design, and augmented methods.
+6. Future: time-series interventions, stationarity, unit roots, cointegration, ARIMA, structural breaks, and HAC inference.
 7. Future: interference, spatial exposure, and energy infrastructure case study.
 
-**Computational companions:** [Randomized experiments and power lab](../../../projects/econometrics/randomized-experiments/README.md), with complete randomization, ITT estimation, Neyman standard errors, randomization inference, MDE, and cluster design-effect calculations; and [difference-in-differences lab](../../../projects/econometrics/difference-in-differences/README.md), with cohort-time ATT estimation under staggered adoption and heterogeneous effects.
+**Computational companions:** [Randomized experiments and power lab](../../../projects/econometrics/randomized-experiments/README.md), [difference-in-differences lab](../../../projects/econometrics/difference-in-differences/README.md), and the new [synthetic-control lab](../../../projects/econometrics/synthetic-control/README.md). The latter fits simplex-constrained donor weights using pre-period data only and reports in-space placebo diagnostics. Its data are synthetic and its placebo rank is not a design-based p-value.
 
 ## Core texts and references
 
