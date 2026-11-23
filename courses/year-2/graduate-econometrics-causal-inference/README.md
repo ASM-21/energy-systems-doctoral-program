@@ -112,6 +112,20 @@ A passing assignment must state the estimand and identification assumptions befo
 The [PA distribution DER interconnection capstone](../../../projects/policy-analysis/pa-distribution-interconnection-capstone/README.md) currently supports descriptive analysis only. Its 2023–2025 aggregate panel predates the 2026 policy changes and lacks application-level outcomes. This course develops the design needed for a future evaluation if suitable application-level data become available. Do not treat the existing panel as a natural experiment.
 
 
+## Final project and completion gate
+
+The final project should answer a focused energy-policy or infrastructure question, or document why available evidence cannot support the proposed estimand. Required components:
+- a pre-analysis plan specifying the estimand, treatment, comparison, sample, outcomes, identification assumptions, and inference strategy;
+- a literature and institutional review;
+- data provenance, a data dictionary, exclusions, and measurement audit;
+- a justified estimator with diagnostics and sensitivity analysis;
+- a clear discussion of selection, spillovers, clustering, serial dependence, and external validity as relevant;
+- reproducible code, environment information, and a clean rerun;
+- a 3,000–5,000 word paper or a detailed research-design paper when data are not adequate for estimation;
+- an oral or written defense of the identification argument and a self-assessment.
+
+A causal claim is not required if the design is not credible. A well-supported decision not to estimate a causal effect can be a strong research outcome. Completion requires attempted and corrected problem sets, the computational assignments, research-design critique, final paper/proposal, and review against the [program rubric](../../../ACADEMIC_STANDARDS.md).
+
 ## Next step
 
 After completing the core identification and panel/time-series modules, apply the methods to a feasible research question or continue to [Y2-04 — Electricity Market Design and Optimization](../electricity-market-design-optimization/README.md). Use the Pennsylvania capstone only within its documented data limits. A causal research paper requires a credible design and suitable data, not simply completion of this course.
