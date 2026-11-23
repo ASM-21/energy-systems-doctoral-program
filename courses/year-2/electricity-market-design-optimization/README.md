@@ -1,6 +1,6 @@
 # Y2-04 — Electricity Market Design and Optimization
 
-**Status:** Planned; Problem Set 1 and worked solutions are available. The remaining analytical assignments, PJM case, and complete computational assessment sequence are in development.  
+**Status:** Planned; Problem Sets 1–2 and worked solutions are available. The remaining analytical assignments, PJM case, and complete computational assessment sequence are in development.  
 **Level:** Advanced graduate / doctoral preparation  
 **Prerequisites:** Y1-01 Power Systems, Y1-02 Energy Economics, and Y1-03 Markets/Regulation or equivalent; linear algebra, calculus, constrained optimization, and introductory probability. Complete the relevant modules of [Y2-01 Advanced Mathematical Methods](../advanced-mathematics-energy-systems/README.md) before beginning the optimization sequence.  
 **Planned effort:** 45–60 hours over approximately 20–24 modular weeks, usually 2–3 hours per week within the total program budget.  
@@ -70,7 +70,7 @@ The models are intentionally simplified. Their READMEs state the assumptions and
 ## Published assessment
 
 - [Problem Set 1: Economic dispatch, Lagrangian duality, and marginal prices](problem-set-01-economic-dispatch-duality.md)
-- [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)
+- [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)\n- [Problem Set 2: Three-bus DC optimal power flow and LMPs](problem-set-02-three-bus-dc-opf.md)\n- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)\n- [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 
 The first assignment is an advanced convex dispatch/KKT exercise. It is not a substitute for the later network-constrained, intertemporal, and institutional modules.
 
