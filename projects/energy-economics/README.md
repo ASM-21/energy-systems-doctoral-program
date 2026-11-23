@@ -8,7 +8,7 @@ These projects progress from single-period dispatch to intertemporal storage, re
 2. [Battery arbitrage](storage-arbitrage/README.md) — intertemporal state of charge, efficiency, and degradation.
 3. [Non-exporting behind-the-meter storage](non-exporting-btm-storage/README.md) — customer load/PV/storage balance and no-export operation.
 4. [Energy and operating-reserve co-optimization](energy-reserve-cooptimization/README.md) — joint energy/reserve constraints, dual values, and finite-difference checks.
-5. [Stochastic and robust capacity planning](stochastic-robust-capacity-planning/README.md) — nonanticipativity, recourse, expected-value benchmarks, VSS, EVPI, and worst-case cost.
+5. [Stochastic and robust capacity planning](stochastic-robust-capacity-planning/README.md) — nonanticipativity, recourse, expected-value benchmarks, VSS, EVPI, and worst-case cost.\n6. [Utility regulatory economics](utility-regulatory-economics/README.md) — cost allocation, three-part rates, regulatory lag, earnings sharing, and capital-budgeting sensitivity.
 
 ## Prerequisites
 
