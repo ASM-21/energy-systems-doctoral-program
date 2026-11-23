@@ -2,7 +2,7 @@
 
 **Status:** Active foundation sequence  
 **Total planned effort:** **168 course hours**, plus a 25-hour integration project (193 hours at the current planning baseline). Individual course ranges allow for prerequisite gaps and variable depth.  
-**Pace:** 3–5 hours per week across the program, not per course. Expect roughly 38–66 weeks including the integration project; extend the calendar rather than skipping required work.
+**Pace:** 3–5 hours per week across the program, not per course. Individual courses typically span about 7–17 weeks at that pace; the full sequence and integration project take roughly 38–66 weeks. Extend the calendar rather than skipping required work.
 
 ## Purpose
 
