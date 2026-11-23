@@ -1,4 +1,4 @@
-"""Synthetic interrupted-time-series model with HAC inference."""
+"""Synthetic interrupted-time-series comparison: HAC OLS versus AR(1)-error GLS."""
 from __future__ import annotations
 
 import argparse
@@ -41,25 +41,44 @@ def fit_its(frame, intervention, maxlags=6):
     if maxlags < 0:
         raise ValueError("maxlags must be nonnegative")
     x = design_matrix(frame["period"], intervention)
-    model = sm.OLS(frame["outcome"].astype(float), x).fit(
+    return sm.OLS(frame["outcome"].astype(float), x).fit(
         cov_type="HAC", cov_kwds={"maxlags": maxlags}
     )
-    return model
+
+
+def fit_ar1_error(frame, intervention, maxiter=20):
+    """Feasible GLS with AR(1) errors; rho is estimated iteratively."""
+    if maxiter < 1:
+        raise ValueError("maxiter must be positive")
+    x = design_matrix(frame["period"], intervention)
+    model = sm.GLSAR(frame["outcome"].astype(float), x, rho=1)
+    result = model.iterative_fit(maxiter=maxiter)
+    return result
+
+
+def _ljung_box(values, lag):
+    result = acorr_ljungbox(np.asarray(values), lags=[lag], return_df=True).iloc[0]
+    return {"statistic": float(result["lb_stat"]), "p_value": float(result["lb_pvalue"])}
 
 
 def analyze(seed=20261123):
     frame, intervention = generate_series(seed=seed)
-    model = fit_its(frame, intervention, maxlags=6)
-    residuals = model.resid
+    hac_model = fit_its(frame, intervention, maxlags=6)
+    ar1_model = fit_ar1_error(frame, intervention)
     lb_lag = min(12, max(1, len(frame) // 5))
-    lb = acorr_ljungbox(residuals, lags=[lb_lag], return_df=True).iloc[0]
-    coefficients = {
-        name: {"estimate": float(model.params[name]),
-               "hac_se": float(model.bse[name]),
-               "t_stat": float(model.tvalues[name]),
-               "p_value": float(model.pvalues[name])}
-        for name in model.params.index
-    }
+    hac_residuals = np.asarray(hac_model.resid)
+    ar1_residuals = np.asarray(ar1_model.resid)
+    whitened_residuals = np.asarray(ar1_model.model.whiten(ar1_residuals))
+    coefficients = {}
+    for name in hac_model.params.index:
+        coefficients[name] = {
+            "estimate": float(hac_model.params[name]),
+            "hac_se": float(hac_model.bse[name]),
+            "t_stat": float(hac_model.tvalues[name]),
+            "p_value": float(hac_model.pvalues[name]),
+            "ar1_gls_estimate": float(ar1_model.params[name]),
+            "ar1_gls_se": float(ar1_model.bse[name]),
+        }
     bandwidth = {}
     for lag in [0, 3, 6, 12]:
         fit = fit_its(frame, intervention, maxlags=lag)
@@ -81,14 +100,24 @@ def analyze(seed=20261123):
         "n_observations": int(len(frame)),
         "intervention_period": intervention,
         "coefficients": coefficients,
-        "r_squared": float(model.rsquared),
-        "ljung_box_lag": int(lb_lag),
-        "ljung_box_stat": float(lb["lb_stat"]),
-        "ljung_box_p_value": float(lb["lb_pvalue"]),
+        "hac_ols_r_squared": float(hac_model.rsquared),
+        "ar1_gls_rho": float(np.asarray(ar1_model.modelrho).reshape(-1)[0]),
+        "residual_diagnostics": {
+            "lag": lb_lag,
+            "hac_ols_raw_residuals": _ljung_box(hac_residuals, lb_lag),
+            "ar1_gls_raw_residuals": _ljung_box(ar1_residuals, lb_lag),
+            "ar1_gls_whitened_residuals": _ljung_box(whitened_residuals, lb_lag),
+        },
         "hac_bandwidth_sensitivity": bandwidth,
         "placebo_dates": placebo,
-        "warning": "HAC inference does not establish causal identification; placebo dates are exploratory."
-    }, frame, model
+        "interpretation": (
+            "HAC changes the covariance estimate, not the residual process. "
+            "AR(1)-error GLS imposes a parametric serial-correlation model; "
+            "inspect whitened residuals and sensitivity because misspecified "
+            "error dynamics can invalidate its efficiency and inference claims."
+        ),
+        "warning": "Neither covariance correction nor AR(1) GLS establishes causal identification."
+    }, frame, hac_model, ar1_model
 
 
 def main():
@@ -96,21 +125,22 @@ def main():
     parser.add_argument("--output-dir", default="outputs")
     parser.add_argument("--seed", type=int, default=20261123)
     args = parser.parse_args()
-    result, frame, model = analyze(args.seed)
+    result, frame, hac_model, ar1_model = analyze(args.seed)
     out = Path(args.output_dir)
     out.mkdir(parents=True, exist_ok=True)
     (out / "summary.json").write_text(json.dumps(result, indent=2) + "\n")
     frame = frame.copy()
-    frame["fitted"] = model.fittedvalues
-    frame["residual"] = model.resid
+    frame["fitted_hac_ols"] = hac_model.fittedvalues
+    frame["residual_hac_ols"] = hac_model.resid
+    frame["fitted_ar1_gls"] = ar1_model.fittedvalues
+    frame["residual_ar1_gls"] = ar1_model.resid
     frame.to_csv(out / "series.csv", index=False)
     print(json.dumps({
         "intervention_period": result["intervention_period"],
-        "level_estimate": result["coefficients"]["post_level"]["estimate"],
-        "slope_change_estimate": result["coefficients"]["post_slope"]["estimate"],
-        "level_hac_se": result["coefficients"]["post_level"]["hac_se"],
-        "slope_hac_se": result["coefficients"]["post_slope"]["hac_se"],
-        "ljung_box_p_value": result["ljung_box_p_value"]
+        "level_hac_ols": result["coefficients"]["post_level"]["estimate"],
+        "level_ar1_gls": result["coefficients"]["post_level"]["ar1_gls_estimate"],
+        "estimated_ar1_rho": result["ar1_gls_rho"],
+        "diagnostics": result["residual_diagnostics"]
     }, indent=2))
 
 
