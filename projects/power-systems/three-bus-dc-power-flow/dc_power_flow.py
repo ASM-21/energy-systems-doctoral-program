@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+from math import isfinite
 from pathlib import Path
 
 
@@ -52,6 +53,7 @@ def solve_dc_power_flow(
     for line in lines:
         i_bus, j_bus = line["from_bus"], line["to_bus"]
         x = float(line["x_pu"])
+        limit = line["limit_mw"]
         if i_bus not in index or j_bus not in index or i_bus == j_bus:
             raise ValueError("Each line must connect two distinct known buses.")
         if x <= 0:
@@ -100,7 +102,7 @@ def solve_dc_power_flow(
     for line in lines:
         i_bus, j_bus = line["from_bus"], line["to_bus"]
         flow = (angles[i_bus] - angles[j_bus]) / line["x_pu"] * base_mva
-        limit = line["limit_mw"]
+        limit = None if limit is None else float(limit)
         branch_results.append(
             {
                 "from_bus": i_bus,
