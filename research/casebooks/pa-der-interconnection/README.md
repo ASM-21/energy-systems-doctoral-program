@@ -135,10 +135,10 @@ The Commission order was entered June 11, 2026. A straightforward 120-calendar-d
 Useful source: [PPL Energy Storage Interconnection Policy and Guidance, Revision 0, effective February 1, 2023](https://www.pplelectric.com/site/-/media/ppl-jss-app/assets/Home/More/About-Us/Electric-rates-and-rules/Point-of-contact-requirements/PPL-Electric-Energy-Storage-Policy-Rev-0.ashx). The document describes non-export configurations and control-system evidence. Verify whether a newer revision exists before treating it as current.
 
 Research tasks:
-- Compare the policy's non-export configurations with the requirements PPL applied to the projects reviewed under paragraph 123.
+- Compare the policy's non-export configurations with the requirements PPL applied to the projects reviewed under paragraph 124.
 - Define inadvertent export, protection, fail-safe controls, metering, commissioning tests, and operating limits.
 - Assess whether an energy-storage-specific process is technically justified and proportionate to actual export risk.
-- Locate evidence of the paragraph 123 review and any resulting policy, tariff, or guidance changes.
+- Locate evidence of the paragraph 124 review and any resulting policy, tariff, or guidance changes.
 
 ### I. Pennsylvania PUC — Net-Metering and Interconnection Report 2023–2025
 
