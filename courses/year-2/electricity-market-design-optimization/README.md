@@ -36,7 +36,7 @@ By the end, the learner should be able to:
 | 1 | Constrained dispatch and marginal pricing | Merit-order clearing and scarcity | PS1 published: analytical dispatch derivation and KKT/duality |
 | 2 | Network-constrained dispatch | DC power flow, congestion, LMP | PS2 and tested three-bus DC-OPF lab published |
 | 3 | AC OPF and model limits | Voltage, reactive power, losses, security | Formulation comparison and model-risk memo |
-| 4 | Operating reserves and co-optimization | Energy/reserve capacity coupling | LP model and finite-difference checks |
+| 4 | Operating reserves and co-optimization | Energy/reserve capacity coupling | PS3 and tested LP lab published |
 | 5 | Unit commitment | Startup, minimum output, ramping, minimum up/down time | Small mixed-integer model |
 | 6 | Market power and monitoring | Pivotal supply, withholding incentives, mitigation | Market-monitor report critique |
 | 7 | Resource adequacy and capacity mechanisms | Accreditation, scarcity, capacity procurement | PJM manual and design comparison |
@@ -73,7 +73,7 @@ The models are intentionally simplified. Their READMEs state the assumptions and
 - [Problem Set 1: Economic dispatch, Lagrangian duality, and marginal prices](problem-set-01-economic-dispatch-duality.md)
 - [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)
 - [Problem Set 2: Three-bus DC optimal power flow and LMPs](problem-set-02-three-bus-dc-opf.md)
-- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)
+- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)\n- [Problem Set 3: Energy and operating-reserve co-optimization](problem-set-03-energy-reserve-cooptimization.md)\n- [Problem Set 3 solution notes](problem-set-03-energy-reserve-cooptimization-solutions.md)\n- [Computational lab: Energy and reserve co-optimization](../../../projects/energy-economics/energy-reserve-cooptimization/README.md)
 - [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 
 The first assignment is an advanced convex dispatch/KKT exercise. It is not a substitute for the later network-constrained, intertemporal, and institutional modules.
@@ -87,7 +87,7 @@ The full course should include:
 - one market-monitoring or market-power critique;
 - a final paper or technical study with reproducible code, sensitivity analysis, and model-risk discussion.
 
-Problem Sets 1–2 establish the convex single-node dispatch and three-bus DC-OPF foundations. The full assessment sequence remains incomplete. Do not mark this course active or schedule it as required work until the remaining assignments, solution notes, and validation checks are complete.
+Problem Sets 1–3 establish single-node dispatch/duality, three-bus DC-OPF, and joint energy/reserve procurement foundations. The full assessment sequence remains incomplete. Do not mark this course active or schedule it as required work until the remaining assignments, solution notes, and validation checks are complete.
 
 ## Completion standard
 
