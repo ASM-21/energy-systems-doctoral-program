@@ -16,6 +16,17 @@ class ThreeBusDcOpfTests(unittest.TestCase):
         self.assertAlmostEqual(result["flows_mw"]["flow_23_mw"], 46.6666666667, places=6)
         self.assertAlmostEqual(result["objective_usd_per_hour"], 6600.0, places=6)
 
+    def test_nodal_balance_and_branch_limits(self):
+        result = solve_dc_opf()
+        generation = result["generation_mw"]
+        flows = result["flows_mw"]
+        self.assertAlmostEqual(generation["g1_bus_1"] - flows["flow_12_mw"] - flows["flow_13_mw"], 0.0, places=7)
+        self.assertAlmostEqual(generation["g2_bus_2"] + flows["flow_12_mw"] - flows["flow_23_mw"], 100.0, places=7)
+        self.assertAlmostEqual(generation["g3_bus_3"] + flows["flow_13_mw"] + flows["flow_23_mw"], 100.0, places=7)
+        self.assertLessEqual(abs(flows["flow_12_mw"]), 60.0 + 1e-8)
+        self.assertLessEqual(abs(flows["flow_13_mw"]), 60.0 + 1e-8)
+        self.assertLessEqual(abs(flows["flow_23_mw"]), 60.0 + 1e-8)
+
     def test_nodal_prices_and_line_shadow_value(self):
         result = solve_dc_opf()
         prices = result["nodal_prices_usd_per_mwh"]
