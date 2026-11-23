@@ -138,19 +138,33 @@ def main() -> None:
     parser.add_argument("--load-step", type=float, default=0.01)
     parser.add_argument("--duration", type=float, default=10.0)
     parser.add_argument("--step", type=float, default=0.001)
+    parser.add_argument("--inertia", type=float, default=M)
+    parser.add_argument("--damping", type=float, default=D)
+    parser.add_argument("--governor-time", type=float, default=T_G)
+    parser.add_argument("--droop", type=float, default=R)
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args()
 
-    matrix = state_matrix()
+    matrix = state_matrix(args.inertia, args.damping, args.governor_time, args.droop)
     eigenvalues = eigenvalues_2x2(matrix)
     result = {
         "model": "illustrative_two_state_frequency_response",
         "load_step_pu": args.load_step,
+        "parameters": {
+            "inertia_seconds": args.inertia,
+            "damping": args.damping,
+            "governor_time_seconds": args.governor_time,
+            "droop": args.droop,
+        },
         "state_matrix": matrix,
         "eigenvalues_per_second": [[v.real, v.imag] for v in eigenvalues],
         "explicit_euler_max_step_seconds": euler_stability_limit(matrix),
-        "steady_state": steady_state(args.load_step),
-        "rk4_terminal_state": simulate_rk4(args.load_step, args.duration, args.step),
+        "steady_state": steady_state(args.load_step, args.damping, args.droop),
+        "rk4_terminal_state": simulate_rk4(
+            args.load_step, args.duration, args.step,
+            inertia=args.inertia, damping=args.damping,
+            governor_time=args.governor_time, droop=args.droop,
+        ),
         "duration_seconds": args.duration,
         "rk4_step_seconds": args.step,
         "limitations": "synthetic single-area linear illustration; not an operational security assessment",
