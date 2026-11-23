@@ -3,7 +3,7 @@
 **Status:** Active Year 1 course  
 **Level:** Graduate  
 **Prerequisites:** Intermediate microeconomics or equivalent; calculus and basic statistics. Y1-01 is recommended, but the two courses may overlap after the learner understands basic electricity-system constraints.  
-**Planned effort:** **35 hours** (30–40 hour planning range), normally 8–10 weeks at 3–5 hours per week.  
+**Planned effort:** **35 hours** (30–40 hour planning range), normally 7–12 weeks at 3–5 hours per week.
 **Position in sequence:** Second course. Establishes the economic foundations for wholesale market design, utility regulation, DER participation, and infrastructure investment.
 
 ## Purpose
