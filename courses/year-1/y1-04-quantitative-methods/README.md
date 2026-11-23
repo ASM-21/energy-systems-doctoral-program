@@ -46,8 +46,9 @@ A clean environment must reproduce tables and figures from raw or documented sou
 - [Problem Set 2 solution notes](problem-set-02-solutions.md)
 
 
-## Computational lab
+## Computational and empirical workflows
 - [OLS and robust inference on synthetic energy-demand data](../../../projects/econometrics/ols-energy-demand/README.md)
+- [EIA-861 public-data ingestion and panel audit](../../../research/data-pipelines/eia861/README.md) — inspect source workbooks, schema changes, utility identity, coverage, exclusions, and panel limitations. The pipeline is a data-engineering and measurement exercise; it does not by itself identify causal effects.
 
 ## How to use the assessments
 
