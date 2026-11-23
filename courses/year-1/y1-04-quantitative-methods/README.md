@@ -1,5 +1,7 @@
 # Y1-04 — Applied Quantitative Methods for Energy Research
 
+**Status:** Active Year 1 course
+
 **Level:** Graduate methods foundation | **Duration:** 10–12 weeks | **Effort:** 35–45 hours  
 **Prerequisites:** Calculus, linear algebra, probability/statistics, Python or R.
 
@@ -46,3 +48,11 @@ A clean environment must reproduce tables and figures from raw or documented sou
 
 ## Computational lab
 - [OLS and robust inference on synthetic energy-demand data](../../../projects/econometrics/ols-energy-demand/README.md)
+
+## How to use the assessments
+
+Attempt each problem set before opening the linked worked solution. For empirical work, define the unit of analysis, preserve data provenance, inspect missingness and measurement changes, and distinguish description from causal identification. Re-run the analysis from a clean environment and retain the code and data dictionary.
+
+## Next step
+
+Proceed to [Y1-03 — Electricity Markets, Utility Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md), then complete the [Year 1 integration project](../README.md#integration-project).
