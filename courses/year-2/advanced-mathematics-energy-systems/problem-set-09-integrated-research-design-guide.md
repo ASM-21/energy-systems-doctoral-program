@@ -12,7 +12,7 @@ The source panel has 33 observations: 11 EDCs in each of 2023, 2024, and 2025. R
 | 2024 | 18,582 | 7,519 | 40.46% | 1 | 2,496.32 | 77.13% |
 | 2025 | 20,202 | 6,844 | 33.88% | 1 | 2,072.92 | 70.68% |
 
-PPL request counts changed by approximately -0.63% from 2023 to 2024, -8.98% from 2024 to 2025, and -9.56% from 2023 to 2025. These are changes in reported request counts, not changes in processing time, approval probability, installed DER, or utility performance.
+PPL request counts changed by approximately -0.63% from 2023 to 2024, -8.98% from 2024 to 2025, and -9.55% from 2023 to 2025. These are changes in reported request counts, not changes in processing time, approval probability, installed DER, or utility performance.
 
 The 2025 large-request split reports 135 PPL Level 2 requests at or above 500 kW out of 196 statewide (68.88%) and 411 PPL Level 3 requests at or above 500 kW out of 954 statewide (43.08%). Do not compare these size-band counts to 2023–2024 because the report does not provide the same split for those years.
 
