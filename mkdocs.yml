@@ -162,6 +162,7 @@ nav:
       - Glossary: curriculum/glossary.md
   - Computational projects:
       - Project index: projects/README.md
+      - Project page template: projects/project-template.md
       - Power systems:
           - Three-bus DC power flow: projects/power-systems/three-bus-dc-power-flow/README.md
           - Two-node congestion: projects/power-systems/two-node-congestion/README.md
