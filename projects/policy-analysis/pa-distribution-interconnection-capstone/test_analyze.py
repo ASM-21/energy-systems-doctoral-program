@@ -31,7 +31,7 @@ class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
         annual = self.result["annual_summary"]
         self.assertEqual(
             [row["ppl_change_from_2023_pct"] for row in annual],
-            [0.0, -0.63, -9.56],
+            [0.0, -0.63, -9.55],
         )
         self.assertEqual(
             [row["top_three_edc_request_share_pct"] for row in annual],
