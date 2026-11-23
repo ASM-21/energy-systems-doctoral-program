@@ -75,3 +75,12 @@ The tests check the duals using finite differences: increasing demand by 1 MW ra
 This is a single-period, single-node convex LP. It omits network constraints, losses, ramping, minimum output, start-up costs, reserve response times, reserve zones, uncertainty, unit commitment, nonconvex offers, market power, performance penalties, and settlement rules. It does not reproduce PJM's actual energy or reserve co-optimization. All offers and capacities are synthetic.
 
 A dual is a local marginal value conditional on this formulation, data, optimal basis, and solver sign convention. Check finite differences and active constraints before interpreting it. Binding constraints can have zero marginal value, and duals can be non-unique in degenerate LPs.
+
+## Project record
+
+- **Type/status:** Energy-market optimization lab; reproducible synthetic LP baseline.
+- **Prerequisites:** Linear programming, merit-order dispatch, equality/inequality constraints, and duality. Review Y1-02 and Y1-03 before the lab.
+- **Data provenance:** Generator offers, reserve offers, capacities, demand, and reserve requirement are synthetic and fully specified in this page and source code.
+- **Validation:** The reported primal solution must satisfy energy balance, reserve sufficiency, nonnegativity, and each joint capacity limit. Automated tests check objective value, duals, finite differences, and infeasibility. Re-run tests after changing solver versions because dual sign conventions and degenerate optima require care.
+- **Assessment link:** Supports Y1-03 resource adequacy and scarcity pricing. Submit the LP formulation, primal feasibility table, dual interpretation with units, finite-difference check, and a short explanation of why this is not a PJM market model.
+
