@@ -58,29 +58,25 @@ Construct a small feeder model with baseline load, then add PV or storage and a 
 Problem-set solutions, code, data dictionary, figures, technical memo, final report, and self-assessment.
 
 ## Problem sets and worked checks
-- [Problem Set 1 — Three-phase fundamentals and per-unit quantities](problem-set-01.md)
-- [Solution notes for Problem Set 1](problem-set-01-solutions.md)
 
-- [Problem Set 2](problem-set-02.md)
-- [Problem Set 2 solution notes](problem-set-02-solutions.md)
+Complete the assignments in sequence. Problem Sets 1–2 establish electrical quantities and network-model reasoning; Problem Sets 3–5 apply those foundations to distribution DER, unbalanced benchmark analysis, and flexible interconnection. Problem Set 4 requires the separate OpenDSS engine; the other assignments use the stated lightweight Python models or hand calculations.
 
-
-## Applied benchmark assignment
-- [Problem Set 4 — IEEE 13-node OpenDSS benchmark](problem-set-04-ieee13-opendss.md)
-- [Solution guide](problem-set-04-ieee13-opendss-solutions.md)
+| Assignment | Focus | Estimated effort | Assignment | Worked solution |
+|---|---|---:|---|---|
+| PS1 | Three-phase fundamentals and per-unit quantities | 2–3 h | [Problem](problem-set-01.md) | [Solution notes](problem-set-01-solutions.md) |
+| PS2 | Network models, power flow, and DER constraints | 2–3 h | [Problem](problem-set-02.md) | [Solution guidance](problem-set-02-solutions.md) |
+| PS3 | Radial feeder DER integration | 3–4 h | [Problem](problem-set-03-radial-der.md) | [Solution notes](problem-set-03-radial-der-solutions.md) |
+| PS4 | IEEE 13-node OpenDSS benchmark | 4–6 h | [Problem](problem-set-04-ieee13-opendss.md) | [Solution guide](problem-set-04-ieee13-opendss-solutions.md) |
+| PS5 | Flexible interconnection and dynamic export envelopes | 4–5 h | [Problem](problem-set-05-flexible-interconnection.md) | [Solution notes](problem-set-05-flexible-interconnection-solutions.md) |
 
 ## Computational labs
+
 - [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
 - [Radial feeder DER hosting-capacity screen](../../../projects/power-systems/radial-der-hosting-capacity/README.md)
+- [IEEE 13-node OpenDSS benchmark](../../../projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md)
 - [Flexible interconnection and dynamic export envelopes](../../../projects/power-systems/flexible-interconnection/README.md)
 
-## Flexible interconnection assignment
-- [Problem Set 5 — Flexible interconnection and dynamic export envelopes](problem-set-05-flexible-interconnection.md)
-- [Solution notes](problem-set-05-flexible-interconnection-solutions.md)
-
-## Additional applied problem set
-- [Problem Set 3 — Radial feeder DER integration](problem-set-03-radial-der.md)
-- [Solution notes for Problem Set 3](problem-set-03-radial-der-solutions.md)
+**Important distinction:** the balanced first-order feeder screen is a screening approximation, while the IEEE 13-node OpenDSS benchmark is a nonlinear unbalanced AC simulation of a published test feeder. They are not a direct numerical validation pair because their network data and assumptions differ. The next validation step would be to construct a matched reduced network and compare the approximation against an AC-capable solution.
 
 ## How to use the assessments
 
