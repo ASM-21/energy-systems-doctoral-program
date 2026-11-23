@@ -5,6 +5,11 @@ The program aims at graduate and early-doctoral intellectual rigor. It does not 
 
 A strong submission demonstrates conceptual accuracy, defensible mathematics, appropriate methods, traceable evidence, reproducible computation, and interpretation that distinguishes correlation from causation and engineering feasibility from policy desirability.
 
+## Course design and learner experience
+Every course page must use the shared [course template](curriculum/course-template.md) as its structural baseline and clearly state status, level, prerequisites, expected effort, learning outcomes, sequence, required and optional work, assessments, solution links, computational resources, final deliverables, and the next progression step. Keep course-specific depth, but do not omit learner-facing orientation.
+
+Problem sets must link to corresponding worked solutions where available. Label solution notes honestly (full derivation, worked check, or instructor notes). Learners should be instructed to attempt assignments before consulting solutions. Distinguish required core work from optional enrichment and reference material.
+
 ## Required learning evidence
 Each course should produce:
 1. A structured concept map or synthesis.
