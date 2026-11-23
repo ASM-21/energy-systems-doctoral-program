@@ -1,6 +1,6 @@
 # Y2-04 — Electricity Market Design and Optimization
 
-**Status:** Roadmap / planned. This is a course specification, not yet an active course. Problem sets, worked solutions, and a complete computational assessment sequence have not been published.  
+**Status:** Planned; Problem Set 1 and worked solutions are available. The remaining analytical assignments, PJM case, and complete computational assessment sequence are in development.  
 **Level:** Advanced graduate / doctoral preparation  
 **Prerequisites:** Y1-01 Power Systems, Y1-02 Energy Economics, and Y1-03 Markets/Regulation or equivalent; linear algebra, calculus, constrained optimization, and introductory probability. Complete the relevant modules of [Y2-01 Advanced Mathematical Methods](../advanced-mathematics-energy-systems/README.md) before beginning the optimization sequence.  
 **Planned effort:** 45–60 hours over approximately 20–24 modular weeks, usually 2–3 hours per week within the total program budget.  
@@ -67,6 +67,13 @@ These projects provide prerequisites and examples, but they do not yet constitut
 
 The models are intentionally simplified. Their READMEs state the assumptions and omissions. In particular, a single-period LP is not a unit-commitment model, and a DC network approximation is not an AC security-constrained dispatch model.
 
+## Published assessment
+
+- [Problem Set 1: Economic dispatch, Lagrangian duality, and marginal prices](problem-set-01-economic-dispatch-duality.md)
+- [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)
+
+The first assignment is an advanced convex dispatch/KKT exercise. It is not a substitute for the later network-constrained, intertemporal, and institutional modules.
+
 ## Planned assessment architecture
 
 The full course should include:
@@ -76,7 +83,7 @@ The full course should include:
 - one market-monitoring or market-power critique;
 - a final paper or technical study with reproducible code, sensitivity analysis, and model-risk discussion.
 
-These assessments are **not yet published**. Do not mark this course active or schedule it as required work until the assignments, solution notes, and validation checks are complete.
+Problem Set 1 on economic dispatch and duality is the first published assessment. The full assessment sequence remains incomplete. Do not mark this course active or schedule it as required work until the remaining assignments, solution notes, and validation checks are complete.
 
 ## Completion standard
 
@@ -84,4 +91,4 @@ The eventual final project should contain a mathematical formulation, reproducib
 
 ## Next step
 
-This course should follow the relevant mathematical foundations in Y2-01 and can be selected after the learner identifies whether the primary research direction is wholesale market design, resource adequacy, transmission, or infrastructure investment. For utility finance and regulation, see [Y2-03 Infrastructure Economics and Utility Investment](../infrastructure-economics-utility-investment/README.md).
+The next development step is a network-constrained dispatch and LMP assignment that builds on the existing two-node congestion and DC power-flow labs. This course should follow the relevant mathematical foundations in Y2-01 and can be selected after the learner identifies whether the primary research direction is wholesale market design, resource adequacy, transmission, or infrastructure investment. For utility finance and regulation, see [Y2-03 Infrastructure Economics and Utility Investment](../infrastructure-economics-utility-investment/README.md).
