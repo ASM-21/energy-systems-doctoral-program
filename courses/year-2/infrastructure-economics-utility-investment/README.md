@@ -3,7 +3,7 @@
 **Status:** Planned; the initial course guide and Problem Set 1 are available, but the full assessment sequence is not yet developed.  
 **Level:** Graduate / applied regulatory economics  
 **Prerequisites:** Y1-02 Energy Economics and Y1-03 Markets, Regulation, and PJM or equivalent; introductory corporate finance, calculus, and statistics.  
-**Planned effort:** 30–40 hours over 10–14 weeks, studied as the primary course within the total 3–5 hour weekly program budget.  
+**Planned effort:** 30–40 hours over approximately 10–14 weeks at 2.5–3 hours per week, studied as the primary course within the total 3–5 hour weekly program budget.  
 **Position in sequence:** Applied bridge between energy economics, utility regulation, infrastructure capital planning, and investment policy.
 
 ## Course question
