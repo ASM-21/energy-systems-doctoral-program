@@ -1,3 +1,9 @@
+## 2026-11-23 — Y2-04 reserve co-optimization assessment
+
+- Added Problem Set 3 and worked solutions on joint energy/upward-reserve procurement, KKT conditions, energy and reserve duals, generator capacity opportunity costs, and finite-difference validation.
+- Added a sequential-versus-joint procurement case with a hand-checked $520 per-hour cost difference, demonstrating why capacity opportunity costs can change dispatch.
+- Linked the assignment to the existing tested energy/reserve LP, updated Y2-04 learning evidence, course navigation, and competency status. Y2-04 remains planned pending the remaining market-design modules.
+
 ## 2026-11-23 — Y2-04 network-constrained dispatch and DC-OPF validation
 
 - Added Y2-04 Problem Set 2 and worked solutions for a three-bus meshed DC-OPF, including nodal balance, branch flow, LMP, congestion shadow values, and finite-difference checks.
