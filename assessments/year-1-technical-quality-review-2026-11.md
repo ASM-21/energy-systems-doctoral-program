@@ -8,12 +8,13 @@ This is an internal quality review of selected materials, not an external peer r
 
 ## Summary
 
-Four material issues were identified and corrected:
+Five material issues were identified and corrected:
 
 1. A two-node congestion exercise had a generator-capacity limit that bound simultaneously with the line limit. This made the intended nodal-price comparison degenerate and contradicted the worked explanation. The generator capacity and comparison line limit were revised so the example isolates congestion and produces the intended locational price separation.
 2. The worked solution for the scarcity/reserve co-optimization exercise contained an arithmetic error in the objective value. The correct value is **$3,720/hour**, not $4,840/hour.
 3. The demand-response solution correctly selected 100 MW but contained contradictory and economically incorrect prose about why additional demand response would be used. The explanation now correctly identifies the marginal substitution: demand response at $50/MWh displaces Unit C at $60/MWh for the first 100 MW, but further demand response would displace Unit B at $35/MWh and is not economic.
 4. A three-bus DC power-flow explanation described a 7.5 MW flow as an export from bus 3 when it is an import to bus 3. The net balance is now stated correctly.
+5. The reserve co-optimization example initially placed the energy demand exactly at a kink where Unit C's energy dispatch was zero. At that point the energy-balance dual was non-unique and the solver's selected dual did not equal the right-hand finite difference. Demand was raised from 150 to 160 MW so Unit C has positive energy dispatch and the reported USD 55/MWh dual is locally stable.
 
 The Y1-01 power-systems course overview was also reorganized into a complete assignment table, with each of its five problem sets linked to its worked solution and estimated effort. The distinction between the simplified radial feeder screen and the unbalanced AC OpenDSS benchmark is explicit.
 
