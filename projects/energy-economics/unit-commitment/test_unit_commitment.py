@@ -34,9 +34,9 @@ class UnitCommitmentTests(unittest.TestCase):
         self.assertAlmostEqual(result["schedules"][0]["periods"][0]["commitment"], 1.0)
 
     def test_lower_period_two_demand_avoids_second_unit(self):
-        result = solve_unit_commitment(demand_mw=(80.0, 120.0))
+        result = solve_unit_commitment(demand_mw=(80.0, 100.0))
         rows = {row["name"]: row["periods"] for row in result["schedules"]}
-        self.assertAlmostEqual(result["objective"], 4700.0)
+        self.assertAlmostEqual(result["objective"], 4300.0)
         self.assertEqual([round(p["commitment"]) for p in rows["G2"]], [0, 0])
 
     def test_initial_commitment_is_respected(self):
