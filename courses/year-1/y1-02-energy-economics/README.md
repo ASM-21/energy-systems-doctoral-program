@@ -1,74 +1,84 @@
 # Y1-02 — Energy Economics and Market Fundamentals
 
-**Status:** Active Year 1 course
-
-**Level:** Graduate | **Duration:** 8–10 weeks | **Effort:** 30–40 hours  
-**Prerequisites:** Intermediate microeconomics or equivalent; calculus and basic statistics.
+**Status:** Active Year 1 course  
+**Level:** Graduate  
+**Prerequisites:** Intermediate microeconomics or equivalent; calculus and basic statistics. Y1-01 is recommended, but the two courses may overlap after the learner understands basic electricity-system constraints.  
+**Planned effort:** **35 hours** (30–40 hour planning range), normally 8–10 weeks at 3–5 hours per week.  
+**Position in sequence:** Second course. Establishes the economic foundations for wholesale market design, utility regulation, DER participation, and infrastructure investment.
 
 ## Purpose
-Build an economic framework for energy supply, demand, investment, market failure, electricity dispatch, and the distinctive economics of electricity.
+
+Develop an economic framework for energy supply, demand, dispatch, investment, market failure, and the distinctive economics of electricity. The central objective is to connect economic models to physical constraints rather than treating electricity as an ordinary storable commodity.
 
 ## Learning outcomes
-Model supply, demand, elasticities, consumer/producer surplus, and welfare; explain electricity's physical constraints; distinguish short-run marginal, long-run marginal, and average cost; derive merit-order dispatch; explain externalities, market power, and natural monopoly; evaluate policy instruments and distributional effects; translate economic models into numerical exercises.
 
-## Weekly sequence
-| Week | Topic | Work |
+By the end, the learner should be able to:
+
+1. Formulate supply and demand relationships and interpret elasticities in energy applications.
+2. Calculate consumer surplus, producer surplus, total surplus, and the effects of policy or market changes.
+3. Distinguish short-run marginal cost, long-run marginal cost, average cost, and levelized cost.
+4. Solve merit-order dispatch problems and identify the marginal unit under stated assumptions.
+5. Explain why non-storability, network constraints, reliability requirements, and inelastic short-run demand affect electricity markets.
+6. Analyze externalities and compare carbon pricing, standards, and subsidies.
+7. Explain natural monopoly, market power, and the economic rationale and limitations of regulation.
+8. Evaluate storage, demand response, and DER economics using intertemporal constraints and explicit assumptions.
+9. Distinguish private project economics from system costs, benefits, and distributional effects.
+
+## Learning sequence
+
+| Stage | Topic | Required evidence |
 |---|---|---|
-| 1 | Microeconomic foundations and energy as a commodity | Supply/demand model |
-| 2 | Elasticity, consumer behavior, demand response | Problem set 1 |
-| 3 | Production costs, fuel costs, short-run dispatch | Merit-order exercise |
-| 4 | Marginal pricing, scarcity, non-storability | Numerical dispatch model |
-| 5 | Externalities and environmental policy | Welfare analysis |
-| 6 | Natural monopoly and utility economics | Revenue-requirement concepts |
-| 7 | Market power, vertical integration, restructuring | Case analysis |
-| 8 | Investment, uncertainty, technology choice | NPV/sensitivity |
-| 9 | DERs, storage, flexibility, retail incentives | Comparative memo |
-| 10 | Synthesis | Final project |
+| 1 | Energy as a commodity; supply, demand, elasticity | PS1 |
+| 2 | Welfare, consumer/producer surplus, externalities | PS1 and policy comparison |
+| 3 | Production costs, merit order, marginal pricing | PS2 and dispatch lab |
+| 4 | Storage, arbitrage, efficiency, degradation | PS2 and battery lab |
+| 5 | Carbon pricing and demand response | PS3 |
+| 6 | Retail incentives and non-exporting BTM storage | PS4 and BTM storage lab |
+| 7 | Investment, uncertainty, and synthesis | Final analysis |
 
-## References
-Stoft, *Power System Economics: Designing Markets for Electricity*; Kirschen & Strbac, *Fundamentals of Power System Economics*; Joskow's work on electricity restructuring and market design.
+## Core materials
+
+- Stoft, Steven. *Power System Economics: Designing Markets for Electricity*. Wiley-IEEE Press, 2002.
+- Kirschen, Daniel S., and Goran Strbac. *Fundamentals of Power System Economics*, 2nd ed. Wiley, 2018.
+- Joskow, Paul L. “Lessons Learned from Electricity Market Liberalization.” *The Energy Journal* 29(2_suppl), 9–42 (2008). [DOI](https://doi.org/10.5547/ISSN0195-6574-EJ-Vol29-NoSI2-3).
 - Stanford ECON 253, *Energy Markets: Theory and Evidence*: [official bulletin](https://bulletin.stanford.edu/courses/econ-253).
 - Stanford ECON 256, *Energy Markets and Policy*: [official bulletin](https://bulletin.stanford.edu/courses/econ-256).
-- CMU 39-612 / 19-666, *Energy Policy and Economics*: [official course page](https://energy.cmu.edu/get-involved/students/courses/39-612.html).
+- Carnegie Mellon 39-612 / 19-666, *Energy Policy and Economics*: [official course page](https://energy.cmu.edu/get-involved/students/courses/39-612.html).
 
-## Assessments
-- Demand, elasticity, consumer/producer surplus, and welfare problem set.
-- Dispatch exercise: given generator capacity and cost curves, solve least-cost dispatch and identify marginal cost.
-- Externality exercise: compare carbon price, performance standard, and subsidy under stated assumptions.
-- Utility economics memo: distinguish cost recovery, incentives, and efficient pricing.
-- Final project: numerical model of dispatch, storage arbitrage, or a retail tariff; evaluate welfare and distributional implications.
+Textbooks are the main conceptual references. University course pages are benchmarks for scope, not required enrollment or a claim that every referenced resource is open access.
 
-## Final project requirements
-Provide equations, units, assumptions, reproducible calculations, sensitivity tests, and limitations. Do not use LCOE as a standalone measure of system value. Distinguish private project economics from system costs/benefits.
+## Required assessments
 
-## Completion evidence
-Worked problem sets, model/code, 1,500–2,000 word analysis, and one-page executive summary.
+| ID | Assignment | Planned hours | Purpose |
+|---|---|---:|---|
+| PS1 | [Demand, welfare, and externalities](problem-set-01.md) / [solution notes](problem-set-01-solutions.md) | 3 | Microeconomic foundations |
+| PS2 | [Storage arbitrage and investment economics](problem-set-02.md) / [solution notes](problem-set-02-solutions.md) | 3 | Intertemporal decisions |
+| PS3 | [Carbon pricing and flexible demand](problem-set-03-carbon-demand-response.md) / [solution notes](problem-set-03-carbon-demand-response-solutions.md) | 3 | Policy instrument and dispatch interaction |
+| PS4 | [Non-exporting behind-the-meter storage](problem-set-04-non-exporting-btm-storage.md) / [solution notes](problem-set-04-non-exporting-btm-storage-solutions.md) | 3 | Retail tariff and storage optimization |
+| LAB1 | [Merit-order dispatch and marginal pricing](../../../projects/energy-economics/merit-order-dispatch/README.md) | 3 | Dispatch, carbon, and demand-response scenarios |
+| LAB2 | [Battery arbitrage and intertemporal optimization](../../../projects/energy-economics/storage-arbitrage/README.md) | 3 | Storage schedule and degradation |
+| LAB3 | [Non-exporting BTM storage optimization](../../../projects/energy-economics/non-exporting-btm-storage/README.md) | 3 | Customer-side constraints and tariff incentives |
+| COURSE | Economic analysis and self-assessment | 14 | Integrated written and computational analysis |
 
-## Problem sets and worked checks
-- [Problem Set 1](problem-set-01.md)
-- [Solution notes](problem-set-01-solutions.md)
+Total planned effort: **35 hours**. The course tracker is the source for this planning baseline.
 
-- [Problem Set 2](problem-set-02.md)
-- [Problem Set 2 solution notes](problem-set-02-solutions.md)
+## Final project
 
+Choose a dispatch, storage, demand-response, or retail-tariff question. Submit a reproducible numerical model or calculation workbook and a 1,500–2,000 word analysis with:
+- a clearly defined decision question and economic objective;
+- equations, units, and assumptions;
+- the physical and institutional constraints relevant to the case;
+- baseline and alternative scenarios;
+- sensitivity analysis;
+- private, system, and distributional effects;
+- limitations and a one-page executive summary.
 
-## Applied problem set
-- [Problem Set 3 — Carbon pricing and flexible demand](problem-set-03-carbon-demand-response.md)
-- [Solution notes for Problem Set 3](problem-set-03-carbon-demand-response-solutions.md)
+Do not use levelized cost of energy as a standalone measure of system value. Distinguish project economics from total system costs and benefits.
 
-## Applied problem set
-- [Problem Set 4 — Non-exporting BTM storage](problem-set-04-non-exporting-btm-storage.md)
-- [Solution notes](problem-set-04-non-exporting-btm-storage-solutions.md)
+## Completion gate
 
-## Computational labs
-- [Non-exporting behind-the-meter battery storage](../../../projects/energy-economics/non-exporting-btm-storage/README.md)
-- [Merit-order dispatch, carbon pricing, and flexible demand](../../../projects/energy-economics/merit-order-dispatch/README.md)
-- [Battery arbitrage and intertemporal optimization](../../../projects/energy-economics/storage-arbitrage/README.md)
-
-## How to use the assessments
-
-Attempt each problem set before opening the linked worked solution. For computational work, reproduce the stated result, inspect the assumptions, change at least one parameter, and explain the effect. Retain corrected derivations, code, and short technical explanations as completion evidence.
+Attempt and correct all four problem sets; reproduce and vary all three labs; submit the final analysis and self-assessment; and record actual hours and evidence in the progress tracker. Use the [program rubric](../../../ACADEMIC_STANDARDS.md). A solution file that has only been read does not count as an attempted assessment.
 
 ## Next step
 
-Proceed to [Y1-04 — Applied Quantitative Methods](../y1-04-quantitative-methods/README.md) when the data and programming prerequisites are comfortable. Then take [Y1-03 — Markets, Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md).
+Proceed to [Y1-04 — Applied Quantitative Methods](../y1-04-quantitative-methods/README.md). Once the data and programming foundations are established, continue to [Y1-03 — Markets, Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md).
