@@ -1,3 +1,9 @@
+## 2026-11-23 — Pennsylvania settlement cross-reference correction
+
+- Reconciled the rate-case settlement references across the casebook, public-data feasibility assessment, and Year 1 assignments.
+- The operative settlement body labels the DER Orchestration Plan stakeholder commitment paragraph 119 and the BTM non-exporting battery review paragraph 124. Appendix D contains off-by-one cross-references to paragraphs 118 and 123, respectively.
+- Corrected materials now identify the operative body paragraphs and preserve the Appendix D discrepancy as a source-quality note rather than repeating the erroneous numbering.
+
 ## 2026-11-23 — Guided project learning paths
 
 - Added subject-area project indexes for power systems, energy economics, econometrics, and policy/infrastructure.
