@@ -15,7 +15,7 @@ python -m unittest -v
 python run_example.py
 ```
 
-The analytical implementation uses the Erlang-C formula for an M/M/c queue. The discrete-event simulation generates exponential interarrival and service times, uses a first-come/first-served discipline, and discards a configurable warm-up period. The fixed random seed makes the demonstration reproducible.
+The analytical implementation uses the Erlang-C formula for an M/M/c queue. The discrete-event simulation generates exponential interarrival and service times, uses a first-come/first-served discipline, and discards a configurable warm-up period. The fixed random seed makes the demonstration reproducible. The example also reports a two- versus three-reviewer sensitivity grid for arrival rates of 10, 12, 13.2, and 14 applications per modeled period.
 
 ## Model
 
@@ -60,6 +60,13 @@ The model cannot infer causal effects of staffing, policy, or DERMS from aggrega
 4. Add priority disciplines and measure whether expedited classes increase delays for other classes.
 5. Use discrete-event simulation to test staffing schedules under peak-arrival scenarios.
 6. Compare simulated outputs with held-out event-history data before any policy interpretation.
+
+## Data and model-risk controls
+
+- [Event-history data requirements](data-requirements.md) specify the event-level records needed to estimate arrivals, queue waits, active service, pauses, rework, throughput, and censoring.
+- [Queueing model-risk register](model-risk-register.csv) lists twelve failure modes and required diagnostics/mitigations.
+
+The public PUC annual panel does not provide the timestamps needed to calibrate this model. These documents are specifications for future authorized data, not claims that such records are available.
 
 ## Validation
 
