@@ -27,11 +27,12 @@ The learner enters with graduate mechanical-engineering preparation, economics e
 6. [Infrastructure Strategy and National Competitiveness](curriculum/departments/infrastructure-strategy.md)
 
 ## Start here
-1. Read the [program overview](curriculum/program-overview.md), [academic standards](ACADEMIC_STANDARDS.md), and [roadmap](ROADMAP.md).
-2. Set up the [research environment](resources/software-setup.md).
-3. Begin the [Year 1 sequence](courses/year-1/README.md).
-4. Record work in [progress tracking](progress/README.md).
-5. Follow the [research workflow](resources/research-workflow.md).
+1. Read the [program overview](curriculum/program-overview.md) and [How to Use the Program](curriculum/learning-guide.md).
+2. Review the [curriculum map](curriculum/course-map.md), [prerequisite diagnostic](curriculum/prerequisites.md), and [academic standards](ACADEMIC_STANDARDS.md).
+3. Set up the [research environment](resources/software-setup.md).
+4. Begin the [Year 1 sequence](courses/year-1/README.md).
+5. Record actual work and evidence in [progress tracking](progress/README.md).
+6. Use the [research workflow](resources/research-workflow.md) when moving from coursework to an independent study.
 
 ## Quality principles
 - No invented course numbers, syllabi, citations, datasets, or findings.
