@@ -78,6 +78,8 @@ nav:
       - Advanced mathematics solutions 8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization-solutions.md
       - Advanced mathematics problem set 9: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design.md
       - Advanced mathematics capstone guide: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design-guide.md
+      - Advanced mathematics problem set 10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection.md
+      - Advanced mathematics solutions 10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection-solutions.md
       - Power systems: courses/year-1/y1-01-power-systems/README.md
       - Power systems problem set 2: courses/year-1/y1-01-power-systems/problem-set-02.md
       - Power systems solution 2: courses/year-1/y1-01-power-systems/problem-set-02-solutions.md
@@ -127,6 +129,7 @@ nav:
       - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
       - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
       - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
+      - Interconnection queueing and process capacity: projects/policy-analysis/interconnection-queueing/README.md
       - Capstone deliverable templates: projects/policy-analysis/pa-distribution-interconnection-capstone/deliverable-templates.md
       - Capstone data dictionary: projects/policy-analysis/pa-distribution-interconnection-capstone/data-dictionary.md
       - Capstone model-risk register: projects/policy-analysis/pa-distribution-interconnection-capstone/model-risk-register.csv
