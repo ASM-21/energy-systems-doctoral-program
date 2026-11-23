@@ -83,9 +83,9 @@ A useful solution check is to recognize that total capacity is 200 MW, so 170 MW
 |---|---:|---:|---:|
 | A | 80 | 0 | 80 |
 | B | 70 | 0 | 70 |
-| C | 0 | 20 | 20 |
+| C | 10 | 20 | 30 |
 
-The objective is `80(18) + 70(32) + 20(2) = 3,720` dollars per hour. The arithmetic is 1,440 + 2,240 + 40 = 3,720. The $4,840 figure is incorrect and should not be used. A and B capacity constraints bind, as do the energy-balance and reserve-requirement constraints. C supplies reserve because its reserve offer is lowest and it has sufficient unused capacity; displacing energy from A or B to hold reserve would require more expensive C energy. Under the stated LP and a conventional minimization-dual sign convention, the energy-balance marginal cost is $55/MWh and the reserve-requirement marginal cost is $2/MW-h over the local range where C has remaining headroom. Verify the dual sign and units in the selected solver.
+The objective is `80(18) + 70(32) + 10(55) + 20(2) = 4,270` dollars for the one-hour interval. The arithmetic is 1,440 + 2,240 + 550 + 40 = 4,270. A and B capacity constraints bind; C has 20 MW of unused headroom. Under the stated LP, the energy-balance marginal cost is $55/MWh and the reserve-requirement marginal cost is $2/(MW-h). Verify the dual sign and units in the selected solver. The demand is intentionally 160 MW rather than 150 MW: at 150 MW the solution lies at a kink where C's energy dispatch is zero, so the energy-balance dual is not unique and a solver may return a value that does not equal the right-hand finite difference. At 160 MW, C supplies 10 MW energy and 20 MW reserve, leaving headroom so both reported marginal values are locally stable.
 
 The energy-balance dual is the marginal system cost of serving one additional MW of demand under the model's assumptions. The reserve-constraint dual is the marginal cost of increasing the reserve requirement by one MW. A sequential reserve process can fail if energy dispatch consumes all available headroom or can be more expensive if it ignores the opportunity cost of withholding capacity during energy dispatch.
 
