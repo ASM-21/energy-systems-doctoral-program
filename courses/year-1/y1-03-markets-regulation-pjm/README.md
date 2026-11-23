@@ -3,7 +3,7 @@
 **Status:** Active Year 1 course  
 **Level:** Graduate / applied institutional analysis  
 **Prerequisites:** Y1-01 and Y1-02, or equivalent power-system and microeconomic literacy; basic quantitative methods. Y1-04 may be taken before or alongside this course.  
-**Planned effort:** **51 hours** (40–52 hour planning range), normally 10–13 weeks at 3–5 hours per week.  
+**Planned effort:** **51 hours** (40–52 hour planning range), normally 10–17 weeks at 3–5 hours per week.
 **Position in sequence:** Integrative Year 1 course. Applies engineering and economics to real institutions, rules, and infrastructure decisions.  
 **Last content review:** 2026-11-23; recheck all cited manual revisions before future use.
 
