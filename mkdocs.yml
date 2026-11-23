@@ -15,6 +15,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -32,11 +33,12 @@ markdown_extensions:
 
 nav:
   - Home: docs/index.md
-  - Repository README: README.md
-  - Changelog: CHANGELOG.md
+  - Getting started: docs/getting-started.md
   - Program:
       - Overview: curriculum/program-overview.md
-      - Roadmap: ROADMAP.md
+      - How to use the program: curriculum/learning-guide.md
+      - Curriculum map: curriculum/course-map.md
+      - Four-year roadmap: ROADMAP.md
       - Prerequisites: curriculum/prerequisites.md
       - Academic standards: ACADEMIC_STANDARDS.md
       - Departments:
@@ -47,140 +49,166 @@ nav:
           - Quantitative methods: curriculum/departments/quantitative-methods.md
           - Infrastructure strategy: curriculum/departments/infrastructure-strategy.md
   - Curriculum:
-      - Year 1: courses/year-1/README.md
-      - Year 2 advanced sequence: courses/year-2/README.md
-      - Graduate econometrics and causal inference: courses/year-2/graduate-econometrics-causal-inference/README.md
-      - Econometrics problem set 1: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes.md
-      - Econometrics solutions 1: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes-solutions.md
-      - Econometrics problem set 2: courses/year-2/graduate-econometrics-causal-inference/problem-set-02-randomized-experiments.md
-      - Econometrics solutions 2: courses/year-2/graduate-econometrics-causal-inference/problem-set-02-randomized-experiments-solutions.md
-      - Econometrics pre-analysis plan: courses/year-2/graduate-econometrics-causal-inference/pre-analysis-plan-template.md
-      - Econometrics problem set 3: courses/year-2/graduate-econometrics-causal-inference/problem-set-03-panel-did-event-studies.md
-      - Econometrics solutions 3: courses/year-2/graduate-econometrics-causal-inference/problem-set-03-panel-did-event-studies-solutions.md
-      - Econometrics problem set 4: courses/year-2/graduate-econometrics-causal-inference/problem-set-04-instrumental-variables-rd.md
-      - Econometrics solutions 4: courses/year-2/graduate-econometrics-causal-inference/problem-set-04-instrumental-variables-rd-solutions.md
-      - Econometrics problem set 5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control.md
-      - Econometrics solutions 5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control-solutions.md
-      - Econometrics problem set 6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions.md
-      - Econometrics solutions 6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions-solutions.md
-      - Econometrics problem set 7: courses/year-2/graduate-econometrics-causal-inference/problem-set-07-spatial-interference.md
-      - Econometrics solutions 7: courses/year-2/graduate-econometrics-causal-inference/problem-set-07-spatial-interference-solutions.md
-      - Advanced mathematical methods: courses/year-2/advanced-mathematics-energy-systems/README.md
-      - Advanced mathematics problem set 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis.md
-      - Advanced mathematics solutions 1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis-solutions.md
-      - Advanced mathematics problem set 2: courses/year-2/advanced-mathematics-energy-systems/problem-set-02-multivariable-calculus.md
-      - Advanced mathematics solutions 2: courses/year-2/advanced-mathematics-energy-systems/problem-set-02-multivariable-calculus-solutions.md
-      - Advanced mathematics problem set 3: courses/year-2/advanced-mathematics-energy-systems/problem-set-03-constrained-optimization-duality.md
-      - Advanced mathematics solutions 3: courses/year-2/advanced-mathematics-energy-systems/problem-set-03-constrained-optimization-duality-solutions.md
-      - Advanced mathematics problem set 4: courses/year-2/advanced-mathematics-energy-systems/problem-set-04-differential-equations-dynamics.md
-      - Advanced mathematics solutions 4: courses/year-2/advanced-mathematics-energy-systems/problem-set-04-differential-equations-dynamics-solutions.md
-      - Advanced mathematics problem set 5: courses/year-2/advanced-mathematics-energy-systems/problem-set-05-probability-stochastic-processes.md
-      - Advanced mathematics solutions 5: courses/year-2/advanced-mathematics-energy-systems/problem-set-05-probability-stochastic-processes-solutions.md
-      - Advanced mathematics problem set 6: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization.md
-      - Advanced mathematics solutions 6: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization-solutions.md
-      - Advanced mathematics problem set 7: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows.md
-      - Advanced mathematics solutions 7: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows-solutions.md
-      - Advanced mathematics problem set 8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization.md
-      - Advanced mathematics solutions 8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization-solutions.md
-      - Advanced mathematics problem set 9: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design.md
-      - Advanced mathematics capstone guide: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design-guide.md
-      - Advanced mathematics problem set 10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection.md
-      - Advanced mathematics solutions 10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection-solutions.md
-      - Power systems: courses/year-1/y1-01-power-systems/README.md
-      - Power systems problem set 2: courses/year-1/y1-01-power-systems/problem-set-02.md
-      - Power systems solution 2: courses/year-1/y1-01-power-systems/problem-set-02-solutions.md
-      - Power systems problem set: courses/year-1/y1-01-power-systems/problem-set-01.md
-      - Power systems solutions: courses/year-1/y1-01-power-systems/problem-set-01-solutions.md
-      - Radial DER problem set: courses/year-1/y1-01-power-systems/problem-set-03-radial-der.md
-      - Radial DER solution notes: courses/year-1/y1-01-power-systems/problem-set-03-radial-der-solutions.md
-      - IEEE 13-node benchmark problem set: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss.md
-      - IEEE 13-node benchmark solution guide: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss-solutions.md
-      - Flexible interconnection problem set: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection.md
-      - Flexible interconnection solution notes: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection-solutions.md
-      - Energy economics: courses/year-1/y1-02-energy-economics/README.md
-      - Energy economics problem set 2: courses/year-1/y1-02-energy-economics/problem-set-02.md
-      - Energy economics solution 2: courses/year-1/y1-02-energy-economics/problem-set-02-solutions.md
-      - Energy economics problem set: courses/year-1/y1-02-energy-economics/problem-set-01.md
-      - Energy economics solutions: courses/year-1/y1-02-energy-economics/problem-set-01-solutions.md
-      - Carbon and demand response problem set: courses/year-1/y1-02-energy-economics/problem-set-03-carbon-demand-response.md
-      - Carbon and demand response solution notes: courses/year-1/y1-02-energy-economics/problem-set-03-carbon-demand-response-solutions.md
-      - Non-exporting BTM storage problem set: courses/year-1/y1-02-energy-economics/problem-set-04-non-exporting-btm-storage.md
-      - Non-exporting BTM storage solutions: courses/year-1/y1-02-energy-economics/problem-set-04-non-exporting-btm-storage-solutions.md
-      - Markets and regulation: courses/year-1/y1-03-markets-regulation-pjm/README.md
-      - Markets and regulation problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01.md
-      - Markets and regulation solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01-solutions.md
-      - Markets and regulation problem set 2: courses/year-1/y1-03-markets-regulation-pjm/problem-set-02.md
-      - Markets and regulation solution 2: courses/year-1/y1-03-markets-regulation-pjm/problem-set-02-solutions.md
-      - Pennsylvania DER aggregation problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-03-pa-der-aggregation.md
-      - Pennsylvania DER aggregation solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-03-pa-der-aggregation-solutions.md
-      - DER orchestration and BTM storage problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-04-der-orchestration-btm-storage.md
-      - DER orchestration and BTM storage solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-04-der-orchestration-btm-storage-solutions.md
-      - Scarcity pricing and resource adequacy problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-05-scarcity-resource-adequacy.md
-      - Scarcity pricing and resource adequacy solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-05-scarcity-resource-adequacy-solutions.md
-      - PA interconnection outcomes problem set: courses/year-1/y1-03-markets-regulation-pjm/problem-set-06-pa-interconnection-outcomes.md
-      - PA interconnection outcomes solutions: courses/year-1/y1-03-markets-regulation-pjm/problem-set-06-pa-interconnection-outcomes-solutions.md
-      - Quantitative methods: courses/year-1/y1-04-quantitative-methods/README.md
-      - Quantitative methods problem set 2: courses/year-1/y1-04-quantitative-methods/problem-set-02.md
-      - Quantitative methods solution 2: courses/year-1/y1-04-quantitative-methods/problem-set-02-solutions.md
-      - EIA-861 panel design problem set: courses/year-1/y1-04-quantitative-methods/problem-set-03-eia861-panel-design.md
-      - EIA-861 panel design solutions: courses/year-1/y1-04-quantitative-methods/problem-set-03-eia861-panel-design-solutions.md
-      - Quantitative problem set: courses/year-1/y1-04-quantitative-methods/problem-set-01.md
-      - Quantitative solutions: courses/year-1/y1-04-quantitative-methods/problem-set-01-solutions.md
+      - Year 1 — Integrated foundations:
+          - Overview: courses/year-1/README.md
+          - Y1-01 Power systems:
+              - Course guide: courses/year-1/y1-01-power-systems/README.md
+              - Problem sets:
+                  - PS1: courses/year-1/y1-01-power-systems/problem-set-01.md
+                  - PS2: courses/year-1/y1-01-power-systems/problem-set-02.md
+                  - PS3 Radial DER: courses/year-1/y1-01-power-systems/problem-set-03-radial-der.md
+                  - PS4 IEEE 13-node: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss.md
+                  - PS5 Flexible interconnection: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection.md
+              - Worked solutions:
+                  - PS1: courses/year-1/y1-01-power-systems/problem-set-01-solutions.md
+                  - PS2: courses/year-1/y1-01-power-systems/problem-set-02-solutions.md
+                  - PS3 Radial DER: courses/year-1/y1-01-power-systems/problem-set-03-radial-der-solutions.md
+                  - PS4 IEEE 13-node: courses/year-1/y1-01-power-systems/problem-set-04-ieee13-opendss-solutions.md
+                  - PS5 Flexible interconnection: courses/year-1/y1-01-power-systems/problem-set-05-flexible-interconnection-solutions.md
+          - Y1-02 Energy economics:
+              - Course guide: courses/year-1/y1-02-energy-economics/README.md
+              - Problem sets:
+                  - PS1: courses/year-1/y1-02-energy-economics/problem-set-01.md
+                  - PS2: courses/year-1/y1-02-energy-economics/problem-set-02.md
+                  - PS3 Carbon and demand response: courses/year-1/y1-02-energy-economics/problem-set-03-carbon-demand-response.md
+                  - PS4 Non-exporting BTM storage: courses/year-1/y1-02-energy-economics/problem-set-04-non-exporting-btm-storage.md
+              - Worked solutions:
+                  - PS1: courses/year-1/y1-02-energy-economics/problem-set-01-solutions.md
+                  - PS2: courses/year-1/y1-02-energy-economics/problem-set-02-solutions.md
+                  - PS3 Carbon and demand response: courses/year-1/y1-02-energy-economics/problem-set-03-carbon-demand-response-solutions.md
+                  - PS4 Non-exporting BTM storage: courses/year-1/y1-02-energy-economics/problem-set-04-non-exporting-btm-storage-solutions.md
+          - Y1-03 Markets, regulation, and PJM:
+              - Course guide: courses/year-1/y1-03-markets-regulation-pjm/README.md
+              - Problem sets:
+                  - PS1: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01.md
+                  - PS2: courses/year-1/y1-03-markets-regulation-pjm/problem-set-02.md
+                  - PS3 Pennsylvania DER aggregation: courses/year-1/y1-03-markets-regulation-pjm/problem-set-03-pa-der-aggregation.md
+                  - PS4 DER orchestration and BTM storage: courses/year-1/y1-03-markets-regulation-pjm/problem-set-04-der-orchestration-btm-storage.md
+                  - PS5 Scarcity and resource adequacy: courses/year-1/y1-03-markets-regulation-pjm/problem-set-05-scarcity-resource-adequacy.md
+                  - PS6 PA interconnection outcomes: courses/year-1/y1-03-markets-regulation-pjm/problem-set-06-pa-interconnection-outcomes.md
+              - Worked solutions:
+                  - PS1: courses/year-1/y1-03-markets-regulation-pjm/problem-set-01-solutions.md
+                  - PS2: courses/year-1/y1-03-markets-regulation-pjm/problem-set-02-solutions.md
+                  - PS3 Pennsylvania DER aggregation: courses/year-1/y1-03-markets-regulation-pjm/problem-set-03-pa-der-aggregation-solutions.md
+                  - PS4 DER orchestration and BTM storage: courses/year-1/y1-03-markets-regulation-pjm/problem-set-04-der-orchestration-btm-storage-solutions.md
+                  - PS5 Scarcity and resource adequacy: courses/year-1/y1-03-markets-regulation-pjm/problem-set-05-scarcity-resource-adequacy-solutions.md
+                  - PS6 PA interconnection outcomes: courses/year-1/y1-03-markets-regulation-pjm/problem-set-06-pa-interconnection-outcomes-solutions.md
+          - Y1-04 Quantitative methods:
+              - Course guide: courses/year-1/y1-04-quantitative-methods/README.md
+              - Problem sets:
+                  - PS1: courses/year-1/y1-04-quantitative-methods/problem-set-01.md
+                  - PS2: courses/year-1/y1-04-quantitative-methods/problem-set-02.md
+                  - PS3 EIA-861 panel design: courses/year-1/y1-04-quantitative-methods/problem-set-03-eia861-panel-design.md
+              - Worked solutions:
+                  - PS1: courses/year-1/y1-04-quantitative-methods/problem-set-01-solutions.md
+                  - PS2: courses/year-1/y1-04-quantitative-methods/problem-set-02-solutions.md
+                  - PS3 EIA-861 panel design: courses/year-1/y1-04-quantitative-methods/problem-set-03-eia861-panel-design-solutions.md
+      - Year 2 — Advanced analytical methods:
+          - Overview: courses/year-2/README.md
+          - Advanced mathematical methods:
+              - Course guide: courses/year-2/advanced-mathematics-energy-systems/README.md
+              - Problem sets:
+                  - PS1 Matrix analysis: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis.md
+                  - PS2 Multivariable calculus: courses/year-2/advanced-mathematics-energy-systems/problem-set-02-multivariable-calculus.md
+                  - PS3 Constrained optimization and duality: courses/year-2/advanced-mathematics-energy-systems/problem-set-03-constrained-optimization-duality.md
+                  - PS4 Differential equations and dynamics: courses/year-2/advanced-mathematics-energy-systems/problem-set-04-differential-equations-dynamics.md
+                  - PS5 Probability and stochastic processes: courses/year-2/advanced-mathematics-energy-systems/problem-set-05-probability-stochastic-processes.md
+                  - PS6 Numerical optimization: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization.md
+                  - PS7 Graph theory and network flows: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows.md
+                  - PS8 Stochastic and robust optimization: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization.md
+                  - PS9 Integrated research design: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design.md
+                  - PS10 Queueing theory (optional): courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection.md
+              - Solutions and guides:
+                  - PS1: courses/year-2/advanced-mathematics-energy-systems/problem-set-01-matrix-analysis-solutions.md
+                  - PS2: courses/year-2/advanced-mathematics-energy-systems/problem-set-02-multivariable-calculus-solutions.md
+                  - PS3: courses/year-2/advanced-mathematics-energy-systems/problem-set-03-constrained-optimization-duality-solutions.md
+                  - PS4: courses/year-2/advanced-mathematics-energy-systems/problem-set-04-differential-equations-dynamics-solutions.md
+                  - PS5: courses/year-2/advanced-mathematics-energy-systems/problem-set-05-probability-stochastic-processes-solutions.md
+                  - PS6: courses/year-2/advanced-mathematics-energy-systems/problem-set-06-numerical-optimization-solutions.md
+                  - PS7: courses/year-2/advanced-mathematics-energy-systems/problem-set-07-graph-theory-network-flows-solutions.md
+                  - PS8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization-solutions.md
+                  - PS9 Capstone guide: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design-guide.md
+                  - PS10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection-solutions.md
+          - Graduate econometrics and causal inference:
+              - Course guide: courses/year-2/graduate-econometrics-causal-inference/README.md
+              - Pre-analysis plan template: courses/year-2/graduate-econometrics-causal-inference/pre-analysis-plan-template.md
+              - Problem sets:
+                  - PS1 Potential outcomes: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes.md
+                  - PS2 Randomized experiments: courses/year-2/graduate-econometrics-causal-inference/problem-set-02-randomized-experiments.md
+                  - PS3 Panel data and DID: courses/year-2/graduate-econometrics-causal-inference/problem-set-03-panel-did-event-studies.md
+                  - PS4 IV and regression discontinuity: courses/year-2/graduate-econometrics-causal-inference/problem-set-04-instrumental-variables-rd.md
+                  - PS5 Synthetic control: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control.md
+                  - PS6 Time-series interventions: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions.md
+                  - PS7 Spatial interference: courses/year-2/graduate-econometrics-causal-inference/problem-set-07-spatial-interference.md
+              - Worked solutions:
+                  - PS1: courses/year-2/graduate-econometrics-causal-inference/problem-set-01-potential-outcomes-solutions.md
+                  - PS2: courses/year-2/graduate-econometrics-causal-inference/problem-set-02-randomized-experiments-solutions.md
+                  - PS3: courses/year-2/graduate-econometrics-causal-inference/problem-set-03-panel-did-event-studies-solutions.md
+                  - PS4: courses/year-2/graduate-econometrics-causal-inference/problem-set-04-instrumental-variables-rd-solutions.md
+                  - PS5: courses/year-2/graduate-econometrics-causal-inference/problem-set-05-synthetic-control-solutions.md
+                  - PS6: courses/year-2/graduate-econometrics-causal-inference/problem-set-06-time-series-interventions-solutions.md
+                  - PS7: courses/year-2/graduate-econometrics-causal-inference/problem-set-07-spatial-interference-solutions.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
+      - Course page template: curriculum/course-template.md
   - Computational projects:
       - Project index: projects/README.md
-      - Frequency response dynamics: projects/power-systems/frequency-response-dynamics/README.md
-      - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
-      - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
-      - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
-      - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
-      - Interconnection queueing and process capacity: projects/policy-analysis/interconnection-queueing/README.md
-      - Queueing event-history data requirements: projects/policy-analysis/interconnection-queueing/data-requirements.md
-      - Queueing model-risk register: projects/policy-analysis/interconnection-queueing/model-risk-register.csv
-      - Capstone deliverable templates: projects/policy-analysis/pa-distribution-interconnection-capstone/deliverable-templates.md
-      - Capstone data dictionary: projects/policy-analysis/pa-distribution-interconnection-capstone/data-dictionary.md
-      - Capstone model-risk register: projects/policy-analysis/pa-distribution-interconnection-capstone/model-risk-register.csv
-      - Competing-risks survival analysis: projects/econometrics/competing-risks-survival/README.md
-      - Randomized experiments and power: projects/econometrics/randomized-experiments/README.md
-      - Difference-in-differences: projects/econometrics/difference-in-differences/README.md
-      - Synthetic control: projects/econometrics/synthetic-control/README.md
-      - Interrupted time series: projects/econometrics/interrupted-time-series/README.md
+      - Power systems:
+          - Three-bus DC power flow: projects/power-systems/three-bus-dc-power-flow/README.md
+          - Two-node congestion: projects/power-systems/two-node-congestion/README.md
+          - Radial DER hosting capacity: projects/power-systems/radial-der-hosting-capacity/README.md
+          - Flexible interconnection: projects/power-systems/flexible-interconnection/README.md
+          - Frequency response dynamics: projects/power-systems/frequency-response-dynamics/README.md
+          - Stochastic resource adequacy: projects/power-systems/stochastic-adequacy/README.md
+          - Network-flow resilience: projects/power-systems/network-flow-resilience/README.md
+          - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
+      - Energy economics:
+          - Merit-order dispatch: projects/energy-economics/merit-order-dispatch/README.md
+          - Battery arbitrage: projects/energy-economics/storage-arbitrage/README.md
+          - Non-exporting BTM storage: projects/energy-economics/non-exporting-btm-storage/README.md
+          - Stochastic and robust capacity planning: projects/energy-economics/stochastic-robust-capacity-planning/README.md
+      - Econometrics:
+          - OLS and robust inference: projects/econometrics/ols-energy-demand/README.md
+          - Randomized experiments: projects/econometrics/randomized-experiments/README.md
+          - Difference-in-differences: projects/econometrics/difference-in-differences/README.md
+          - Synthetic control: projects/econometrics/synthetic-control/README.md
+          - Competing-risks survival analysis: projects/econometrics/competing-risks-survival/README.md
+          - Interrupted time series: projects/econometrics/interrupted-time-series/README.md
+      - Policy and infrastructure:
+          - Pennsylvania DER interconnection capstone: projects/policy-analysis/pa-distribution-interconnection-capstone/README.md
+          - Interconnection queueing and process capacity: projects/policy-analysis/interconnection-queueing/README.md
+          - Data requirements: projects/policy-analysis/interconnection-queueing/data-requirements.md
+          - Model-risk register: projects/policy-analysis/interconnection-queueing/model-risk-register.csv
+          - Capstone deliverable templates: projects/policy-analysis/pa-distribution-interconnection-capstone/deliverable-templates.md
+          - Capstone data dictionary: projects/policy-analysis/pa-distribution-interconnection-capstone/data-dictionary.md
+          - Capstone model-risk register: projects/policy-analysis/pa-distribution-interconnection-capstone/model-risk-register.csv
   - Research:
       - Research hub: research/README.md
       - Research workflow: resources/research-workflow.md
       - Literature review template: research/literature-review-template.md
       - Research protocol template: research/research-protocol-template.md
-      - Casebooks: research/casebooks/README.md
-      - Pennsylvania DER / PJM casebook: research/casebooks/pa-der-interconnection/README.md
-      - Pennsylvania data feasibility memo: research/casebooks/pa-der-interconnection/data-feasibility.md
-      - PUC interconnection report 2023–2025: research/casebooks/pa-der-interconnection/puc-interconnection-report-2023-2025.md
-      - Application-level evaluation data specification: research/casebooks/pa-der-interconnection/application-level-evaluation-data-spec.md
-      - PPL net-metered PV trend 2015–2025: research/casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md
-      - DER orchestration and BTM battery review: research/casebooks/pa-der-interconnection/der-orchestration-and-btm-storage-review.md
-      - EIA-861 data pipeline and PPL historical analysis: research/data-pipelines/eia861/README.md
-      - EIA-861 empirical research design: research/data-pipelines/eia861/research-design.md
-      - PPL EIA-861 derived dataset: research/data-pipelines/eia861/data/README.md
-      - Dataset intake template: resources/dataset-intake-template.md
-      - Data sources: resources/data-sources.md
-      - Question bank: research/research-question-bank/README.md
-      - Initial proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
-      - Two-node congestion lab: projects/power-systems/two-node-congestion/README.md
-      - Three-bus DC power-flow lab: projects/power-systems/three-bus-dc-power-flow/README.md
-      - Radial DER hosting-capacity lab: projects/power-systems/radial-der-hosting-capacity/README.md
-      - Flexible interconnection lab: projects/power-systems/flexible-interconnection/README.md
-      - Frequency response dynamics lab: projects/power-systems/frequency-response-dynamics/README.md
-      - IEEE 13-node OpenDSS benchmark: projects/power-systems/radial-der-hosting-capacity/benchmarks/ieee13-opendss/README.md
-      - OLS energy-demand lab: projects/econometrics/ols-energy-demand/README.md
-      - OLS data dictionary: projects/econometrics/ols-energy-demand/data-dictionary.md
-      - Merit-order dispatch lab: projects/energy-economics/merit-order-dispatch/README.md
-      - Battery arbitrage lab: projects/energy-economics/storage-arbitrage/README.md
-  - Assessment: assessments/README.md
-  - Progress:
+      - Casebooks:
+          - Index: research/casebooks/README.md
+          - Pennsylvania DER and PJM: research/casebooks/pa-der-interconnection/README.md
+          - Data feasibility: research/casebooks/pa-der-interconnection/data-feasibility.md
+          - PUC interconnection report 2023–2025: research/casebooks/pa-der-interconnection/puc-interconnection-report-2023-2025.md
+          - Application-level data specification: research/casebooks/pa-der-interconnection/application-level-evaluation-data-spec.md
+          - DER orchestration and BTM storage review: research/casebooks/pa-der-interconnection/der-orchestration-and-btm-storage-review.md
+          - PPL net-metering trend: research/casebooks/pa-der-interconnection/eia861-ppl-net-metering-trend.md
+      - Data and research tools:
+          - EIA-861 pipeline: research/data-pipelines/eia861/README.md
+          - EIA-861 research design: research/data-pipelines/eia861/research-design.md
+          - EIA-861 derived dataset: research/data-pipelines/eia861/data/README.md
+          - Data sources: resources/data-sources.md
+          - Dataset intake template: resources/dataset-intake-template.md
+          - Research question bank: research/research-question-bank/README.md
+      - Initial research proposal: projects/policy-analysis/pjm-distribution-der-research-proposal.md
+  - Assessment and progress:
+      - Assessment framework: assessments/README.md
       - Getting started: docs/getting-started.md
-      - Repository guide: docs/repository-guide.md
-      - Project index: projects/README.md
-      - Tracking guide: progress/README.md
+      - Progress guide: progress/README.md
       - Year 1 study plan: progress/year-1-study-plan.md
       - Year 1 assessment tracker: progress/year-1-assessment-tracker.csv
-      - Transcript: progress/academic-transcript.md
+      - Academic transcript: progress/academic-transcript.md
+      - Repository guide: docs/repository-guide.md
+      - Maintainer changelog: CHANGELOG.md
