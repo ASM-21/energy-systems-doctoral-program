@@ -1,3 +1,10 @@
+## 2026-11-23 — Computational model correctness and validation
+
+- Corrected the frequency-response model's custom-inertia disturbance scaling, exposed model parameters in the CLI, and fixed explicit-Euler integration of a final partial step. Added regression tests for parameter consistency, fractional durations, and nonfinite inputs.
+- Corrected DC power-flow per-branch thermal-limit reporting and added finite/positive validation for model inputs. Regression tests cover invalid injections, reactances, base values, and ratings.
+- Strengthened radial feeder validation for tree topology, finite nonnegative loads, finite branch parameters, DER inputs, and sweep controls.
+- Added project records to the frequency-response and radial feeder pages and documented the implementation audit. Latest test and documentation workflows are being checked against the final commit.
+
 ## 2026-11-23 — Curriculum structure, course sequencing, and learner experience
 
 - Standardized the four active Year 1 course guides around a consistent structure: course identity/status, prerequisites, planned hours, position in sequence, observable outcomes, learning sequence, core materials, required assessments, final project, completion gate, and next step.
