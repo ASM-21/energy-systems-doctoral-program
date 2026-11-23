@@ -1,3 +1,10 @@
+## 2026-11-23 — Synthetic control and comparative case studies
+
+- Added Problem Set 5 and worked solutions on convex-hull geometry, simplex-constrained weights, predictor balance, pre-fit diagnostics, in-space placebo comparisons, donor-pool design, augmented methods, and inference limitations.
+- Added a reproducible NumPy/SciPy synthetic-control lab with pre-period-only weight fitting, known data-generating weights, treatment-gap outputs, placebo RMSPE ratios, fit eligibility flags, and deterministic tests.
+- Explicitly labeled the dataset synthetic and the placebo rank descriptive rather than a design-based randomization p-value.
+- Integrated the assessment and lab into the econometrics course, MkDocs navigation, project index, Makefile, and Python CI.
+
 # Changelog
 
 ## 2026-11-22 — Queueing theory and interconnection process capacity
