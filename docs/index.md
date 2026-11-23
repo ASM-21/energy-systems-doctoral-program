@@ -14,6 +14,9 @@ The objective is to understand energy infrastructure as a coupled technical, eco
 
 ## Begin
 
+- [How to use the program](../curriculum/learning-guide.md)
+- [Curriculum map and course dependencies](../curriculum/course-map.md)
+
 - [Program overview](../curriculum/program-overview.md)
 - [Four-year roadmap](../ROADMAP.md)
 - [Academic standards and assessment](../ACADEMIC_STANDARDS.md)
