@@ -16,7 +16,7 @@ The learner should choose a primary analytical pathway based on the research que
 |---|---|---:|---|---|
 | Y2-01 | [Advanced Mathematical Methods](advanced-mathematics-energy-systems/README.md) | 60–75 h | Planned | Mathematical maturity, proof, optimization, stochastic methods, and network mathematics |
 | Y2-02 | [Graduate Econometrics and Causal Inference](graduate-econometrics-causal-inference/README.md) | 60–75 h | Planned | Identification, panel methods, experiments, IV/RD, synthetic control, time series, and interference |
-| Y2-03 | [Infrastructure Economics and Utility Investment](infrastructure-economics-utility-investment/README.md) | 30–40 h | Planned; initial guide and PS1 available | Rate base, revenue requirements, cost of capital, rate design, incentives, and risk allocation |
+| Y2-03 | [Infrastructure Economics and Utility Investment](infrastructure-economics-utility-investment/README.md) | 30–40 h | Planned; guide and PS1–2 available | Rate base, revenue requirements, cost of capital, rate design, incentives, and risk allocation |
 | Y2-04 | [Electricity Market Design and Optimization](electricity-market-design-optimization/README.md) | 45–60 h | Roadmap; assessments not yet published | Dispatch, OPF, LMP, reserves, unit commitment, market power, and transmission |
 
 The estimates are preliminary course-planning ranges, not completed assessment-tracker allocations. Update them as assignments and validated computational work are published.
