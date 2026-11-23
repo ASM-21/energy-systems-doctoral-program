@@ -170,6 +170,8 @@ nav:
               - Problem Set 2 solutions: courses/year-2/electricity-market-design-optimization/problem-set-02-three-bus-dc-opf-solutions.md
               - "Problem Set 3: Energy and reserve co-optimization": courses/year-2/electricity-market-design-optimization/problem-set-03-energy-reserve-cooptimization.md
               - Problem Set 3 solutions: courses/year-2/electricity-market-design-optimization/problem-set-03-energy-reserve-cooptimization-solutions.md
+              - "Problem Set 4: Unit commitment": courses/year-2/electricity-market-design-optimization/problem-set-04-unit-commitment.md
+              - Problem Set 4 solutions: courses/year-2/electricity-market-design-optimization/problem-set-04-unit-commitment-solutions.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
       - Course page template: curriculum/course-template.md
