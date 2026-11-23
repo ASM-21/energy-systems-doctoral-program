@@ -77,7 +77,7 @@ p_i+r_i\leq K_i,\quad p_i\geq0,\quad r_i\geq0.
 
 Here `c_i` is the energy offer, `q_i` the reserve offer, and `K_i` the unit capacity. This is a simplified single-period model: it omits ramp rates, minimum output, start costs, reserve response time, transmission constraints, reserve zones, and uncertainty.
 
-A useful solution check is to recognize that total capacity is 200 MW, so 170 MW must be committed as energy plus reserve. The optimum is:
+A useful solution check is to recognize that total capacity is 200 MW, so 180 MW must be committed as energy plus reserve. The optimum is:
 
 | Unit | Energy `p_i` (MW) | Reserve `r_i` (MW) | Total (MW) |
 |---|---:|---:|---:|
