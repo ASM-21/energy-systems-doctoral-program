@@ -96,3 +96,22 @@ The corrected 2015–2025 Pennsylvania extraction and coverage audit is complete
 ### Respondent-frame linkage
 
 The EIA respondent frame is available from 2016 onward and identifies each respondent's short-form status, ownership, and schedule participation. `extract_pa_eia861_frame.py` joins the Pennsylvania net-metering utility IDs to each annual frame and records unmatched or duplicate IDs rather than inferring a match. The 2016–2025 run matched all 225 Pennsylvania utility-year IDs to exactly one frame row, with zero unmatched IDs and zero duplicate frame IDs. All matched rows carry the net-metering schedule flag. Seven of the 32 respondents in 2019 were short-form; all 2020–2025 respondents in this extract are full-form. The 2019 peak therefore includes a different respondent-form composition, and the later coverage decline also includes fewer full-form respondents. EIA's short-form imputation note beginning in 2020 remains important background, but no 2020–2025 Pennsylvania utility rows in this extract are marked short-form. This frame linkage does not establish service-territory continuity or measurement comparability. The workflow artifact includes the frame linkage outputs from 2016–2025.
+
+## Data lineage and release controls
+
+The pipeline has two distinct products: (1) an archive/worksheet inventory and respondent-coverage audit, and (2) selected extracted or harmonized measures. A successful inventory does not establish that every field is comparable across years. A clean respondent-ID join does not establish stable service territories, ownership, respondent form, or measurement definitions.
+
+For each release, preserve the official source URL, retrieval date, archive SHA-256, ZIP CRC result, workbook and worksheet names, source-row coordinates, respondent ID/name, source field label, units, transformations, exclusions, and script version. Keep raw downloads and generated intermediate files outside the committed source tree unless there is a specific reproducibility reason to commit a small derived artifact.
+
+### Release acceptance gates
+
+1. **Archive integrity:** ZIP CRC passes and SHA-256 is recorded.
+2. **Schema inventory:** Workbook/sheet inventory and relevant source headers are retained; year-specific naming changes are not silently normalized.
+3. **Respondent identity:** Utility ID, respondent name, state, ownership, and form type are checked against the annual frame where available.
+4. **Extraction integrity:** Duplicate keys, excluded schedules/adjustment rows, missing rows, and row counts are reported explicitly.
+5. **Measurement comparability:** Units, AC/DC basis, customer/installations labels, imputation, schedule coverage, and reporting changes are reviewed before constructing a panel.
+6. **Reproducibility:** Tests and audit scripts run from a clean checkout; artifacts identify the exact source archive and code revision.
+7. **Inference boundary:** Descriptive utility-level capacity is not feeder hosting capacity, application throughput, or a causal estimate of a tariff or DERMS intervention.
+
+The corrected 2015–2025 Pennsylvania peer-panel audit establishes extraction coverage and key uniqueness only. It is not yet a harmonized panel for cross-utility estimation. The historical PPL series has its own field-definition and capacity-basis breaks; retain those caveats in every downstream figure and interpretation.
+
