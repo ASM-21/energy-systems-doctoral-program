@@ -12,6 +12,7 @@ Connect the differential-equation problem set to a reproducible numerical implem
 
 ```bash
 python frequency_response.py
+python frequency_response.py --inertia 10 --droop 0.04 --duration 10 --step 0.001
 python -m unittest discover -s . -p "test_*.py" -v
 ```
 
@@ -39,14 +40,14 @@ For a constant disturbance, the equilibrium is
 \Delta p_m^*=-\frac{\Delta f^*}{R}.
 \]
 
-The implementation integrates the state equations with fourth-order Runge-Kutta (RK4). It also calculates the explicit-Euler step-size boundary for this complex eigenvalue pair.
+The implementation integrates the state equations with fourth-order Runge-Kutta (RK4). It also calculates the explicit-Euler step-size boundary for this complex eigenvalue pair. The CLI exposes inertia, damping, governor time constant, and droop so parameter changes are applied consistently to both the state matrix and disturbance input. Both integrators include a final partial step when the requested duration is not an integer multiple of the step size.
 
 ## Required analysis
 
 1. Re-derive the state matrix from the swing-equation/governor approximation in Problem Set 4.
 2. Compare the simulated terminal state with the analytical steady state.
 3. Run explicit Euler below and above the calculated stability boundary. Explain why the time step affects numerical stability, not the physical model's continuous-time eigenvalues.
-4. Change inertia \(M\) and droop \(R\), then explain how the eigenvalues and equilibrium response change.
+4. Run the CLI with at least two inertia and droop combinations. Compare eigenvalues, transient trajectories, and the steady-state frequency deviation. Explain why inertia changes transient behavior but not this model's equilibrium frequency expression.
 5. Discuss which measurements would be needed to calibrate this model and validate its response.
 
 ## Limitations
