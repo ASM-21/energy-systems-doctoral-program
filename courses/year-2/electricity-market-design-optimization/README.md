@@ -37,7 +37,7 @@ By the end, the learner should be able to:
 | 2 | Network-constrained dispatch | DC power flow, congestion, LMP | PS2 and tested three-bus DC-OPF lab published |
 | 3 | AC OPF and model limits | Voltage, reactive power, losses, security | Formulation comparison and model-risk memo |
 | 4 | Operating reserves and co-optimization | Energy/reserve capacity coupling | PS3 and tested LP lab published |
-| 5 | Unit commitment | Startup, minimum output, ramping, minimum up/down time | Small mixed-integer model |
+| 5 | Unit commitment | Startup, minimum output, ramping, minimum up/down time | PS4 and tested two-period MILP published |
 | 6 | Market power and monitoring | Pivotal supply, withholding incentives, mitigation | Market-monitor report critique |
 | 7 | Resource adequacy and capacity mechanisms | Accreditation, scarcity, capacity procurement | PJM manual and design comparison |
 | 8 | Transmission planning and cost allocation | Congestion, reliability, beneficiaries, regional planning | Public project case analysis |
@@ -76,6 +76,9 @@ The models are intentionally simplified. Their READMEs state the assumptions and
 - [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)
 - [Problem Set 3: Energy and operating-reserve co-optimization](problem-set-03-energy-reserve-cooptimization.md)
 - [Problem Set 3 solution notes](problem-set-03-energy-reserve-cooptimization-solutions.md)
+- [Problem Set 4: Unit commitment, startup costs, and nonconvex dispatch](problem-set-04-unit-commitment.md)
+- [Problem Set 4 solution notes](problem-set-04-unit-commitment-solutions.md)
+- [Computational lab: Two-period unit commitment](../../../projects/energy-economics/unit-commitment/README.md)
 - [Computational lab: Energy and reserve co-optimization](../../../projects/energy-economics/energy-reserve-cooptimization/README.md)
 - [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 
