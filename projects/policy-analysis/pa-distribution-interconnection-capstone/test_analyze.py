@@ -27,6 +27,17 @@ class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
             ppl_2025["change_from_prior_reporting_year_pct"], -8.98, places=2
         )
 
+    def test_ppl_long_run_trend_and_top_three_concentration(self):
+        annual = self.result["annual_summary"]
+        self.assertEqual(
+            [row["ppl_change_from_2023_pct"] for row in annual],
+            [0.0, -0.63, -9.56],
+        )
+        self.assertEqual(
+            [row["top_three_edc_request_share_pct"] for row in annual],
+            [76.68, 77.13, 70.68],
+        )
+
     def test_request_count_concentration_is_not_market_hhi(self):
         annual = self.result["annual_summary"]
         self.assertAlmostEqual(annual[0]["request_count_hhi"], 2487.17, places=2)
