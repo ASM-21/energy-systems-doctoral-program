@@ -63,6 +63,7 @@ These projects provide prerequisites and examples, but they do not yet constitut
 - [Two-node congestion and nodal prices](../../../projects/power-systems/two-node-congestion/README.md)
 - [Three-bus DC power flow](../../../projects/power-systems/three-bus-dc-power-flow/README.md)
 - [Energy and reserve co-optimization](../../../projects/energy-economics/energy-reserve-cooptimization/README.md)
+- [Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 - [Stochastic and robust capacity planning](../../../projects/energy-economics/stochastic-robust-capacity-planning/README.md)
 
 The models are intentionally simplified. Their READMEs state the assumptions and omissions. In particular, a single-period LP is not a unit-commitment model, and a DC network approximation is not an AC security-constrained dispatch model.
@@ -70,7 +71,10 @@ The models are intentionally simplified. Their READMEs state the assumptions and
 ## Published assessment
 
 - [Problem Set 1: Economic dispatch, Lagrangian duality, and marginal prices](problem-set-01-economic-dispatch-duality.md)
-- [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)\n- [Problem Set 2: Three-bus DC optimal power flow and LMPs](problem-set-02-three-bus-dc-opf.md)\n- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)\n- [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
+- [Problem Set 1 solution notes](problem-set-01-economic-dispatch-duality-solutions.md)
+- [Problem Set 2: Three-bus DC optimal power flow and LMPs](problem-set-02-three-bus-dc-opf.md)
+- [Problem Set 2 solution notes](problem-set-02-three-bus-dc-opf-solutions.md)
+- [Computational lab: Three-bus DC-OPF](../../../projects/power-systems/three-bus-dc-opf/README.md)
 
 The first assignment is an advanced convex dispatch/KKT exercise. It is not a substitute for the later network-constrained, intertemporal, and institutional modules.
 
