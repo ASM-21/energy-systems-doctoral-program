@@ -2,7 +2,7 @@ import math
 import unittest
 
 from utility_regulation import (
-    allocate_cost_pools, annuity_factor, class_totals, expected_npv,
+    allocate_cost_pools, annuity_factor, class_totals, compare_rate_designs, expected_npv,
     incentive_scenarios, npv, representative_bill, three_part_rates,
 )
 
@@ -52,6 +52,26 @@ class RateTests(unittest.TestCase):
             three_part_rates(1, 1, 1, 0, 1, 1)
         with self.assertRaises(ValueError):
             three_part_rates(1, 1, 1, 1, 1, 1, months=0)
+
+    def test_alternative_rate_designs_recover_requirement(self):
+        designs = compare_rate_designs(
+            100_000_000, 120_000, 300_000, 2_000_000_000,
+            40_000_000, 35_000_000, 25_000_000
+        )
+        self.assertAlmostEqual(designs["volumetric_only"]["energy_per_kwh"], 0.05)
+        self.assertAlmostEqual(designs["fixed_plus_volumetric"]["fixed_per_account_month"], 27.7777777778)
+        self.assertAlmostEqual(designs["fixed_plus_volumetric"]["energy_per_kwh"], 0.03)
+        for rates in designs.values():
+            recovered = (
+                rates["fixed_per_account_month"] * 120_000 * 12
+                + rates["demand_per_kw_month"] * 300_000 * 12
+                + rates["energy_per_kwh"] * 2_000_000_000
+            )
+            self.assertAlmostEqual(recovered, 100_000_000, places=5)
+
+    def test_rate_design_rejects_nonreconciling_cost_pools(self):
+        with self.assertRaises(ValueError):
+            compare_rate_designs(100, 1, 1, 1, 40, 30, 20)
 
 
 class IncentiveTests(unittest.TestCase):
