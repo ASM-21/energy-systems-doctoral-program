@@ -1,5 +1,7 @@
 # Y1-03 — Electricity Markets, Utility Regulation, and PJM
 
+**Status:** Active Year 1 course
+
 **Level:** Graduate / applied institutional analysis | **Duration:** 10–13 weeks | **Effort:** 40–52 hours  
 **Prerequisites:** Y1-02 or equivalent microeconomics and basic electricity-system literacy.
 
@@ -73,3 +75,11 @@ Institutional map, worked market exercises, regulatory source log, 2,000–3,000
 ## Empirical interconnection problem set
 - [Problem Set 6 — Pennsylvania DER interconnection outcomes: measurement, peer comparison, and policy evaluation](problem-set-06-pa-interconnection-outcomes.md)
 - [Worked solution notes](problem-set-06-pa-interconnection-outcomes-solutions.md)
+
+## How to use the assessments
+
+Attempt each problem set before opening the linked worked solution. For regulatory assignments, distinguish statutes, regulations, commission orders, tariffs, manuals, and informational materials. Record the exact source version and effective date. For computational work, reproduce results and state what the model does not represent.
+
+## Next step
+
+Complete the [Year 1 integration project](../README.md#integration-project). Use the [Year 2 sequence](../../year-2/README.md) only after the Year 1 progression gate is met.
