@@ -10,6 +10,7 @@ These projects progress from single-period dispatch to intertemporal storage, re
 4. [Energy and operating-reserve co-optimization](energy-reserve-cooptimization/README.md) — joint energy/reserve constraints, dual values, and finite-difference checks.
 5. [Stochastic and robust capacity planning](stochastic-robust-capacity-planning/README.md) — nonanticipativity, recourse, expected-value benchmarks, VSS, EVPI, and worst-case cost.
 6. [Utility regulatory economics](utility-regulatory-economics/README.md) — cost allocation, three-part rates, regulatory lag, earnings sharing, and capital-budgeting sensitivity.
+7. [Unit commitment](unit-commitment/README.md) — startup and no-load costs, binary commitment, and LP-relaxation comparison.
 
 ## Prerequisites
 
