@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2026-11-22 — Queueing theory and interconnection process capacity
-- Added an optional advanced-mathematics extension on M/M/1 and M/M/c queues, Erlang-C, Little's Law, utilization-driven delay, staffing trade-offs, multi-stage process models, and empirical identification limits.
+- Added an optional advanced-mathematics extension on M/M/1, M/M/c, and M/G/1 queues, Erlang-C, Pollaczek–Khinchine, Little's Law, service-time variability, utilization-driven delay, staffing trade-offs, multi-stage process models, and empirical identification limits.
 - Added a standard-library analytical and discrete-event simulation lab with exact Erlang-C regression checks, fixed-seed simulation, stability validation, and arrival-rate/staffing sensitivity.
 - Added a timestamp-level data specification and twelve-item queueing model-risk register covering arrival/service assumptions, reviewer pooling, rework, censoring, policy changes, and arbitrary delay penalties.
 - Explicitly labeled all queue parameters and waiting-cost coefficients as synthetic; no utility staffing or application-delay estimates are inferred.
