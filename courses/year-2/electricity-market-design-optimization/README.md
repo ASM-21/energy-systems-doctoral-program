@@ -33,8 +33,8 @@ By the end, the learner should be able to:
 
 | Stage | Topic | Energy-system application | Evidence planned |
 |---|---|---|---|
-| 1 | Constrained dispatch and marginal pricing | Merit-order clearing and scarcity | Analytical dispatch derivation |
-| 2 | Network-constrained dispatch | DC power flow, congestion, LMP | DC-OPF model and dual interpretation |
+| 1 | Constrained dispatch and marginal pricing | Merit-order clearing and scarcity | PS1 published: analytical dispatch derivation and KKT/duality |
+| 2 | Network-constrained dispatch | DC power flow, congestion, LMP | PS2 and tested three-bus DC-OPF lab published |
 | 3 | AC OPF and model limits | Voltage, reactive power, losses, security | Formulation comparison and model-risk memo |
 | 4 | Operating reserves and co-optimization | Energy/reserve capacity coupling | LP model and finite-difference checks |
 | 5 | Unit commitment | Startup, minimum output, ramping, minimum up/down time | Small mixed-integer model |
