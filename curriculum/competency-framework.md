@@ -117,7 +117,7 @@ The table identifies the primary contribution of each course. A dash means the c
 |---|---|---|
 | Pennsylvania distribution DER interconnection capstone | PS-3, RP-1–RP-4, QM-3–QM-5, IS-4 | Definitions, reporting coverage, eligibility, selection, missingness, causal limits |
 | Three-bus and distribution-network labs | PS-1–PS-3, QM-1, QM-7 | Units, topology, sign conventions, benchmark values, model boundaries |
-| Dispatch, congestion, and storage labs | PS-5, EM-2–EM-3, QM-2 | Feasibility, marginal values, dual interpretation, sensitivity |
+| Dispatch, congestion, storage, and energy/reserve co-optimization labs | PS-5, EM-2–EM-4, QM-2 | Feasibility, coupled energy/reserve awards, marginal values, dual interpretation, sensitivity |
 | Stochastic adequacy and capacity planning | PS-4–PS-5, EM-4, QM-2, QM-6 | Dependence, calibration, convergence, uncertainty, scenario interpretation |
 | EIA-861 public-data pipeline | QM-3, EM-6, RP-5 | Respondent population, identity changes, exclusions, schema drift, panel comparability |
 | Econometrics labs | QM-4–QM-6, RP-5 | Estimand, identification, inference, diagnostics, robustness, external validity |
