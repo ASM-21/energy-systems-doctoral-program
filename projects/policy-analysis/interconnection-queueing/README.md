@@ -36,11 +36,11 @@ With 12 arrivals per modeled period and a service rate of 8 applications per per
 | 2 | 75.0% | 64.29% | 0.1607 periods | 0.2857 periods |
 | 3 | 50.0% | 23.68% | 0.0197 periods | 0.1447 periods |
 
-Adding a third reviewer reduces expected queue wait substantially in this synthetic case. The example also calculates an illustrative total cost using a fixed reviewer cost and a per-application-period waiting penalty. Those cost coefficients are assumptions, not measured labor costs, customer damages, or utility values.
+Adding a third reviewer reduces expected queue wait substantially in this synthetic case. If arrivals rise from 12 to 13.2 per period with two reviewers unchanged, utilization rises from 75% to 82.5% and expected queue wait rises from 0.1607 to approximately 0.2664 periods. This is a 65.75% increase in expected waiting from a 10% increase in arrivals. The example also calculates an illustrative total cost using a fixed reviewer cost and a per-application-period waiting penalty. Those cost coefficients are assumptions, not measured labor costs, customer damages, or utility values.
 
 ## Interpretation for actual interconnection processes
 
-A real interconnection process is not necessarily an M/M/c queue. It may contain multiple sequential review stages, rework, priority classes, seasonal arrival peaks, project-size heterogeneity, customer response delays, parallel engineering disciplines, study batching, and right-censored open applications. A single pooled service rate can conceal bottlenecks. If a project waits for both protection and planning review, a network of queues or discrete-event process model may be more appropriate.
+A real interconnection process is not necessarily an M/M/c queue. Service-time variability matters even when the mean service rate is unchanged: the M/G/1 Pollaczek–Khinchine formula depends on the second moment of service time, not only its mean. Problem Set 10 demonstrates a synthetic case in which increasing the service-time coefficient of variation from 1 to 2 raises mean queue wait from 0.375 to 0.9375 business day at the same arrival rate and mean service time. It may contain multiple sequential review stages, rework, priority classes, seasonal arrival peaks, project-size heterogeneity, customer response delays, parallel engineering disciplines, study batching, and right-censored open applications. A single pooled service rate can conceal bottlenecks. If a project waits for both protection and planning review, a network of queues or discrete-event process model may be more appropriate.
 
 Before applying queueing theory to real process data, collect event-level timestamps and distinguish:
 - time waiting for utility assignment;
