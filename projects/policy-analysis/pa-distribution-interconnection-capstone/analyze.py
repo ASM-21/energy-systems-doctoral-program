@@ -39,7 +39,9 @@ def validate_panel(rows: Iterable[dict]) -> list[dict]:
     required = {
         "reporting_year", "edc", "level1_requests", "level2_requests",
         "level3_requests", "level4_requests", "total_requests",
-        "reported_statewide_total",
+        "reported_statewide_total", "period_start", "period_end",
+        "level2_lt500kw_requests", "level2_ge500kw_requests",
+        "level3_lt500kw_requests", "level3_ge500kw_requests",
     }
     if not records:
         raise ValueError("Input panel is empty")
@@ -52,10 +54,17 @@ def validate_panel(rows: Iterable[dict]) -> list[dict]:
     if years != [2023, 2024, 2025]:
         raise ValueError(f"Expected reporting years 2023-2025; received {years}")
 
+    expected_periods = {
+        2023: ("2022-06-01", "2023-05-31"),
+        2024: ("2023-06-01", "2024-05-31"),
+        2025: ("2024-06-01", "2025-05-31"),
+    }
     edcs_by_year = {}
     for row in records:
         year = int(row["reporting_year"])
         edc = row["edc"].strip()
+        if (row["period_start"], row["period_end"]) != expected_periods[year]:
+            raise ValueError(f"Reporting-period dates do not match reporting year {year}")
         if not edc:
             raise ValueError("EDC name cannot be blank")
         key = (year, edc)
@@ -70,12 +79,37 @@ def validate_panel(rows: Iterable[dict]) -> list[dict]:
         total = _integer(row, "total_requests")
         if components != total:
             raise ValueError(f"Review-level counts do not reconcile for {key}")
-        if total < 0 or any(_integer(row, field) < 0 for field in (
-            "level1_requests", "level2_requests", "level3_requests", "level4_requests"
-        )):
+        count_fields = (
+            "level1_requests", "level2_requests", "level3_requests", "level4_requests",
+            "level2_lt500kw_requests", "level2_ge500kw_requests",
+            "level3_lt500kw_requests", "level3_ge500kw_requests",
+            "level4_lt500kw_requests", "level4_ge500kw_requests",
+            "reported_statewide_total",
+        )
+        if total < 0 or any(_integer(row, field) < 0 for field in count_fields):
             raise ValueError(f"Negative request count for {key}")
+        if year == 2025:
+            if (_integer(row, "level2_lt500kw_requests")
+                    + _integer(row, "level2_ge500kw_requests") != _integer(row, "level2_requests")):
+                raise ValueError(f"2025 Level 2 size bands do not reconcile for {key}")
+            if (_integer(row, "level3_lt500kw_requests")
+                    + _integer(row, "level3_ge500kw_requests") != _integer(row, "level3_requests")):
+                raise ValueError(f"2025 Level 3 size bands do not reconcile for {key}")
+            if (_integer(row, "level4_lt500kw_requests")
+                    + _integer(row, "level4_ge500kw_requests") != _integer(row, "level4_requests")):
+                raise ValueError(f"2025 Level 4 size bands do not reconcile for {key}")
+        else:
+            size_fields = (
+                "level2_lt500kw_requests", "level2_ge500kw_requests",
+                "level3_lt500kw_requests", "level3_ge500kw_requests",
+                "level4_lt500kw_requests", "level4_ge500kw_requests",
+            )
+            if any(row.get(field, "") not in ("", None) for field in size_fields):
+                raise ValueError(f"Pre-2025 size bands must remain unavailable for {key}")
 
     expected_edcs = edcs_by_year[2023]
+    if len(expected_edcs) != 11 or "PPL" not in expected_edcs:
+        raise ValueError("Expected the 11-EDC panel including PPL")
     for year, edcs in edcs_by_year.items():
         if edcs != expected_edcs:
             raise ValueError(f"EDC coverage changes in {year}; panel is not balanced")
