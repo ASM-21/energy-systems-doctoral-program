@@ -168,6 +168,8 @@ nav:
               - Problem Set 1 solutions: courses/year-2/electricity-market-design-optimization/problem-set-01-economic-dispatch-duality-solutions.md
               - "Problem Set 2: Three-bus DC-OPF": courses/year-2/electricity-market-design-optimization/problem-set-02-three-bus-dc-opf.md
               - Problem Set 2 solutions: courses/year-2/electricity-market-design-optimization/problem-set-02-three-bus-dc-opf-solutions.md
+              - "Problem Set 3: Energy and reserve co-optimization": courses/year-2/electricity-market-design-optimization/problem-set-03-energy-reserve-cooptimization.md
+              - Problem Set 3 solutions: courses/year-2/electricity-market-design-optimization/problem-set-03-energy-reserve-cooptimization-solutions.md
       - Course references: library/course-catalog.md
       - Core reading list: library/reading-list.md
       - Course page template: curriculum/course-template.md
