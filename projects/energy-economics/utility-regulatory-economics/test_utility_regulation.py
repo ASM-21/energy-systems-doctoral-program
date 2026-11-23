@@ -86,6 +86,8 @@ class CapitalBudgetingTests(unittest.TestCase):
             annuity_factor(-1, 10)
         with self.assertRaises(ValueError):
             expected_npv(30, {"a": 1, "b": 2}, {"a": 0.2, "b": 0.2}, 0.07, 10)
+        with self.assertRaises(ValueError):
+            expected_npv(30, {"a": 1}, {"a": 1}, 0.07, 0)
 
 
 if __name__ == "__main__":
