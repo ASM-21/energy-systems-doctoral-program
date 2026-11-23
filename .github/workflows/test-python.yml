@@ -34,6 +34,7 @@ jobs:
           - projects/econometrics/competing-risks-survival
           - projects/econometrics/randomized-experiments
           - projects/econometrics/difference-in-differences
+          - projects/econometrics/synthetic-control
     defaults:
       run:
         working-directory: ${{ matrix.project }}
@@ -74,6 +75,8 @@ jobs:
             python adequacy.py --years 2 --output-dir /tmp/stochastic-adequacy-results
           elif [ -f max_flow.py ]; then
             python max_flow.py
+          elif [ -f synthetic_control.py ]; then
+            python synthetic_control.py --output-dir /tmp/synthetic-control
           elif [ -f analyze.py ]; then
             python analyze.py --output /tmp/ols-lab-results
           fi
