@@ -48,6 +48,27 @@ class PaDistributionInterconnectionCapstoneTests(unittest.TestCase):
         self.assertEqual(provenance["reporting_period"], "June 1 through May 31; reporting years 2023-2025")
         self.assertEqual(provenance["source_dataset_path"], "research/casebooks/pa-der-interconnection/pa_edc_interconnection_2023_2025.csv")
 
+    def test_reporting_period_and_size_band_integrity(self):
+        bad_period = [dict(row) for row in self.rows]
+        bad_period[0]["period_start"] = "2022-07-01"
+        with self.assertRaises(ValueError):
+            validate_panel(bad_period)
+
+        bad_size = [dict(row) for row in self.rows]
+        target = next(row for row in bad_size
+                      if row["reporting_year"] == "2025" and row["edc"] == "PPL")
+        target["level3_ge500kw_requests"] = "410"
+        with self.assertRaises(ValueError):
+            validate_panel(bad_size)
+
+    def test_negative_subcategory_count_fails(self):
+        bad = [dict(row) for row in self.rows]
+        target = next(row for row in bad
+                      if row["reporting_year"] == "2025" and row["edc"] == "PPL")
+        target["level2_ge500kw_requests"] = "-1"
+        with self.assertRaises(ValueError):
+            validate_panel(bad)
+
     def test_duplicate_and_nonreconciling_rows_fail(self):
         duplicate = self.rows + [dict(self.rows[0])]
         with self.assertRaises(ValueError):
