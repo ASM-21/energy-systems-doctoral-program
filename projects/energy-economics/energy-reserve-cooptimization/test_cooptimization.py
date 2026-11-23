@@ -39,7 +39,8 @@ class CooptimizationTests(unittest.TestCase):
 
     def test_non_default_offer_changes_reserve_award(self):
         units = [dict(unit) for unit in DEFAULT_UNITS]
-        units[0]["capacity"] = 90.0
+        units[0]["capacity"] = 100.0
+        units[0]["energy_offer"] = 40.0
         units[0]["reserve_offer"] = 1.0
         result = solve_cooptimization(units=units)
         rows = {row["name"]: row for row in result["units"]}
