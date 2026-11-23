@@ -1,6 +1,6 @@
 # Curriculum Map and Course Dependencies
 
-This page is the program's navigation map. It distinguishes the current foundation sequence from planned advanced study and optional extensions. Course status describes curriculum design, not the learner's personal completion.
+This page is the program's navigation map. It distinguishes the current foundation sequence from planned advanced study and optional extensions. Course status describes curriculum design, not the learner's personal completion. Use the [competency framework](competency-framework.md) to see how courses, assessments, and projects map to program outcomes.
 
 ## Program structure
 
