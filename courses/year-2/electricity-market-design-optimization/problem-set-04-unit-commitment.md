@@ -75,7 +75,7 @@ For at least two constraints, write a mathematical representation and explain th
 ## Problem 6 — Sensitivity and model design
 
 1. Identify how the schedule changes if Generator 1's startup cost rises from $500 to $1,000.
-2. Identify how the schedule changes if Period 2 demand falls from 150 to 120 MW.
+2. Identify how the schedule changes if Period 2 demand falls from 150 to 100 MW.
 3. Explain why the optimal commitment schedule can change discontinuously as demand or startup cost changes.
 4. Discuss the trade-off between model detail, computational tractability, and the fidelity required for a particular market or planning question.
 
