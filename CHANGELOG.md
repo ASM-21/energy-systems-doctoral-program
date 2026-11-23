@@ -1,3 +1,14 @@
+## 2026-11-23 — Year 1 technical audit and energy/reserve co-optimization
+
+- Audited selected Year 1 worked solutions for arithmetic, sign conventions, primal feasibility, active constraints, and marginal-value interpretation.
+- Corrected the Y1-03 two-node congestion exercise to avoid simultaneous line and generator-capacity degeneracy; aligned its worked solution and nodal-price explanation.
+- Corrected the Y1-03 reserve co-optimization objective arithmetic and moved the teaching benchmark from a dual-degenerate 150 MW demand point to a 160 MW point with locally stable dual values.
+- Corrected Y1-02 demand-response marginal substitution and clarified that the stated 200 MW capability limit is nonbinding when only 100 MW is economic.
+- Corrected the Y1-01 DC power-flow net-flow explanation and organized all five Y1-01 problem sets and solutions in a single course table.
+- Added a SciPy/HiGHS energy and operating-reserve co-optimization lab with primal, dual, capacity-shadow-value, finite-difference, alternative-offer, and input-validation tests.
+- Added the lab to the project index, course guide, Makefile, Python CI matrix, and MkDocs navigation.
+- Added an internal Year 1 technical quality review documenting verified calculations, corrections, model safeguards, and remaining audit scope.
+
 ## 2026-11-23 — Spatial interference and dynamic error models
 
 - Added Problem Set 7 and worked solutions on network exposure mappings, direct and spillover estimands, two-stage randomized saturation designs, reflection, interference in difference-in-differences, and the distinction between spatial error dependence and causal spillovers.
