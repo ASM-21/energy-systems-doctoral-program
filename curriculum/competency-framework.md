@@ -106,7 +106,7 @@ The table identifies the primary contribution of each course. A dash means the c
 | Y1-03 Markets, Regulation, and PJM | Medium | High | High | Medium | Medium | Medium | 2, 3, 5, 8 |
 | Y2-01 Advanced Mathematical Methods | High | Medium | Low | High | Medium | Medium | 1, 4, 7 |
 | Y2-02 Graduate Econometrics and Causal Inference | Low | Medium | Medium | High | Medium | Medium | 3, 4, 5, 7, 8 |
-| Y2-04 Market Design and Optimization (planned; PS1–2 available) | High | High | Medium | High | Medium | Medium | 1, 2, 4, 8 |
+| Y2-04 Market Design and Optimization (planned; PS1–3 available) | High | High | Medium | High | Medium | Medium | 1, 2, 4, 8 |
 | Y2-03 Infrastructure Economics and Utility Investment (planned) | Medium | High | High | Medium | Medium | High | 2, 3, 5, 6, 8 |
 
 **Interpretation:** High = a central assessed outcome; Medium = supporting or applied contribution; Low = contextual contribution. Planned courses do not count as completed evidence. The matrix describes intended design coverage, not demonstrated learner attainment.
