@@ -49,17 +49,17 @@ python -m unittest discover -s . -p "test_*.py" -v
 | B | 32 | 5 | 70 |
 | C | 55 | 2 | 50 |
 
-Demand is 150 MW and upward reserve is 20 MW.
+Demand is 160 MW and upward reserve is 20 MW. The 160 MW demand avoids a kink at zero dispatch of Unit C and makes the reported energy dual locally unambiguous.
 
 | Unit | Energy (MW) | Reserve (MW) | Total (MW) |
 |---|---:|---:|---:|
 | A | 80 | 0 | 80 |
 | B | 70 | 0 | 70 |
-| C | 0 | 20 | 20 |
+| C | 10 | 20 | 30 |
 
-The objective is **USD 3,720 for the one-hour interval**. The energy-balance dual is **USD 55/MWh** and the reserve-requirement marginal value is **USD 2/(MW·h)**. Capacity shadow values are USD 37/(MW·h) for A, USD 23/(MW·h) for B, and zero for C in this optimum.
+The objective is **USD 4,270 for the one-hour interval**. The energy-balance dual is **USD 55/MWh** and the reserve-requirement marginal value is **USD 2/(MW·h)**. Capacity shadow values are USD 37/(MW·h) for A, USD 23/(MW·h) for B, and zero for C in this optimum.
 
-The tests check the duals using finite differences: increasing demand by 1 MW raises cost by USD 55 for the interval; increasing reserve by 1 MW raises cost by USD 2 while the same optimal basis remains valid.
+The tests check the duals using finite differences: increasing demand by 1 MW raises cost by USD 55 for the interval; increasing reserve by 1 MW raises cost by USD 2 while the same optimal basis remains valid. At 150 MW demand, Unit C's energy dispatch is at its lower bound and the value function has a kink; the energy dual is then non-unique. This benchmark intentionally uses 160 MW.
 
 ## Required interpretation
 
