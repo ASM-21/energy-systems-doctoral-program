@@ -1,3 +1,10 @@
+## 2026-11-23 — Y2-03 Pennsylvania investment case and computational model
+
+- Added Problem Set 5: a public-record Pennsylvania distribution investment and DER integration case, with a detailed assessment guide and explicit source-status, jurisdiction, engineering-need, cost-allocation, and risk-allocation requirements.
+- Added a standard-library Python companion for class cost allocation, three-part tariff calculations, representative bills, simplified regulatory-lag/savings-sharing comparisons, annuity factors, NPV, and discrete-state expected NPV.
+- Added unit tests for pool and tariff reconciliation, benchmark bills, incentive calculations, NPV results, and invalid inputs. Added the model to the Python CI matrix and site/project indexes.
+- Reconciled Y2-03 course guide, Year 2 overview, course map, and competency framework. The course remains planned pending independent review and an integrated final synthesis.
+
 ## 2026-11-23 — Y2-03 regulatory incentives and capital budgeting
 
 - Added Problem Set 3 on regulatory lag, cost-of-service resets, earnings sharing, formula rates, revenue decoupling, performance-based regulation, and service-quality safeguards, with worked solutions.
