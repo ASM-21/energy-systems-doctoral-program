@@ -97,3 +97,29 @@ Run the [interconnection queueing lab](../../../projects/policy-analysis/interco
 ## Submission
 
 Submit the derivations, a compact staffing sensitivity table, a process map, and a 500–700 word methodological critique. Label every numerical example as synthetic. Do not infer actual PPL reviewer staffing, queue times, or service rates from this assignment.
+
+
+## Problem 9. Service-time variability and the M/G/1 queue
+
+Return to one reviewer with arrival rate \(\lambda=6\) applications per business day and mean service time \(E[S]=1/8\) business day. The service-time distribution is no longer assumed exponential. Instead, assume a general service-time distribution with coefficient of variation \(CV_S\).
+
+For an M/G/1 FCFS queue, the Pollaczek–Khinchine mean-queue-wait formula is
+
+\[
+W_q=\frac{\lambda E[S^2]}{2(1-\rho)},\qquad
+\rho=\lambda E[S],\qquad
+E[S^2]=E[S]^2(1+CV_S^2).
+\]
+
+1. Calculate \(W_q\) when \(CV_S=1\), corresponding to the exponential-service M/M/1 case.
+2. Calculate \(W_q\) when \(CV_S=2\), holding the mean service time fixed.
+3. Calculate the percentage increase in expected queue wait due solely to the increase in service-time variability.
+4. Explain why two processes with the same mean service time and utilization can have very different queue delays.
+5. Explain why the second moment of service time matters and what happens if the service-time distribution has an infinite second moment.
+6. Identify empirical checks required before using the M/G/1 approximation for an actual review stage.
+
+## References
+
+- Gross, Shortle, Thompson, and Harris, *Fundamentals of Queueing Theory*, 5th ed., Wiley, 2018.
+- Hopp and Spearman, *Factory Physics*, 3rd ed., Waveland Press, 2011.
+- Little's Law: \(L=\lambda W\), applied separately to a stable queue and its full system boundary.
