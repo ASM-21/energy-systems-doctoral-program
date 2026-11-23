@@ -22,7 +22,7 @@ Compare 90%, 95%, and 98% charge/discharge efficiencies. Then compare degradatio
 
 ## Problem 5 — Interconnection and policy memo
 
-Write a 750–1,000 word memo explaining what a utility would need to verify before approving a non-exporting BTM battery. Address export-limiting controls, inadvertent export, fail-safe behavior, metering, protection, communications loss, commissioning, inverter standards, and the difference between a policy review and an interconnection approval. Use the Pennsylvania casebook's settlement paragraph 123 and PPL's Energy Storage Interconnection Policy as sources.
+Write a 750–1,000 word memo explaining what a utility would need to verify before approving a non-exporting BTM battery. Address export-limiting controls, inadvertent export, fail-safe behavior, metering, protection, communications loss, commissioning, inverter standards, and the difference between a policy review and an interconnection approval. Use the Pennsylvania casebook's settlement paragraph 124 and PPL's Energy Storage Interconnection Policy as sources. Appendix D cross-references this commitment as paragraph 123; the operative settlement body labels it paragraph 124.
 
 ## Deliverables
 
