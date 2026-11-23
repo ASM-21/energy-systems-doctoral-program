@@ -35,6 +35,20 @@ class DCPowerFlowTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             solve_dc_power_flow({1: 40, 2: -40, 3: 5}, self.lines)
 
+    def test_nonfinite_and_invalid_limits_rejected(self):
+        with self.assertRaises(ValueError):
+            solve_dc_power_flow({1: float("nan"), 2: -1.0}, self.lines)
+        with self.assertRaises(ValueError):
+            solve_dc_power_flow(self.buses, self.lines, base_mva=float("inf"))
+        bad_lines = [dict(line) for line in self.lines]
+        bad_lines[0]["x_pu"] = float("nan")
+        with self.assertRaises(ValueError):
+            solve_dc_power_flow(self.buses, bad_lines)
+        bad_lines = [dict(line) for line in self.lines]
+        bad_lines[0]["limit_mw"] = 0.0
+        with self.assertRaises(ValueError):
+            solve_dc_power_flow(self.buses, bad_lines)
+
     def test_nonpositive_reactance_rejected(self):
         bad_lines = [dict(line, x_pu=0) for line in self.lines]
         with self.assertRaises(ValueError):
