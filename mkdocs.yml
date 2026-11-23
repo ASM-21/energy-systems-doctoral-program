@@ -178,6 +178,7 @@ nav:
       - Power systems:
           - Learning path: projects/power-systems/README.md
           - Three-bus DC power flow: projects/power-systems/three-bus-dc-power-flow/README.md
+          - Three-bus DC optimal power flow: projects/power-systems/three-bus-dc-opf/README.md
           - Two-node congestion: projects/power-systems/two-node-congestion/README.md
           - Radial DER hosting capacity: projects/power-systems/radial-der-hosting-capacity/README.md
           - Flexible interconnection: projects/power-systems/flexible-interconnection/README.md
