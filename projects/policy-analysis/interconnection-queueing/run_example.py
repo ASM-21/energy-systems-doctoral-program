@@ -14,7 +14,14 @@ def main():
             arrival_rate, service_rate, servers, customers=100_000, warmup=10_000
         )
         results[str(servers)] = metrics
+    sensitivity = {}
+    for rate in (10.0, 12.0, 13.2, 14.0):
+        sensitivity[str(rate)] = {
+            str(servers): mmc_metrics(rate, service_rate, servers)
+            for servers in (2, 3)
+        }
     print(json.dumps({
+        "arrival_rate_sensitivity": sensitivity,
         "note": "Synthetic M/M/c illustration; not utility staffing or service-time data.",
         "rates": {"arrivals_per_period": arrival_rate,
                   "service_rate_per_server_per_period": service_rate},
