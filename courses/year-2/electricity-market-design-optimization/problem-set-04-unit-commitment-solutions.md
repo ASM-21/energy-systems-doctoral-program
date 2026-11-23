@@ -74,6 +74,6 @@ A minimum up-time constraint requires a unit that starts to remain committed for
 
 If G1 startup cost rises to $1,000, the cost of the current schedule increases by $500. The best alternative that avoids committing G1 in Period 1 is to use G2 for 80 MW in Period 1, then G1 for 100 MW and G2 for 50 MW in Period 2. Its energy cost is $8,500, no-load cost is $180, and startup cost is $1,100, for total $9,780. The original schedule becomes $7,440 and remains cheaper, so commitment does not change under this case.
 
-If Period 2 demand falls to 120 MW, G1 can supply all demand in both periods. The schedule can keep G1 on and avoid starting G2. Costs are energy $1,600 + $2,400 = $4,000, no-load $200, startup $500, total $4,700. G2 remains off.
+If Period 2 demand falls to 100 MW, G1 can supply all demand in both periods. The schedule keeps G1 on and avoids starting G2. Costs are energy $1,600 + $2,000 = $3,600, no-load $200, startup $500, total $4,300. G2 remains off.
 
 Commitment decisions are discrete. Small changes in demand, startup cost, or operating constraints can trigger a unit start or shutdown and cause discontinuous changes in dispatch and cost. A more detailed model may improve operational fidelity but increase data requirements, solve time, and risk of false precision. The right formulation depends on the decision being studied.
