@@ -69,4 +69,4 @@ A shadow value, allocated cost, rate, or NPV is conditional on the model's assum
 - [PS1: Revenue requirement, rate base, and WACC](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement.md)
 - [PS2: Cost allocation and rate design](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-02-cost-allocation-rate-design.md)
 - [PS3: Regulatory lag and incentives](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-03-regulatory-lag-incentives.md)
-- [PS4: Capital budgeting under uncertainty](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-04-capital-budgeting-uncertainty.md)
+- [PS4: Capital budgeting under uncertainty](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-04-capital-budgeting-uncertainty.md)\n- [PS5: Pennsylvania distribution investment case](../../../courses/year-2/infrastructure-economics-utility-investment/problem-set-05-pennsylvania-distribution-investment-case.md)\n- [Pennsylvania DER interconnection casebook](../../../research/casebooks/pa-der-interconnection/README.md)
