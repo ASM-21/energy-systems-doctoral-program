@@ -1,6 +1,6 @@
 # Y2-03 — Infrastructure Economics and Utility Investment
 
-**Status:** Planned; the initial course guide and Problem Set 1 are available, but the full assessment sequence is not yet developed.  
+**Status:** Planned; Problem Sets 1–2 and worked solutions are available. Regulatory-incentive, capital-budgeting, and Pennsylvania applied-case assessments remain in development.  
 **Level:** Graduate / applied regulatory economics  
 **Prerequisites:** Y1-02 Energy Economics and Y1-03 Markets, Regulation, and PJM or equivalent; introductory corporate finance, calculus, and statistics.  
 **Planned effort:** 30–40 hours over approximately 10–14 weeks at 2.5–3 hours per week, studied as the primary course within the total 3–5 hour weekly program budget.  
@@ -59,9 +59,9 @@ for a simplified debt/equity capital structure with tax-deductible interest. Reg
 ## Problem sets and evidence
 
 - [Problem Set 1: Revenue requirement, rate base, and WACC](problem-set-01-revenue-requirement.md)
-- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)
+- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)\n- [Problem Set 2: Cost allocation and retail rate design](problem-set-02-cost-allocation-rate-design.md)\n- [Problem Set 2 solution notes](problem-set-02-cost-allocation-rate-design-solutions.md)
 
-Future assignments will cover cost allocation and tariff design, regulatory lag and performance incentives, discounted cash flow and uncertainty, and a Pennsylvania distribution investment case. Each assignment should include an assumptions register and distinguish accounting identities from economic welfare claims.
+Future assignments will cover regulatory lag and performance incentives, discounted cash flow and uncertainty, and a Pennsylvania distribution investment case. Each assignment should include an assumptions register and distinguish accounting identities from economic welfare claims.
 
 ## Recommended references
 
@@ -78,7 +78,7 @@ The course's applied work should use public commission dockets, utility annual r
 
 ## Computational and empirical work
 
-No dedicated computational lab or complete assessment sequence has yet been published for this course. The first applied case should use public commission dockets, approved tariff sheets, utility annual reports, FERC Form 1, EIA data, and public planning documents. A future workbook or script should calculate a simplified revenue requirement, reconcile rate-base components, model class cost allocation, and test bill impacts under alternative tariff structures.
+No dedicated computational lab has yet been published for this course. Problem Set 2 provides a complete, hand-checkable cost-allocation and three-part-rate example. The planned computational companion should extend this to alternative allocators, class revenue reconciliation, customer-level bill distributions, and sensitivity analysis using public commission dockets, approved tariff sheets, utility annual reports, FERC Form 1, EIA data, and public planning documents.
 
 Useful public sources include [FERC Form 1](https://www.ferc.gov/industries-data/electric/general-information/electric-industry-forms/form-1), [EIA electricity data](https://www.eia.gov/electricity/data/), and the [Pennsylvania PUC](https://www.puc.pa.gov/). The applied case must identify the proceeding's legal status and test year, and must not use confidential employer or customer records.
 
@@ -101,7 +101,7 @@ Submit a revenue-requirement workbook or script, a short rate-design comparison,
 
 ## Completion gate
 
-The course remains planned until the remaining rate-design, regulatory-incentive, capital-budgeting, and Pennsylvania case assignments are developed and reviewed. When activated, completion should require:
+The course remains planned until the regulatory-incentive, capital-budgeting, and Pennsylvania case assignments are developed and reviewed. When activated, completion should require:
 - all required problem sets attempted and corrected;
 - a reproducible revenue-requirement and rate-design model;
 - a primary-source review of one public rate proceeding;
@@ -109,8 +109,8 @@ The course remains planned until the remaining rate-design, regulatory-incentive
 - a 1,500–2,000 word investment/regulatory memo;
 - a self-assessment against the [program rubric](../../../ACADEMIC_STANDARDS.md).
 
-The currently published Problem Set 1 is an initial module, not evidence that the full course is ready or complete.
+The currently published Problem Sets 1–2 are initial modules, not evidence that the full course is ready or complete.
 
 ## Next step
 
-Complete the remaining rate-design, regulatory-incentive, and investment-risk modules as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
+Complete the regulatory-incentive and investment-risk modules as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
