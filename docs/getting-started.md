@@ -3,7 +3,7 @@
 ## First study session
 
 1. Read [How to Use the Program](../curriculum/learning-guide.md) and the [program overview](../curriculum/program-overview.md).
-2. Review the [curriculum map](../curriculum/course-map.md), prerequisite diagnostic, and academic standards.
+2. Review the [curriculum map](../curriculum/course-map.md), [glossary](../curriculum/glossary.md), prerequisite diagnostic, and academic standards.
 3. Set up Python, Git, and a reference manager using the [software setup guide](../resources/software-setup.md).
 4. Create a research-log entry with baseline knowledge, current questions, and a realistic weekly study window.
 5. Begin Y1-01 with a diagnostic review of AC circuits, three-phase power, and linear algebra.
