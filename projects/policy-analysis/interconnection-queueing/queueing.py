@@ -50,6 +50,42 @@ def mmc_metrics(arrival_rate: float, service_rate: float, servers: int) -> dict:
     }
 
 
+
+def mg1_metrics(arrival_rate: float, mean_service_time: float,
+                service_coefficient_of_variation: float) -> dict:
+    """Return Pollaczek-Khinchine steady-state metrics for an M/G/1 FCFS queue."""
+    values = (arrival_rate, mean_service_time, service_coefficient_of_variation)
+    if any(not math.isfinite(value) for value in values):
+        raise ValueError("M/G/1 inputs must be finite")
+    if arrival_rate <= 0 or mean_service_time <= 0:
+        raise ValueError("arrival rate and mean service time must be positive")
+    if service_coefficient_of_variation < 0:
+        raise ValueError("service coefficient of variation must be nonnegative")
+    utilization = arrival_rate * mean_service_time
+    if utilization >= 1:
+        raise ValueError("M/G/1 system is unstable: utilization must be below one")
+    second_moment = mean_service_time ** 2 * (
+        1.0 + service_coefficient_of_variation ** 2
+    )
+    mean_queue_wait = (
+        arrival_rate * second_moment / (2.0 * (1.0 - utilization))
+    )
+    mean_system_time = mean_queue_wait + mean_service_time
+    mean_queue_length = arrival_rate * mean_queue_wait
+    mean_system_size = arrival_rate * mean_system_time
+    return {
+        "arrival_rate": arrival_rate,
+        "mean_service_time": mean_service_time,
+        "service_coefficient_of_variation": service_coefficient_of_variation,
+        "utilization": utilization,
+        "service_time_second_moment": second_moment,
+        "mean_queue_wait": mean_queue_wait,
+        "mean_system_time": mean_system_time,
+        "mean_queue_length": mean_queue_length,
+        "mean_system_size": mean_system_size,
+    }
+
+
 def staffing_cost(metrics: dict, server_cost_per_period: float,
                   waiting_cost_per_application_period: float) -> float:
     """Illustrative server + queueing cost per common period.
