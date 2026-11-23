@@ -31,6 +31,7 @@ Use the [computational project template](project-template.md) for new or substan
 - [Utility regulatory economics](energy-economics/utility-regulatory-economics/README.md) — cost allocation, tariff arithmetic, regulatory incentive comparisons, and capital budgeting under uncertainty
 - [Stochastic and robust capacity planning](energy-economics/stochastic-robust-capacity-planning/README.md) — two-stage recourse, expected-value benchmarking, EVPI/VSS, and min-max robust capacity
 - [Three-bus DC power flow](power-systems/three-bus-dc-power-flow/README.md) — per-unit network matrix, slack bus, angles, and branch flows
+- [Three-bus DC optimal power flow](power-systems/three-bus-dc-opf/README.md) — network-constrained dispatch, nodal prices, line shadow values, and finite-difference checks
 - [Two-node congestion and nodal prices](power-systems/two-node-congestion/README.md) — network-constrained dispatch and dual values
 - [Radial feeder DER hosting-capacity screen](power-systems/radial-der-hosting-capacity/README.md) — first-order radial voltage-drop approximation, branch loading, reverse flow, and PV penetration sweep
 - [Flexible interconnection and dynamic export envelopes](power-systems/flexible-interconnection/README.md) — compare fixed, scheduled, and dynamic export limits with PV and behind-the-meter storage
