@@ -32,5 +32,6 @@ Projects are the main evidence of applied mastery. Each project should have a de
 - [Randomized experiments and power](econometrics/randomized-experiments/README.md) — complete randomization, ITT, Neyman standard errors, randomization inference, MDE, and cluster design effects
 - [Difference-in-differences and staggered adoption](econometrics/difference-in-differences/README.md) — 2×2 DID, cohort-time ATT, never-treated controls, and heterogeneous treatment effects
 - [Synthetic control](econometrics/synthetic-control/README.md) — simplex-constrained donor weights, pre-period-only fitting, treatment gaps, and in-space placebo diagnostics
+- [Interrupted time series](econometrics/interrupted-time-series/README.md) — segmented regression, Newey–West HAC inference, autocorrelation diagnostics, placebo dates, and bandwidth sensitivity
 
 The radial feeder lab is a synthetic screening model. It is not an AC power-flow, protection, or utility interconnection study.
