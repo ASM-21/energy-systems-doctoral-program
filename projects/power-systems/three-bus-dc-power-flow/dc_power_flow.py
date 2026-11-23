@@ -35,8 +35,12 @@ def solve_dc_power_flow(
 ) -> dict:
     if len(injections_mw) < 2:
         raise ValueError("At least two buses are required.")
-    if base_mva <= 0:
-        raise ValueError("Base MVA must be positive.")
+    if not isfinite(base_mva) or base_mva <= 0:
+        raise ValueError("Base MVA must be finite and positive.")
+    if not isfinite(tolerance) or tolerance <= 0:
+        raise ValueError("Tolerance must be finite and positive.")
+    if any(not isfinite(value) for value in injections_mw.values()):
+        raise ValueError("Bus injections must all be finite.")
     buses = sorted(injections_mw)
     if slack_bus is None:
         slack_bus = buses[0]
@@ -56,8 +60,10 @@ def solve_dc_power_flow(
         limit = line["limit_mw"]
         if i_bus not in index or j_bus not in index or i_bus == j_bus:
             raise ValueError("Each line must connect two distinct known buses.")
-        if x <= 0:
-            raise ValueError("Branch reactance must be positive.")
+        if not isfinite(x) or x <= 0:
+            raise ValueError("Branch reactance must be finite and positive.")
+        if limit is not None and (not isfinite(float(limit)) or float(limit) <= 0):
+            raise ValueError("Branch thermal limits must be finite and positive.")
         key = tuple(sorted((i_bus, j_bus)))
         if key in seen:
             raise ValueError("Parallel branches are not supported in this lab.")
