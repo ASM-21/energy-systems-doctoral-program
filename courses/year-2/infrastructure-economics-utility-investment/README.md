@@ -1,6 +1,6 @@
 # Y2-03 — Infrastructure Economics and Utility Investment
 
-**Status:** Planned; Problem Sets 1–2 and worked solutions are available. Regulatory-incentive, capital-budgeting, and Pennsylvania applied-case assessments remain in development.  
+**Status:** Planned; Problem Sets 1–4 and worked solutions are available. A Pennsylvania applied case, computational companion, and final course synthesis remain in development.  
 **Level:** Graduate / applied regulatory economics  
 **Prerequisites:** Y1-02 Energy Economics and Y1-03 Markets, Regulation, and PJM or equivalent; introductory corporate finance, calculus, and statistics.  
 **Planned effort:** 30–40 hours over approximately 10–14 weeks at 2.5–3 hours per week, studied as the primary course within the total 3–5 hour weekly program budget.  
@@ -59,9 +59,9 @@ for a simplified debt/equity capital structure with tax-deductible interest. Reg
 ## Problem sets and evidence
 
 - [Problem Set 1: Revenue requirement, rate base, and WACC](problem-set-01-revenue-requirement.md)
-- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)\n- [Problem Set 2: Cost allocation and retail rate design](problem-set-02-cost-allocation-rate-design.md)\n- [Problem Set 2 solution notes](problem-set-02-cost-allocation-rate-design-solutions.md)
+- [Problem Set 1 solution notes](problem-set-01-revenue-requirement-solutions.md)\n- [Problem Set 2: Cost allocation and retail rate design](problem-set-02-cost-allocation-rate-design.md)\n- [Problem Set 2 solution notes](problem-set-02-cost-allocation-rate-design-solutions.md)\n- [Problem Set 3: Regulatory lag, incentives, and performance regulation](problem-set-03-regulatory-lag-incentives.md)\n- [Problem Set 3 solution notes](problem-set-03-regulatory-lag-incentives-solutions.md)\n- [Problem Set 4: Utility capital budgeting under uncertainty](problem-set-04-capital-budgeting-uncertainty.md)\n- [Problem Set 4 solution notes](problem-set-04-capital-budgeting-uncertainty-solutions.md)
 
-Future assignments will cover regulatory lag and performance incentives, discounted cash flow and uncertainty, and a Pennsylvania distribution investment case. Each assignment should include an assumptions register and distinguish accounting identities from economic welfare claims.
+The remaining major assessed component is a Pennsylvania distribution investment case. A computational companion should make the cost-allocation, rate-design, and capital-budgeting calculations reproducible. Each assignment includes an assumptions register and distinguishes accounting identities from economic welfare claims.
 
 ## Recommended references
 
@@ -78,7 +78,7 @@ The course's applied work should use public commission dockets, utility annual r
 
 ## Computational and empirical work
 
-No dedicated computational lab has yet been published for this course. Problem Set 2 provides a complete, hand-checkable cost-allocation and three-part-rate example. The planned computational companion should extend this to alternative allocators, class revenue reconciliation, customer-level bill distributions, and sensitivity analysis using public commission dockets, approved tariff sheets, utility annual reports, FERC Form 1, EIA data, and public planning documents.
+No dedicated computational lab has yet been published for this course. Problem Sets 1–4 provide hand-checkable revenue-requirement, cost-allocation, rate-design, regulatory-incentive, and capital-budgeting examples. The planned computational companion should extend these to alternative allocators, class revenue reconciliation, customer-level bill distributions, and sensitivity analysis using public commission dockets, approved tariff sheets, utility annual reports, FERC Form 1, EIA data, and public planning documents.
 
 Useful public sources include [FERC Form 1](https://www.ferc.gov/industries-data/electric/general-information/electric-industry-forms/form-1), [EIA electricity data](https://www.eia.gov/electricity/data/), and the [Pennsylvania PUC](https://www.puc.pa.gov/). The applied case must identify the proceeding's legal status and test year, and must not use confidential employer or customer records.
 
@@ -101,7 +101,7 @@ Submit a revenue-requirement workbook or script, a short rate-design comparison,
 
 ## Completion gate
 
-The course remains planned until the regulatory-incentive, capital-budgeting, and Pennsylvania case assignments are developed and reviewed. When activated, completion should require:
+The course remains planned until the Pennsylvania applied case, computational companion, and final course synthesis are developed and reviewed. When activated, completion should require:
 - all required problem sets attempted and corrected;
 - a reproducible revenue-requirement and rate-design model;
 - a primary-source review of one public rate proceeding;
@@ -109,8 +109,8 @@ The course remains planned until the regulatory-incentive, capital-budgeting, an
 - a 1,500–2,000 word investment/regulatory memo;
 - a self-assessment against the [program rubric](../../../ACADEMIC_STANDARDS.md).
 
-The currently published Problem Sets 1–2 are initial modules, not evidence that the full course is ready or complete.
+The currently published Problem Sets 1–4 are assessed modules, not evidence that the full course is ready or complete.
 
 ## Next step
 
-Complete the regulatory-incentive and investment-risk modules as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
+Complete the Pennsylvania applied case and computational synthesis as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
