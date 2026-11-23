@@ -1,10 +1,10 @@
-# Graduate Econometrics and Causal Inference for Energy Policy
+# Y2-02 — Graduate Econometrics and Causal Inference for Energy Policy
 
-**Status:** Planned Year 2 course  
-**Duration:** 24–30 modular weeks across two semesters  
-**Weekly target:** 2–3 hours, within the program's total 3–5 hour weekly budget  
+**Status:** Planned; activate after Y1-04 and the Year 1 progression gate.  
 **Level:** Advanced graduate / doctoral preparation  
-**Purpose:** Develop the ability to identify, estimate, validate, and communicate causal effects in energy infrastructure, utility regulation, DER adoption, electricity markets, and public policy.
+**Prerequisites:** Y1-04 or equivalent introductory econometrics; OLS, probability, statistical inference, linear algebra, and Python or R. Review the [OLS and robust inference lab](../../../projects/econometrics/ols-energy-demand/README.md) and complete the [pre-analysis plan template](pre-analysis-plan-template.md) before the applied modules.  
+**Planned effort:** Approximately 60–75 hours over 24–30 modular weeks, normally 2–3 hours per week within the program's total 3–5 hour budget. Study this as the primary course rather than stacking it with another full 2–3 hour course.  
+**Position in sequence:** Second Year 2 methods course. It builds on Y1-04 and supports original policy evaluation and the Pennsylvania DER research program.
 
 ## Why this course is necessary
 
@@ -110,3 +110,8 @@ A passing assignment must state the estimand and identification assumptions befo
 ## Connection to the Pennsylvania capstone
 
 The [PA distribution DER interconnection capstone](../../../projects/policy-analysis/pa-distribution-interconnection-capstone/README.md) currently supports descriptive analysis only. Its 2023–2025 aggregate panel predates the 2026 policy changes and lacks application-level outcomes. This course develops the design needed for a future evaluation if suitable application-level data become available. Do not treat the existing panel as a natural experiment.
+
+
+## Next step
+
+After completing the core identification and panel/time-series modules, apply the methods to a feasible research question or continue to [Y2-04 — Electricity Market Design and Optimization](../electricity-market-design-optimization/README.md). Use the Pennsylvania capstone only within its documented data limits. A causal research paper requires a credible design and suitable data, not simply completion of this course.
