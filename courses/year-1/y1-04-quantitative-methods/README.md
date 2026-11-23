@@ -3,7 +3,7 @@
 **Status:** Active Year 1 course  
 **Level:** Graduate methods foundation  
 **Prerequisites:** Calculus, linear algebra, introductory probability/statistics, and Python or R. Basic Git is recommended; use the [software setup guide](../../../resources/software-setup.md) if needed.  
-**Planned effort:** **40 hours** (35–45 hour planning range), normally 10–12 weeks at 3–5 hours per week.  
+**Planned effort:** **40 hours** (35–45 hour planning range), normally 8–14 weeks at 3–5 hours per week.
 **Position in sequence:** May begin after the basic quantitative prerequisites are comfortable. It can overlap with Y1-01/Y1-02 and should precede the Year 2 econometrics sequence.
 
 ## Purpose
