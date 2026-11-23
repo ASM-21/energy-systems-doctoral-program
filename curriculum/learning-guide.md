@@ -19,7 +19,7 @@ Use the [curriculum map](course-map.md) to identify the current course and its p
 1. **Orient and diagnose.** Read the [program overview](program-overview.md), [prerequisite diagnostic](prerequisites.md), and [academic standards](../ACADEMIC_STANDARDS.md). Complete only the prerequisite remediation indicated by the diagnostic.
 2. **Build Year 1 foundations.** Work through power systems, energy economics, quantitative methods, and then electricity markets/regulation. Quantitative methods can overlap with the other courses once the relevant mathematics and basic data skills are comfortable.
 3. **Complete the Year 1 integration project.** Choose a narrow question, assemble public evidence, produce an analysis, and write a short policy or technical brief.
-4. **Enter Year 2 selectively.** Use the advanced mathematics sequence to strengthen mathematical maturity and take econometrics in a sequence that fits the workload. Do not attempt every Year 2 topic at once.
+4. **Enter Year 2 selectively.** Use the advanced mathematics sequence to strengthen mathematical maturity, then choose econometrics or market design as the primary methods branch. Add infrastructure economics when the research question requires it. Keep one primary course at a time within the total 3–5 hour weekly budget; do not stack multiple nominal 2–3 hour courses.
 5. **Specialize through research.** Select a technical or policy concentration only after identifying a question, data or model feasibility, and a credible method.
 
 The program is independent study. Its four-year roadmap is a planning horizon, not a guarantee of mastery or a degree-equivalent credential.
