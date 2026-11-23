@@ -50,14 +50,14 @@ Stationarity:
 
 `q_i - ρ + μ_i - β_i = 0`.
 
-At the optimum, C has positive energy and reserve awards and unused capacity, so `μ_C=α_C=β_C=0`. Therefore `λ=55) USD/MWh and `ρ=2) USD/(MW·h).
+At the optimum, C has positive energy and reserve awards and unused capacity, so μ_C = α_C = β_C = 0. Therefore λ = 55 USD/MWh and ρ = 2 USD/(MW·h).
 
 A and B are at their joint capacity limits with positive energy and zero reserve. Their capacity shadow values are:
-- A: `μ_A=λ-c_A=55-18=37) USD/(MW·h).
-- B: `μ_B=λ-c_B=55-32=23) USD/(MW·h).
-- C: `μ_C=0).
+- A: μ_A = λ - c_A = 55 - 18 = 37 USD/(MW·h).
+- B: μ_B = λ - c_B = 55 - 32 = 23 USD/(MW·h).
+- C: μ_C = 0.
 
-The lower-bound multipliers for reserve on A and B are positive, reflecting that reserve is not economic for those units at the benchmark offers after accounting for their capacity opportunity cost. For A, `β_A=q_A-ρ+μ_A=8-2+37=43); for B, `β_B=5-2+23=26).
+The lower-bound multipliers for reserve on A and B are positive, reflecting that reserve is not economic for those units at the benchmark offers after accounting for their capacity opportunity cost. For A, β_A = q_A - ρ + μ_A = 8 - 2 + 37 = 43; for B, β_B = 5 - 2 + 23 = 26.
 
 The energy dual is the marginal system cost of one additional MW of energy demand. The reserve dual is the marginal system cost of one additional MW of reserve requirement, over the local range where the same basis remains optimal. Capacity shadow values measure the benefit of one additional MW of a unit's joint energy/reserve capability. A constraint can bind with zero shadow value when relaxing it does not improve the objective at the margin, as for C.
 
