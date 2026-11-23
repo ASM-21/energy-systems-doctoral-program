@@ -12,6 +12,13 @@ Use the [computational project template](project-template.md) for new or substan
 - Use versioned assumptions and explain scenario choices.
 - Provide a short policy/decision summary alongside technical artifacts.
 
+## Subject-area learning paths
+
+- [Power systems](power-systems/README.md) — network models, DER screening, dynamics, and reliability.
+- [Energy economics](energy-economics/README.md) — dispatch, storage, reserves, and capacity planning.
+- [Econometrics](econometrics/README.md) — regression, experiments, causal inference, and survival analysis.
+- [Policy and infrastructure](policy-analysis/README.md) — Pennsylvania interconnection evidence, queueing, and regulatory research.
+
 ## Initial flagship research projects
 - [Pennsylvania distribution DER interconnection capstone](policy-analysis/pa-distribution-interconnection-capstone/README.md) — reproducible 11-EDC, three-year descriptive baseline, peer comparisons, and a defensible design for follow-on application-level evaluation.
 - [Interconnection queueing and process capacity](policy-analysis/interconnection-queueing/README.md) — Erlang-C M/M/c analysis, Little's Law, staffing sensitivity, and fixed-seed discrete-event simulation. Synthetic teaching model only.
