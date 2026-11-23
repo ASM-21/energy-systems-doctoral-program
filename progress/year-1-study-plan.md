@@ -2,11 +2,23 @@
 
 ## Workload and calendar
 
-The four course guides estimate 140–182 hours in total. The current progress tracker uses a planning baseline of approximately **168 hours** across the required problem sets, computational work, source analysis, and course deliverables. The Year 1 integration project is planned at a further **20–30 hours**.
+The four course guides allow a combined range of approximately **140–182 hours**. The assessment trackers assign a single planning baseline of **168 hours** across required problem sets, computational work, source analysis, and course deliverables. The integration project has a **25-hour planning baseline**, with a reasonable range of 20–30 hours.
 
-At 3–5 hours per week, plan for roughly **38–66 weeks**, including the integration project. This is a range, not a deadline. Prerequisite remediation, difficult derivations, and optional extensions may increase it. Do not compress the work by skipping assessments or solution review.
+The current total planning baseline is therefore **193 hours**. At 3–5 hours per week, the calendar is approximately **38–66 weeks**, including the integration project and allowing for variation in the actual time required. This is a planning range, not a deadline. Prerequisite remediation or optional extensions may increase it. Do not compress the work by skipping assessments or solution review.
 
-The estimates are planning aids. Record actual time in the tracker and adjust future estimates from experience.
+The assessment tracker is the operational source for planned hours. The course guides show the planning baseline and a range for individual variation. Record actual time and recalibrate future estimates from experience.
+
+## Course workload allocation
+
+| Course | Planned baseline | Allowance in course guide |
+|---|---:|---:|
+| Y1-01 Power Systems | 42 h | 35–45 h |
+| Y1-02 Energy Economics | 35 h | 30–40 h |
+| Y1-04 Quantitative Methods | 40 h | 35–45 h |
+| Y1-03 Markets, Regulation, and PJM | 51 h | 40–52 h |
+| **Core courses** | **168 h** | **140–182 h combined range** |
+| Year 1 integration project | 25 h | 20–30 h |
+| **Planning total** | **193 h** | **160–212 h combined range** |
 
 ## Weekly allocation
 
@@ -24,17 +36,17 @@ A difficult derivation or lab can span multiple weeks. Keep the weekly budget st
 
 The [curriculum map](../curriculum/course-map.md) is the canonical dependency guide.
 
-1. **Y1-01 Power Systems and Electricity Infrastructure.** Build electrical-system literacy, per-unit and network representation, power-flow reasoning, feeder constraints, and DER integration. Work through the five problem sets and linked power-system labs.
-2. **Y1-02 Energy Economics and Market Fundamentals.** Develop supply, demand, welfare, dispatch, externality, storage, and investment reasoning. Complete the four problem sets and linked economic-dispatch/storage labs.
-3. **Y1-04 Applied Quantitative Methods.** Start once the data and programming prerequisites are comfortable. Build reproducible data workflows, OLS interpretation, measurement audits, and careful distinctions between description and causal identification.
-4. **Y1-03 Electricity Markets, Utility Regulation, and PJM.** Apply engineering and economics to institutions, wholesale markets, utility regulation, resource adequacy, DER participation, and Pennsylvania interconnection. Use primary sources and record exact document versions and effective dates.
+1. **Y1-01 Power Systems and Electricity Infrastructure.** Build electrical-system literacy, per-unit and network representation, power-flow reasoning, feeder constraints, and DER integration.
+2. **Y1-02 Energy Economics and Market Fundamentals.** Develop supply, demand, welfare, dispatch, externality, storage, and investment reasoning.
+3. **Y1-04 Applied Quantitative Methods.** Build reproducible data workflows, OLS interpretation, measurement audits, and careful distinctions between description and causal identification.
+4. **Y1-03 Electricity Markets, Utility Regulation, and PJM.** Apply engineering, economics, and quantitative reasoning to institutions, wholesale markets, utility regulation, resource adequacy, DER participation, and Pennsylvania interconnection.
 5. **Year 1 integration project.** Select one focused question, complete a literature and institutional review, establish data/model feasibility, conduct an analysis, and produce a technical report or policy brief with a reproducibility package.
 
-Limited overlap is appropriate. Do not run all four courses at full intensity simultaneously.
+Limited overlap is appropriate. Y1-04 can overlap with the first two courses once prerequisites are met. Do not run all four courses at full intensity simultaneously.
 
 ## Weekly operating routine
 
-At the beginning of a session, choose one measurable target: a section of a text, a derivation, a problem set section, a source review, or a code/test milestone. End by recording actual hours, completed evidence, unresolved questions, and the next action in progress/research-log.md.
+At the beginning of a session, choose one measurable target: a section of a text, a derivation, a problem-set section, a source review, or a code/test milestone. End by recording actual hours, completed evidence, unresolved questions, and the next action in progress/research-log.md.
 
 ## Problem sets and solutions
 
