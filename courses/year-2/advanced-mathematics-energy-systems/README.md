@@ -56,6 +56,7 @@ By the end, the learner should be able to:
 | 7. Graph theory and network optimization | Directed/undirected graphs, incidence matrices, cuts, paths, trees, max-flow/min-cut, Laplacians | Transmission/distribution topology, congestion, network resilience | Network-flow model and graph sensitivity |
 | 8. Stochastic, robust, and dynamic optimization | Two-stage recourse, scenario trees, chance constraints, robust sets, dynamic programming, Bellman equations | Renewable uncertainty, resource adequacy, resilient investment, storage control | Stochastic or robust planning model |
 | 9. Synthesis | Model selection, approximation, sensitivity, uncertainty propagation, reproducibility | Integrated energy-system decision model | Technical paper with mathematical appendix |
+| 10. Optional queueing extension | Birth-death processes, stationary distributions, Erlang-C, Little's Law, queueing networks, discrete-event simulation | Interconnection review capacity, process bottlenecks, and staffing sensitivity | Analytic M/M/c derivation and validated simulation |
 
 ## Assessment
 
@@ -127,12 +128,13 @@ This is a single course sequence, not nine assignments to complete concurrently.
 | 15–17 | PS8 stochastic and robust optimization | Recourse formulation and risk comparison |
 | 18–21 | PS9 integrated research design | Data audit, network formulation, identification plan |
 | 22–24 | Capstone implementation and revision | Tested reproducibility package and technical draft |
-| 25–30 (optional) | Validation, defense, and extension | Benchmark comparison, oral defense, or revised paper |
+| 25–26 (optional) | PS10 queueing extension or targeted advanced topic | Erlang-C derivation and process-model critique |
+| 27–30 (optional) | Validation, defense, and extension | Benchmark comparison, oral defense, or revised paper |
 
-The minimum path is 24 weeks. Weeks 25–30 are reserved for topics that require deeper derivation or model validation. If a problem set takes longer, shift later blocks rather than increasing the weekly workload. Do not treat the full 6,000–8,000 word capstone as a one-week assignment.
+The minimum path is 24 weeks. Weeks 25–30 are optional and can be used for queueing theory, topics requiring deeper derivation, or model validation. PS10 is an extension, not an additional required workload. If a problem set takes longer, shift later blocks rather than increasing the weekly workload. Do not treat the full 6,000–8,000 word capstone as a one-week assignment.
 
 ## Sequencing and scope control
 
-This is a planned advanced course, not a prerequisite to the current Year 1 work. Do not attempt to complete every module before making progress in energy systems. The recommended order is to finish Year 1 foundations, complete targeted mathematics remediation, then take Modules 1–6 before advanced OPF and stochastic planning. Modules 7–9 can follow or run as research needs dictate.
+This is a planned advanced course, not a prerequisite to the current Year 1 work. Do not attempt to complete every module before making progress in energy systems. The recommended order is to finish Year 1 foundations, complete targeted mathematics remediation, then take Modules 1–6 before advanced OPF and stochastic planning. Modules 7–9 can follow or run as research needs dictate. Module 10 is optional and is most useful when studying process capacity, queues, and review-system design.
 
 At 3–5 hours/week, the full course should be spread across two academic years if necessary. Depth and retention take priority over calendar completion. The course should be revised after the first Year 2 optimization and econometrics assignments reveal actual mathematical gaps.
