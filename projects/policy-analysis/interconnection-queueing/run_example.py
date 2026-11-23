@@ -1,6 +1,6 @@
 import json
 
-from queueing import mmc_metrics, simulate_mmc, staffing_cost
+from queueing import mg1_metrics, mmc_metrics, simulate_mmc, staffing_cost
 
 
 def main():
@@ -22,6 +22,9 @@ def main():
         }
     print(json.dumps({
         "arrival_rate_sensitivity": sensitivity,
+        "single_reviewer_service_variability": {
+            str(cv): mg1_metrics(6.0, 1 / 8, cv) for cv in (1.0, 2.0)
+        },
         "note": "Synthetic M/M/c illustration; not utility staffing or service-time data.",
         "rates": {"arrivals_per_period": arrival_rate,
                   "service_rate_per_server_per_period": service_rate},
