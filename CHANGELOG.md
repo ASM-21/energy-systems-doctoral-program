@@ -1,3 +1,9 @@
+## 2026-11-23 — Year 2 utility cost allocation and rate design
+
+- Added Y2-03 Problem Set 2 and worked solutions covering class cost allocation, customer/demand/energy functional pools, three-part tariff construction, representative bill calculations, alternative rate designs, cost-causation judgment, and regulatory evidence hierarchy.
+- Included full class-level revenue reconciliation and explicitly separated allocated cost responsibility, tariff billing determinants, and individual customer bill impacts.
+- Updated the course guide and published navigation. Y2-03 remains planned; regulatory-incentive, capital-budgeting, and Pennsylvania applied-case assessments are still outstanding.
+
 ## 2026-11-23 — Pennsylvania settlement cross-reference correction
 
 - Reconciled the rate-case settlement references across the casebook, public-data feasibility assessment, and Year 1 assignments.
