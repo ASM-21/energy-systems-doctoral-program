@@ -1,3 +1,9 @@
+## 2026-11-23 — Y2-04 unit commitment and nonconvex dispatch
+
+- Added Problem Set 4 and worked solutions covering mixed-integer commitment, startup/no-load costs, LP relaxation, integrality gap, and uplift/nonconvex pricing.
+- Added a tested SciPy/HiGHS two-period unit-commitment model with startup logic, commitment-linked minimum/maximum output, cost reconciliation, LP relaxation, and sensitivity cases.
+- Added the project to Python CI, site navigation, and the energy-economics learning path. Y2-04 remains planned; market-power, resource-adequacy, transmission planning, and PJM-specific analysis remain incomplete.
+
 ## 2026-11-23 — Y2-04 reserve co-optimization assessment
 
 - Added Problem Set 3 and worked solutions on joint energy/upward-reserve procurement, KKT conditions, energy and reserve duals, generator capacity opportunity costs, and finite-difference validation.
