@@ -57,6 +57,41 @@ def three_part_rates(customer_cost: float, demand_cost: float, energy_cost: floa
     }
 
 
+def compare_rate_designs(total_requirement: float, accounts: float, demand_kw: float,
+                           energy_kwh: float, customer_cost: float,
+                           demand_cost: float, energy_cost: float,
+                           fixed_share: float = 0.40, months: int = 12) -> dict[str, dict[str, float]]:
+    """Compare volumetric-only, fixed-plus-volumetric, and three-part rates.
+
+    The three-part pools must sum to the total requirement. Aggregate
+    determinants do not establish customer-level cost causation or incidence.
+    """
+    total = _nn(total_requirement, "total_requirement")
+    accounts, demand_kw, energy_kwh = (
+        _nn(accounts, "accounts"), _nn(demand_kw, "demand_kw"), _nn(energy_kwh, "energy_kwh")
+    )
+    if min(accounts, demand_kw, energy_kwh) <= 0:
+        raise ValueError("Aggregate account, demand, and energy determinants must be positive")
+    share = float(fixed_share)
+    if not math.isfinite(share) or not 0 <= share <= 1:
+        raise ValueError("fixed_share must be between zero and one")
+    pools = [_nn(v, n) for v, n in [
+        (customer_cost, "customer_cost"), (demand_cost, "demand_cost"), (energy_cost, "energy_cost")
+    ]]
+    if not math.isclose(sum(pools), total, rel_tol=0, abs_tol=max(1e-6, total * 1e-10)):
+        raise ValueError("Three-part cost pools must sum to total_requirement")
+    if not isinstance(months, int) or isinstance(months, bool) or months <= 0:
+        raise ValueError("months must be a positive integer")
+    zero = {"fixed_per_account_month": 0.0, "demand_per_kw_month": 0.0, "energy_per_kwh": 0.0}
+    volumetric = dict(zero)
+    volumetric["energy_per_kwh"] = total / energy_kwh
+    fixed_volumetric = dict(zero)
+    fixed_volumetric["fixed_per_account_month"] = total * share / (accounts * months)
+    fixed_volumetric["energy_per_kwh"] = total * (1 - share) / energy_kwh
+    three_part = three_part_rates(*pools, accounts, demand_kw, energy_kwh, months)
+    return {"volumetric_only": volumetric, "fixed_plus_volumetric": fixed_volumetric, "three_part": three_part}
+
+
 def representative_bill(rates: Mapping[str, float], annual_kwh: float, monthly_kw: float, months: int = 12) -> dict[str, float]:
     annual_kwh, monthly_kw = _nn(annual_kwh, "annual_kwh"), _nn(monthly_kw, "monthly_kw")
     if not isinstance(months, int) or isinstance(months, bool) or months <= 0:
