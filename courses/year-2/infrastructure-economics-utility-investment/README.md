@@ -99,6 +99,18 @@ A strong submission:
 Submit a revenue-requirement workbook or script, a short rate-design comparison, a source register for one public regulatory proceeding, and a 1,500–2,000 word investment memo. A model without a clear institutional interpretation is incomplete.
 
 
+## Completion gate
+
+The course remains planned until the remaining rate-design, regulatory-incentive, capital-budgeting, and Pennsylvania case assignments are developed and reviewed. When activated, completion should require:
+- all required problem sets attempted and corrected;
+- a reproducible revenue-requirement and rate-design model;
+- a primary-source review of one public rate proceeding;
+- a sensitivity analysis that identifies who bears material risks;
+- a 1,500–2,000 word investment/regulatory memo;
+- a self-assessment against the [program rubric](../../../ACADEMIC_STANDARDS.md).
+
+The currently published Problem Set 1 is an initial module, not evidence that the full course is ready or complete.
+
 ## Next step
 
 Complete the remaining rate-design, regulatory-incentive, and investment-risk modules as they are developed. Then use the [Y2-04 market-design sequence](../electricity-market-design-optimization/README.md) or the Year 2 research capstone to integrate engineering constraints, market outcomes, and utility investment incentives. This course remains planned until its full assessment set and applied case have been reviewed.
