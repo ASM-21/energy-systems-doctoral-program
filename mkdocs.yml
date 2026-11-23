@@ -131,6 +131,10 @@ nav:
                   - PS8: courses/year-2/advanced-mathematics-energy-systems/problem-set-08-stochastic-robust-optimization-solutions.md
                   - PS9 Capstone guide: courses/year-2/advanced-mathematics-energy-systems/problem-set-09-integrated-research-design-guide.md
                   - PS10: courses/year-2/advanced-mathematics-energy-systems/problem-set-10-queueing-theory-interconnection-solutions.md
+          - Infrastructure economics and utility investment:
+              - Course guide: courses/year-2/infrastructure-economics-utility-investment/README.md
+              - Problem Set 1: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement.md
+              - Problem Set 1 solutions: courses/year-2/infrastructure-economics-utility-investment/problem-set-01-revenue-requirement-solutions.md
           - Graduate econometrics and causal inference:
               - Course guide: courses/year-2/graduate-econometrics-causal-inference/README.md
               - Pre-analysis plan template: courses/year-2/graduate-econometrics-causal-inference/pre-analysis-plan-template.md
