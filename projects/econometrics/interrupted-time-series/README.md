@@ -1,6 +1,6 @@
 # Interrupted Time Series and Dynamic Regression Lab
 
-A synthetic monthly utility-outcome example for segmented regression with Newey–West HAC inference, residual autocorrelation diagnostics, placebo intervention dates, and sensitivity to HAC bandwidth.
+A synthetic monthly utility-outcome example comparing segmented OLS with Newey–West HAC inference against feasible GLS with AR(1) errors. It reports raw and whitened residual diagnostics, HAC bandwidth sensitivity, and placebo intervention dates.
 
 **All observations are synthetic.** The example demonstrates estimator behavior under a known data-generating process; it is not an estimate of any real utility or policy.
 
@@ -12,25 +12,30 @@ python interrupted_time_series.py --output-dir /tmp/its-results
 python -m unittest discover -s . -p 'test_*.py' -v
 ```
 
-## Model
+## Mean model and estimands
 
-\[
-Y_t=\beta_0+\beta_1t+\beta_2D_t+\beta_3(t-T_0)D_t+\epsilon_t.
-\]
+[
+Y_t=\beta_0+\beta_1t+\beta_2D_t+\beta_3(t-T_0)D_t+u_t.
+]
 
-The design matrix separates baseline trend, immediate level change, and trend change. OLS coefficients are paired with Newey–West HAC covariance estimates. HAC affects uncertainty estimation, not causal identification.
+The design matrix separates baseline trend, immediate level change, and trend change. The coefficient \(\beta_2\) is the modeled immediate shift at \(T_0\); \(\beta_3\) is the change in slope per period. They are descriptive conditional parameters unless a credible counterfactual design justifies causal interpretation.
 
-The script reports the primary model, selected coefficient standard errors, Ljung–Box residual diagnostic, alternative HAC maximum lags, and placebo-date coefficients.
+## Two error treatments
+
+1. **Segmented OLS with HAC covariance.** OLS estimates the conditional mean; Newey–West HAC changes the estimated covariance matrix. It does not remove serial correlation, change fitted values, or correct a misspecified conditional mean.
+2. **AR(1)-error feasible GLS.** The lab estimates \(u_t=\rho u_{t-1}+\varepsilon_t\) iteratively. This can improve efficiency when the AR(1) model is adequate, but it is more model-dependent. A misspecified AR order, structural break in the error process, heteroskedasticity, or outliers can distort estimates and standard errors.
+
+The output reports Ljung–Box diagnostics for raw OLS residuals, raw GLS residuals, and GLS-whitened residuals. A non-rejection is not proof of white noise; a rejection is a specification warning, not an automatic instruction to increase AR order until a preferred result appears. The AR coefficient and residual plots should be interpreted with domain knowledge and sensitivity checks.
 
 ## Interpretation controls
 
 - A significant level or slope coefficient is not sufficient for causal attribution.
 - The intervention date is externally specified in the synthetic example; placebo dates are diagnostic, not a formal multiple-testing-adjusted test.
-- Serial-correlation-robust inference does not fix confounding, concurrent shocks, outcome revisions, or misspecified trend shape.
-- Unit-root and cointegration tests are deliberately not bundled into the core estimator: their deterministic terms, lag choices, and break assumptions require substantive specification. See the course assignment for those derivations.
-- This lab uses a single intervention and a single series. It does not implement controlled ITS, Bayesian structural time series, ARIMA intervention models, or state-space forecasting.
+- Neither HAC nor AR(1) GLS fixes confounding, concurrent shocks, outcome revisions, anticipation, endogenous policy timing, or invalid counterfactual trends.
+- Unit-root and cointegration tests are not bundled into the estimator: deterministic terms, lag choices, structural breaks, and integration order require substantive specification.
+- The lab uses a single intervention and a single series. It does not implement controlled ITS, ARIMA intervention models, Bayesian structural time series, or state-space forecasting.
 
 ## Outputs
 
-- `summary.json`: coefficients, HAC standard errors, fit diagnostics, Ljung–Box test, bandwidth sensitivity, and placebo-date results.
-- `series.csv`: synthetic observations and fitted values.
+- `summary.json`: OLS/HAC and AR(1)-GLS coefficient estimates, uncertainty, estimated AR coefficient, residual diagnostics, HAC bandwidth sensitivity, and placebo-date results.
+- `series.csv`: synthetic observations, both fitted series, and residuals.
