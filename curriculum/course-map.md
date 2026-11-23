@@ -39,7 +39,7 @@ The integration project should produce a literature/institutional review, a tran
 
 ## Year 2: advanced analytical methods
 
-Year 2 is a flexible advanced-study stage rather than a fixed 12-month calendar. The current course architecture represents approximately 195–250 hours before a research capstone. At 3–5 hours per week, expect roughly 10–22 months depending on prerequisite remediation and research scope. The [Year 2 guide](../courses/year-2/README.md) is the operational sequencing reference.
+Year 2 is a flexible advanced-study stage rather than a fixed 12-month calendar. The four planned courses represent approximately 195–250 hours before a research capstone, or roughly 9–19 months at 3–5 hours per week. A 25–40 hour research synthesis extends the full stage to approximately 10–22 months. The [Year 2 guide](../courses/year-2/README.md) is the operational sequencing reference.
 
 | ID | Course | Dependencies | Planned effort | Status |
 |---|---|---|---:|---|
