@@ -1,6 +1,6 @@
 # Assessments and Examination Standards
 
-Assessment is designed to test independent reasoning, not recognition or note production.
+Assessment is designed to test independent reasoning, not recognition or note production. Map each assessment to the [program competency framework](../curriculum/competency-framework.md); an outcome should not be claimed as mastered unless an assessment produces observable evidence.
 
 ## Course-level assessment package
 Each course should contain:
