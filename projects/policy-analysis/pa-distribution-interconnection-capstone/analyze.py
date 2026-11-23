@@ -132,6 +132,8 @@ def analyze(rows: Iterable[dict]) -> dict:
     annual = []
     panel = []
     prior_by_edc = {}
+    ppl_baseline = next(_integer(row, "total_requests") for row in records
+                        if int(row["reporting_year"]) == years[0] and row["edc"] == "PPL")
 
     for year in years:
         cohort = [row for row in records if int(row["reporting_year"]) == year]
@@ -151,6 +153,7 @@ def analyze(rows: Iterable[dict]) -> dict:
             "ppl_requests": _integer(ppl, "total_requests"),
             "ppl_rank": next(i for i, row in enumerate(ranked, 1) if row["edc"] == "PPL"),
             "ppl_request_share_pct": round(_integer(ppl, "total_requests") / total * 100, 2),
+            "ppl_change_from_2023_pct": round((_integer(ppl, "total_requests") / ppl_baseline - 1) * 100, 2),
             "request_count_hhi": round(hhi, 2),
             "top_three_edc_request_share_pct": round(top_three_share, 2),
         })
