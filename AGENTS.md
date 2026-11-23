@@ -29,7 +29,7 @@ This repository is an independent doctoral-level curriculum and research portfol
 - Provide concise change summaries with material caveats.
 
 ## Academic design
-At 3–5 hours/week, prioritize a small number of deep courses and substantial projects. Avoid an inflated course catalog. Each course must specify prerequisites, learning outcomes, sequence, workload, assessments, and completion evidence.
+At 3–5 hours/week, prioritize a small number of deep courses and substantial projects. Avoid an inflated course catalog. Each course must follow the shared curriculum/course-template.md structure and specify status, prerequisites, learning outcomes, sequence, workload, required versus optional material, assessments, solution availability, computational resources, completion evidence, and next steps. Keep navigation hierarchical: year → course → assignments/solutions; do not maintain a flat list of dozens of problem sets.
 
 ## Publication and website
 The website must clearly state the program is not accredited. It should be generated from canonical repository content, accessible, responsive, searchable, and maintainable. Do not copy third-party copyrighted materials into the repository.
