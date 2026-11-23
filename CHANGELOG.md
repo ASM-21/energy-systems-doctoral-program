@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22 — Queueing theory and interconnection process capacity
+- Added an optional advanced-mathematics extension on M/M/1 and M/M/c queues, Erlang-C, Little's Law, utilization-driven delay, staffing trade-offs, multi-stage process models, and empirical identification limits.
+- Added a standard-library analytical and discrete-event simulation lab with exact Erlang-C regression checks, fixed-seed simulation, stability validation, and illustrative staffing-cost sensitivity.
+- Explicitly labeled all queue parameters and waiting-cost coefficients as synthetic; no utility staffing or application-delay estimates are inferred.
+- Integrated the extension into Year 2 course navigation, project index, Makefile, and Python CI.
+
+
 ## 2026-11-22 — Quantitative methods department integration
 - Linked the graduate econometrics course and its randomized, DID, and competing-risk computational companions from the department competency framework.
 
