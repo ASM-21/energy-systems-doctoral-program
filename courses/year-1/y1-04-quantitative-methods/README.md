@@ -89,4 +89,4 @@ Attempt and correct all three problem sets; reproduce and modify both computatio
 
 ## Next step
 
-Proceed to [Y1-03 — Electricity Markets, Utility Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md). Then complete the [Year 1 integration project](../README.md#integration-project) before entering the advanced Year 2 econometrics sequence.
+Proceed to [Y1-03 — Electricity Markets, Utility Regulation, and PJM](../y1-03-markets-regulation-pjm/README.md). Then complete the [Year 1 integration project](../README.md#year-1-integration-project) before entering the advanced Year 2 econometrics sequence.
