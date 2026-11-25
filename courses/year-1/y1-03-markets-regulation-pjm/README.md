@@ -96,4 +96,4 @@ Attempt and correct all six problem sets; complete both computational labs and t
 
 ## Next step
 
-Complete the [Year 1 integration project](../README.md#integration-project). Enter Year 2 only after demonstrating the Year 1 progression outcomes in the [curriculum map](../../../curriculum/course-map.md).
+Complete the [Year 1 integration project](../README.md#year-1-integration-project). Enter Year 2 only after demonstrating the Year 1 progression outcomes in the [curriculum map](../../../curriculum/course-map.md).
